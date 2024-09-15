@@ -187,6 +187,3 @@ More in depth
 1. Install [Obsidian](https://obsidian.md/).
 2. **Enable local encryption** for vaults and use it to take private, organized notes.
 3. Sync notes securely using encryption-friendly cloud services.
-
-## Conclusion
-Maintaining privacy and OPSEC is an ongoing process, requiring constant vigilance and the use of the right tools. With these steps, you’ll be well on your way to ensuring that your data, identity, and communications remain protected.
