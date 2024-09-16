@@ -151,6 +151,11 @@ More in depth
    - In the web interface, go to **Applications** > **Adblock** and turn it on.
 5. **Firmware Updates**:
    - Check for and install the latest firmware updates for security improvements.
+6. **Blue Merle**:
+   - Consider installing the opkg for [srlabs blue-merle](https://github.com/srlabs/blue-merle)
+   - SSH into Mudi router (root@192.168.8.1) with your admin login password
+   - scp blue-merle to the Mudi device (follow instructions on the repo)
+   - Utilize the toggle on devie, or LuCi web interface to roll IMEI and MAC address for your operational needs
 
 ## Generational Operational Security
 OPSEC isn't just a one-time thing; it's something you need to maintain consistently, across different tools and platforms.
