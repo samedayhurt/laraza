@@ -15,7 +15,9 @@
    - [Signal Messenger](#signal-messenger)
    - [Analyst Notebook](#analyst-notebook)
    - [Obsidian for Secure Notes](#obsidian-for-secure-notes)
-7. [Conclusion](#conclusion)
+7. [Direction Finding](directionfinding.md)
+8. [Vetting Sources](vetsources.md)
+9. [Fundamentals of Non-Standard Communications](nscomms.md)
 
 ---
 
