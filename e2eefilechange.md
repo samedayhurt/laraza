@@ -1,6 +1,6 @@
-# **Strong & Anonymous Syncthing Setup with End-to-End Encryption (E2EE)**
+# **Strong & Anonymous File Sync with End-to-End Encryption (E2EE)**
 
-Syncthing does **not** provide end-to-end encryption (E2EE), so we must encrypt files **before syncing**. This guide sets up **gocryptfs** for encryption and runs **Syncthing over Tor** for anonymity.
+Syncthing does **not** provide end-to-end encryption (E2EE), so we must encrypt files **before syncing**. This guide sets up **gocryptfs** for encryption and runs **Syncthing or Magic Wormhole** over **Tor** for anonymity.
 
 ---
 
@@ -30,16 +30,36 @@ gocryptfs ~/encrypted ~/decrypted
 
 ---
 
-## **2️⃣ Sync Encrypted Data with Syncthing**
+## **2️⃣ Sync Encrypted Data with Syncthing or Magic Wormhole**
+### **Option 1: Syncthing**
 - Add `~/encrypted` as a Syncthing folder.
 - Disable **Global Discovery** and **Relays** for privacy.
 - Sync encrypted data only.
 
+### **Option 2: Magic Wormhole**
+Magic Wormhole provides a **one-time, encrypted** file transfer method. Ideal for **ad-hoc** file sharing.
+
+#### **Install Magic Wormhole**
+```bash
+sudo apt install magic-wormhole
+```
+#### **Send a file**
+```bash
+wormhole send myfile.txt
+```
+- A short code appears (e.g., `4-horse-battery`).
+- Share this code securely.
+
+#### **Receive a file**
+```bash
+wormhole receive 4-horse-battery
+```
+
 ---
 
-## **3️⃣ Run Syncthing Over Tor for Anonymity**
+## **3️⃣ Run Over Tor for Anonymity**
 
-### **Set Up a Tor Hidden Service**
+### **Set Up a Tor Hidden Service for Syncthing**
 ```bash
 echo -e "HiddenServiceDir /var/lib/tor/syncthing/\nHiddenServicePort 22000 127.0.0.1:22000" | sudo tee -a /etc/tor/torrc
 sudo systemctl restart tor
@@ -49,6 +69,12 @@ sudo systemctl restart tor
 cat /var/lib/tor/syncthing/hostname
 ```
 - **Add this address as a remote device in Syncthing.**
+
+### **Use Tor for Magic Wormhole**
+Run Magic Wormhole over Tor for extra privacy:
+```bash
+torsocks wormhole send myfile.txt
+```
 
 ---
 
@@ -91,7 +117,7 @@ firejail syncthing
 ---
 
 ## **5️⃣ Use a VPN + Tor for Layered Privacy**
-- VPN → Tor → Syncthing
+- VPN → Tor → Syncthing / Magic Wormhole
 
 ---
 
@@ -109,10 +135,9 @@ Then, set up a **cron job** or **systemd service** to run it at startup.
 ## **Final Setup Summary**
 ✅ **gocryptfs for encryption**  
 ✅ **Sync only encrypted data**  
-✅ **Syncthing over Tor Hidden Services**  
+✅ **Syncthing or Magic Wormhole**  
+✅ **Run over Tor Hidden Services**  
 ✅ **Disable discovery & relays**  
 ✅ **Run in a sandbox (Firejail)**  
 ✅ **VPN + Tor for extra anonymity**  
 ✅ **Automate with scripts**  
-
-
