@@ -5,6 +5,7 @@
 2. [Installing Virtual Machines](#installing-virtual-machines)
    - [Kali Linux](#kali-linux)
    - [TraceLabs VM](#tracelabs-vm)
+   - [Workflow of E2EE With SyncThing, VPN+Tor, firejail](e2eefilechange.md)
 3. [Hardening Your Browser](#hardening-your-browser)
    - [Firefox Security](#firefox-security)
 4. [Using Tor and a VPN](#using-tor-and-a-vpn)
