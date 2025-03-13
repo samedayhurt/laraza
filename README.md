@@ -2,7 +2,10 @@
     <img width="25%" src="asset1.png"> 
 </p>
 
-## Privacy and OPSEC Guide
+# La Raza VI.I.IX - Open Source Intelligence (OSINT) and Technology Primers
+This project equips community journalists, activists, and engaged citizens with the tools, techniques, and knowledge for effective open-source research and secure technology practices, fostering resilience and informed action. It also serves as a research log for secure communication methodologies, independent analysis of community issues, and the development of accessible tech solutions to empower all.
+
+For all of our family.
 
 ## Table of Contents
 1. [Introduction](#introduction)
