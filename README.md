@@ -1,4 +1,8 @@
-# Privacy and OPSEC Guide
+<p align="center" width="100%">
+    <img width="100%" src="asset1.png"> 
+</p>
+
+## Privacy and OPSEC Guide
 
 ## Table of Contents
 1. [Introduction](#introduction)
