@@ -2,6 +2,8 @@
 
 Syncthing does **not** provide end-to-end encryption (E2EE), so we must encrypt files **before syncing**. This guide sets up **gocryptfs** for encryption and runs **Syncthing or Magic Wormhole** over **Tor** for anonymity.
 
+##Auto Setup
+You can follow the steps below or use the simple [bash script](e2eesetup.sh) I've written that'll walk you through the setup.
 ---
 
 ## **1️⃣ Encrypt Files Before Syncing**
