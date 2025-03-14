@@ -23,7 +23,7 @@ For all of our family.
    - [Signal Messenger](#signal-messenger)
    - [Analyst Notebook](#analyst-notebook)
    - [Obsidian for Secure Notes](#obsidian-for-secure-notes)
-1. [Direction Finding](primers/directionfinding.md)
+1. [Direction Finding](Direction%20Finding%20(Wi-Fi).md)
 2. [Vetting Sources](opsec/vetsources.md)
 3. [Fundamentals of Non-Standard Communications](comms/nscomms.md)
 

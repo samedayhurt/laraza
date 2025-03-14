@@ -6,12 +6,16 @@
 As we have discussed in the digital communications primers, there is significant inherent risk and footprint in transmitting files, notes, and other pieces of information in today's environment. While becoming totally invisible is not a possibility, we can obfuscate and diminish the risk of exposure of our sensitive transfers with a thoughtful workflow.
 
 This workflow utilizes several FOSS (free and open source software) solutions to:
-1. Encrypt data 
-2. Protect our data transmission through obfuscation, hiding identities of senders and receivers
-3. Allow for the synchronization of data across many users
-4. And allow for flexibility of point to point transmissions when required
+1. **Encrypt data** so that only the intended viewers can open and use our data
+2. **Protect our data transmission** through obfuscation, hiding identities of senders and receivers
+3. **Allow for the synchronization** of data across many users
+4. And **allow for flexibility** of point to point transmissions when required
 
-This enables bypassing using cloud services (which are someone else's computer easily subject to warrants), 
+This enables bypassing using cloud services (which are someone else's computer easily subject to warrants). We can also further secure this by carrying our traffic over virtual private network connection (VPN) and the Onion Router (TOR). 
+<p align="center" width="100%">
+    <img width="80%" src="assets/torhops.png"> 
+</p>
+*In the above crude figure, we can visualize how we wish our files to exchange.* 
 
 Syncthing does **not** provide end-to-end encryption (E2EE), so we must encrypt files **before syncing**. This guide sets up **gocryptfs** for encryption and runs **Syncthing or Magic Wormhole** over **Tor** for anonymity.
 
@@ -133,7 +137,7 @@ firejail syncthing
 
 ## **5️⃣ Use a VPN + Tor for Layered Privacy**
 - VPN → Tor → Syncthing / Magic Wormhole
-
+A break down of Virtual Private Networks is available in [Primers](./primers)
 ---
 
 ## **6️⃣ Automate Encryption & Syncing**

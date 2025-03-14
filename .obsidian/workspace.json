@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "comms/e2eefilechange.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "e2eefilechange"
             }
           }
         ]
@@ -170,16 +170,19 @@
   },
   "active": "4153e691dc207d9a",
   "lastOpenFiles": [
-    "comms/e2eefilechange.md",
-    "README.md",
-    "opsec/opsec.md",
-    "primers/directionfinding.md",
-    "comms/README.md",
-    "comms/nscomms.md",
-    "assets/asset1.png",
-    "opsec/vetsource.md",
     "primers/Virtual Machines.md",
     "primers/README.md",
+    "primers/Linux Primer.md",
+    "primers/Direction Finding (Wi-Fi).md",
+    "comms/nscomms.md",
+    "comms/e2eefilechange.md",
+    "comms/README.md",
+    "opsec/Operational Security Techniques.md",
+    "opsec/Vet Sources.md",
+    "README.md",
+    "comms/assets/torhops.png",
+    "comms/assets",
+    "assets/asset1.png",
     "primers",
     "opsec",
     "comms",

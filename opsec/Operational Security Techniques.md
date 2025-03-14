@@ -20,7 +20,8 @@
 3. **Secure File Sharing**:
    - Use services like **OnionShare** to share files securely and anonymously.
    - Encrypt all sensitive documents with GPG before sharing via email or cloud storage.
-     
+   - Check out a workflow for encrypting and transmitting files without cloud storage [here](./comms/e2eefilechange.md)
+
 #### Use Pseudonyms and Secure Profiles
 1. **Assign Pseudonyms**: Each group member should use pseudonyms for all external communication.
 2. **Minimize Personal Exposure**:
