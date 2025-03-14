@@ -1,5 +1,18 @@
 # **Strong & Anonymous File Sync with End-to-End Encryption (E2EE)**
 
+#comms
+
+## Introduction 
+As we have discussed in the digital communications primers, there is significant inherent risk and footprint in transmitting files, notes, and other pieces of information in today's environment. While becoming totally invisible is not a possibility, we can obfuscate and diminish the risk of exposure of our sensitive transfers with a thoughtful workflow.
+
+This workflow utilizes several FOSS (free and open source software) solutions to:
+1. Encrypt data 
+2. Protect our data transmission through obfuscation, hiding identities of senders and receivers
+3. Allow for the synchronization of data across many users
+4. And allow for flexibility of point to point transmissions when required
+
+This enables bypassing using cloud services (which are someone else's computer easily subject to warrants), 
+
 Syncthing does **not** provide end-to-end encryption (E2EE), so we must encrypt files **before syncing**. This guide sets up **gocryptfs** for encryption and runs **Syncthing or Magic Wormhole** over **Tor** for anonymity.
 
 ## Auto Setup
@@ -134,7 +147,7 @@ Then, set up a **cron job** or **systemd service** to run it at startup.
 
 ---
 
-## **Final Setup Summary**
+## **Final Setup Checklist
 ✅ **gocryptfs for encryption**  
 ✅ **Sync only encrypted data**  
 ✅ **Syncthing or Magic Wormhole**  

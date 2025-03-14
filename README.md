@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="25%" src="asset1.png"> 
+    <img width="25%" src="assets/asset1.png"> 
 </p>
 
 # La Raza VII.I.IX - Open Source Intelligence (OSINT) and Technology Primers
@@ -12,8 +12,8 @@ For all of our family.
 2. [Installing Virtual Machines](#installing-virtual-machines)
    - [Kali Linux](#kali-linux)
    - [TraceLabs VM](#tracelabs-vm)
-   - [Workflow of E2EE With SyncThing, VPN+Tor, firejail](e2eefilechange.md)
-3. [Hardening Your Browser](#hardening-your-browser)
+   - [Workflow of E2EE With SyncThing, VPN+Tor, firejail](comms/e2eefilechange.md)
+1. [Hardening Your Browser](#hardening-your-browser)
    - [Firefox Security](#firefox-security)
 4. [Using Tor and a VPN](#using-tor-and-a-vpn)
 5. [Mudi Router and Blue Merle](#mudi-router-and-blue-merle)
@@ -23,15 +23,25 @@ For all of our family.
    - [Signal Messenger](#signal-messenger)
    - [Analyst Notebook](#analyst-notebook)
    - [Obsidian for Secure Notes](#obsidian-for-secure-notes)
-7. [Direction Finding](directionfinding.md)
-8. [Vetting Sources](vetsources.md)
-9. [Fundamentals of Non-Standard Communications](nscomms.md)
+1. [Direction Finding](primers/directionfinding.md)
+2. [Vetting Sources](opsec/vetsources.md)
+3. [Fundamentals of Non-Standard Communications](comms/nscomms.md)
 
 ---
 
 ## Introduction
-In today’s digital landscape, privacy and operational security (OPSEC) are more important than ever. This guide will walk you through practical steps to secure your devices, communications, and data, ensuring that your online presence remains as private as possible.
+In today’s digital landscape, privacy and operational security (OPSEC) are more important than ever. This guide will walk you through practical steps to secure your devices, communications, and data, ensuring that your online presence remains as private as possible. This is a field guide covering as much ground as we can, and attempting to distill it to the level anyone can use.
 
+## Disclaimer
+This project is worked on over time and space; while workflow guides may be shared, the world continues to evolve at light speed. Some information may be outdated by the time you see it, some techniques may be compromised by the time you use them, and some information may just be completely wrong. The goal here is to plant seeds for trees to grow from; learn, trust, but verify.
+
+## How to Use this Repo
+1. Clone this repo
+```
+git clone https://github.com/samedayhurt/laraza.git
+```
+2. Open as vault using [Obsidian](https://obsidian.md/)
+3. Make edits and notes to make this guide your own
 ## Installing Virtual Machines
 Setting up virtual machines (VMs) is a foundational step for security professionals. Here’s how to install and configure some of the most important VMs for privacy-focused operations.
 
