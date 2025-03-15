@@ -2,24 +2,61 @@
     <img width="25%" src="assets/asset1.png"> 
 </p>
 
-# La Raza VII.I.IX - Open Source Intelligence (OSINT) and Technology Primers
+# La Raza VII.I.IX - A Field Guide on Open Source Intelligence (OSINT) and Technology Primers
 This project equips community journalists, activists, and engaged citizens with the tools, techniques, and knowledge for effective open-source research and secure technology practices, fostering resilience and informed action. It also serves as a research log for secure communication methodologies, independent analysis of community issues, and the development of accessible tech solutions to empower all.
 
 For all of our family.
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Installing Virtual Machines](#installing-virtual-machines)
-   - [Kali Linux](#kali-linux)
-   - [TraceLabs VM](#tracelabs-vm)
-   - [Workflow of E2EE With SyncThing, VPN+Tor, firejail](comms/e2eefilechange.md)
-1. [Hardening Your Browser](#hardening-your-browser)
-   - [Firefox Security](#firefox-security)
-4. [Using Tor and a VPN](#using-tor-and-a-vpn)
-5. [Mudi Router and Blue Merle](#mudi-router-and-blue-merle)
-   - [Buying and Using the Mudi Router](#buying-and-using-the-mudi-router)
-   - [Setting Up Blue Merle](#setting-up-blue-merle)
-6. [Generational Operational Security](#generational-operational-security)
+1. [Introduction - What is This?]
+2. Basics on What You Might Want to Know Before Proceeding
+	1. [Introduction to Computer Hardware]
+	2. [Introduction to Linux]
+	3. [Introduction to Networking / OSI Model Concepts]
+	4. Introduction to Radio Communications
+3. [Threats](#introduction)
+	1. Ubiquitous Technical Surveillance
+		1. Primer on UTS
+		2. Analysis of UTS applications in Pueblo, Colorado
+	2. Tech Enabled Surveillance
+		1. Primer
+		2. Analysis of Tech Enabled Surveillance applications in Pueblo, Colorado
+	3. Counter Threat Thinking
+		1. Basic Digital Hygiene Practices
+		2. Virtual Private Networks (VPN)
+		3. Secure Messaging Applications
+		4. Protecting Yourself with Technology
+			1. Understanding the Digital Environment Around You
+				1. 
+			2. [Mudi Router and Blue Merle](#mudi-router-and-blue-merle)
+				1. [Buying and Using the Mudi Router](#buying-and-using-the-mudi-router)
+				2. [Setting Up Blue Merle](#setting-up-blue-merle)
+4. An Approach to Open Source Research
+	1. Preparing Your Environment
+		1. [Installing Virtual Machines](#installing-virtual-machines)
+			1. [Kali Linux](#kali-linux)
+			2. [TraceLabs](#tracelabs-vm)
+		2. Using a LiveBoot USB
+			1. TailsOS
+		3. [Hardening Your Browser](#hardening-your-browser)
+			1. [Firefox Security](#firefox-security)
+		4. [Using Tor and a VPN](#using-tor-and-a-vpn)
+			1. Primer on Virtual Private Networks
+			2. Primer on TOR
+		5. Encryption
+			1. Primer on Encryption 
+			2. Using VeraCrypt to create encrypted containers
+			3. A Workflow for Strong & Anonymous File Sync with End-to-End Encryption (E2EE)
+	2. Framing 
+		1. Local Install Tools
+		2. StartPages for Internet Tools
+	3. Mapping 
+		1. Making a Link
+			1. Understanding relation 
+	4. Articulating Findings
+		1. Tools for Data and Diagrams
+
+5. [Generational Operational Security](#generational-operational-security)
    - [Signal Messenger](#signal-messenger)
    - [Analyst Notebook](#analyst-notebook)
    - [Obsidian for Secure Notes](#obsidian-for-secure-notes)
