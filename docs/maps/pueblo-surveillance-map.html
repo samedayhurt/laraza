@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c27685d6fe325245ee74848b08bbc761 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c27685d6fe325245ee74848b08bbc761" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c27685d6fe325245ee74848b08bbc761 = L.map(
+                "map_c27685d6fe325245ee74848b08bbc761",
+                {
+                    center: [38.29, -104.61],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e63b217cb7df020a2803167470f1fd37 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e63b217cb7df020a2803167470f1fd37.addTo(map_c27685d6fe325245ee74848b08bbc761);
+        
+    
+        function geo_json_1fefef89253c1397ed48c56b165b156b_styler(feature) {
+            switch(feature.properties.id) {
+                case "pueblo-rtcc": case "downtown-alpr": case "pueblo-mall-security": case "pcso-hq": case "ccsoco-immigration": case "mineral-palace-staging": 
+                    return {"color": "#0057b7", "fillColor": "#3388ff", "fillOpacity": 0.2, "weight": 2};
+                default:
+                    return {"color": "#ff6f00", "fillColor": "#ff6f00", "fillOpacity": 0.05, "weight": 2};
+            }
+        }
+
+        function geo_json_1fefef89253c1397ed48c56b165b156b_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_1fefef89253c1397ed48c56b165b156b = L.geoJson(null, {
+                onEachFeature: geo_json_1fefef89253c1397ed48c56b165b156b_onEachFeature,
+            
+                style: geo_json_1fefef89253c1397ed48c56b165b156b_styler,
+            ...{
+}
+        });
+
+        function geo_json_1fefef89253c1397ed48c56b165b156b_add (data) {
+            geo_json_1fefef89253c1397ed48c56b165b156b
+                .addData(data);
+        }
+            geo_json_1fefef89253c1397ed48c56b165b156b_add({"features": [{"geometry": {"coordinates": [[[-104.6694073, 38.2646391], [-104.5694073, 38.2646391], [-104.5694073, 38.3646391], [-104.6694073, 38.3646391], [-104.6694073, 38.2646391]]], "type": "Polygon"}, "properties": {"description": "Bounding box returned by Nominatim for ZIP code 81008; used as a rough frame for North Pueblo research.", "id": "zip-81008", "name": "Approximate ZIP 81008 extent", "notes": "Desktop mapping uses bounding box because public polygon data for the ZIP code is not accessible without shapefiles.", "sources": ["https://nominatim.openstreetmap.org/search.php?postalcode=81008\u0026country=USA\u0026polygon_geojson=1\u0026format=jsonv2"], "type": "boundary"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.612921, 38.2629478], "type": "Point"}, "properties": {"description": "Public Safety Complex that now hosts the Real-Time Crime Center, ShotSpotter feeds, Daktronics video wall, and Community Connect intake.", "id": "pueblo-rtcc", "name": "Pueblo Police Department / Real-Time Crime Center", "sources": ["https://www.pueblo.us/Directory.aspx?did=13", "https://www.daktronics.com/news/eye-on-crime-increases-with-daktronics-high-point-networks-collaboration-for-pueblo-police-department-s-real-time-crime-center"], "type": "rtcc"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6126358, 38.2654292], "type": "Point"}, "properties": {"description": "Pueblo Downtown Association-funded Flock Safety cameras covering the Union Ave / Riverwalk corridors to alert police about stolen vehicles and hit-and-runs.", "id": "downtown-alpr", "name": "Downtown Flock ALPR Installations", "notes": "Exact pole locations are not published; map locates the Historic Arkansas Riverwalk/Union Ave business district referenced in KOAA reporting.", "sources": ["https://www.koaa.com/news/covering-colorado/license-plate-cameras-coming-to-pueblo"], "type": "alpr"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6082866, 38.3031311], "type": "Point"}, "properties": {"description": "North-side retail hub with on-site security office, lost \u0026 found, and camera-friendly code of conduct inside ZIP 81008.", "id": "pueblo-mall-security", "name": "Pueblo Mall private security office", "notes": "Represents one of the largest commercial lots feeding Community Connect sign-ups in ZIP 81008.", "sources": ["https://www.shoppueblomall.com/services/security"], "type": "private-security"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6107614, 38.2751559], "type": "Point"}, "properties": {"description": "909 Court Street command campus where Sheriff Lucero issued the Jan. 2025 statement limiting cooperation with ICE round-ups.", "id": "pcso-hq", "name": "Pueblo County Sheriff\u2019s Office HQ", "notes": "Use for monitoring public statements, jail releases, and ICE coordination rumors.", "sources": ["https://www.pueblosheriff.com/Directory.aspx?did=1", "https://www.pueblosheriff.com/DocumentCenter/View/3323/Sheriff-Lucero-Statement"], "type": "law-enforcement"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6129252, 38.2764132], "type": "Point"}, "properties": {"description": "Safe walk-in site at 429 W 10th St offering immigration legal aid, Know Your Rights briefings, and DocuTeam referrals.", "id": "ccsoco-immigration", "name": "Catholic Charities Immigration Services", "notes": "Coordinate with staff before routing protest arrestees\u2019 families here for documentation support.", "sources": ["https://www.ccsoco.org/contact", "https://www.ccsoco.org/immigration"], "type": "community-support"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6071836, 38.2812424], "type": "Point"}, "properties": {"description": "Parade and outreach site for Pueblo Pride and community safety events; open sight lines make it a safer rally point away from downtown RTCC clusters.", "id": "mineral-palace-staging", "name": "Mineral Palace Park community staging zone", "notes": "Use park perimeter for \"green zone\" medical tents and mutual aid drop-offs before marches head south.", "sources": ["https://www.pueblounitedway.org/news/hundreds-turn-out-pueblos-pride-parade-and-festival-mineral-palace-park", "https://www.chieftain.com/picture-gallery/news/local/2025/08/17/pueblo-pride-pueblos-annual-parade-and-festival-at-mineral-palace-park/85702935007/"], "type": "assembly"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_1fefef89253c1397ed48c56b165b156b.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["name", "type"];
+    let aliases = ["Name", "Category"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_1fefef89253c1397ed48c56b165b156b.addTo(map_c27685d6fe325245ee74848b08bbc761);
+        
+    
+            var marker_5715de08d73caf2753155236b0e1271d = L.marker(
+                [38.2629478, -104.612921],
+                {
+}
+            ).addTo(map_c27685d6fe325245ee74848b08bbc761);
+        
+    
+        var popup_9dd47e89387fecca326f783333518c04 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ea90174e8767e9a88fb1daba71d76778 = $(`<div id="html_ea90174e8767e9a88fb1daba71d76778" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Police Department / Real-Time Crime Center</strong><br/>Public Safety Complex that now hosts the Real-Time Crime Center, ShotSpotter feeds, Daktronics video wall, and Community Connect intake.<br/><em>Sources:</em> https://www.pueblo.us/Directory.aspx?did=13<br/>https://www.daktronics.com/news/eye-on-crime-increases-with-daktronics-high-point-networks-collaboration-for-pueblo-police-department-s-real-time-crime-center</div>`)[0];
+                popup_9dd47e89387fecca326f783333518c04.setContent(html_ea90174e8767e9a88fb1daba71d76778);
+            
+        
+
+        marker_5715de08d73caf2753155236b0e1271d.bindPopup(popup_9dd47e89387fecca326f783333518c04)
+        ;
+
+        
+    
+    
+            var marker_710438980385b532ab9054cc7b835601 = L.marker(
+                [38.2654292, -104.6126358],
+                {
+}
+            ).addTo(map_c27685d6fe325245ee74848b08bbc761);
+        
+    
+        var popup_a52ea835d6e3d8e3d93e8938c14e02d6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_efaf9bd1962fbe69be19127ebf23b1bc = $(`<div id="html_efaf9bd1962fbe69be19127ebf23b1bc" style="width: 100.0%; height: 100.0%;"><strong>Downtown Flock ALPR Installations</strong><br/>Pueblo Downtown Association-funded Flock Safety cameras covering the Union Ave / Riverwalk corridors to alert police about stolen vehicles and hit-and-runs.<br/><em>Sources:</em> https://www.koaa.com/news/covering-colorado/license-plate-cameras-coming-to-pueblo</div>`)[0];
+                popup_a52ea835d6e3d8e3d93e8938c14e02d6.setContent(html_efaf9bd1962fbe69be19127ebf23b1bc);
+            
+        
+
+        marker_710438980385b532ab9054cc7b835601.bindPopup(popup_a52ea835d6e3d8e3d93e8938c14e02d6)
+        ;
+
+        
+    
+    
+            var marker_8173c575ca4c7614be107d3892395aef = L.marker(
+                [38.3031311, -104.6082866],
+                {
+}
+            ).addTo(map_c27685d6fe325245ee74848b08bbc761);
+        
+    
+        var popup_8c63738c4ee655006e22259e141df456 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_aa318574a227c6aef200e8ef70d5c63c = $(`<div id="html_aa318574a227c6aef200e8ef70d5c63c" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Mall private security office</strong><br/>North-side retail hub with on-site security office, lost & found, and camera-friendly code of conduct inside ZIP 81008.<br/><em>Sources:</em> https://www.shoppueblomall.com/services/security</div>`)[0];
+                popup_8c63738c4ee655006e22259e141df456.setContent(html_aa318574a227c6aef200e8ef70d5c63c);
+            
+        
+
+        marker_8173c575ca4c7614be107d3892395aef.bindPopup(popup_8c63738c4ee655006e22259e141df456)
+        ;
+
+        
+    
+    
+            var marker_9be1a120c68a311ce465b569daa07b22 = L.marker(
+                [38.2751559, -104.6107614],
+                {
+}
+            ).addTo(map_c27685d6fe325245ee74848b08bbc761);
+        
+    
+        var popup_56fad53f290e69369c8323681ee101d6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_9683ef7df4f29cc59929626443b6c32f = $(`<div id="html_9683ef7df4f29cc59929626443b6c32f" style="width: 100.0%; height: 100.0%;"><strong>Pueblo County Sheriff’s Office HQ</strong><br/>909 Court Street command campus where Sheriff Lucero issued the Jan. 2025 statement limiting cooperation with ICE round-ups.<br/><em>Sources:</em> https://www.pueblosheriff.com/Directory.aspx?did=1<br/>https://www.pueblosheriff.com/DocumentCenter/View/3323/Sheriff-Lucero-Statement</div>`)[0];
+                popup_56fad53f290e69369c8323681ee101d6.setContent(html_9683ef7df4f29cc59929626443b6c32f);
+            
+        
+
+        marker_9be1a120c68a311ce465b569daa07b22.bindPopup(popup_56fad53f290e69369c8323681ee101d6)
+        ;
+
+        
+    
+    
+            var marker_9c8037718902d1141060236f4e5bab4d = L.marker(
+                [38.2764132, -104.6129252],
+                {
+}
+            ).addTo(map_c27685d6fe325245ee74848b08bbc761);
+        
+    
+        var popup_7d31c5690526895c9d3fb61ddb767af7 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_c8f725bb03e63eb2740e04d2710ebed5 = $(`<div id="html_c8f725bb03e63eb2740e04d2710ebed5" style="width: 100.0%; height: 100.0%;"><strong>Catholic Charities Immigration Services</strong><br/>Safe walk-in site at 429 W 10th St offering immigration legal aid, Know Your Rights briefings, and DocuTeam referrals.<br/><em>Sources:</em> https://www.ccsoco.org/contact<br/>https://www.ccsoco.org/immigration</div>`)[0];
+                popup_7d31c5690526895c9d3fb61ddb767af7.setContent(html_c8f725bb03e63eb2740e04d2710ebed5);
+            
+        
+
+        marker_9c8037718902d1141060236f4e5bab4d.bindPopup(popup_7d31c5690526895c9d3fb61ddb767af7)
+        ;
+
+        
+    
+    
+            var marker_abd8240760d31e2c8312be41e022644f = L.marker(
+                [38.2812424, -104.6071836],
+                {
+}
+            ).addTo(map_c27685d6fe325245ee74848b08bbc761);
+        
+    
+        var popup_028eb8fdf93d93d71de706e652525c60 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_7275d9b5cb5d471b4d8274550b6a85ff = $(`<div id="html_7275d9b5cb5d471b4d8274550b6a85ff" style="width: 100.0%; height: 100.0%;"><strong>Mineral Palace Park community staging zone</strong><br/>Parade and outreach site for Pueblo Pride and community safety events; open sight lines make it a safer rally point away from downtown RTCC clusters.<br/><em>Sources:</em> https://www.pueblounitedway.org/news/hundreds-turn-out-pueblos-pride-parade-and-festival-mineral-palace-park<br/>https://www.chieftain.com/picture-gallery/news/local/2025/08/17/pueblo-pride-pueblos-annual-parade-and-festival-at-mineral-palace-park/85702935007/</div>`)[0];
+                popup_028eb8fdf93d93d71de706e652525c60.setContent(html_7275d9b5cb5d471b4d8274550b6a85ff);
+            
+        
+
+        marker_abd8240760d31e2c8312be41e022644f.bindPopup(popup_028eb8fdf93d93d71de706e652525c60)
+        ;
+
+        
+    
+</script>
+</html>

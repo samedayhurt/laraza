@@ -8,77 +8,64 @@ This project equips community journalists, activists, and engaged citizens with 
 For all of our family.
 
 ## Table of Contents
-1. [Introduction - What is This?]
-2. Basics on What You Might Want to Know Before Proceeding
-	1. [Introduction to Computer Hardware]
-	2. [Introduction to Linux]
-	3. [Introduction to Networking / OSI Model Concepts]
-	4. Introduction to Radio Communications
-3. [Threats](#introduction)
-	1. Ubiquitous Technical Surveillance
-		1. Primer on UTS
-		2. Analysis of UTS applications in Pueblo, Colorado
-	2. Tech Enabled Surveillance
-		1. Primer
-		2. Analysis of Tech Enabled Surveillance applications in Pueblo, Colorado
-	3. Counter Threat Thinking
-		1. Basic Digital Hygiene Practices
-		2. Virtual Private Networks (VPN)
-		3. Secure Messaging Applications
-		4. Protecting Yourself with Technology
-			1. Understanding the Digital Environment Around You
-				1. 
-			2. [Mudi Router and Blue Merle](#mudi-router-and-blue-merle)
-				1. [Buying and Using the Mudi Router](#buying-and-using-the-mudi-router)
-				2. [Setting Up Blue Merle](#setting-up-blue-merle)
-4. An Approach to Open Source Research
-	1. Preparing Your Environment
-		1. [Installing Virtual Machines](#installing-virtual-machines)
-			1. [Kali Linux](#kali-linux)
-			2. [TraceLabs](#tracelabs-vm)
-		2. Using a LiveBoot USB
-			1. TailsOS
-		3. [Hardening Your Browser](#hardening-your-browser)
-			1. [Firefox Security](#firefox-security)
-		4. [Using Tor and a VPN](#using-tor-and-a-vpn)
-			1. Primer on Virtual Private Networks
-			2. Primer on TOR
-		5. Encryption
-			1. Primer on Encryption 
-			2. Using VeraCrypt to create encrypted containers
-			3. A Workflow for Strong & Anonymous File Sync with End-to-End Encryption (E2EE)
-	2. Framing 
-		1. Local Install Tools
-		2. StartPages for Internet Tools
-	3. Mapping 
-		1. Making a Link
-			1. Understanding relation 
-	4. Articulating Findings
-		1. Tools for Data and Diagrams
-
-5. [Generational Operational Security](#generational-operational-security)
-   - [Signal Messenger](#signal-messenger)
-   - [Analyst Notebook](#analyst-notebook)
-   - [Obsidian for Secure Notes](#obsidian-for-secure-notes)
-1. [Direction Finding](Direction%20Finding%20(Wi-Fi).md)
-2. [Vetting Sources](opsec/vetsources.md)
-3. [Fundamentals of Non-Standard Communications](comms/nscomms.md)
+- [Purpose](#purpose)
+- [Disclaimer](#disclaimer)
+- [How to Use This Repo](#how-to-use-this-repo)
+- [Repository Structure](#repository-structure)
+- [Pueblo 81008 Field Priorities](#pueblo-81008-field-priorities)
+- [Data & Map Outputs](#data--map-outputs)
+- [Field Use: Protest & Outreach Protection](#field-use-protest--outreach-protection)
 
 ---
 
-## Introduction
+## Purpose
 In today’s digital landscape, privacy and operational security (OPSEC) are more important than ever. This guide will walk you through practical steps to secure your devices, communications, and data, ensuring that your online presence remains as private as possible. This is a field guide covering as much ground as we can, and attempting to distill it to the level anyone can use.
 
 ## Disclaimer
 This project is worked on over time and space; while workflow guides may be shared, the world continues to evolve at light speed. Some information may be outdated by the time you see it, some techniques may be compromised by the time you use them, and some information may just be completely wrong. The goal here is to plant seeds for trees to grow from; learn, trust, but verify.
 
-## How to Use this Repo
+## How to Use This Repo
 1. Clone this repo
 ```
 git clone https://github.com/samedayhurt/laraza.git
 ```
 2. Open as vault using [Obsidian](https://obsidian.md/)
 3. Make edits and notes to make this guide your own
+
+## Repository Structure
+- **[Primers](primers/README.md):** Fast-start guides for Linux, direction finding, virtual machines, and other fundamentals.
+- **[Secure Communication Techniques](comms/README.md):** Living playbooks for digital + RF channels, plus workflows like [Strong & Anonymous File Sync](comms/e2eefilechange.md) and the new [`GrapheneOS Mudi Field Kit`](comms/GrapheneOS%20Mudi%20Field%20Kit.md).
+- **[Operational Security](opsec/README.md):** Threat-model worksheets, daily discipline checklists, Pueblo-specific legal observer workflows, and source vetting procedures aimed at civilians rather than military units.
+- **[Non-Standard Communications](comms/nscomms.md)** & **[Direction Finding](primers/Direction%20Finding%20(Wi-Fi).md):** Specialized research threads that support Pueblo-focused investigations and counter-surveillance scouting.
+- **[Pueblo 81008 Surveillance Memo](opsec/Pueblo%2081008%20Surveillance.md):** Political landscape notes, RTCC inventory, commercial telemetry analysis, police-abuse reporting routes, ICE collaboration research, and “5-minute” action blocks.
+- **[Pueblo County Officials](opsec/Pueblo%20County%20Officials.md):** Quick reference on which party controls each county office plus the business ties and high-stakes decisions tied to those officials, paired with the new [`Legal Observer Toolkit`](opsec/Legal%20Observer%20Toolkit.md) for documentation escalations.
+- **[Scripts](scripts/):** Automation such as `build_pueblo_map.py` to regenerate the folium overlay without external GIS tools.
+
+## Pueblo 81008 Field Priorities
+- **Political control:** Use `opsec/Pueblo County Officials.md` before outreach meetings to surface conflicts of interest (e.g., Republic Shooting Range co-ownership, sheriff lawsuits) and align campaigns with the right office.
+- **Surveillance stack:** `opsec/Pueblo 81008 Surveillance.md` consolidates RTCC tooling, Community Connect tactics, ALPR corridors, and now Pueblo-specific police abuse + ICE reporting workflows.
+- **Rapid protest comms:** `comms/GrapheneOS Mudi Field Kit.md` adapts DSOK’s GrapheneOS router workflow for medics, scouts, and legal observers who need hardened connectivity in 81008 without touching personal SIMs.
+- **Accountability escalations:** The surveillance memo now points directly to Pueblo PD Internal Affairs forms, Colorado POST certification complaints, the Attorney General’s pattern-and-practice form, and Colorado Rapid Response Network (CORRN) hotline instructions so community members can escalate abuse or ICE sightings immediately.
+
+## Data & Map Outputs
+- **`data/pueblo_apparatus.geojson`** — working GeoJSON covering the 81008 boundary approximation, RTCC, downtown Flock ALPR zone, and Pueblo Mall security footprint.
+- **`docs/maps/pueblo-surveillance-map.html`** — editable folium map (GitHub Pages friendly) driven by the GeoJSON to visualize sensors and political targets along march routes. A static preview (`docs/maps/pueblo-surveillance-map.png`) now lives alongside it for README embeds.
+- **[`docs/pueblo-watchlist.md`](docs/pueblo-watchlist.md)** — rolling agenda/procurement tracker so you can match surveillance votes to the officials and business ties documented in `opsec/`.
+- **`scripts/build_pueblo_map.py`** — regenerates the HTML overlay whenever the GeoJSON changes so everyone shares the same situational awareness.
+
+<p align="center">
+  <img src="docs/maps/pueblo-surveillance-map.png" alt="Pueblo surveillance apparatus map preview" width="70%">
+</p>
+
+## Field Use: Protest & Outreach Protection
+- **Primers** help field researchers and volunteer medics spin up clean laptops/VMs before deployments so seized gear can’t reveal networks.
+- **Secure Communication Techniques + Non-Standard Comms** pair encrypted drops (Tor + gocryptfs) with LoRa/APRS redundancies for marches where cell service or legal protections collapse.
+- **GrapheneOS + Mudi kit** (documented under Comms & OPSEC) gives you a travel router + hardened phone chain so you can uplink livestreams or legal updates without exposing your home IP.
+- **Operational Security** translates DSOK lessons to civilian teams: build threat models per action, enforce compartmentalized personas, and keep source notes in encrypted Obsidian vaults.
+- **Pueblo 81008 memo/map** shows where surveillance infrastructure lives (RTCC feeds, Flock cameras) so organizers can plan ingress/egress routes that avoid persistent monitoring.
+- **Pueblo County Officials guide** surfaces which electeds own businesses or make policy decisions affecting protest permits, jail funding, or public-records access—fuel for research requests and accountability campaigns.
+
+When in doubt, start with the folder README to understand how each section is meant to be used in the field.
 ## Installing Virtual Machines
 Setting up virtual machines (VMs) is a foundational step for security professionals. Here’s how to install and configure some of the most important VMs for privacy-focused operations.
 

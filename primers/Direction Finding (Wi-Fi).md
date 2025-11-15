@@ -116,3 +116,7 @@
    - Use WiFi direction finding to troubleshoot network issues, identify areas with weak coverage, or locate network interference sources.
    - Bluetooth direction finding can be used to track down malfunctioning IoT devices that are disrupting network communications.
 
+### If you only have 5 minutes in Pueblo
+1. **Scout the march route:** Walk two blocks ahead of the crowd with Kismet running on your GrapheneOS/Mudi kit, screenshot any clusters of static MACs (doorbells, hotel APs) near Union Ave, and drop them in the ops Signal chat.
+2. **Counter drone/bait devices:** Fire up airodump-ng outside Mineral Palace Park, filter for unknown SSIDs following the group, and radio marshals if a “Free_Public_WiFi” access point appears so everyone disables auto-join.
+3. **Blue-force check:** Use Ubertooth or Blue Hydra for a 5-minute sweep before sensitive meetings—if you see unexpected BLE trackers (Tile/AirTag MACs) spike near Catholic Charities or the sheriff’s lobby, move the group and begin a bag search.

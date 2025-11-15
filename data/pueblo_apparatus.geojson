@@ -1,0 +1,168 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.6694073,
+              38.2646391
+            ],
+            [
+              -104.5694073,
+              38.2646391
+            ],
+            [
+              -104.5694073,
+              38.3646391
+            ],
+            [
+              -104.6694073,
+              38.3646391
+            ],
+            [
+              -104.6694073,
+              38.2646391
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "zip-81008",
+        "name": "Approximate ZIP 81008 extent",
+        "type": "boundary",
+        "description": "Bounding box returned by Nominatim for ZIP code 81008; used as a rough frame for North Pueblo research.",
+        "sources": [
+          "https://nominatim.openstreetmap.org/search.php?postalcode=81008&country=USA&polygon_geojson=1&format=jsonv2"
+        ],
+        "notes": "Desktop mapping uses bounding box because public polygon data for the ZIP code is not accessible without shapefiles."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.612921,
+          38.2629478
+        ]
+      },
+      "properties": {
+        "id": "pueblo-rtcc",
+        "name": "Pueblo Police Department / Real-Time Crime Center",
+        "type": "rtcc",
+        "description": "Public Safety Complex that now hosts the Real-Time Crime Center, ShotSpotter feeds, Daktronics video wall, and Community Connect intake.",
+        "sources": [
+          "https://www.pueblo.us/Directory.aspx?did=13",
+          "https://www.daktronics.com/news/eye-on-crime-increases-with-daktronics-high-point-networks-collaboration-for-pueblo-police-department-s-real-time-crime-center"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6126358,
+          38.2654292
+        ]
+      },
+      "properties": {
+        "id": "downtown-alpr",
+        "name": "Downtown Flock ALPR Installations",
+        "type": "alpr",
+        "description": "Pueblo Downtown Association-funded Flock Safety cameras covering the Union Ave / Riverwalk corridors to alert police about stolen vehicles and hit-and-runs.",
+        "sources": [
+          "https://www.koaa.com/news/covering-colorado/license-plate-cameras-coming-to-pueblo"
+        ],
+        "notes": "Exact pole locations are not published; map locates the Historic Arkansas Riverwalk/Union Ave business district referenced in KOAA reporting."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6082866,
+          38.3031311
+        ]
+      },
+      "properties": {
+        "id": "pueblo-mall-security",
+        "name": "Pueblo Mall private security office",
+        "type": "private-security",
+        "description": "North-side retail hub with on-site security office, lost & found, and camera-friendly code of conduct inside ZIP 81008.",
+        "sources": [
+          "https://www.shoppueblomall.com/services/security"
+        ],
+        "notes": "Represents one of the largest commercial lots feeding Community Connect sign-ups in ZIP 81008."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6107614,
+          38.2751559
+        ]
+      },
+      "properties": {
+        "id": "pcso-hq",
+        "name": "Pueblo County Sheriff\u2019s Office HQ",
+        "type": "law-enforcement",
+        "description": "909 Court Street command campus where Sheriff Lucero issued the Jan. 2025 statement limiting cooperation with ICE round-ups.",
+        "sources": [
+          "https://www.pueblosheriff.com/Directory.aspx?did=1",
+          "https://www.pueblosheriff.com/DocumentCenter/View/3323/Sheriff-Lucero-Statement"
+        ],
+        "notes": "Use for monitoring public statements, jail releases, and ICE coordination rumors."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6129252,
+          38.2764132
+        ]
+      },
+      "properties": {
+        "id": "ccsoco-immigration",
+        "name": "Catholic Charities Immigration Services",
+        "type": "community-support",
+        "description": "Safe walk-in site at 429 W 10th St offering immigration legal aid, Know Your Rights briefings, and DocuTeam referrals.",
+        "sources": [
+          "https://www.ccsoco.org/contact",
+          "https://www.ccsoco.org/immigration"
+        ],
+        "notes": "Coordinate with staff before routing protest arrestees\u2019 families here for documentation support."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6071836,
+          38.2812424
+        ]
+      },
+      "properties": {
+        "id": "mineral-palace-staging",
+        "name": "Mineral Palace Park community staging zone",
+        "type": "assembly",
+        "description": "Parade and outreach site for Pueblo Pride and community safety events; open sight lines make it a safer rally point away from downtown RTCC clusters.",
+        "sources": [
+          "https://www.pueblounitedway.org/news/hundreds-turn-out-pueblos-pride-parade-and-festival-mineral-palace-park",
+          "https://www.chieftain.com/picture-gallery/news/local/2025/08/17/pueblo-pride-pueblos-annual-parade-and-festival-at-mineral-palace-park/85702935007/"
+        ],
+        "notes": "Use park perimeter for \"green zone\" medical tents and mutual aid drop-offs before marches head south."
+      }
+    }
+  ]
+}

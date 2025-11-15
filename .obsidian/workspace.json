@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "opsec/Pueblo 81008 Surveillance.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Pueblo 81008 Surveillance"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -170,18 +171,22 @@
   },
   "active": "4153e691dc207d9a",
   "lastOpenFiles": [
-    "comms/e2eesetup.sh",
-    "comms/e2eefilechange.md",
-    "README.md",
-    "comms/README.md",
-    "comms/nscomms.md",
-    "opsec/Vet Sources.md",
-    "opsec/README.md",
+    "comms/GrapheneOS Mudi Field Kit.md",
+    "opsec/Operational Security Techniques.md",
     "primers/Direction Finding (Wi-Fi).md",
     "primers/Virtual Machines.md",
-    "primers/Linux Primer.md",
     "primers/README.md",
-    "opsec/Operational Security Techniques.md",
+    "primers/Linux Primer.md",
+    "comms/README.md",
+    "opsec/Pueblo County Officials.md",
+    "opsec/UTS for Civilians.md",
+    "opsec/README.md",
+    "opsec/Pueblo 81008 Surveillance.md",
+    "README.md",
+    "opsec/Vet Sources.md",
+    "comms/nscomms.md",
+    "comms/e2eefilechange.md",
+    "comms/e2eesetup.sh",
     "comms/assets/torhops.png",
     "comms/assets",
     "assets/asset1.png",

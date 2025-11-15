@@ -1,3 +1,6 @@
 {
-  "cssTheme": "Reverie"
+  "cssTheme": "Reverie",
+  "enabledCssSnippets": [
+    "print"
+  ]
 }
