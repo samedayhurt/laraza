@@ -1,6 +1,16 @@
 # Secure Communication Techniques
 This section is meant to cover ongoing ideas/workflows that enable communication in restricted or monitored environments with the goal of enabling collaboration within a ubiquitous technical surveillance.
 
+## Directory Contents
+| Resource | Type | Focus |
+| --- | --- | --- |
+| [README.md](README.md) | Guide | Conceptual overview plus deep dives on layered comms practices. |
+| [e2eefilechange.md](e2eefilechange.md) | Playbook | End-to-end encrypted file sync workflow that keeps metadata minimized. |
+| [GrapheneOS Mudi Field Kit.md](GrapheneOS%20Mudi%20Field%20Kit.md) | Playbook | Field-ready checklist for pairing a hardened Pixel with a GL.iNet Mudi router. |
+| [nscomms.md](nscomms.md) | Notes | Non-standard communications (LoRa, Reticulum, APRS) firmware tips and workflows. |
+| [e2eesetup.sh](e2eesetup.sh) | Script | Helper script that automates parts of the E2EE sync setup described above. |
+| [assets/](assets/) | Folder | Visual aids (e.g., Tor hop diagrams) referenced throughout the comms primers. |
+
 ## Table of Contents
 1. Basic Communication Principles
 2. Digital Communications

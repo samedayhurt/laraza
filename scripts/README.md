@@ -2,6 +2,13 @@
 
 Utility helpers that keep the Pueblo artifacts reproducible.
 
+## Directory Contents
+| Resource | Type | Description |
+| --- | --- | --- |
+| [README.md](README.md) | Guide | Explains what each automation does and when to run it. |
+| [build_pueblo_map.py](build_pueblo_map.py) | Python script | Generates the interactive/PNG surveillance maps from the GeoJSON dataset. |
+| [download_agendas.py](download_agendas.py) | Python script | Uses Playwright to fetch and archive Pueblo City Council agendas. |
+
 ## `build_pueblo_map.py`
 - **Purpose:** Regenerates `docs/maps/pueblo-surveillance-map.html` from `data/pueblo_apparatus.geojson` using folium, including popups for every surveillance/safe-space point.
 - **Setup:** Create a virtual environment once:

@@ -2,10 +2,11 @@
 
 This folder collects lightweight primers that provide just enough background to start experimenting with a new topic without wading through an entire textbook. Each document focuses on actionable context, trusted tooling, and links out to deeper dives once you are comfortable.
 
-## What's Inside Right Now
+## Directory Contents
 
-| Primer                                                        | Why it matters                                                                                        | Jump-start actions                                                                                          |
+| Resource                                                      | Why it matters                                                                                        | Jump-start actions                                                                                          |
 | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [README.md](README.md)                                       | Orientation for how primers support the Pueblo research workflow and how to contribute new ones.     | Scan this page first to choose the right primer and mirror the contribution guidelines.                     |
 | [Linux Primer](Linux%20Primer.md)                             | Build a working knowledge of the operating system that powers most security tooling.                  | Install a beginner-friendly distribution (Ubuntu, Pop!\_OS) in a VM and follow the file system walkthrough. |
 | [Direction Finding (Wi-Fi)](Direction%20Finding%20(Wi-Fi).md) | Understand how wireless devices are detected and tracked so you can both audit and defend against it. | Install Kismet or airodump-ng, practice gathering RSSI readings, then review mitigation tactics.            |
 | [Virtual Machines](Virtual%20Machines.md)                     | Safely compartmentalize research workflows and rehearse complex setups before field use.              | Enable hardware virtualization, create a clean baseline VM, and capture a snapshot before customizing.      |
