@@ -2,7 +2,7 @@
 
 This playbook adapts the DSOK GrapheneOS workflows for Pueblo community organizers. It walks you through flashing a hardened phone, pairing it with a GL.iNet Mudi (GL-E750) travel router, and running the combo as a rapid-response shield for marches, outreach tables, or courthouse vigils.
 
-> **Goal:** keep sensitive chatter, media uploads, and legal coordination off home networks while defeating tower dumps, stingray sweeps, and ad-tech tracking in ZIP 81008.
+> **Goal:** keep sensitive chatter, media uploads, and legal coordination off home networks while defeating tower dumps, stingray sweeps, and ad-tech tracking in Pueblo.
 
 ## 1. Hardware Checklist
 
