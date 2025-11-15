@@ -1,0 +1,65 @@
+{
+  "updated": "2025-11-15",
+  "risks": [
+    {
+      "title": "Unverified ICE roundup rumors causing panic",
+      "description": "January 2025 social posts reported mass raids in Pueblo; CPR confirmed the incident involved ICE assisting a narcotics arrest, but fear persisted and door-knock claims spread statewide.",
+      "impact": "Can trigger unnecessary school/work absences, hamper reporting, and obscure real enforcement actions.",
+      "recommended_actions": [
+        "Verify sightings through CORRN hotline before sharing.",
+        "Issue clarifying messages when rumors are debunked.",
+        "Maintain rapid logging (time, location, vehicles) for confirmed operations."
+      ],
+      "sources": [
+        "Caitlyn Kim, CPR News, 2025-01-24"
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "title": "Pueblo County Sheriff cooperation limits",
+      "summary": "Sheriff David Lucero pledged PCSO will not help ICE with civil 'round-up' operations and will only participate when there are criminal charges or officer-safety concerns.",
+      "date": "2025-01-23",
+      "implications": "Provides a documented commitment to cite if deputies assist immigration enforcement absent criminal nexus.",
+      "actions": [
+        "Carry copies of the statement at protests, schools, and clinics.",
+        "Log any deviations for escalation to POST/AG Pattern & Practice."
+      ],
+      "sources": [
+        "Pueblo County Sheriff’s Office news release, 2025-01-23"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "name": "Colorado Rapid Response Network (CORRN)",
+      "services": [
+        "Statewide hotline 844-864-8341 (option 1 for live raids, option 2 for past incidents)",
+        "Dispatch of trained legal observers and documentation teams",
+        "Data sharing with Colorado Immigrant Rights Coalition organizers"
+      ],
+      "notes": "Program hotline into protest/legal observer phones; pair reports with badges, vehicle info, and timestamps.",
+      "source": "coloradorapidresponsenetwork.com (accessed 2025-11-15)"
+    },
+    {
+      "name": "Rocky Mountain Immigrant Advocacy Network (RMIAN)",
+      "services": [
+        "Legal orientation and direct representation for detained adults at Aurora GEO",
+        "Child advocacy program for unaccompanied minors",
+        "Social service support for released families"
+      ],
+      "notes": "Collect A-numbers, detention location, and contact info before calling; Pueblo families can request phone consults.",
+      "source": "rmian.org/get-help/ (accessed 2025-11-15)"
+    },
+    {
+      "name": "Colorado Immigrant Rights Coalition (CIRC)",
+      "services": [
+        "Policy advocacy and rapid-response coordination",
+        "Volunteer training for hotline response and accompaniment",
+        "Know-your-rights materials tailored to Colorado communities"
+      ],
+      "notes": "Pueblo organizers can join statewide alerts and mobilize local volunteers to support CORRN dispatches and legislative pushes.",
+      "source": "coloradoimmigrant.org (accessed 2025-11-15)"
+    }
+  ]
+}

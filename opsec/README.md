@@ -18,6 +18,7 @@ Document this in your vault so the entire team works from the same assumptions.
 | [Operational Security Techniques](Operational%20Security%20Techniques.md) | Day-to-day defensive practices (Signal setup, Tor/VPN layering, document handling). |
 | [Vet Sources](Vet%20Sources.md) | Structured process for evaluating sources, cross-checking evidence, and protecting identities. |
 | [UTS for Civilians](UTS%20for%20Civilians.md) | Summarizes ubiquitous technical surveillance risks and maps them to community-focused mitigations. |
+| [Digital Footprint Protection Playbook](../docs/digital-footprint-protection.md) | Links the research workflow to device hygiene, metadata minimization, and comms/opsec actions. |
 
 Add more notebooks as you solidify workflows (e.g., travel OPSEC, on-the-ground recording procedures).
 

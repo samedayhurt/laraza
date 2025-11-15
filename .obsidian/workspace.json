@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "opsec/Pueblo 81008 Surveillance.md",
+                "file": "primers/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pueblo 81008 Surveillance"
+              "title": "README"
+            }
+          },
+          {
+            "id": "1e9ad3614a6e75c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "reports/surveillance_and_policing_risks.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "surveillance_and_policing_risks"
+            }
+          },
+          {
+            "id": "9bcb4ddca98f21e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AGENTS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AGENTS"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,31 +198,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4153e691dc207d9a",
+  "active": "1e9ad3614a6e75c8",
   "lastOpenFiles": [
-    "comms/GrapheneOS Mudi Field Kit.md",
-    "opsec/Operational Security Techniques.md",
-    "primers/Direction Finding (Wi-Fi).md",
+    "docs/data-legend.md",
+    "docs/agendas/city_council-3943.pdf",
+    "scripts/download_agendas.py",
+    "docs/agendas/council-3943.pdf",
+    "docs/agendas",
+    "reports/pueblo_resources_guide.md",
+    "reports/pueblo_power_map.md",
+    "reports/journalist_activist_protestor_protection_guide.md",
+    "reports/immigration_and_ice_risks.md",
     "primers/Virtual Machines.md",
     "primers/README.md",
     "primers/Linux Primer.md",
-    "comms/README.md",
-    "opsec/Pueblo County Officials.md",
+    "primers/Direction Finding (Wi-Fi).md",
+    "opsec/Vet Sources.md",
     "opsec/UTS for Civilians.md",
     "opsec/README.md",
+    "opsec/Pueblo County Officials.md",
     "opsec/Pueblo 81008 Surveillance.md",
+    "opsec/Operational Security Techniques.md",
+    "opsec/Legal Observer Toolkit.md",
+    "AGENTS.md",
     "README.md",
-    "opsec/Vet Sources.md",
+    "data/surveillance_policing_raw.md",
+    "docs/digital-footprint-protection.md",
+    "comms/README.md",
     "comms/nscomms.md",
-    "comms/e2eefilechange.md",
+    "comms/GrapheneOS Mudi Field Kit.md",
+    "data/pueblo_context_structured.json",
+    "data/pueblo_context_raw_notes.md",
+    "reports/surveillance_and_policing_risks.md",
+    "docs/research_inventory.md",
     "comms/e2eesetup.sh",
     "comms/assets/torhops.png",
     "comms/assets",
     "assets/asset1.png",
     "primers",
     "opsec",
-    "comms",
-    "direction-finding",
-    "assets"
+    "comms"
   ]
 }

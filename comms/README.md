@@ -24,6 +24,8 @@ This section is meant to cover ongoing ideas/workflows that enable communication
 
 The goal is to move information only as far as it needs to travel, expose as little metadata as possible, and leave behind a predictable trail for your own audit logging. Use this folder to design redundant communication paths that survive platform bans, infrastructure outages, and hostile surveillance.
 
+See also the [Digital Footprint Protection Playbook](../docs/digital-footprint-protection.md) for device hygiene and metadata practices that tie directly into these comms workflows.
+
 ### Pueblo protest & outreach examples
 - **March logistics:** During a Civic Center rally, run Signal for leadership chat, LoRa/Reticulum for mass check-ins, and APRS for bike scouts; if the RTCC pulls cellular CDRs, the Mesh still carries the meetup points.
 - **Door knocking:** Outreach crews in 81008 can harden Firefox with the primer, collect stories in encrypted Syncthing folders, and upload via Mudi + VPN from the nearest library without burning home IP space.
