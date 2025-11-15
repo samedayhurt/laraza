@@ -1,0 +1,123 @@
+{
+  "updated": "2025-11-15",
+  "officials": [
+    {
+      "body": "Pueblo City Council",
+      "control": "5-2 conservative majority",
+      "key_figures": [],
+      "implications": "Council signs off on surveillance expansions, curfews, and protest permits; agenda center must be monitored weekly for Community Connect, Flock Safety, and RTCC line items.",
+      "sources": [
+        "Colorado Politics – Dennis Maes, 2025-03-28"
+      ]
+    },
+    {
+      "body": "Pueblo County Board of Commissioners",
+      "control": "Republican majority (Lucero D, McPheeters R, Swearingen R)",
+      "key_figures": [
+        "Miles Lucero",
+        "Paula McPheeters",
+        "Zach Swearingen"
+      ],
+      "implications": "Controls sheriff/RTCC/ALPR budgets; commissioners bring business ties (Republic Shooting Range, PCC grant compliance) that should be surfaced during procurement votes.",
+      "sources": [
+        "Pueblo Chieftain – James Bartolo, 2024-12-09"
+      ]
+    },
+    {
+      "body": "Countywide Offices",
+      "control": "Mixed",
+      "key_figures": [
+        "Candace Rivera",
+        "David Lucero",
+        "Kala Beauvais"
+      ],
+      "implications": "Clerk accelerates election canvassing, sheriff is litigating labor authority, DA is prioritizing violent-crime prosecutions—each office intersects with accountability, detention, and transparency sections of the reports.",
+      "sources": [
+        "opsec/Pueblo County Officials.md"
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "topic": "Surveillance purchasing oversight",
+      "status": "Ongoing Council approvals",
+      "actions": [
+        "Subscribe to City Council agenda center; pull new packets weekly.",
+        "Pre-draft testimony referencing Community Connect privacy concerns.",
+        "Track votes for inclusion in the power map report."
+      ],
+      "sources": [
+        "Colorado Politics – Dennis Maes, 2025-03-28"
+      ]
+    },
+    {
+      "topic": "County RTCC & ALPR contracts",
+      "status": "Budget controlled by GOP-majority commissioners",
+      "actions": [
+        "File CORA requests for maintenance contracts signed after Jan 2025.",
+        "Document Republic Shooting Range connections when firearms vendors appear on agendas."
+      ],
+      "sources": [
+        "Pueblo Chieftain – James Bartolo, 2024-12-09"
+      ]
+    },
+    {
+      "topic": "Meeting calendar monitoring",
+      "status": "Weekly agendas",
+      "actions": [
+        "Download City Council and BOCC agendas each Sunday; search for \"Community Connect\", \"Flock\", \"contract\", \"license plate\".",
+        "Attend Public Safety Committee/RTCC briefings virtually to capture sensor expansion notes early."
+      ],
+      "sources": [
+        "docs/pueblo-watchlist.md – Meeting Calendar Targets"
+      ]
+    },
+    {
+      "topic": "Procurement & surveillance pipeline",
+      "status": "Active vendor contracts",
+      "actions": [
+        "File CORA requests for Daktronics/High Point RTCC maintenance, Genetec Community Connect agreements, and Flock ALPR placements.",
+        "Track Downtown Association or other private funding that circumvents council debate.",
+        "Log amendments and renewal timelines so advocates can intervene before approvals."
+      ],
+      "sources": [
+        "docs/pueblo-watchlist.md – Procurement & Surveillance Pipeline"
+      ]
+    },
+    {
+      "topic": "ICE cooperation boundaries",
+      "status": "Sheriff pledge (2025-01-23)",
+      "actions": [
+        "Cite the sheriff’s statement whenever deputies assist ICE absent criminal nexus.",
+        "Monitor agendas for detention facility zoning, ICE MOUs, or bed rentals."
+      ],
+      "sources": [
+        "opsec/Pueblo 81008 Surveillance.md – ICE section",
+        "Sheriff Lucero statement (2025-01-23)"
+      ]
+    },
+    {
+      "topic": "Voter rights & election transparency",
+      "status": "Clerk accelerated canvass",
+      "actions": [
+        "Support budget/staffing that maintains fast canvasses and bipartisan verification.",
+        "Flag any proposals that would reduce observer access or slowdown certification."
+      ],
+      "sources": [
+        "opsec/Pueblo County Officials.md – Candace Rivera references"
+      ]
+    },
+    {
+      "topic": "Sheriff vs. union litigation",
+      "status": "Ongoing lawsuit",
+      "actions": [
+        "Track legal filings and note impacts on labor relations and surveillance deployments.",
+        "Raise conflict questions if anti-union moves coincide with tech purchases or ICE cooperation."
+      ],
+      "sources": [
+        "opsec/Pueblo County Officials.md – Sheriff entry citing Colorado Newsline"
+      ]
+    }
+  ],
+  "notes": "Seeded from docs/pueblo-watchlist.md and opsec/Pueblo County Officials.md; continue enriching with meeting-specific data."
+}

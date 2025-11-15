@@ -1,0 +1,83 @@
+{
+  "updated": "2025-11-15",
+  "demographics": [
+    {
+      "topic": "Political realignment",
+      "summary": "City council now has a 5-2 conservative majority; county commission is 2-1 GOP, shifting oversight of surveillance and policing budgets.",
+      "sources": [
+        "Colorado Politics – Dennis Maes, 2025-03-28",
+        "Pueblo Chieftain – James Bartolo, 2024-12-09"
+      ],
+      "notes": "Council seats remain nonpartisan but functionally align with Republican priorities around surveillance expansions."
+    },
+    {
+      "topic": "Population, income, poverty (2023)",
+      "summary": "Pueblo city population: 111,456; Pueblo County: 168,424. Median household income (2018-2022 dollars): city $54,137, county $56,567. Poverty rate: city 22.8%, county 18.1%.",
+      "sources": [
+        "U.S. Census Bureau, QuickFacts (accessed 2025-11-15)"
+      ],
+      "notes": "Use these baselines when arguing for equitable deployment of resources and surveillance oversight."
+    },
+    {
+      "topic": "ZIP-level income & poverty (ACS 2022)",
+      "summary": "Median household income / poverty: 81008 ($63,803 / 13.62%), 81007 ($89,530 / 24.27%), 81006 ($67,077 / 15.06%), 81005 ($66,607 / 40.08%).",
+      "sources": [
+        "U.S. Census Bureau, ACS 2022 5-year subject tables (API)"
+      ],
+      "notes": "Use to illustrate disparities between north-side RTCC corridors (81008) and high-poverty southside ZIP 81005 when debating surveillance budgets."
+    }
+  ],
+  "economy": [
+    {
+      "topic": "Key employers & vendors",
+      "summary": "Rail technology firms, Pueblo Community College, CSU-Pueblo, and downtown tourism funders influence budgets, while surveillance vendors (Daktronics, High Point Networks, Flock Safety) are securing multi-year contracts.",
+      "sources": [
+        "README field priorities",
+        "docs/pueblo-watchlist.md references"
+      ],
+      "notes": "Need quantitative employment data; ties between commissioners and private businesses (Republic Shooting Range, PCC) should be tracked for conflicts."
+    }
+  ],
+  "geography": [
+    {
+      "area": "ZIP 81008",
+      "features": [
+        "RTCC headquarters",
+        "Pueblo Mall security footprint",
+        "ALPR corridors along Union Ave/Riverwalk",
+        "Community Connect recruitment zones"
+      ],
+      "sources": [
+        "opsec/Pueblo 81008 Surveillance.md",
+        "data/pueblo_apparatus.geojson"
+      ],
+      "notes": "Prioritize mapping ingress/egress routes and socio-economic data for 81008 to inform protest planning."
+    }
+  ],
+  "governance": [
+    {
+      "topic": "Mayor-council model & district layout",
+      "summary": "Pueblo runs a mayor-council government with nine districts; although races are nonpartisan on paper, current alignments track partisan priorities (conservative council bloc, GOP-leaning commission).",
+      "sources": [
+        "opsec/Pueblo 81008 Surveillance.md – Political Power Snapshot"
+      ],
+      "notes": "Map district boundaries against surveillance deployments and protest corridors to surface representation gaps."
+    }
+  ],
+  "communications": [
+    {
+      "topic": "City-owned channels to monitor",
+      "summary": "Official website (pueblo.us) posts agendas, news releases, and surveys; Facebook page (facebook.com/CityofPueblo) mirrors alerts and livestreams.",
+      "sources": [
+        "City of Pueblo official website",
+        "City of Pueblo Facebook page"
+      ],
+      "notes": "Subscribe to the Agenda Center/newsletter and track Facebook posts for late-breaking policy moves."
+    }
+  ],
+  "todo": [
+    "Pull census-level demographics (population, race, income) for Pueblo city vs. county.",
+    "Document top 10 employers with headcounts and union presence.",
+    "Map health/housing deserts in 81008 to align resource deployments."
+  ]
+}

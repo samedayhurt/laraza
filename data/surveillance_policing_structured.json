@@ -1,0 +1,109 @@
+{
+  "updated": "2025-11-15",
+  "systems": [
+    {
+      "name": "Real-Time Crime Center",
+      "components": [
+        "ShotSpotter acoustic sensors",
+        "Body-worn camera feeds",
+        "Drone feeds",
+        "Fixed surveillance cameras",
+        "ALPR streams",
+        "Daktronics 7x12 ft dvLED wall"
+      ],
+      "operators": "Pueblo PD with High Point Networks infrastructure support",
+      "sources": [
+        "Daktronics press release, 2025-09-25 (opsec/Pueblo 81008 Surveillance.md)"
+      ],
+      "notes": "Centralizes telemetry in one managed vendor environment; requires CORA demands for SLAs, uptime, and retention."
+    },
+    {
+      "name": "Community Connect",
+      "components": [
+        "Genetec Security Center",
+        "Preferred integrators: Arden, High Point Networks, Linx"
+      ],
+      "operators": "City of Pueblo / RTCC",
+      "sources": [
+        "City of Pueblo Community Connect Program page (accessed 2025-01)"
+      ],
+      "notes": "Voluntary registry encouraging camera sharing without retention guardrails."
+    },
+    {
+      "name": "Flock Safety ALPR Corridor",
+      "components": [
+        "Flock Safety LPR cameras at Union Ave/Riverwalk"
+      ],
+      "operators": "Pueblo Downtown Association with Pueblo PD access",
+      "sources": [
+        "KOAA News5 report, 2024"
+      ],
+      "notes": "30-day cloud retention; audit logs available but policy on sharing unclear."
+    },
+    {
+      "name": "Commercial telemetry & vendor data stores",
+      "components": [
+        "ShotSpotter / SoundThinking alert pipelines",
+        "Genetec Cloud Video storage",
+        "Flock Safety cloud retention"
+      ],
+      "operators": "Third-party vendors contracted by Pueblo PD",
+      "sources": [
+        "opsec/Pueblo 81008 Surveillance.md – Commercial Telemetry section"
+      ],
+      "notes": "Private vendors hold primary evidence; subpoena processes and retention policies must be documented for transparency."
+    }
+  ],
+  "incidents": [
+    {
+      "title": "IA / POST escalation flow",
+      "summary": "Complaints start with Pueblo PD Internal Affairs; criminal issues escalate to DA/POST; systemic issues via AG Pattern & Practice form.",
+      "date": "2025-11-15",
+      "sources": [
+        "Pueblo PD Internal Affairs page",
+        "Colorado POST certification inquiries",
+        "Colorado AG Pattern & Practice form"
+      ],
+      "status": "Need standardized evidence packets and tracking."
+    },
+    {
+      "title": "AG Pattern & Practice escalation",
+      "summary": "Colorado AG Civil Rights Division accepts complaints about systemic misconduct via Pattern & Practice intake, including attachments and agency info.",
+      "date": "2025-11-15",
+      "sources": [
+        "Colorado AG Pattern & Practice Program"
+      ],
+      "status": "Integrate AG complaint submissions into every multi-incident case."
+    }
+  ],
+  "recommendations": [
+    {
+      "theme": "RTCC transparency",
+      "actions": [
+        "File CORA requests for RTCC vendor contracts (ShotSpotter, Daktronics, High Point Networks).",
+        "Keep march route maps updated with RTCC coverage."
+      ]
+    },
+    {
+      "theme": "Community Connect safeguards",
+      "actions": [
+        "Draft ordinance requiring warrants or MOUs before accessing private feeds.",
+        "Publish a public dashboard of registered cameras."
+      ]
+    },
+    {
+      "theme": "ALPR accountability",
+      "actions": [
+        "Request placement maps and usage logs from CDOT/city.",
+        "Document civil-liberties coalitions (Libertarian officials) opposing mass scans."
+      ]
+    },
+    {
+      "theme": "Complaint escalation",
+      "actions": [
+        "Build template packets (badge numbers, hashes, witness statements).",
+        "Track IA submissions and escalate to DA/AG when deadlines lapse."
+      ]
+    }
+  ]
+}

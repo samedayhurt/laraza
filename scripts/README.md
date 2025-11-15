@@ -26,3 +26,20 @@ Utility helpers that keep the Pueblo artifacts reproducible.
 - **When to rerun:** Anytime you edit `data/pueblo_apparatus.geojson` or add new surveillance/safe-space features.
 
 Keep additional automation (CORA templates, watchlist scrapers, etc.) in this folder with short READMEs so future volunteers know how to execute them offline.
+
+## `download_agendas.py`
+- **Purpose:** Fetches the latest City Council agenda PDFs from the `pueblo.us` Archive Center so planners can review surveillance, ICE, and voter-rights votes without manual downloads.
+- **Setup:** Uses the repo’s Python venv. Install Playwright once and download Chromium (already done in this repo):
+  ```bash
+  python3 -m venv .venv
+  . .venv/bin/activate
+  pip install playwright
+  playwright install chromium
+  ```
+  (Future runs only need `. .venv/bin/activate`.)
+- **Usage:**
+  ```bash
+  .venv/bin/python scripts/download_agendas.py --limit 2
+  ```
+  Downloads the newest two PDFs into `docs/agendas/` (e.g., `city_council-3943.pdf`). Additional archive IDs can be added inside the script (`ARCHIVES` dict) as they are discovered.
+- **When to run:** Weekly, before meetings, so surveillance/ICE/union/voter-rights agenda items can be parsed and logged immediately.

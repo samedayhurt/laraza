@@ -14,6 +14,7 @@ For all of our family.
 - [Repository Structure](#repository-structure)
 - [Pueblo 81008 Field Priorities](#pueblo-81008-field-priorities)
 - [Data & Map Outputs](#data--map-outputs)
+- [Roadmap: Guides & Self-Advocacy](#roadmap-guides--self-advocacy)
 - [Field Use: Protest & Outreach Protection](#field-use-protest--outreach-protection)
 
 ---
@@ -52,16 +53,33 @@ git clone https://github.com/samedayhurt/laraza.git
 - **`docs/maps/pueblo-surveillance-map.html`** — editable folium map (GitHub Pages friendly) driven by the GeoJSON to visualize sensors and political targets along march routes. A static preview (`docs/maps/pueblo-surveillance-map.png`) now lives alongside it for README embeds.
 - **[`docs/pueblo-watchlist.md`](docs/pueblo-watchlist.md)** — rolling agenda/procurement tracker so you can match surveillance votes to the officials and business ties documented in `opsec/`.
 - **`scripts/build_pueblo_map.py`** — regenerates the HTML overlay whenever the GeoJSON changes so everyone shares the same situational awareness.
+- **[`docs/digital-footprint-protection.md`](docs/digital-footprint-protection.md)** — ties the research workflow to device hygiene, metadata minimization, and the comms/OPSEC primers so teams keep their digital footprint tight while executing the roadmap.
+- **[`docs/data-legend.md`](docs/data-legend.md)** — summarizes where each dataset/report comes from (census, media, vendor releases, automation scripts) so readers can audit provenance and extend the pipeline transparently.
 
 <p align="center">
   <img src="docs/maps/pueblo-surveillance-map.png" alt="Pueblo surveillance apparatus map preview" width="70%">
 </p>
 
+## Roadmap: Guides & Self-Advocacy
+We follow the `AGENTS.md` workflow so research flows into actionable guides that teach Pueblo residents how to advocate for themselves.
+
+1. **Research + Logging Layer**
+   - Populate the raw/structured notebooks in `data/` (politics, surveillance/policing, immigration/ICE, community resources) and cite everything inside `logs/source_index.md`.
+   - Record investigations, FOIA/CORA pulls, and desk research sessions in `logs/search_log.md` so anyone can audit how findings were produced; log TODOs (e.g., district-level census pulls, upcoming council agendas) in context notes so future sprints can pick them up quickly.
+2. **Report & Guide Production**
+   - Draft and continuously update the five Markdown reports inside `reports/`, prioritizing sections like “How to assert your right to record,” “How to push back on surveillance purchases,” and “Where to get immediate legal/financial help.”
+   - Pair every risk description with a corresponding “self-advocacy move” (filing complaints, rallying allies, requesting hearings, redirecting budgets) before publishing.
+3. **Community Activation & Review**
+   - Convert report highlights into teach-ins, handouts, or Signal briefs for journalists, activists, organizers, and residents navigating arrests or ICE pressure.
+   - Run a `logs/safety_ethics_review.md` check before release to ensure no private residents are exposed and that guidance stays rights-affirming rather than escalatory.
+
+Update this roadmap as needs evolve—each bullet should map to issues/tasks so contributors understand how their work strengthens Pueblo’s self-advocacy muscle.
+
 ## Field Use: Protest & Outreach Protection
 - **Primers** help field researchers and volunteer medics spin up clean laptops/VMs before deployments so seized gear can’t reveal networks.
 - **Secure Communication Techniques + Non-Standard Comms** pair encrypted drops (Tor + gocryptfs) with LoRa/APRS redundancies for marches where cell service or legal protections collapse.
 - **GrapheneOS + Mudi kit** (documented under Comms & OPSEC) gives you a travel router + hardened phone chain so you can uplink livestreams or legal updates without exposing your home IP.
-- **Operational Security** translates DSOK lessons to civilian teams: build threat models per action, enforce compartmentalized personas, and keep source notes in encrypted Obsidian vaults.
+- **Operational Security** translates lessons to civilian teams: build threat models per action, enforce compartmentalized personas, and keep source notes in encrypted Obsidian vaults.
 - **Pueblo 81008 memo/map** shows where surveillance infrastructure lives (RTCC feeds, Flock cameras) so organizers can plan ingress/egress routes that avoid persistent monitoring.
 - **Pueblo County Officials guide** surfaces which electeds own businesses or make policy decisions affecting protest permits, jail funding, or public-records access—fuel for research requests and accountability campaigns.
 
@@ -215,23 +233,6 @@ More, in depth
    - Encrypt Signal backups and store them in a secure location.
 4. **Vet Group Members**:
    - When creating Signal groups, ensure members are trusted and vetted to avoid leaks.
-
-### Analyst Notebook
-For intelligence gathering and visualization:
-1. Use IBM Analyst Notebook to map out complex data and relationships.
-2. Ensure that all sensitive information is stored securely using encrypted databases.
-
-More in depth
-#### Using IBM Analyst Notebook
-1. **Install IBM Analyst Notebook**:
-   - Obtain from IBM’s official site.
-2. **Create a Secure Workspace**:
-   - Use encrypted storage for data files.
-3. **Map Relationships**:
-   - Use visualizations to track connections between people, locations, and events.
-4. **Export Securely**:
-   - Export visualizations and data to encrypted formats for safe sharing.
-
 ### Obsidian for Secure Notes
 1. Install [Obsidian](https://obsidian.md/).
 2. **Enable local encryption** for vaults and use it to take private, organized notes.

@@ -1,0 +1,214 @@
+{
+  "updated": "2025-11-15",
+  "resources": [
+    {
+      "name": "Colorado Legal Services – Southeastern Colorado (Pueblo Office)",
+      "category": [
+        "Legal aid",
+        "Housing",
+        "Immigration"
+      ],
+      "services": [
+        "Eviction defense and housing stability clinics",
+        "Protection orders and family safety filings",
+        "Consumer debt defense",
+        "Limited-scope immigration screenings"
+      ],
+      "contact": {
+        "address": "1000 W. 6th St., Suite I, Pueblo, CO 81003",
+        "phone": "719-545-6708",
+        "web": "https://www.coloradolegalservices.org/node/10/pueblo-office"
+      },
+      "eligibility": "Income- and asset-screened Pueblo/Southeastern Colorado residents; priority for survivors of violence, seniors, and people at risk of homelessness.",
+      "source": "Colorado Legal Services website (accessed 2025-11-15)"
+    },
+    {
+      "name": "Posada Pueblo",
+      "category": [
+        "Housing",
+        "Mutual aid"
+      ],
+      "services": [
+        "Emergency motel vouchers and diversion support",
+        "Mail services and basic-needs supplies",
+        "Permanent supportive housing case management",
+        "Veteran and youth-focused housing navigation"
+      ],
+      "contact": {
+        "address": "1008 N. Grand Ave., Pueblo, CO 81003",
+        "phone": "719-545-8776",
+        "web": "https://posadapueblo.org/services/"
+      },
+      "eligibility": "Households or individuals experiencing or at risk of homelessness in Pueblo County; bilingual staff available.",
+      "source": "Posada Pueblo website (accessed 2025-11-15)"
+    },
+    {
+      "name": "YWCA Pueblo Domestic Violence Program",
+      "category": [
+        "Domestic violence",
+        "Legal advocacy"
+      ],
+      "services": [
+        "24/7 domestic violence crisis hotline",
+        "Emergency shelter beds and hotel placements",
+        "Civil legal advocacy and court accompaniment",
+        "Economic empowerment and support groups"
+      ],
+      "contact": {
+        "phone": "719-545-4884",
+        "web": "https://www.ywcapueblo.org/our-work/domestic-violence-services/"
+      },
+      "eligibility": "Survivors of domestic violence and their dependents regardless of gender; capacity-based shelter placements.",
+      "source": "YWCA Pueblo website (accessed 2025-11-15)"
+    },
+    {
+      "name": "Rape Crisis Services of Pueblo",
+      "category": [
+        "Sexual assault support",
+        "Mental health"
+      ],
+      "services": [
+        "24/7 sexual assault hotline",
+        "Hospital and law-enforcement accompaniment",
+        "Counseling referrals and support groups",
+        "Prevention and education programming"
+      ],
+      "contact": {
+        "phone": "719-544-1191",
+        "web": "https://rapecrisisservices.org/"
+      },
+      "eligibility": "Survivors and secondary survivors in Pueblo and surrounding counties; Spanish-speaking advocates available.",
+      "source": "Rape Crisis Services website (accessed 2025-11-15)"
+    },
+    {
+      "name": "Health Solutions Crisis Walk-In Center",
+      "category": [
+        "Mental health",
+        "Substance use"
+      ],
+      "services": [
+        "24/7 crisis stabilization and observation",
+        "Mobile crisis response and peer support",
+        "Detox linkage and care coordination",
+        "Youth and adult walk-in counseling"
+      ],
+      "contact": {
+        "address": "711 W. 13th St., Pueblo, CO 81003",
+        "phone": "844-493-8255",
+        "web": "https://www.health.solutions/services/crisis-care/"
+      },
+      "eligibility": "No-cost crisis care regardless of insurance; serves youth and adults across Pueblo County.",
+      "source": "Health Solutions website (accessed 2025-11-15)"
+    },
+    {
+      "name": "Colorado Rapid Response Network (CORRN)",
+      "category": [
+        "Immigration rapid response",
+        "Legal observation"
+      ],
+      "services": [
+        "Statewide hotline (844-864-8341 opt.1 live / opt.2 past incidents)",
+        "Dispatch of trained observers and legal support teams",
+        "Incident logging shared with immigrant-rights coalitions"
+      ],
+      "contact": {
+        "phone": "844-864-8341",
+        "web": "https://www.coloradorapidresponsenetwork.com/"
+      },
+      "eligibility": "Anyone witnessing immigration enforcement activity in Colorado; bilingual dispatch available.",
+      "source": "CORRN website (accessed 2025-11-15)"
+    },
+    {
+      "name": "Rocky Mountain Immigrant Advocacy Network (RMIAN)",
+      "category": [
+        "Immigration legal aid"
+      ],
+      "services": [
+        "Legal orientation for detained adults at Aurora GEO",
+        "Child advocacy program for unaccompanied minors",
+        "Social service coordination for released families"
+      ],
+      "contact": {
+        "phone": "303-433-2812 (adults) / 303-222-0003 (children)",
+        "web": "https://rmian.org/get-help/"
+      },
+      "eligibility": "Colorado families with detained adults or minors; need A-number and detention location.",
+      "source": "RMIAN website (accessed 2025-11-15)"
+    },
+    {
+      "name": "Colorado Crisis Services",
+      "category": [
+        "Mental health",
+        "Substance use"
+      ],
+      "services": [
+        "24/7 hotline (844-493-8255) and text line (38255)",
+        "Statewide mobile response coordination",
+        "Referrals to local walk-in centers and peer support"
+      ],
+      "contact": {
+        "phone": "844-493-8255",
+        "text": "38255 (text TALK)",
+        "web": "https://coloradocrisisservices.org/"
+      },
+      "eligibility": "Open to anyone in Colorado regardless of insurance or immigration status; translation available.",
+      "source": "Colorado Crisis Services website (accessed 2025-11-15)"
+    },
+    {
+      "name": "Catholic Charities of Pueblo",
+      "category": [
+        "Childcare",
+        "Family services"
+      ],
+      "services": [
+        "Early Head Start/childcare slots",
+        "Parenting classes and case management",
+        "Emergency assistance referrals"
+      ],
+      "contact": {
+        "address": "429 W. 10th St., Pueblo, CO 81003",
+        "phone": "719-544-4233",
+        "web": "https://www.ccpueblo.org/services/"
+      },
+      "eligibility": "Income-qualified families following Head Start guidelines; bilingual staff available.",
+      "source": "Catholic Charities Pueblo website (accessed 2025-11-15)"
+    },
+    {
+      "name": "Pueblo City-County Library District TechConnect",
+      "category": [
+        "Technology access"
+      ],
+      "services": [
+        "Wi-Fi hotspot and Chromebook lending",
+        "Public computer/printing services",
+        "Digital literacy classes and drop-in tech help"
+      ],
+      "contact": {
+        "address": "100 E. Abriendo Ave., Pueblo, CO 81004",
+        "phone": "719-562-5600",
+        "web": "https://www.pueblolibrary.org/techconnect"
+      },
+      "eligibility": "Library card required; device loans typically 21 days.",
+      "source": "PCCLD TechConnect page (accessed 2025-11-15)"
+    },
+    {
+      "name": "Pueblo Cooperative Care Center",
+      "category": [
+        "Mutual aid",
+        "Basic needs"
+      ],
+      "services": [
+        "Food pantry and sack lunches",
+        "Clothing and hygiene supplies",
+        "Mail service and limited utility assistance referrals"
+      ],
+      "contact": {
+        "address": "326 W. 8th St., Pueblo, CO 81003",
+        "phone": "719-543-7484",
+        "web": "https://cooperativecarecenter.org/"
+      },
+      "eligibility": "Pueblo County residents; IDs requested but emergency support available.",
+      "source": "Cooperative Care Center website (accessed 2025-11-15)"
+    }
+  ]
+}
