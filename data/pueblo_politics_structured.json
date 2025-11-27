@@ -1,40 +1,204 @@
 {
-  "updated": "2025-11-15",
+  "updated": "2025-11-27",
   "officials": [
     {
       "body": "Pueblo City Council",
-      "control": "5-2 conservative majority",
-      "key_figures": [],
-      "implications": "Council signs off on surveillance expansions, curfews, and protest permits; agenda center must be monitored weekly for Community Connect, Flock Safety, and RTCC line items.",
+      "control": "Conservative majority",
+      "members": [
+        {
+          "name": "Mark Aliff",
+          "district": "At-Large",
+          "role": "Council President",
+          "notes": "Supported sales tax increase; created Commission on Housing and Homelessness"
+        },
+        {
+          "name": "Joe Latino",
+          "district": "District 2",
+          "notes": "Opposed sales tax increase"
+        },
+        {
+          "name": "Roger Gomez",
+          "district": "District 4",
+          "role": "Work Session Chair",
+          "notes": "Former PCSO commander; opposed sales tax increase; attempted to table immigration resolution"
+        },
+        {
+          "name": "Selena Ruiz Gomez",
+          "district": "At-Large",
+          "elected": "2025-11",
+          "notes": "Licensed mental health professional; platform: sustainable economic development, public safety, homelessness"
+        },
+        {
+          "name": "Brett Boston",
+          "district": "At-Large",
+          "elected": "2025-11",
+          "notes": "Youngest council member; supports expanding DICE/Impact teams, grant funding for neighborhood camera programs"
+        },
+        {
+          "name": "Dianne Danti",
+          "district": "District 1",
+          "elected": "2025-11",
+          "notes": "Retiree with accounting background; platform: transparency, responsible spending, public safety"
+        },
+        {
+          "name": "Ted Hernandez",
+          "district": "District 3",
+          "elected": "2025-11",
+          "notes": "Endorsed by Pueblo Democrats"
+        }
+      ],
+      "implications": "Council signs off on surveillance expansions, curfews, and protest permits; agenda center must be monitored weekly.",
       "sources": [
-        "Colorado Politics – Dennis Maes, 2025-03-28"
+        "CPR Southern Colorado Voter Guide, 2025-10-22",
+        "KOAA Election Results, 2025-11"
       ]
     },
     {
       "body": "Pueblo County Board of Commissioners",
-      "control": "Republican majority (Lucero D, McPheeters R, Swearingen R)",
-      "key_figures": [
-        "Miles Lucero",
-        "Paula McPheeters",
-        "Zach Swearingen"
+      "control": "Republican majority",
+      "members": [
+        {
+          "name": "Miles Lucero",
+          "district": "District 1",
+          "party": "Democrat",
+          "elected": "2025",
+          "notes": "Pueblo native, math degree from University of Arizona"
+        },
+        {
+          "name": "Paula McPheeters",
+          "district": "District 2",
+          "party": "Republican",
+          "elected": "2025-01",
+          "notes": "Priorities: public safety, infrastructure, economic development, transparency"
+        },
+        {
+          "name": "Zach Swearingen",
+          "district": "District 3",
+          "party": "Republican",
+          "notes": "Business ties to Republic Shooting Range"
+        }
       ],
-      "implications": "Controls sheriff/RTCC/ALPR budgets; commissioners bring business ties (Republic Shooting Range, PCC grant compliance) that should be surfaced during procurement votes.",
+      "recent_actions": [
+        {
+          "action": "Approved $45,000 for Sheriff Lucero legal fees in union lawsuit",
+          "date": "2025-03"
+        }
+      ],
+      "implications": "Controls sheriff/RTCC/ALPR budgets; commissioners' business ties should be surfaced during procurement votes.",
       "sources": [
-        "Pueblo Chieftain – James Bartolo, 2024-12-09"
+        "county.pueblo.org",
+        "Colorado Newsline, 2025-03-04"
       ]
     },
     {
-      "body": "Countywide Offices",
-      "control": "Mixed",
-      "key_figures": [
-        "Candace Rivera",
-        "David Lucero",
-        "Kala Beauvais"
+      "body": "Mayor",
+      "officeholder": {
+        "name": "Heather Graham",
+        "elected": "2023",
+        "notes": "Defeated incumbent Nick Gradisar with 62%; previously Council President"
+      },
+      "government_type": "Strong-mayor (one of 3 in Colorado: Denver, Colorado Springs, Pueblo)",
+      "recent_actions": [
+        {
+          "action": "Vetoed ordinance for city manager ballot measure",
+          "date": "2025-08-15",
+          "outcome": "Veto overridden 6-1 by Council"
+        },
+        {
+          "action": "Ballot Question 2C (eliminate mayor) failed 67-32%",
+          "date": "2025-11",
+          "outcome": "Mayor position retained"
+        }
       ],
-      "implications": "Clerk accelerates election canvassing, sheriff is litigating labor authority, DA is prioritizing violent-crime prosecutions—each office intersects with accountability, detention, and transparency sections of the reports.",
       "sources": [
-        "opsec/Pueblo County Officials.md"
+        "KOAA, 2025-11",
+        "KKTV, 2025-08-26"
       ]
+    },
+    {
+      "body": "Sheriff",
+      "officeholder": {
+        "name": "David Lucero",
+        "party": "Democrat",
+        "appointed": "2022-10-11",
+        "elected": "2022-11",
+        "experience": "22-year law enforcement veteran; former Colorado Jail Association president"
+      },
+      "key_positions": {
+        "ice_cooperation": "Will NOT participate in roundup operations; will cooperate on criminal matters only",
+        "union_lawsuit": "Filed suit arguing sheriff's office not subject to 2022 collective bargaining law"
+      },
+      "key_quote": "My role isn't to enforce immigration laws. I am not the federal sheriff.",
+      "sources": [
+        "PCSO news release, 2025-01-23",
+        "Colorado Newsline, 2025-03-04"
+      ]
+    },
+    {
+      "body": "Police Chief",
+      "officeholder": {
+        "name": "Chris Noeller",
+        "title": "Chief of Police / Deputy Mayor",
+        "since": "2024-02",
+        "other_roles": "2nd Vice President, Colorado Association of Chiefs of Police"
+      },
+      "key_positions": {
+        "crime_stats": "Reports 40% violent crime reduction, 50% homicide reduction in 2025",
+        "technology": "Credits RTCC as 'force multiplier'; expanding drone program",
+        "reform": "Pushing for tougher criminal justice laws after officer shootings"
+      },
+      "key_quote": "The blood of my officers is on the steps of the capitol.",
+      "sources": [
+        "KKTV, 2025-05-06",
+        "KOAA, 2025-08"
+      ]
+    },
+    {
+      "body": "District Attorney",
+      "officeholder": {
+        "name": "Kala Beauvais",
+        "assumed_office": "2025-01",
+        "notes": "Defeated Democrat Kyle Aber in Nov 2024; over decade of prosecution experience"
+      },
+      "former_da": {
+        "name": "Jeff Chostner",
+        "current_role": "Colorado Independent Judicial Review Board (appointed Dec 2024)"
+      },
+      "sources": [
+        "county.pueblo.org",
+        "Yahoo News, 2024-12"
+      ]
+    }
+  ],
+  "key_votes_2025": [
+    {
+      "topic": "Immigration resolution",
+      "date": "2025-11-10",
+      "outcome": "Failed 5-2",
+      "details": "Resolution expressing support for immigrants while complying with state law. Sponsor: Dennis Flores.",
+      "context": "Followed protests over potential ICE use of Pueblo Memorial Airport",
+      "sources": ["Yahoo News, 2025-11"]
+    },
+    {
+      "topic": "Ballot Question 2C (eliminate mayor)",
+      "date": "2025-11",
+      "outcome": "Failed 67-32%",
+      "details": "Would have eliminated mayor position and established city manager selected by Council.",
+      "sources": ["KOAA, 2025-11"]
+    },
+    {
+      "topic": "ARPA funds for park surveillance fiber",
+      "date": "2025-07-14",
+      "outcome": "Approved unanimously",
+      "details": "$227,956 reallocated from railroad permit technology to fiber-optic cables for park surveillance.",
+      "sources": ["KRDO, 2025-07-14"]
+    },
+    {
+      "topic": "Park surveillance cameras",
+      "date": "2024-12",
+      "outcome": "Approved 7-0",
+      "details": "$1 million for cameras, license plate readers, Wi-Fi at 5 parks.",
+      "sources": ["KRDO, 2025-07-14"]
     }
   ],
   "policies": [
@@ -45,79 +209,66 @@
         "Subscribe to City Council agenda center; pull new packets weekly.",
         "Pre-draft testimony referencing Community Connect privacy concerns.",
         "Track votes for inclusion in the power map report."
-      ],
-      "sources": [
-        "Colorado Politics – Dennis Maes, 2025-03-28"
       ]
     },
     {
-      "topic": "County RTCC & ALPR contracts",
-      "status": "Budget controlled by GOP-majority commissioners",
+      "topic": "ICE cooperation boundaries",
+      "status": "Sheriff pledge (2025-01-23); Council rejected resolution (2025-11-10)",
       "actions": [
-        "File CORA requests for maintenance contracts signed after Jan 2025.",
-        "Document Republic Shooting Range connections when firearms vendors appear on agendas."
-      ],
-      "sources": [
-        "Pueblo Chieftain – James Bartolo, 2024-12-09"
+        "Cite sheriff's statement when deputies assist ICE absent criminal nexus.",
+        "Monitor agendas for detention facility zoning, ICE MOUs, or bed rentals.",
+        "Document City Council member positions on immigration issues."
       ]
     },
     {
       "topic": "Meeting calendar monitoring",
       "status": "Weekly agendas",
       "actions": [
-        "Download City Council and BOCC agendas each Sunday; search for \"Community Connect\", \"Flock\", \"contract\", \"license plate\".",
-        "Attend Public Safety Committee/RTCC briefings virtually to capture sensor expansion notes early."
-      ],
-      "sources": [
-        "docs/pueblo-watchlist.md – Meeting Calendar Targets"
-      ]
-    },
-    {
-      "topic": "Procurement & surveillance pipeline",
-      "status": "Active vendor contracts",
-      "actions": [
-        "File CORA requests for Daktronics/High Point RTCC maintenance, Genetec Community Connect agreements, and Flock ALPR placements.",
-        "Track Downtown Association or other private funding that circumvents council debate.",
-        "Log amendments and renewal timelines so advocates can intervene before approvals."
-      ],
-      "sources": [
-        "docs/pueblo-watchlist.md – Procurement & Surveillance Pipeline"
-      ]
-    },
-    {
-      "topic": "ICE cooperation boundaries",
-      "status": "Sheriff pledge (2025-01-23)",
-      "actions": [
-        "Cite the sheriff’s statement whenever deputies assist ICE absent criminal nexus.",
-        "Monitor agendas for detention facility zoning, ICE MOUs, or bed rentals."
-      ],
-      "sources": [
-        "opsec/Pueblo 81008 Surveillance.md – ICE section",
-        "Sheriff Lucero statement (2025-01-23)"
-      ]
-    },
-    {
-      "topic": "Voter rights & election transparency",
-      "status": "Clerk accelerated canvass",
-      "actions": [
-        "Support budget/staffing that maintains fast canvasses and bipartisan verification.",
-        "Flag any proposals that would reduce observer access or slowdown certification."
-      ],
-      "sources": [
-        "opsec/Pueblo County Officials.md – Candace Rivera references"
-      ]
-    },
-    {
-      "topic": "Sheriff vs. union litigation",
-      "status": "Ongoing lawsuit",
-      "actions": [
-        "Track legal filings and note impacts on labor relations and surveillance deployments.",
-        "Raise conflict questions if anti-union moves coincide with tech purchases or ICE cooperation."
-      ],
-      "sources": [
-        "opsec/Pueblo County Officials.md – Sheriff entry citing Colorado Newsline"
+        "Download City Council and BOCC agendas each Sunday.",
+        "Search for 'Community Connect', 'Flock', 'contract', 'license plate', 'drone'.",
+        "Attend Public Safety Committee/RTCC briefings virtually."
       ]
     }
   ],
-  "notes": "Seeded from docs/pueblo-watchlist.md and opsec/Pueblo County Officials.md; continue enriching with meeting-specific data."
+  "upcoming": [
+    {
+      "item": "Speed camera proposal",
+      "details": "15 speed cameras proposed across city (July 2025); status unclear",
+      "source": "KRDO, 2025-07-29"
+    },
+    {
+      "item": "24/7 RTCC operations",
+      "details": "Hiring additional technicians to expand from 10am-midnight to 24/7",
+      "source": "KOAA, 2025"
+    },
+    {
+      "item": "ShotSpotter expansion",
+      "details": "Additional coverage beyond 6 sq mi planned with state grant",
+      "source": "KOAA, 2025-01"
+    }
+  ],
+  "campaign_finance": {
+    "municipal_limits": "$400 per election cycle from persons/entities (effective 2024-01-01)",
+    "tracer_database": "tracer.sos.colorado.gov",
+    "research_needed": [
+      "Search contributions to council members from surveillance vendors",
+      "Cross-reference SoundThinking, Genetec, Daktronics, High Point Networks, Flock Safety",
+      "Review lobbyist registrations for surveillance vendors"
+    ]
+  },
+  "accountability": {
+    "internal_affairs": {
+      "url": "pueblo.us/449/Internal-Affairs-Section",
+      "mission": "Ensure integrity through impartial investigations of misconduct, excessive force, civil rights violations"
+    },
+    "colorado_post": {
+      "url": "post.colorado.gov/certification-inquiries-officer-complaints",
+      "note": "POST has NO authority to investigate; can file with AG Pattern & Practice unit"
+    },
+    "pattern_practice": {
+      "filing": "Contact AG Civil Rights Division via Pattern & Practice intake form",
+      "select": "Governmental Authority"
+    }
+  },
+  "notes": "Updated with November 2025 election results and key votes. Continue enriching with meeting-specific data."
 }

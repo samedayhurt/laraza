@@ -1,34 +1,150 @@
 # Immigration and ICE Risks
 
-Pueblo residents continue to navigate federal enforcement rumors, county-level cooperation decisions, and the need for rapid legal response. This brief captures the most recent intelligence plus the tools available to assert rights and document abuses.
+*Updated: November 27, 2025*
+
+Pueblo residents face escalating federal enforcement, evolving county policies, and new surveillance threats. This brief captures the latest intelligence and tools for asserting rights and documenting abuses.
 
 ## Executive Summary
-- January 2025 social media posts sparked panic about ICE “roundups” in Pueblo; CPR reporting confirmed the incident involved ICE supporting a narcotics arrest, underscoring the need for fast verification before amplifying alerts.[^cpr]
-- Pueblo County Sheriff David Lucero issued a written pledge that PCSO “will not support or participate in any round-up operations,” limiting cooperation to criminal cases or officer-safety situations—use this statement when deputies overreach.[^sheriff]
-- The Colorado Rapid Response Network (CORRN) hotline (844-864-8341) remains the fastest way to dispatch legal observers, while Rocky Mountain Immigrant Advocacy Network (RMIAN) handles detention legal aid for Pueblo families statewide.[^corrn][^rmian]
+- **MAJOR VICTORY:** Federal judge ordered ICE to stop warrantless arrests in Colorado (Nov 25, 2025)—cite this in any ICE encounter.[^court]
+- **ICE enforcement quadrupled:** 1,360 arrests in Colorado Jan-June 2025 vs. same period 2024; September operation targeted 14 cities including Pueblo.[^ice]
+- **Sheriff Lucero holds firm:** PCSO will NOT participate in roundup operations; only cooperates on criminal matters with officer-safety concerns.[^sheriff]
+- **Sensitive areas rescinded:** ICE can now enforce at schools, churches, hospitals (Jan 21, 2025).[^sensitive]
+- **Social media surveillance:** ICE seeking 24/7 monitoring of Facebook, TikTok, WhatsApp, Instagram—friends/relatives may be tracked.[^social]
+- **Nearby detention:** Huerfano County facility (50 mi south) may activate with 752-bed ICE capacity.[^detention]
 
-## Recent Incidents & Policy Signals
-### Rumor-driven panic (January 2025)
-- **What happened:** Viral posts claimed ICE agents were conducting mass arrests in Pueblo neighborhoods.
-- **Verified facts:** CPR found ICE assisted with a single narcotics arrest; no evidence of broad sweeps surfaced, but residents reported door knocks statewide.
-- **Why it matters:** False alarms cause missed work/school and desensitize communities to genuine raids.
-- **Action:** Before forwarding alerts, call CORRN option 1 with details (location, vehicle plates, agent clothing). Draft a Signal template reminding contacts to verify sightings.
+## Critical Legal Update: November 2025 Court Ruling
 
-### Sheriff cooperation limits
-- **Statement:** Sheriff Lucero’s 2025 letter commits PCSO to avoid civil immigration enforcement unless criminal charges or officer-safety factors exist.
-- **How to use it:** Carry printed excerpts to cite at schools, clinics, or protest lines when deputies appear alongside ICE. If actions contradict the policy, log the incident for POST/AG complaints.
+**Federal Judge Orders ICE to Stop Warrantless Arrests**
 
-## Rapid Response & Self-Advocacy Playbook
-1. **Spot, verify, report.** Capture date/time, address, agent identifiers, and vehicle plates. Call CORRN (844-864-8341 option 1) for live encounters; use option 2 for after-action logging.[^corrn]
-2. **Document internally.** Drop notes, photos, and audio into the encrypted Obsidian vault using case IDs (`YYYYMMDD-Location-Reporter`). Hash media before sharing.
-3. **Engage legal aid.** For detained adults or kids, contact RMIAN’s intake line (https://rmian.org/get-help/) with the person’s name, A-number, and detention location.[^rmian]
-4. **Activate CIRC networks.** Loop in the Colorado Immigrant Rights Coalition to mobilize local volunteers and policy advocates who can follow up on CORRN alerts, collect testimonies, and push city/county officials.[^circ]
-5. **Press policy commitments.** When deputies assist ICE without a criminal nexus, cite the sheriff’s statement plus Colorado’s sanctuary statutes in complaints to POST and the Attorney General’s Pattern & Practice unit.
-6. **Debunk responsibly.** If a rumor proves false, send a follow-up message to the same channels clarifying what was confirmed; this builds credibility and keeps people listening when real threats emerge.
+On November 25, 2025, Senior U.S. District Judge R. Brooke Jackson issued a 66-page ruling finding that ICE has "routinely carried out illegal arrests" in Colorado. The ruling orders agents to stop making warrantless arrests based solely on suspected immigration violations.
+
+**How to use this:**
+- Carry a summary of this ruling
+- If ICE attempts arrest without warrant, state: "A federal court has ruled ICE cannot make warrantless arrests in Colorado"
+- Document the encounter and contact RMIAN or ACLU immediately
+- Sources: CPR News, Denver Post (Nov 25, 2025)
+
+## Sheriff Cooperation Policy
+
+**Sheriff David Lucero's Pledge (January 23, 2025):**
+
+| Will Cooperate | Will NOT Cooperate |
+|----------------|-------------------|
+| Criminal charges or nexus | Any roundup operations |
+| Officer safety/backup | Enforcement based solely on status |
+| Criminal apprehension support | Operations at schools, churches, similar venues |
+
+**Key quote:** "My role isn't to enforce immigration laws. I am not the federal sheriff. My role is to enforce Colorado law and to ensure the safety of the citizens of Pueblo County."
+
+**How to use:** Carry printed copies to cite at schools, clinics, or protests. Log any deviations for POST/AG complaints.
+
+## Pueblo County Jail Policy
+
+- PCSO does NOT proactively notify ICE of immigration status
+- Only responded to ONE ICE inquiry in 2024
+- ICE must provide warrant/writ signed by federal judge to request hold
+- Cannot detain people after release solely for ICE pickup
+- Fingerprints go to FBI, which automatically shares with ICE
+
+## New Threats in 2025
+
+### ICE 24/7 Social Media Monitoring
+ICE published RFI for contractors to monitor: Facebook, Instagram, TikTok, Twitter/X, WhatsApp, YouTube, Reddit, LinkedIn, and more.
+
+**Risks:**
+- Posts can be used to identify, locate, and build cases
+- Friends and relatives of targets may be monitored
+- Location data from posts reveals movement patterns
+
+**Protective actions:**
+- Review privacy settings immediately on all platforms
+- Remove location data from posts
+- Use Signal instead of WhatsApp for sensitive communications
+- Warn community members about social media risks
+
+### ICE Sensitive Areas Policy Rescinded
+As of January 21, 2025, ICE can conduct enforcement at:
+- Schools
+- Places of worship
+- Hospitals and medical facilities
+
+**Response:** Train staff at schools and churches on Know Your Rights protocols. Develop rapid response plans for these locations.
+
+### Huerfano County Detention Facility
+- Located in Walsenburg, 50 miles south of Pueblo
+- 752-bed capacity
+- ICE plans to take over facility
+- Community protests at Pueblo City Council over potential use of Pueblo Memorial Airport for ICE transport
+
+## Rapid Response Playbook
+
+### 1. Spot, Verify, Report
+- Capture: date/time, address, agent identifiers, vehicle plates
+- Call CORRN: **844-864-8341**
+  - Option 1: Live encounters
+  - Option 2: After-action logging
+- Do NOT forward unverified alerts—verify first
+
+### 2. Document Internally
+- Use encrypted Obsidian vault
+- Case ID format: `YYYYMMDD-Location-Reporter`
+- Hash all media before sharing: `sha256sum filename`
+
+### 3. Engage Legal Aid
+- **Detained adults:** RMIAN (303) 866-9308
+- **Immigration cases:** Catholic Charities (719) 586-8600
+- **General legal:** Colorado Legal Services 719-545-6708
+- Have ready: Name, A-number, detention location
+
+### 4. Activate Networks
+- Contact CIRC for volunteer mobilization
+- Loop in CORRN for documentation teams
+- Share verified information through Signal, not social media
+
+### 5. Press Policy Commitments
+- Cite sheriff's statement if deputies assist ICE without criminal nexus
+- Cite November 2025 court ruling if ICE attempts warrantless arrest
+- File POST/AG complaints for any violations
+
+### 6. Debunk Responsibly
+- If rumor proves false, send clarifying follow-up to same channels
+- Builds credibility for when real threats emerge
+
+## Know Your Rights
+
+**If ICE comes to your door:**
+1. You do NOT have to open the door
+2. Ask to see a warrant signed by a judge (not just ICE paperwork)
+3. You have the right to remain silent
+4. Do not sign any documents without an attorney
+5. Memorize: **CORRN 844-864-8341**
+
+**Constitutional rights:**
+- Fifth Amendment: Right to remain silent
+- Right to attorney before answering questions
+- Do not grant access to property without valid warrant
+
+## Emergency Contacts
+
+| Need | Contact |
+|------|---------|
+| **CORRN (live ICE)** | 844-864-8341 opt.1 |
+| **RMIAN Detention** | (303) 866-9308 |
+| **Catholic Charities** | (719) 586-8600 |
+| **CIRC workshops** | bit.ly/CIRCworkshop2025 |
+| **CO Legal Services** | 719-545-6708 |
+
+## 2025 Policy Context
+
+- **DACA:** Fifth Circuit ruled Biden regulation unlawful (Jan 2025); new apps blocked, renewals continue
+- **TPS:** Terminations announced for 1M+ Hondurans, Haitians, Venezuelans
+- **State protection:** Colorado SB25-276 strengthened immigrant protections (effective June 30, 2025)
+- **Sanctuary status:** DHS designated Pueblo as "sanctuary jurisdiction" (May 2025); county officials dispute label
 
 ## Source Notes
-- [^cpr]: Caitlyn Kim, “Rumors of immigration arrests spread across Colorado, but details are unclear,” CPR News, Jan 24 2025. https://www.cpr.org/2025/01/24/addresssing-colorado-ice-immigration-arrests-rumors/
-- [^sheriff]: “Sheriff Lucero Issues Statement on Agency’s Cooperation with ICE,” Pueblo County Sheriff’s Office, Jan 23 2025. https://www.pueblosheriff.com/DocumentCenter/View/3323/Sheriff-Lucero-Statement
-- [^corrn]: Colorado Rapid Response Network, https://www.coloradorapidresponsenetwork.com/ (accessed 2025-11-15).
-- [^rmian]: Rocky Mountain Immigrant Advocacy Network – Get Help, https://rmian.org/get-help/ (accessed 2025-11-15).
-- [^circ]: Colorado Immigrant Rights Coalition, https://coloradoimmigrant.org/ (accessed 2025-11-15).
+- [^court]: CPR News & Denver Post, "Federal judge orders ICE to stop warrantless arrests in Colorado," Nov 25, 2025
+- [^ice]: CPR News, "As ICE expands its Colorado efforts, many without criminal records are caught," April 7, 2025
+- [^sheriff]: Pueblo County Sheriff's Office news release, Jan 23, 2025
+- [^sensitive]: DHS announcement, Jan 21, 2025
+- [^social]: Latin Times & The Conversation, "ICE Eyes New Social Media Intelligence Program," 2025
+- [^detention]: Rocky Mountain PBS, 2025

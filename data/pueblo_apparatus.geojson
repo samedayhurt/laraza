@@ -1,5 +1,6 @@
 {
   "type": "FeatureCollection",
+  "updated": "2025-11-27",
   "features": [
     {
       "type": "Feature",
@@ -7,26 +8,11 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [
-              -104.6694073,
-              38.2646391
-            ],
-            [
-              -104.5694073,
-              38.2646391
-            ],
-            [
-              -104.5694073,
-              38.3646391
-            ],
-            [
-              -104.6694073,
-              38.3646391
-            ],
-            [
-              -104.6694073,
-              38.2646391
-            ]
+            [-104.6694073, 38.2646391],
+            [-104.5694073, 38.2646391],
+            [-104.5694073, 38.3646391],
+            [-104.6694073, 38.3646391],
+            [-104.6694073, 38.2646391]
           ]
         ]
       },
@@ -34,134 +20,275 @@
         "id": "zip-81008",
         "name": "Approximate ZIP 81008 extent",
         "type": "boundary",
-        "description": "Bounding box returned by Nominatim for ZIP code 81008; used as a rough frame for North Pueblo research.",
-        "sources": [
-          "https://nominatim.openstreetmap.org/search.php?postalcode=81008&country=USA&polygon_geojson=1&format=jsonv2"
-        ],
-        "notes": "Desktop mapping uses bounding box because public polygon data for the ZIP code is not accessible without shapefiles."
+        "description": "Bounding box for ZIP code 81008; used as frame for North Pueblo research.",
+        "sources": ["Nominatim OpenStreetMap"],
+        "notes": "Desktop mapping uses bounding box because public polygon data requires shapefiles."
       }
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -104.612921,
-          38.2629478
-        ]
+        "coordinates": [-104.612921, 38.2629478]
       },
       "properties": {
         "id": "pueblo-rtcc",
         "name": "Pueblo Police Department / Real-Time Crime Center",
         "type": "rtcc",
-        "description": "Public Safety Complex that now hosts the Real-Time Crime Center, ShotSpotter feeds, Daktronics video wall, and Community Connect intake.",
+        "description": "Public Safety Complex hosting RTCC with ShotSpotter (6 sq mi), drones, Daktronics video wall, Community Connect intake. Operating 10am-midnight, expanding to 24/7.",
+        "components": ["ShotSpotter", "Drones", "Body cams", "22+ fixed cameras", "22 ALPRs", "Daktronics video wall"],
         "sources": [
           "https://www.pueblo.us/Directory.aspx?did=13",
           "https://www.daktronics.com/news/eye-on-crime-increases-with-daktronics-high-point-networks-collaboration-for-pueblo-police-department-s-real-time-crime-center"
-        ]
+        ],
+        "updated": "2025-11"
       }
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -104.6126358,
-          38.2654292
-        ]
+        "coordinates": [-104.6126358, 38.2654292]
       },
       "properties": {
         "id": "downtown-alpr",
         "name": "Downtown Flock ALPR Installations",
         "type": "alpr",
-        "description": "Pueblo Downtown Association-funded Flock Safety cameras covering the Union Ave / Riverwalk corridors to alert police about stolen vehicles and hit-and-runs.",
-        "sources": [
-          "https://www.koaa.com/news/covering-colorado/license-plate-cameras-coming-to-pueblo"
-        ],
-        "notes": "Exact pole locations are not published; map locates the Historic Arkansas Riverwalk/Union Ave business district referenced in KOAA reporting."
+        "description": "Pueblo Downtown Association-funded Flock Safety cameras covering Union Ave / Riverwalk corridors. 30-day cloud retention. Part of 1,091-camera Colorado network.",
+        "sources": ["https://www.koaa.com/news/covering-colorado/license-plate-cameras-coming-to-pueblo"],
+        "notes": "EFF Nov 2025 report documents Flock network used to surveil protesters nationwide.",
+        "updated": "2025-11"
       }
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -104.6082866,
-          38.3031311
-        ]
+        "coordinates": [-104.5950, 38.2580]
+      },
+      "properties": {
+        "id": "bessemer-mobile-trailer",
+        "name": "Mobile Camera Trailer - Bessemer Area",
+        "type": "mobile-surveillance",
+        "description": "Solar-powered mobile RTCC camera trailer relocated to Mesa Ave & Elm St area (July 2025). One of four mobile trailers deployed citywide.",
+        "sources": ["KKTV, July 2025"],
+        "notes": "Location approximate based on news reporting. Trailers are mobile and may relocate.",
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6082866, 38.3031311]
       },
       "properties": {
         "id": "pueblo-mall-security",
         "name": "Pueblo Mall private security office",
         "type": "private-security",
-        "description": "North-side retail hub with on-site security office, lost & found, and camera-friendly code of conduct inside ZIP 81008.",
-        "sources": [
-          "https://www.shoppueblomall.com/services/security"
-        ],
-        "notes": "Represents one of the largest commercial lots feeding Community Connect sign-ups in ZIP 81008."
+        "description": "North-side retail hub with on-site security office. Potential Community Connect participant in ZIP 81008.",
+        "sources": ["https://www.shoppueblomall.com/services/security"],
+        "updated": "2025-11"
       }
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -104.6107614,
-          38.2751559
-        ]
+        "coordinates": [-104.6107614, 38.2751559]
       },
       "properties": {
         "id": "pcso-hq",
-        "name": "Pueblo County Sheriff\u2019s Office HQ",
+        "name": "Pueblo County Sheriff's Office HQ",
         "type": "law-enforcement",
-        "description": "909 Court Street command campus where Sheriff Lucero issued the Jan. 2025 statement limiting cooperation with ICE round-ups.",
+        "description": "909 Court Street command campus. Sheriff Lucero issued Jan 2025 statement limiting ICE cooperation. All 73 patrol cars now equipped with mobile ALPRs (March 2025).",
         "sources": [
           "https://www.pueblosheriff.com/Directory.aspx?did=1",
           "https://www.pueblosheriff.com/DocumentCenter/View/3323/Sheriff-Lucero-Statement"
         ],
-        "notes": "Use for monitoring public statements, jail releases, and ICE coordination rumors."
+        "updated": "2025-11"
       }
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -104.6129252,
-          38.2764132
-        ]
+        "coordinates": [-104.6129252, 38.2764132]
       },
       "properties": {
         "id": "ccsoco-immigration",
         "name": "Catholic Charities Immigration Services",
         "type": "community-support",
-        "description": "Safe walk-in site at 429 W 10th St offering immigration legal aid, Know Your Rights briefings, and DocuTeam referrals.",
-        "sources": [
-          "https://www.ccsoco.org/contact",
-          "https://www.ccsoco.org/immigration"
-        ],
-        "notes": "Coordinate with staff before routing protest arrestees\u2019 families here for documentation support."
+        "description": "Safe walk-in site at 429 W 10th St offering DOJ-accredited immigration legal aid, Know Your Rights briefings. Phone: (719) 586-8600.",
+        "sources": ["https://www.ccsoco.org/contact", "https://www.ccsoco.org/immigration"],
+        "updated": "2025-11"
       }
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -104.6071836,
-          38.2812424
-        ]
+        "coordinates": [-104.6071836, 38.2812424]
       },
       "properties": {
-        "id": "mineral-palace-staging",
-        "name": "Mineral Palace Park community staging zone",
-        "type": "assembly",
-        "description": "Parade and outreach site for Pueblo Pride and community safety events; open sight lines make it a safer rally point away from downtown RTCC clusters.",
-        "sources": [
-          "https://www.pueblounitedway.org/news/hundreds-turn-out-pueblos-pride-parade-and-festival-mineral-palace-park",
-          "https://www.chieftain.com/picture-gallery/news/local/2025/08/17/pueblo-pride-pueblos-annual-parade-and-festival-at-mineral-palace-park/85702935007/"
-        ],
-        "notes": "Use park perimeter for \"green zone\" medical tents and mutual aid drop-offs before marches head south."
+        "id": "mineral-palace-park",
+        "name": "Mineral Palace Park",
+        "type": "park-surveillance",
+        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Also community staging zone for events like Pueblo Pride.",
+        "sources": ["KRDO, July 2025"],
+        "notes": "Good rally point with sight lines away from downtown RTCC clusters. Now has surveillance cameras.",
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6200, 38.2700]
+      },
+      "properties": {
+        "id": "city-park",
+        "name": "City Park",
+        "type": "park-surveillance",
+        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation.",
+        "sources": ["KRDO, July 2025"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.5850, 38.2400]
+      },
+      "properties": {
+        "id": "lake-minnequa",
+        "name": "Lake Minnequa Park",
+        "type": "park-surveillance",
+        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber).",
+        "sources": ["KRDO, July 2025"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.5900, 38.2500]
+      },
+      "properties": {
+        "id": "ray-aguilera-park",
+        "name": "Ray Aguilera Park",
+        "type": "park-surveillance",
+        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber).",
+        "sources": ["KRDO, July 2025"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6050, 38.2950]
+      },
+      "properties": {
+        "id": "mitchell-park",
+        "name": "Mitchell Park",
+        "type": "park-surveillance",
+        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber).",
+        "sources": ["KRDO, July 2025"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6140, 38.2620]
+      },
+      "properties": {
+        "id": "city-hall-cameras",
+        "name": "City Hall Camera Arrays",
+        "type": "fixed-surveillance",
+        "description": "New camera arrays installed on city buildings including City Hall (2025). Enhanced surveillance for downtown events.",
+        "sources": ["KKTV, July 2025"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.5000, 38.2900]
+      },
+      "properties": {
+        "id": "pueblo-memorial-airport",
+        "name": "Pueblo Memorial Airport",
+        "type": "watch-site",
+        "description": "Community protests over potential ICE use for immigration transport. Monitor for ICE activity.",
+        "sources": ["Rocky Mountain PBS, 2025"],
+        "notes": "Location to watch for ICE transport flights. Not confirmed as active ICE site.",
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6100, 38.2880]
+      },
+      "properties": {
+        "id": "posada-pueblo",
+        "name": "Posada of Pueblo",
+        "type": "community-support",
+        "description": "Emergency housing, homeless services, youth programs. Address: 501 Belmont Ave. Phone: 719-545-8776.",
+        "sources": ["posadapueblo.org"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6130, 38.2730]
+      },
+      "properties": {
+        "id": "colorado-legal-services",
+        "name": "Colorado Legal Services - Pueblo Office",
+        "type": "community-support",
+        "description": "Free legal aid for eviction defense, immigration screenings, protection orders. Address: 1000 W 6th St. Phone: 719-545-6708.",
+        "sources": ["coloradolegalservices.org"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6080, 38.2690]
+      },
+      "properties": {
+        "id": "mariposa-ywca",
+        "name": "Mariposa Center for Safety (YWCA)",
+        "type": "community-support",
+        "description": "24/7 DV crisis line, emergency shelter, legal advocacy. Address: 801 N Santa Fe Ave. Crisis line: 719-545-8195.",
+        "sources": ["ywcapueblo.org"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6090, 38.2780]
+      },
+      "properties": {
+        "id": "pueblo-chc",
+        "name": "Pueblo Community Health Center",
+        "type": "community-support",
+        "description": "FQHC accepting all patients regardless of ability to pay. Homeless clinic, migrant health services. Phone: (719) 543-8711.",
+        "sources": ["pueblochc.org"],
+        "updated": "2025-11"
       }
     }
   ]
