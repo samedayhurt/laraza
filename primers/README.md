@@ -14,6 +14,10 @@ This folder collects lightweight primers that provide just enough background to 
 | [Surveillance Counter-Measures](Surveillance%20Counter-Measures.md) | Comprehensive guide to modern surveillance ecosystem and defensive strategies. | Review commercial telemetry threats, protect against facial recognition, understand ALPR/Stingray risks. |
 | [Digital Hygiene for Everyday People](Digital%20Hygiene%20for%20Everyday%20People.md) | Simplified privacy guide for non-technical community members. | Enable 2FA, use Signal, review app permissions, protect social media presence. |
 | [Higiene Digital para la Comunidad](Higiene%20Digital%20para%20la%20Comunidad.md) | Spanish version of Digital Hygiene guide for Spanish-speaking community. | Same as above, in Spanish. |
+| [Recording Rights in Colorado](Recording%20Rights%20in%20Colorado.md) | Your legal rights to document police and protests; Colorado one-party consent laws. | Know the law, set up cloud backup, understand what to say if confronted by police. |
+| [First Amendment Protest Rights](First%20Amendment%20Protest%20Rights.md) | Your rights to assemble, protest, and speak freely; dispersal order requirements. | Know when permits are needed, understand dispersal rules, what to do if arrested. |
+| [Data Broker Opt-Out Guide](Data%20Broker%20Opt-Out%20Guide.md) | Remove yourself from people-search sites and protect against doxing. | Start with Tier 1 sites, reset Ad ID, set up ongoing monitoring. |
+| [Youth and Family Digital Safety](Youth%20and%20Family%20Digital%20Safety.md) | Protect children from school surveillance, predators, and prepare for ICE encounters. | Review school device policies, set up family safety plan, teach age-appropriate security. |
 
 > **Tip:** Primers are intentionally brief. Pair them with hands-on reps and notes in your Obsidian vault to solidify the material.
 
@@ -24,6 +28,10 @@ This folder collects lightweight primers that provide just enough background to 
 - **Drone Awareness:** Before the Chile Festival protest, review police drone models so you can identify the Matrice 30T overhead; use Remote ID apps to confirm it's PPD and document for FOIA requests.
 - **Surveillance Counter-Measures:** Reset your advertising ID and deny app location permissions before attending a city council meeting on surveillance—commercial telemetry data has been used to identify attendees.
 - **Digital Hygiene:** Print copies of the Spanish version for the Bessemer community center so families know how to protect themselves from social media surveillance without needing technical backgrounds.
+- **Recording Rights:** Set up automatic cloud backup before the march so if police seize your phone, footage is already preserved; know you can say "I have a legal right to record under Colorado law."
+- **First Amendment:** Review dispersal order requirements before action; know police must give clear exit routes and time to comply—and when orders are unlawful.
+- **Data Broker Opt-Out:** Before publishing an op-ed, remove yourself from Spokeo, WhitePages, and BeenVerified to prevent retaliation doxing.
+- **Youth & Family:** Prepare your teenager for what to do if ICE comes while you're at work; make sure they know CORRN's number (844-864-8341) and to never open the door.
 
 ## How to Use These Notes
 

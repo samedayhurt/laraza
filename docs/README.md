@@ -5,6 +5,7 @@ Reference material that explains processes, inventories active research, and sto
 ## Table of Contents
 | Resource | Type | Description |
 | --- | --- | --- |
+| [glossary.md](glossary.md) | Markdown | Quick reference for surveillance, privacy, and rights terminology. Start here if you see unfamiliar acronyms. |
 | [data-legend.md](data-legend.md) | Markdown | Provenance guide describing each dataset/report, when it updates, and citation expectations. |
 | [digital-footprint-protection.md](digital-footprint-protection.md) | Markdown | Device and metadata hygiene playbook aligned with Pueblo operations. |
 | [pueblo-watchlist.md](pueblo-watchlist.md) | Markdown | Tracker for upcoming votes, contracts, and procurement issues that affect surveillance and rights. |
