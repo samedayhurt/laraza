@@ -47,3 +47,11 @@
 | 2025-11-27 | 05_PUEBLO_RESOURCES_MAPPER | Expanded GeoJSON | Added 6 community support locations (Health Solutions, Rape Crisis, Library, Cooperative Care, Courthouse watch site). |
 | 2025-11-27 | 04_IMMIGRATION_ICE_RISK_MAPPER | Expanded immigration data | Added Nov 2025 court ruling, social media monitoring threat, courthouse/detention tracking templates. |
 | 2025-11-27 | 00_ORCHESTRATOR | Updated docs README | Added CORA templates section with links and usage guide. |
+| 2025-11-27 | 01_PUEBLO_CONTEXT_MAPPER | Census district research | District-level data requires tract aggregation; logged ZIP-level stats already present. |
+| 2025-11-27 | 02_PUEBLO_POLITICS_POWER_MAPPER | Nov 2025 election results | 3 new council members (Danti D1, Hernandez D3, Ruiz Gomez at-large); Question 2C city manager FAILED 67.71%. |
+| 2025-11-27 | 03_SURVEILLANCE_POLICING_RESEARCHER | 2025 surveillance expansion | Daktronics RTCC Sept 2025, DFR drones July 2025, $1M park cameras, Flock-ICE scandal 1,400+ searches. |
+| 2025-11-27 | 04_IMMIGRATION_ICE_RISK_MAPPER | Federal court ruling research | *Ramirez Ovando v. Noem* Nov 25 2025; ICE 300% surge; Walsenburg 1,400-bed facility 50mi from Pueblo. |
+| 2025-11-27 | 05_PUEBLO_RESOURCES_MAPPER | Org name verification | YWCA → Mariposa Center for Safety; Rape Crisis → Juniper Southern Colorado; updated contacts. |
+| 2025-11-27 | 07_REPORT_COMPILER | Integrated agent research | Updated immigration_ice_raw.md, surveillance_policing_raw.md, resources_directory_raw.md, politics_raw_notes.md. |
+| 2025-11-27 | 06_RIGHTS_RISK_TRANSLATOR | KYR handout update | Added exact case citation *Ramirez Ovando v. Noem* to KYR-ICE-English.md. |
+| 2025-11-27 | 00_ORCHESTRATOR | Session commit | Comprehensive 2025 research integration across all data files. |

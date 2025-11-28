@@ -28,12 +28,18 @@
 
 ---
 
-## IMPORTANT: NOVEMBER 2025 COURT RULING
+## IMPORTANT: NOVEMBER 25, 2025 COURT RULING
 
-**A federal judge ruled that ICE cannot make warrantless arrests in Colorado based solely on immigration status.**
+**Case: *Ramirez Ovando v. Noem* — U.S. District Court, Colorado**
+
+**A federal judge ruled ICE warrantless arrests are UNLAWFUL in Colorado.**
+
+ICE must now prove you are a flight risk BEFORE arresting without a warrant.
 
 If ICE tries to arrest you without a warrant, say:
-> "A federal court has ruled ICE cannot make warrantless arrests in Colorado."
+> "Under *Ramirez Ovando v. Noem*, ICE cannot make warrantless arrests in Colorado without proving flight risk."
+
+**If arrested after Nov 25, 2025 without warrant:** You may be eligible for bond refund and ankle monitor removal. Contact ACLU of Colorado immediately.
 
 ---
 
