@@ -13,6 +13,20 @@ Reference material that explains processes, inventories active research, and sto
 | [agendas/](agendas/) | Folder | Downloaded Pueblo City Council agenda PDFs pulled via automation for archival review. |
 | [maps/](maps/) | Folder | Rendered Pueblo surveillance map outputs (interactive HTML and quick PNG preview). |
 | [handouts/](handouts/) | Folder | Printable community resources (KYR cards, emergency contacts). |
+| [cora-templates/](cora-templates/) | Folder | Ready-to-send CORA (Colorado Open Records Act) request letters for surveillance oversight. |
+
+## CORA Request Templates
+
+The `cora-templates/` folder contains fill-in-the-blank public records request letters:
+
+| Template | Target Records |
+| --- | --- |
+| [rtcc-vendor-contracts.md](cora-templates/rtcc-vendor-contracts.md) | Real Time Crime Center vendor contracts, invoices, data-sharing agreements |
+| [alpr-placement-policies.md](cora-templates/alpr-placement-policies.md) | ALPR locations, retention policies, aggregate query statistics |
+| [internal-affairs-stats.md](cora-templates/internal-affairs-stats.md) | Complaint counts, use-of-force stats, discipline outcomes |
+| [community-connect-agreements.md](cora-templates/community-connect-agreements.md) | Private camera partnership MOUs, access policies |
+
+**Usage:** Fill in your name/contact, send to the listed records custodian, track response in `logs/search_log.md`.
 
 ## Printable Handouts
 

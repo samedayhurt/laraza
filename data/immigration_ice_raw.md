@@ -37,4 +37,66 @@ Track courthouse monitoring, local detention reports, hotline escalations, and s
 - **Sources:** https://coloradoimmigrant.org/ (accessed 2025-11-15).
 - **Suggested response / referral:** Share CIRC’s signup + training info with volunteers so CORRN hotline calls can be backed by local responders; plug CIRC alerts into Signal channels for policy updates.
 
+## 2025-11-XX — November 2025 Federal Court Ruling on Warrantless ICE Arrests
+- **Date / trigger:** November 2025 (exact date TBD)
+- **Agency or facility:** U.S. District Court, Colorado
+- **Summary:** A federal judge ruled that ICE cannot conduct warrantless arrests in Colorado based solely on immigration status. This ruling strengthens protections for community members and provides legal grounds to challenge ICE activity that occurs without judicial warrant.
+- **Sources:** Colorado federal court ruling (exact citation pending); referenced in KYR materials.
+- **Suggested response / referral:** Update KYR cards with ruling citation; train rapid responders to cite ruling during ICE encounters; document any post-ruling warrantless arrests for legal challenge.
+
+## 2025-11 — ICE Social Media Monitoring Threat Assessment
+- **Date / trigger:** November 2025 policy analysis
+- **Agency or facility:** ICE / Homeland Security Investigations (HSI)
+- **Summary:** Reports indicate ICE maintains 24/7 social media monitoring for immigration enforcement purposes. Pueblo-area residents should assume location check-ins, protest photos, and public posts are monitored. Recommend removing location data from social media, using Signal instead of public platforms for organizing.
+- **Sources:** ACLU national surveillance reports; EFF social media monitoring documentation.
+- **Suggested response / referral:** Include social media hygiene in all KYR trainings; remove location services before protests; avoid posting about routes/gatherings until after events conclude.
+
+---
+
+## Courthouse Monitoring Template
+
+Use this format to log observations at Pueblo County Courthouse (215 W 10th St):
+
+```markdown
+## [DATE] — Courthouse Observation
+
+- **Date / time:** YYYY-MM-DD, HH:MM - HH:MM
+- **Observer(s):** [Initials or pseudonym]
+- **Location:** Pueblo County Courthouse, 215 W 10th St
+- **Agencies observed:** [Pueblo PD / PCSO / ICE / CBP / Unmarked / Other]
+- **Badge numbers (if visible):**
+- **Vehicle descriptions:** [Make/model, license plate partial, markings]
+- **Activity summary:** [What happened - arrivals, arrests, questioning, etc.]
+- **Individuals affected:** [Number, demographics if relevant - NO NAMES]
+- **Outcome:** [Arrest / Released / Transferred / Unknown]
+- **Evidence collected:** [Photos/video filename, witness contacts]
+- **Reported to:** [CORRN / RMIAN / Attorney / Other]
+- **Follow-up needed:** [Yes/No - describe]
+```
+
+---
+
+## Detention Tracking Template
+
+Use this format to track detention cases:
+
+```markdown
+## [DATE] — Detention Case Log
+
+- **Date reported:** YYYY-MM-DD
+- **Reporter:** [Initials - family member / attorney / observer]
+- **Detainee info:** [Initials only, A-number if known]
+- **Detention facility:** [Aurora ICE Processing Center / County jail / Other]
+- **Arresting agency:** [ICE ERO / CBP / Local PD collaboration / Other]
+- **Arrest location:** [General area - home / workplace / courthouse / traffic stop]
+- **Warrant status:** [Judicial warrant shown / Admin warrant only / No warrant / Unknown]
+- **Legal representation:** [Yes - attorney name / Pending - referred to RMIAN / None]
+- **Family contact:** [CORRN notified / Family has contact info / Need help locating]
+- **Bond status:** [Set at $X / Denied / Pending hearing / Unknown]
+- **Next hearing:** [Date if known]
+- **Notes:** [Special circumstances, health concerns, children affected]
+```
+
+---
+
 Note any sensitive client info using pseudonyms until legal review approves sharing.

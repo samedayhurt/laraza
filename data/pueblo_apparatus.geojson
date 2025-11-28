@@ -290,6 +290,82 @@
         "sources": ["pueblochc.org"],
         "updated": "2025-11"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6180, 38.2750]
+      },
+      "properties": {
+        "id": "health-solutions-crisis",
+        "name": "Health Solutions Crisis Walk-In Center",
+        "type": "community-support",
+        "description": "24/7 mental health crisis stabilization, mobile crisis response, peer support, detox coordination. No insurance required. Address: 711 W 13th St. Phone: 844-493-8255.",
+        "sources": ["health.solutions/services/crisis-care"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6160, 38.2745]
+      },
+      "properties": {
+        "id": "rape-crisis-services",
+        "name": "Rape Crisis Services of Pueblo",
+        "type": "community-support",
+        "description": "24/7 crisis hotline, hospital/court accompaniment, counseling referrals, prevention education. Address: 500 W 13th St. Crisis line: 719-544-1191.",
+        "sources": ["rapecrisisservices.org"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6050, 38.2620]
+      },
+      "properties": {
+        "id": "pueblo-library-main",
+        "name": "Pueblo City-County Library - Rawlings Branch",
+        "type": "community-support",
+        "description": "Main library with TechConnect program: free Wi-Fi hotspot/Chromebook loans, printing, digital literacy help. Address: 100 E Abriendo Ave. Phone: 719-562-5600.",
+        "sources": ["pueblolibrary.org/techconnect"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6170, 38.2680]
+      },
+      "properties": {
+        "id": "cooperative-care-center",
+        "name": "Pueblo Cooperative Care Center",
+        "type": "community-support",
+        "description": "Food, clothing, hygiene kits, mail services for residents in crisis. Address: 326 W 8th St. Phone: 719-543-7484.",
+        "sources": ["cooperativecarecenter.org"],
+        "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6065, 38.2715]
+      },
+      "properties": {
+        "id": "pueblo-courthouse",
+        "name": "Pueblo County Courthouse",
+        "type": "watch-site",
+        "description": "Location to monitor for ICE civil arrest activity. Nov 2025 federal ruling prohibits ICE warrantless arrests in Colorado. Address: 215 W 10th St.",
+        "sources": ["Colorado federal court ruling Nov 2025"],
+        "notes": "Log observations in data/immigration_ice_raw.md with date, time, agency, badge numbers if visible.",
+        "updated": "2025-11"
+      }
     }
   ]
 }
