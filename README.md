@@ -7,6 +7,29 @@ This project equips community journalists, activists, and engaged citizens with 
 
 For all of our family.
 
+## Latest Updates (January 2026)
+
+**Critical Fixes:**
+- Fixed inaccurate council member data and reconciled political roster with official City of Pueblo records
+- Updated Juniper Southern Colorado (formerly Rape Crisis Services) with new 24/7 crisis line: **719-549-0549**
+- Fixed `monitor_agendas.py` to actually scrape county commissioners (was defined but never processed)
+
+**New Spanish Translations:**
+- [Derechos de Grabación en Colorado](primers/Derechos%20de%20Grabacion%20en%20Colorado.md) - Recording Rights
+- [Derechos de Protesta Primera Enmienda](primers/Derechos%20de%20Protesta%20Primera%20Enmienda.md) - First Amendment Protest Rights
+
+**New Handouts & Guides:**
+- [Traffic Stop Rights Card](docs/handouts/Traffic-Stop-Rights-Card.md) - Bilingual wallet-sized card
+- [Post-Arrest Roadmap](docs/handouts/Post-Arrest-Roadmap.md) - First 72 hours guide
+- [Police Violence Documentation Primer](primers/Police%20Violence%20Documentation.md) - How to document, preserve, and report
+
+**Expanded Data:**
+- GeoJSON now includes ShotSpotter 6 sq mi coverage polygon, ALPR corridors, and institutional POIs
+- Resources directory expanded with bail funds, worker rights orgs, LGBTQ+ services, and digital security help
+- Surveillance data updated with Flock-ICE scandal details, EFF protest surveillance findings, and racial disparity statistics
+
+**Stay safe. The times demand it.**
+
 ## Table of Contents
 - [Purpose](#purpose)
 - [Disclaimer](#disclaimer)
