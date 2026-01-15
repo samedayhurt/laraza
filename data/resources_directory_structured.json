@@ -89,20 +89,23 @@
       "source": "ACOVA Pueblo website (verified 2025-11-27)"
     },
     {
-      "name": "Rape Crisis Services of Pueblo",
+      "name": "Juniper Southern Colorado (formerly Pueblo Rape Crisis Services)",
       "category": ["Sexual assault support", "Mental health"],
       "services": [
-        "24/7 sexual assault hotline",
-        "Hospital and law-enforcement accompaniment",
+        "24/7 sexual assault hotline (call OR text)",
+        "Hospital and court accompaniment",
+        "Long-term case management",
         "Counseling referrals and support groups",
         "Prevention and education programming"
       ],
       "contact": {
-        "phone": "719-544-1191",
+        "crisis_line": "719-549-0549 (call or text 24/7)",
+        "office": "719-544-1191",
+        "address": "503 N Main St, Suite 526, Pueblo, CO 81003",
         "web": "https://rapecrisisservices.org/"
       },
-      "eligibility": "Survivors and secondary survivors in Pueblo and surrounding counties; Spanish-speaking advocates available.",
-      "source": "Rape Crisis Services website (verified 2025-11-27)"
+      "eligibility": "Survivors and secondary survivors in Pueblo and surrounding counties; Spanish-speaking advocates available on request. Only sexual violence resource center serving Pueblo area since mid-1970s. Serves 450+ individuals annually.",
+      "source": "Juniper Southern Colorado website; ColoradoGives (verified 2025-11-27)"
     },
     {
       "name": "Health Solutions Crisis Walk-In Center",
@@ -422,6 +425,167 @@
       },
       "focus_areas": "Youth/family strengthening, senior services, crisis intervention, basic needs/financial stability",
       "source": "United Way of Pueblo County website (verified 2025-11-27)"
+    },
+    {
+      "name": "Colorado Freedom Fund",
+      "category": ["Bail fund", "Legal support"],
+      "services": [
+        "Bail assistance for people who cannot afford to pay",
+        "Bond payment for immigration detention",
+        "Post-release support and court date reminders",
+        "Know Your Rights resources"
+      ],
+      "contact": {
+        "phone": "(303) 997-2565",
+        "web": "https://coloradofreedomfund.org/",
+        "email": "info@coloradofreedomfund.org"
+      },
+      "eligibility": "People detained in Colorado jails or immigration detention who cannot afford bail/bond.",
+      "notes": "Statewide organization; serves Pueblo County. Accepts community donations to fund bail.",
+      "source": "Colorado Freedom Fund website (verified 2026-01)"
+    },
+    {
+      "name": "ACLU of Colorado",
+      "category": ["Legal advocacy", "Civil rights"],
+      "services": [
+        "Legal intake for civil rights violations",
+        "Know Your Rights trainings",
+        "Policy advocacy for police accountability",
+        "Immigration rights resources"
+      ],
+      "contact": {
+        "phone": "303-777-5482",
+        "web": "https://www.aclu-co.org/",
+        "email": "aclu@aclu-co.org",
+        "address": "303 E 17th Ave, Suite 350, Denver, CO 80203"
+      },
+      "report_violations": "https://www.aclu-co.org/report",
+      "notes": "Statewide organization. Tracks civil rights patterns. Can take cases involving police misconduct, free speech violations, immigrant rights.",
+      "source": "ACLU Colorado website (verified 2026-01)"
+    },
+    {
+      "name": "One Colorado",
+      "category": ["LGBTQ+ services", "Advocacy"],
+      "services": [
+        "LGBTQ+ policy advocacy",
+        "Safe schools program",
+        "Workplace equality resources",
+        "Healthcare access navigation",
+        "Community events and support"
+      ],
+      "contact": {
+        "phone": "303-396-6170",
+        "web": "https://one-colorado.org/",
+        "address": "PO Box 11966, Denver, CO 80211"
+      },
+      "notes": "Statewide LGBTQ+ advocacy organization. Can connect Pueblo residents with local LGBTQ+ affirming services and support.",
+      "source": "One Colorado website (verified 2026-01)"
+    },
+    {
+      "name": "Inside Out Youth Services",
+      "category": ["LGBTQ+ services", "Youth programs"],
+      "services": [
+        "LGBTQ+ youth support groups (ages 13-24)",
+        "Safe space and community building",
+        "Mental health referrals",
+        "Family support resources",
+        "HIV/STI testing referrals"
+      ],
+      "contact": {
+        "phone": "719-328-1056",
+        "web": "https://insideoutys.org/",
+        "address": "223 N. Wahsatch Ave, Colorado Springs, CO 80903"
+      },
+      "notes": "Based in Colorado Springs; serves Southern Colorado region including Pueblo. Drop-in hours for LGBTQ+ youth.",
+      "source": "Inside Out Youth Services website (verified 2026-01)"
+    },
+    {
+      "name": "Colorado Immigrant Rights Coalition (CIRC)",
+      "category": ["Immigration advocacy", "Know Your Rights"],
+      "services": [
+        "Know Your Rights workshops",
+        "Rapid response coordination",
+        "Policy advocacy for immigrant protections",
+        "Family preparedness planning",
+        "Community organizing support"
+      ],
+      "contact": {
+        "phone": "303-922-3344",
+        "web": "https://coloradoimmigrant.org/",
+        "workshop_signup": "bit.ly/CIRCworkshop2025"
+      },
+      "notes": "Statewide coalition coordinating immigrant defense. Holds regular workshops - sign up at workshop link. Works closely with CORRN rapid response.",
+      "source": "CIRC website (verified 2026-01)"
+    },
+    {
+      "name": "Colorado Workers for Innovative and New Solutions (Colorado WINS)",
+      "category": ["Worker rights", "Labor union"],
+      "services": [
+        "Worker organizing support",
+        "Collective bargaining assistance",
+        "Workplace rights education",
+        "Grievance support for public sector workers"
+      ],
+      "contact": {
+        "phone": "303-839-1933",
+        "web": "https://coloradowins.org/",
+        "address": "1325 S. Colorado Blvd, Suite B-400, Denver, CO 80222"
+      },
+      "notes": "State employee union. Can assist public sector workers with workplace issues. May have contacts for private sector organizing resources.",
+      "source": "Colorado WINS website (verified 2026-01)"
+    },
+    {
+      "name": "Towards Justice",
+      "category": ["Worker rights", "Legal aid"],
+      "services": [
+        "Wage theft legal representation",
+        "Employment discrimination cases",
+        "Worker rights legal clinics",
+        "Policy advocacy for low-wage workers"
+      ],
+      "contact": {
+        "phone": "720-239-2606",
+        "web": "https://towardsjustice.org/",
+        "intake": "https://towardsjustice.org/get-help/",
+        "address": "1535 High St, Suite 300, Denver, CO 80218"
+      },
+      "eligibility": "Low-wage workers facing wage theft, discrimination, or unsafe working conditions.",
+      "notes": "Free legal services for qualifying workers. Focus on systemic cases affecting many workers.",
+      "source": "Towards Justice website (verified 2026-01)"
+    },
+    {
+      "name": "National Lawyers Guild - Colorado Chapter",
+      "category": ["Legal observer", "Protest support"],
+      "services": [
+        "Legal observer training and deployment",
+        "Jail support coordination",
+        "Post-arrest legal referrals",
+        "Know Your Rights trainings for protesters"
+      ],
+      "contact": {
+        "web": "https://nlgcolorado.org/",
+        "email": "info@nlgcolorado.org"
+      },
+      "notes": "Can request legal observers for protests and community events. Provides jail support during mass arrest situations. Volunteer-run.",
+      "source": "NLG Colorado website (verified 2026-01)"
+    },
+    {
+      "name": "Access Now Digital Security Helpline",
+      "category": ["Digital security", "Emergency support"],
+      "services": [
+        "24/7 emergency digital security assistance",
+        "Incident response for hacked accounts",
+        "Security assessment and guidance",
+        "Available in 9 languages"
+      ],
+      "contact": {
+        "web": "https://www.accessnow.org/help/",
+        "email": "help@accessnow.org"
+      },
+      "response_time": "Responds within 2 hours to emergency requests.",
+      "eligibility": "Activists, journalists, human rights defenders facing digital threats.",
+      "notes": "International organization. Free service. Particularly useful for activists facing online harassment or surveillance.",
+      "source": "Access Now website (verified 2026-01)"
     }
   ],
   "quick_reference": {
@@ -429,19 +593,33 @@
       "CORRN_live_ICE": "844-864-8341 (opt 1)",
       "DV_crisis_Mariposa": "719-545-8195",
       "ACOVA_victim_services": "719-583-6434",
-      "sexual_assault_crisis": "719-544-1191",
+      "sexual_assault_Juniper": "719-549-0549 (call/text 24/7)",
       "mental_health_crisis": "844-493-8255",
       "211_referrals": "2-1-1"
     },
     "immigration_legal": {
       "RMIAN_detention": "(303) 866-9308",
       "Catholic_Charities": "(719) 586-8600",
-      "Colorado_Legal_Services": "719-545-6708"
+      "Colorado_Legal_Services": "719-545-6708",
+      "CIRC_workshops": "bit.ly/CIRCworkshop2025"
     },
     "housing_emergency": {
       "Posada": "719-545-8776",
       "CO_rental_assistance": "1-303-838-1200",
       "NeighborWorks": "719-544-8078"
+    },
+    "legal_civil_rights": {
+      "ACLU_Colorado": "303-777-5482",
+      "NLG_Colorado": "nlgcolorado.org",
+      "Colorado_Freedom_Fund_bail": "(303) 997-2565",
+      "Pueblo_Public_Defender": "719-583-6900"
+    },
+    "worker_rights": {
+      "Towards_Justice_wage_theft": "720-239-2606",
+      "Colorado_WINS_union": "303-839-1933"
+    },
+    "digital_security": {
+      "Access_Now_24_7": "accessnow.org/help"
     }
   }
 }

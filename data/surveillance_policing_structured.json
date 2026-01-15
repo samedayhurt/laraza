@@ -176,6 +176,44 @@
         "Colorado AG Pattern & Practice form"
       ],
       "status": "Need standardized evidence packets and tracking."
+    },
+    {
+      "title": "Flock-ICE Scandal: 1,400+ Immigration Searches via Colorado ALPR Network",
+      "summary": "Out-of-state agencies and Border Patrol ran 1,400+ searches with ICE/immigration justifications via Denver's Flock national lookup feature. 690 searches post-Trump inauguration. Loveland PD admitted sharing portal with ICE federal agent. Pueblo's Downtown Association Flock cameras potentially accessible via national network.",
+      "date": "2025-08",
+      "sources": [
+        "Colorado Newsline, 2025-08-06",
+        "ACLU Colorado coalition statement, 2025-08",
+        "Sentinel Colorado, 2025"
+      ],
+      "status": "ACTION: CORA Pueblo PD to confirm if national lookup enabled; demand City Council resolution prohibiting ICE data sharing."
+    },
+    {
+      "title": "EFF Exposes Flock Surveillance of Protesters Nationwide",
+      "summary": "EFF analyzed 12+ million Flock searches. 50+ agencies ran hundreds of protest-related searches. Tulsa PD: 38 protest searches. Delaware State Police: 9 searches targeting animal-rights activists. Border Patrol accessed during trial period.",
+      "date": "2025-11-20",
+      "sources": [
+        "EFF Deeplinks, 2025-11-20"
+      ],
+      "status": "ACTION: CORA audit logs for Pueblo ALPR searches by external agencies; demand warrant requirement."
+    },
+    {
+      "title": "Pueblo Police Racial Disparities in Deadly Force (2013-2023)",
+      "summary": "Police Scorecard data shows Black persons 2.8x more likely and Latinx persons 2x more likely to be killed by Pueblo police than white persons. 57% of arrests for low-level, non-violent offenses. More racial disparities than 54% of departments evaluated.",
+      "date": "2025",
+      "sources": [
+        "Police Scorecard: Pueblo, CO (policescorecard.org)"
+      ],
+      "status": "ACTION: Demand demographic impact analysis before surveillance expansions; push for civilian oversight commission."
+    },
+    {
+      "title": "Colorado ALPR Warrant Legislation Pending",
+      "summary": "Sen. Amabile's proposed law would require warrant based on probable cause for police to share ALPR data with other agencies, parallel to GPS/cellphone tracking requirements.",
+      "date": "2025",
+      "sources": [
+        "CBS Colorado, 2025"
+      ],
+      "status": "ACTION: Organize community testimony supporting bill; coordinate with ACLU-CO."
     }
   ],
   "civil_liberties_concerns": [
@@ -236,6 +274,32 @@
         "Track when ARPA funds expire and ongoing costs shift to city budget.",
         "Monitor annual $410,000+ recurring costs (ShotSpotter + Genetec).",
         "Watch for speed camera proposal (15 cameras proposed July 2025)."
+      ]
+    },
+    {
+      "theme": "ICE/immigration data sharing prevention",
+      "actions": [
+        "CORA Pueblo PD to confirm if Flock national lookup is enabled on local cameras.",
+        "Demand City Council resolution prohibiting ICE data sharing (precedent: Denver disabled April 2025, Boulder June 2025).",
+        "Organize with ACLU-CO and immigrant rights groups on ALPR accountability.",
+        "Support Sen. Amabile's warrant requirement legislation with community testimony."
+      ]
+    },
+    {
+      "theme": "Racial equity and civilian oversight",
+      "actions": [
+        "Demand demographic impact analysis before any surveillance expansion.",
+        "Push for independent civilian oversight commission (precedent: Colorado Springs 2025).",
+        "CORA complaint data and discipline records by race/ethnicity.",
+        "Package racial disparity patterns for CO AG Pattern & Practice complaint."
+      ]
+    },
+    {
+      "theme": "Legislative advocacy",
+      "actions": [
+        "Track Sen. Amabile ALPR warrant requirement bill through 2025 session.",
+        "Push Pueblo City Council to adopt Boulder PD model: 30-day retention, no national lookup, supervisory approval for external sharing.",
+        "Coordinate with EFF, ACLU-CO on statewide surveillance reform."
       ]
     }
   ]

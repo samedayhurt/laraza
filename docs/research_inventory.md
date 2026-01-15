@@ -10,7 +10,9 @@ This inventory reclassifies all existing materials against the `AGENTS.md` workf
 - `logs/safety_ethics_review.md`: Template for the mandatory ethics checks before publishing.
 
 ## 01 — Pueblo Context Mapper
-- (Not yet populated) — Need `data/pueblo_context_raw_notes.md` + structured JSON per AGENTS; current repo has contextual narrative inside `docs/pueblo-watchlist.md` and `opsec/Pueblo 81008 Surveillance.md` but no dedicated context file.
+- **POPULATED** — `data/pueblo_context_raw_notes.md` contains demographics, economy, geographic focus (ZIP 81008), governance structure, census baselines, and city communication channels.
+- `data/pueblo_context_structured.json` contains normalized demographic and economic data.
+- **Pending:** District-level census/labor statistics (logged as TODO for future sprint).
 
 ## 02 — Politics & Power Mapper
 - `docs/pueblo-watchlist.md`: Rolling agenda & procurement tracker with actionable next steps.
@@ -25,18 +27,45 @@ This inventory reclassifies all existing materials against the `AGENTS.md` workf
 
 ## 04 — Immigration & ICE Risk Mapper
 - `opsec/Pueblo 81008 Surveillance.md` immigration section plus `opsec/Legal Observer Toolkit.md` references.
-- `data/immigration_ice_raw.md` & `data/immigration_ice_structured.json`: Empty scaffolds awaiting hotline + courthouse logs.
+- **POPULATED** — `data/immigration_ice_raw.md` contains:
+  - Federal court ruling (*Ramirez Ovando v. Noem*, Nov 25, 2025)
+  - Sheriff ICE cooperation policy and statements
+  - CORRN hotline documentation and volunteer network (3,000+)
+  - RMIAN detention hotline and services
+  - Colorado Immigrant Rights Coalition workshops
+  - ICE social media monitoring threat assessment
+  - Statewide ICE enforcement surge data (arrests quadrupled 2025 vs 2024)
+  - Courthouse monitoring template
+- `data/immigration_ice_structured.json`: Contains normalized risks, policies, and advocacy resources.
 
 ## 05 — Resources Mapper
-- `opsec/Legal Observer Toolkit.md`, `UTS for Civilians.md`, and primers list individual services but need consolidation.
-- `data/resources_directory_raw.md` & `data/resources_directory_structured.json`: Standing by for intake.
+- `opsec/Legal Observer Toolkit.md`, `UTS for Civilians.md`, and primers list individual services.
+- **POPULATED** — `data/resources_directory_raw.md` contains 11 dated entries for legal aid, housing, DV services, immigration support, mental health, and mutual aid.
+- `data/resources_directory_structured.json` contains 21 verified resources with contact info, eligibility, and services including:
+  - Colorado Legal Services, Posada, Mariposa Center (DV), Juniper Southern Colorado (sexual assault)
+  - CORRN, RMIAN, Catholic Charities immigration services
+  - Health Solutions, Pueblo Community Health Center (FQHC)
+  - Care and Share, Salvation Army, Cooperative Care Center
+  - NeighborWorks, United Way, 211 Colorado
+- **Pending:** Mutual aid networks, bail funds, worker centers, LGBTQ+ affirming services.
 
 ## 06 — Rights & Risk Translator
 - `README.md` (Field Use) and `comms/README.md` provide rights-forward framing.
-- Target output: `reports/journalist_activist_protestor_protection_guide.md` (outline ready, awaiting upstream content).
+- **COMPLETED** — `reports/journalist_activist_protestor_protection_guide.md` is fully populated with:
+  - Top risks for November 2025 (RTCC, digital surveillance, ICE escalation, political landscape)
+  - Field safety checklists (before/during/after actions)
+  - Digital hygiene essentials (phone security, secure comms, VPN recommendations)
+  - Rapid resource contact table
+  - Emergency digital security help (Access Now, EFF Cape, Front Line Defenders)
+- **Pending:** Spanish translation of protection guide.
 
 ## 07 — Report Compiler
-- Placeholders for all major reports exist in `reports/` with outlines referencing self-advocacy hooks; they must be filled once structured data matures.
+- **COMPLETED** — All major reports in `reports/` are fully populated:
+  - `pueblo_power_map.md`: Political power structure, decision-makers, conflicts of interest
+  - `surveillance_and_policing_risks.md`: RTCC stack, civil liberties concerns, complaint workflows
+  - `immigration_and_ice_risks.md`: ICE agreements, cooperation policies, defense resources
+  - `pueblo_resources_guide.md`: Legal, financial, health, activist support services
+  - `journalist_activist_protestor_protection_guide.md`: Actionable field safety guidance
 
 ## 08 — Safety & Ethics Reviewer
 - `logs/safety_ethics_review.md` prepared for sign-offs; begins once draft reports are ready.

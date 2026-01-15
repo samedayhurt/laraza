@@ -60,63 +60,70 @@ SOURCES = {
 }
 
 # Keywords to monitor - grouped by category
+# Using word boundaries \b to reduce false positives
 KEYWORDS = {
     "surveillance": [
-        r"real[\-\s]?time\s+crime",
-        r"rtcc",
-        r"shotspotter",
-        r"soundthinking",
-        r"community\s+connect",
-        r"genetec",
-        r"flock\s+safety",
-        r"license\s+plate\s+reader",
-        r"alpr",
-        r"surveillance",
-        r"camera",
-        r"drone",
-        r"daktronics",
-        r"high\s+point\s+networks",
+        r"\breal[\-\s]?time\s+crime\b",
+        r"\brtcc\b",
+        r"\bshotspotter\b",
+        r"\bsoundthinking\b",
+        r"\bcommunity\s+connect\b",
+        r"\bgenetec\b",
+        r"\bflock\s+safety\b",
+        r"\blicense\s+plate\s+reader",
+        r"\balpr\b",
+        r"\bsurveillance\s+(camera|system|program|equipment)",
+        r"\bsecurity\s+camera",
+        r"\bpark\s+camera",
+        r"\btraffic\s+camera",
+        r"\bspeed\s+camera",
+        r"\bdrone\s+(program|unit|fleet|response|first\s+responder)",
+        r"\bdaktronics\b",
+        r"\bhigh\s+point\s+networks\b",
+        r"\bfacial\s+recognition\b",
     ],
     "immigration": [
-        r"\bice\b",
-        r"immigration",
-        r"customs\s+and\s+border",
-        r"cbp",
-        r"deportation",
-        r"detention",
-        r"sanctuary",
-        r"287\s*\(?g\)?",
-        r"detainer",
+        r"\bice\b(?!\s*(cream|skating|machine))",  # ICE but not ice cream
+        r"\bimmigration\s+(enforcement|detainer|hold|policy|resolution)",
+        r"\bcustoms\s+and\s+border\b",
+        r"\bcbp\b",
+        r"\bdeportation\b",
+        r"\bdetention\s+(center|facility|bed|contract)",
+        r"\bsanctuary\s+(city|policy|resolution)",
+        r"\b287\s*\(?g\)?\b",
+        r"\bimmigrant\s+(rights|protection|community)",
     ],
     "policing": [
-        r"police\s+contract",
-        r"body[\-\s]?worn\s+camera",
-        r"body\s*cam",
-        r"use\s+of\s+force",
-        r"internal\s+affairs",
-        r"citizen\s+oversight",
-        r"police\s+budget",
-        r"public\s+safety\s+budget",
+        r"\bpolice\s+(contract|agreement|budget|department)",
+        r"\bbody[\-\s]?worn\s+camera",
+        r"\bbody\s*cam\b",
+        r"\buse\s+of\s+force\b",
+        r"\binternal\s+affairs\b",
+        r"\bcitizen\s+oversight\b",
+        r"\bpublic\s+safety\s+(budget|committee|department)",
+        r"\blaw\s+enforcement\s+(contract|agreement|budget)",
+        r"\bsheriff\s+(budget|contract|department)",
     ],
     "civil_liberties": [
-        r"first\s+amendment",
-        r"protest",
-        r"demonstration",
-        r"assembly",
-        r"free\s+speech",
-        r"privacy",
-        r"civil\s+rights",
-        r"civil\s+liberties",
+        r"\bfirst\s+amendment\b",
+        r"\bprotest\s+(permit|ordinance|policy)",
+        r"\bdemonstration\s+(permit|policy)",
+        r"\bfree\s+speech\b",
+        r"\bprivacy\s+(policy|concern|right|impact)",
+        r"\bcivil\s+rights\b",
+        r"\bcivil\s+liberties\b",
+        r"\bfourth\s+amendment\b",
     ],
     "procurement": [
-        r"contract",
-        r"vendor",
-        r"procurement",
-        r"rfp",
-        r"bid",
-        r"sole\s+source",
-        r"arpa\s+fund",
-        r"grant",
+        r"\bsurveillance\s+contract",
+        r"\bsecurity\s+(vendor|contract)",
+        r"\bprocurement\s+(surveillance|camera|security)",
+        r"\brfp\b.*\b(camera|security|surveillance)",
+        r"\bbid\b.*\b(camera|security|surveillance)",
+        r"\bsole\s+source\b",
+        r"\barpa\s+fund",
+        r"\bgrant\b.*\b(surveillance|camera|security|rtcc)",
+        r"\b(daktronics|genetec|flock|soundthinking)\s+contract",
     ],
 }
 
@@ -168,22 +175,56 @@ def download_file(url: str, dest: pathlib.Path) -> bool:
 
 
 def extract_pdf_text(pdf_path: pathlib.Path) -> str:
-    """Extract text from a PDF using pdftotext if available."""
-    if not shutil.which("pdftotext"):
-        log("pdftotext not found - install poppler-utils for PDF text extraction", "WARN")
-        return ""
+    """Extract text from a PDF using pdftotext or PyPDF2 as fallback."""
+    # Try pdftotext first (best quality)
+    if shutil.which("pdftotext"):
+        try:
+            result = subprocess.run(
+                ["pdftotext", "-layout", str(pdf_path), "-"],
+                capture_output=True,
+                text=True,
+                timeout=60
+            )
+            if result.stdout.strip():
+                return result.stdout
+        except Exception as e:
+            log(f"pdftotext failed for {pdf_path}: {e}", "WARN")
 
+    # Fallback to PyPDF2 if available
     try:
-        result = subprocess.run(
-            ["pdftotext", "-layout", str(pdf_path), "-"],
-            capture_output=True,
-            text=True,
-            timeout=60
-        )
-        return result.stdout
+        import PyPDF2
+        text_parts = []
+        with open(pdf_path, "rb") as f:
+            reader = PyPDF2.PdfReader(f)
+            for page in reader.pages:
+                page_text = page.extract_text()
+                if page_text:
+                    text_parts.append(page_text)
+        if text_parts:
+            return "\n".join(text_parts)
+    except ImportError:
+        pass  # PyPDF2 not installed
     except Exception as e:
-        log(f"Failed to extract text from {pdf_path}: {e}", "ERROR")
-        return ""
+        log(f"PyPDF2 failed for {pdf_path}: {e}", "WARN")
+
+    # Fallback to pdfplumber if available
+    try:
+        import pdfplumber
+        text_parts = []
+        with pdfplumber.open(pdf_path) as pdf:
+            for page in pdf.pages:
+                page_text = page.extract_text()
+                if page_text:
+                    text_parts.append(page_text)
+        if text_parts:
+            return "\n".join(text_parts)
+    except ImportError:
+        pass  # pdfplumber not installed
+    except Exception as e:
+        log(f"pdfplumber failed for {pdf_path}: {e}", "WARN")
+
+    log(f"No PDF extraction method available for {pdf_path}. Install: poppler-utils, PyPDF2, or pdfplumber", "ERROR")
+    return ""
 
 
 def search_keywords(text: str, filename: str) -> list[dict]:
@@ -227,11 +268,48 @@ def get_city_council_links(html: str, base_url: str) -> list[tuple[str, str]]:
     return links
 
 
+def get_county_commissioner_links(html: str, base_url: str) -> list[tuple[str, str]]:
+    """Extract agenda PDF links from county commissioners page."""
+    links = []
+    # Find all PDF links on the page
+    pdf_matches = re.findall(r'href=["\']([^"\']*\.pdf)["\']', html, re.IGNORECASE)
+    seen = set()
+
+    for pdf_path in pdf_matches:
+        if pdf_path in seen:
+            continue
+        seen.add(pdf_path)
+
+        # Construct full URL
+        if pdf_path.startswith("http"):
+            url = pdf_path
+        elif pdf_path.startswith("/"):
+            url = base_url + pdf_path
+        else:
+            url = base_url + "/" + pdf_path
+
+        # Extract filename from URL
+        filename = f"county_{pathlib.Path(pdf_path).name}"
+        links.append((url, filename))
+
+    return links
+
+
 def load_state() -> dict:
     """Load monitoring state from file."""
     if STATE_FILE.exists():
-        with open(STATE_FILE) as f:
-            return json.load(f)
+        try:
+            with open(STATE_FILE) as f:
+                state = json.load(f)
+                # Validate state structure
+                if not isinstance(state, dict):
+                    raise ValueError("Invalid state format")
+                if "processed" not in state:
+                    state["processed"] = []
+                return state
+        except (json.JSONDecodeError, ValueError) as e:
+            log(f"Corrupted state file, resetting: {e}", "WARN")
+            return {"processed": [], "last_run": None}
     return {"processed": [], "last_run": None}
 
 
@@ -359,6 +437,19 @@ def main() -> int:
             html = fetch_html(SOURCES["city_council"]["url"])
             if html:
                 links = get_city_council_links(html, "https://www.pueblo.us")
+                for url, filename in links[:args.limit]:
+                    dest = AGENDA_DIR / filename
+                    if download_file(url, dest):
+                        new_files.append(filename)
+
+        if args.source in ["county", "all"]:
+            log("Checking Pueblo County Commissioners agendas...")
+            html = fetch_html(SOURCES["county_commissioners"]["url"])
+            if html:
+                links = get_county_commissioner_links(
+                    html,
+                    SOURCES["county_commissioners"]["base_url"]
+                )
                 for url, filename in links[:args.limit]:
                     dest = AGENDA_DIR / filename
                     if download_file(url, dest):

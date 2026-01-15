@@ -18,6 +18,9 @@ This folder collects lightweight primers that provide just enough background to 
 | [First Amendment Protest Rights](First%20Amendment%20Protest%20Rights.md) | Your rights to assemble, protest, and speak freely; dispersal order requirements. | Know when permits are needed, understand dispersal rules, what to do if arrested. |
 | [Data Broker Opt-Out Guide](Data%20Broker%20Opt-Out%20Guide.md) | Remove yourself from people-search sites and protect against doxing. | Start with Tier 1 sites, reset Ad ID, set up ongoing monitoring. |
 | [Youth and Family Digital Safety](Youth%20and%20Family%20Digital%20Safety.md) | Protect children from school surveillance, predators, and prepare for ICE encounters. | Review school device policies, set up family safety plan, teach age-appropriate security. |
+| [Police Violence Documentation](Police%20Violence%20Documentation.md) | How to safely document, preserve, and report police violence. | Know what to document during/after incident, preserve evidence, file complaints with IA/POST/AG. |
+| [Derechos de Grabación en Colorado](Derechos%20de%20Grabacion%20en%20Colorado.md) | Spanish version of Recording Rights in Colorado. | Same as Recording Rights - en español. |
+| [Derechos de Protesta Primera Enmienda](Derechos%20de%20Protesta%20Primera%20Enmienda.md) | Spanish version of First Amendment Protest Rights. | Same as First Amendment rights - en español. |
 
 > **Tip:** Primers are intentionally brief. Pair them with hands-on reps and notes in your Obsidian vault to solidify the material.
 

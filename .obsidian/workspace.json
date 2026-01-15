@@ -4,53 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "b3ecf4f93d0655e6",
+        "id": "07b8b3afb8621908",
         "type": "tabs",
         "children": [
           {
-            "id": "4153e691dc207d9a",
+            "id": "dc5eb6e7c48f9af7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "primers/README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "1e9ad3614a6e75c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "reports/surveillance_and_policing_risks.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "surveillance_and_policing_risks"
-            }
-          },
-          {
-            "id": "9bcb4ddca98f21e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AGENTS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AGENTS"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,8 +165,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1e9ad3614a6e75c8",
+  "active": "dc5eb6e7c48f9af7",
   "lastOpenFiles": [
+    "primers/README.md",
+    "AGENTS.md",
+    "reports/surveillance_and_policing_risks.md",
     "comms/assets/README.md",
     "reports/README.md",
     "logs/README.md",
@@ -218,7 +188,6 @@
     "reports/journalist_activist_protestor_protection_guide.md",
     "reports/immigration_and_ice_risks.md",
     "primers/Virtual Machines.md",
-    "primers/README.md",
     "primers/Linux Primer.md",
     "primers/Direction Finding (Wi-Fi).md",
     "opsec/Vet Sources.md",
@@ -228,8 +197,6 @@
     "opsec/Pueblo 81008 Surveillance.md",
     "opsec/Operational Security Techniques.md",
     "opsec/Legal Observer Toolkit.md",
-    "AGENTS.md",
-    "README.md",
     "data/pueblo_context_structured.json",
     "comms/e2eesetup.sh",
     "comms/assets/torhops.png",

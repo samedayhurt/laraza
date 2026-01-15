@@ -310,15 +310,15 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.6160, 38.2745]
+        "coordinates": [-104.6100, 38.2690]
       },
       "properties": {
-        "id": "rape-crisis-services",
-        "name": "Rape Crisis Services of Pueblo",
+        "id": "juniper-southern-colorado",
+        "name": "Juniper Southern Colorado (formerly Rape Crisis Services)",
         "type": "community-support",
-        "description": "24/7 crisis hotline, hospital/court accompaniment, counseling referrals, prevention education. Address: 500 W 13th St. Crisis line: 719-544-1191.",
-        "sources": ["rapecrisisservices.org"],
-        "updated": "2025-11"
+        "description": "24/7 crisis hotline (call OR text), hospital/court accompaniment, long-term case management, counseling referrals. Address: 503 N Main St, Suite 526. Crisis line: 719-549-0549 (call/text).",
+        "sources": ["rapecrisisservices.org", "ColoradoGives"],
+        "updated": "2026-01"
       }
     },
     {
@@ -365,6 +365,122 @@
         "sources": ["Colorado federal court ruling Nov 2025"],
         "notes": "Log observations in data/immigration_ice_raw.md with date, time, agency, badge numbers if visible.",
         "updated": "2025-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-104.6350, 38.2850],
+            [-104.5850, 38.2850],
+            [-104.5850, 38.2450],
+            [-104.6350, 38.2450],
+            [-104.6350, 38.2850]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "shotspotter-coverage",
+        "name": "ShotSpotter Acoustic Coverage Area (Approximate)",
+        "type": "acoustic-surveillance",
+        "description": "Approximately 6 square miles of ShotSpotter/SoundThinking acoustic gunfire detection. Sensors on buildings and street lamps detect gunshots within 60 seconds. 97% accuracy claimed over 5-month evaluation. 73% of alerts were NOT called in by citizens.",
+        "coverage_sq_mi": 6,
+        "cost_annual": "$210,000",
+        "sources": ["SoundThinking press release 2025", "KOAA News5 2025-01"],
+        "notes": "Coverage area is approximate - exact sensor locations not public. Alerts processed through RTCC. Expansion planned with state grant funding.",
+        "updated": "2026-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-104.6200, 38.2620],
+          [-104.6150, 38.2640],
+          [-104.6100, 38.2660],
+          [-104.6050, 38.2680]
+        ]
+      },
+      "properties": {
+        "id": "union-ave-alpr-corridor",
+        "name": "Union Avenue ALPR Corridor",
+        "type": "alpr-corridor",
+        "description": "Flock Safety license plate reader corridor along Union Avenue. Downtown Association funded initial deployment. Part of 1,091-camera Colorado network. 30-day cloud retention.",
+        "sources": ["KOAA News5 2024", "EFF Nov 2025 report"],
+        "notes": "EFF documented this network used for protest surveillance. Audit logs should be requested via CORA.",
+        "updated": "2026-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-104.6080, 38.2580],
+          [-104.6100, 38.2620],
+          [-104.6120, 38.2660],
+          [-104.6140, 38.2700]
+        ]
+      },
+      "properties": {
+        "id": "riverwalk-alpr-corridor",
+        "name": "Riverwalk ALPR Corridor",
+        "type": "alpr-corridor",
+        "description": "Flock Safety license plate reader coverage along Riverwalk area. Connected to Downtown Association surveillance initiative.",
+        "sources": ["KOAA News5 2024"],
+        "notes": "Part of downtown surveillance ring. Cameras capture all plates, not just hotlist matches.",
+        "updated": "2026-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6350, 38.2850]
+      },
+      "properties": {
+        "id": "csu-pueblo",
+        "name": "Colorado State University Pueblo",
+        "type": "institution",
+        "description": "Major employer and institution. Potential march/protest staging area. Has campus police. Located near ALPR coverage zones.",
+        "sources": ["CSU Pueblo website"],
+        "notes": "University grounds are limited public forum - different First Amendment rules may apply for non-students.",
+        "updated": "2026-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6200, 38.2550]
+      },
+      "properties": {
+        "id": "pueblo-community-college",
+        "name": "Pueblo Community College",
+        "type": "institution",
+        "description": "Major employer. Commissioner McPheeters works in grant compliance here. Mobile food pantry first Tuesday of each month.",
+        "sources": ["PCC website", "Care and Share Food Bank"],
+        "notes": "Potential conflict of interest for commissioner votes on education-related surveillance.",
+        "updated": "2026-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6080, 38.2665]
+      },
+      "properties": {
+        "id": "el-centro-quinto-sol",
+        "name": "El Centro del Quinto Sol Recreation Center",
+        "type": "community-support",
+        "description": "Free drop-in activities, after-school programs, tutoring, safe community space. Address: 609 E 6th St. Phone: 719-553-2949.",
+        "sources": ["City of Pueblo website"],
+        "notes": "Good community meeting space. CSU-Pueblo Learning Center on-site.",
+        "updated": "2026-01"
       }
     }
   ]

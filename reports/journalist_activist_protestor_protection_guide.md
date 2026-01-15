@@ -30,7 +30,8 @@ This guide distills the latest surveillance, immigration, and resource research 
 ### 4. Political Landscape
 - City Council rejected pro-immigrant resolution 5-2 (Nov 2025)
 - Conservative majority continues fast-tracking surveillance budgets
-- New council member Brett Boston supports expanding neighborhood camera programs
+- Council approved 7-0 park surveillance ($1M for cameras, ALPRs at 5 parks)
+- Speed camera proposal (15 cameras) pending; monitor upcoming votes
 
 ## Critical Updates for Field Safety
 
@@ -105,7 +106,7 @@ PCSO will NOT participate in ICE roundups. Only cooperates on criminal matters. 
 | **Posada housing** | 719-545-8776 |
 | **Mariposa/YWCA DV crisis** | 719-545-8195 |
 | **ACOVA victim services** | 719-583-6434 |
-| **Rape Crisis Services** | 719-544-1191 |
+| **Juniper (Sexual Assault)** | 719-549-0549 (call/text 24/7) |
 | **Health Solutions Crisis** | 844-493-8255 |
 | **Colorado Crisis Services** | 844-493-8255 / text TALK to 38255 |
 | **211 referrals** | Dial 2-1-1 |
