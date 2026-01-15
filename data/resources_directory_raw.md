@@ -16,19 +16,19 @@ Log every hotline, mutual aid fund, clinic, and legal service with sourcing so w
 - **Eligibility / notes:** Serves households experiencing or at risk of homelessness; offers bilingual services; coordinates with Pueblo County’s Continuum of Care.
 - **Source / verification date:** Posada Pueblo website, accessed 2025-11-15.
 
-## 2025-11-15 — YWCA Pueblo Domestic Violence Crisis Line
-- **Organization:** YWCA Pueblo
-- **Service focus:** 24/7 domestic violence crisis line, emergency shelter beds, legal advocacy, and economic empowerment classes.
-- **Contact / intake:** Crisis line 719-545-4884; website https://www.ywcapueblo.org/our-work/domestic-violence-services/.
-- **Eligibility / notes:** Serves all survivors regardless of gender; capacity-based shelter placement; can coordinate safe transportation within Pueblo County.
-- **Source / verification date:** YWCA Pueblo website, accessed 2025-11-15.
+## 2025-11-27 — Mariposa Center for Safety (formerly YWCA Pueblo) — UPDATED
+- **Organization:** Mariposa Center for Safety (rebranded from YWCA Pueblo in 2023)
+- **Service focus:** 24/7 domestic violence crisis line, emergency shelter beds, legal advocacy, court accompaniment, economic empowerment classes.
+- **Contact / intake:** **24/7 Crisis Line: 719-545-8195** (CORRECTED); Office: 719-542-6904; Address: 801 N. Santa Fe Avenue, Pueblo, CO 81003; Email: shelterywca@ywcapueblo.com.
+- **Eligibility / notes:** Serves all survivors regardless of gender; capacity-based shelter placement; can coordinate safe transportation within Pueblo County. Languages: English, Spanish. Received $80,000 Colorado Homeland Security grant (2025) to strengthen 24/7 crisis hotline.
+- **Source / verification date:** Mariposa Center for Safety / YWCA Pueblo website; KOAA (2025); verified 2025-11-27.
 
-## 2025-11-15 — Rape Crisis Services of Pueblo
-- **Organization:** Rape Crisis Services of the YWCA Pueblo (formerly Pueblo Rape Crisis Services)
-- **Service focus:** 24/7 sexual assault hotline, hospital and law-enforcement accompaniment, counseling referrals, prevention education.
-- **Contact / intake:** Hotline 719-544-1191; website https://rapecrisisservices.org/.
-- **Eligibility / notes:** Serves survivors and secondary survivors in Pueblo and surrounding counties; Spanish-speaking advocates available on request.
-- **Source / verification date:** Rape Crisis Services website, accessed 2025-11-15.
+## 2025-11-27 — Juniper Southern Colorado / Pueblo Rape Crisis Services — UPDATED
+- **Organization:** Juniper Southern Colorado (formerly Pueblo Rape Crisis Services)
+- **Service focus:** 24/7 sexual assault crisis hotline (CALL OR TEXT), hospital and court accompaniment, long-term case management, counseling referrals, prevention education.
+- **Contact / intake:** **24/7 Crisis Hotline: 719-549-0549 (call OR text)** — NEW; Office: 719-544-1191; Address: 503 N Main St, Suite 526, Pueblo, CO 81003; website https://rapecrisisservices.org/.
+- **Eligibility / notes:** ONLY sexual violence resource center serving Pueblo and surrounding counties (since mid-1970s). Serves 450+ individuals annually. Spanish-speaking advocates available on request.
+- **Source / verification date:** Juniper Southern Colorado / Rape Crisis Services website; ColoradoGives; verified 2025-11-27.
 
 ## 2025-11-15 — Health Solutions Crisis Walk-In Center
 - **Organization:** Health Solutions

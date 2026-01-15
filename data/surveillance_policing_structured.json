@@ -1,79 +1,198 @@
 {
-  "updated": "2025-11-15",
+  "updated": "2025-11-27",
   "systems": [
     {
       "name": "Real-Time Crime Center",
       "components": [
-        "ShotSpotter acoustic sensors",
+        "ShotSpotter acoustic sensors (6 sq mi coverage, 97% accuracy claimed)",
         "Body-worn camera feeds",
-        "Drone feeds",
-        "Fixed surveillance cameras",
-        "ALPR streams",
-        "Daktronics 7x12 ft dvLED wall"
+        "Drone feeds (Drone as First Responder program, 60-90 sec response)",
+        "Fixed surveillance cameras (22 initial + park expansions)",
+        "ALPR streams (22 fixed + 73 mobile in Sheriff patrol cars)",
+        "Daktronics 7x12 ft dvLED wall (1.2mm pixel pitch)",
+        "Four mobile solar camera trailers"
       ],
       "operators": "Pueblo PD with High Point Networks infrastructure support",
+      "funding": {
+        "initial": "$2.2 million (ARPA)",
+        "2025_state_grant": "$1 million (DOLA) + $1 million city match",
+        "annual_recurring": "$210,000 (ShotSpotter) + $200,000 (Genetec licensing)",
+        "park_surveillance": "$1 million cameras + $227,956 fiber (ARPA)",
+        "federal_grants": "$415,714 (DOJ Project Safe Neighborhoods)"
+      },
       "sources": [
-        "Daktronics press release, 2025-09-25 (opsec/Pueblo 81008 Surveillance.md)"
+        "Daktronics press release, 2025-10-02",
+        "KOAA News5, 2025-01 (state grant)",
+        "KKTV, 2025-07-12 (drones)",
+        "KRDO, 2025-07-14 (park surveillance)"
       ],
-      "notes": "Centralizes telemetry in one managed vendor environment; requires CORA demands for SLAs, uptime, and retention."
+      "notes": "Operating 10am-midnight; hiring for 24/7 operations. Centralizes telemetry in one managed vendor environment."
     },
     {
       "name": "Community Connect",
       "components": [
         "Genetec Security Center",
+        "Phase 1: Camera registry (live Dec 2024)",
+        "Phase 2: Live video feed integration (Spring 2025)",
         "Preferred integrators: Arden, High Point Networks, Linx"
       ],
       "operators": "City of Pueblo / RTCC",
-      "sources": [
-        "City of Pueblo Community Connect Program page (accessed 2025-01)"
+      "participation_options": [
+        "Camera Registry Only (register locations, provide footage on request)",
+        "Genetec Cloud Video SaaS (cloud-based, no local equipment)",
+        "On-Premise Genetec System (existing systems can integrate)"
       ],
-      "notes": "Voluntary registry encouraging camera sharing without retention guardrails."
+      "sources": [
+        "City of Pueblo Community Connect Program page (accessed 2025-11)",
+        "KKTV, 2025-07-17 (small business partnerships)"
+      ],
+      "notes": "Voluntary registry; participants can opt-out anytime. RTCC staff NOT actively monitoring in real-time; access only for investigations."
     },
     {
-      "name": "Flock Safety ALPR Corridor",
+      "name": "Flock Safety ALPR",
       "components": [
-        "Flock Safety LPR cameras at Union Ave/Riverwalk"
+        "2 Downtown Association-funded cameras (Union Ave/Riverwalk)",
+        "Integration with statewide network (1,091 cameras in Colorado)"
       ],
       "operators": "Pueblo Downtown Association with Pueblo PD access",
       "sources": [
-        "KOAA News5 report, 2024"
+        "KOAA News5, 2024 (initial deployment)",
+        "Denver Gazette, 2025-10-22 (statewide count)"
       ],
-      "notes": "30-day cloud retention; audit logs available but policy on sharing unclear."
+      "notes": "30-day cloud retention; motion-activated. Images/data are property of camera owner. No facial recognition capability per vendor."
+    },
+    {
+      "name": "Pueblo County Sheriff Mobile ALPR",
+      "components": [
+        "73 Automobile License Plate Recognition systems in patrol cars",
+        "Three-lane view capability",
+        "Up to one-mile detection distance"
+      ],
+      "operators": "Pueblo County Sheriff's Office",
+      "deployment_date": "2025-03",
+      "sources": [
+        "KKTV, 2025-03-06"
+      ],
+      "notes": "Part of dash cam setup; compares captures to state and national databases. Sheriff Lucero reported positive impact within one month on stolen vehicles."
+    },
+    {
+      "name": "ShotSpotter / SoundThinking",
+      "components": [
+        "Acoustic sensors on buildings and street lamps",
+        "Remote analyst confirmation",
+        "Integration with RTCC dispatch"
+      ],
+      "coverage": "6 square miles (expanded from initial 3 sq mi)",
+      "performance": {
+        "accuracy": "97% over five months",
+        "incidents_detected": "676 shooting incidents",
+        "cases_assigned": "114 (36% investigative impact)",
+        "unreported_to_911": "73% of alerts were NOT called in by citizens",
+        "lives_saved": "9 gunshot victims received rapid first aid"
+      },
+      "cost": "$210,000/year",
+      "sources": [
+        "SoundThinking press release, 2025",
+        "KOAA News5, 2025-01 (expansion)"
+      ],
+      "notes": "Alerts within 60 seconds; operates 24/7 without witness reports. Chief Noeller sharing workflows with other agencies."
+    },
+    {
+      "name": "Drone as First Responder Program",
+      "components": [
+        "RTCC-integrated drones",
+        "60-90 second response time to scenes"
+      ],
+      "operators": "Pueblo PD",
+      "deployment_date": "2025-07",
+      "sources": [
+        "KKTV, 2025-07-12"
+      ],
+      "notes": "Footage integrated into RTCC when deployed. Sheriff also operates S.O.A.R.R. UAV program for life-saving missions and crime scene documentation."
+    },
+    {
+      "name": "Park Surveillance Infrastructure",
+      "components": [
+        "Security cameras at 5 high-traffic parks",
+        "License plate readers",
+        "Wi-Fi infrastructure",
+        "Fiber-optic cable connections to RTCC"
+      ],
+      "locations": [
+        "City Park",
+        "Mineral Palace Park",
+        "Ray Aguilera Park",
+        "Lake Minnequa",
+        "Mitchell Park"
+      ],
+      "funding": "$1 million (Dec 2024) + $227,956 fiber (July 2025) - ARPA",
+      "sources": [
+        "KRDO, 2025-07-14"
+      ],
+      "notes": "Enables real-time data transmission to RTCC."
     },
     {
       "name": "Commercial telemetry & vendor data stores",
       "components": [
         "ShotSpotter / SoundThinking alert pipelines",
         "Genetec Cloud Video storage",
-        "Flock Safety cloud retention"
+        "Flock Safety cloud retention (30 days)",
+        "Daktronics video wall management"
       ],
       "operators": "Third-party vendors contracted by Pueblo PD",
       "sources": [
         "opsec/Pueblo 81008 Surveillance.md – Commercial Telemetry section"
       ],
-      "notes": "Private vendors hold primary evidence; subpoena processes and retention policies must be documented for transparency."
+      "notes": "Private vendors hold primary evidence; subpoena processes and retention policies must be documented."
     }
   ],
   "incidents": [
     {
+      "title": "Crime reduction statistics (2025)",
+      "summary": "PPD reports 40% reduction in violent crime, 50% reduction in homicides (9 vs 15 through Aug 2024), drive-by shootings down from 118 to 84.",
+      "date": "2025-08-20",
+      "sources": [
+        "KOAA News5, 2025-08"
+      ],
+      "status": "Chief Noeller credits RTCC technology as 'force multiplier'."
+    },
+    {
+      "title": "Officer shootings by repeat offenders",
+      "summary": "March 2025: 3 officers shot by MS-13 gang member with 14 prior felony arrests. April 2025: 2 officers shot in head by repeat offender. Chief Noeller pushing for criminal justice reform.",
+      "date": "2025-05",
+      "sources": [
+        "KKTV, 2025-05-06",
+        "KRDO, 2025-04-09"
+      ],
+      "status": "Chief stated 'blood of my officers is on steps of capitol' regarding soft-on-crime legislation."
+    },
+    {
       "title": "IA / POST escalation flow",
       "summary": "Complaints start with Pueblo PD Internal Affairs; criminal issues escalate to DA/POST; systemic issues via AG Pattern & Practice form.",
-      "date": "2025-11-15",
+      "date": "2025-11-27",
       "sources": [
         "Pueblo PD Internal Affairs page",
         "Colorado POST certification inquiries",
         "Colorado AG Pattern & Practice form"
       ],
       "status": "Need standardized evidence packets and tracking."
+    }
+  ],
+  "civil_liberties_concerns": [
+    {
+      "issue": "Flock ALPR network used to surveil protesters",
+      "details": "EFF November 2025 report highlighted police use of Flock Safety network for surveillance beyond criminal investigations, including tracking protesters and activists.",
+      "source": "EFF Deeplinks, 2025-11"
     },
     {
-      "title": "AG Pattern & Practice escalation",
-      "summary": "Colorado AG Civil Rights Division accepts complaints about systemic misconduct via Pattern & Practice intake, including attachments and agency info.",
-      "date": "2025-11-15",
-      "sources": [
-        "Colorado AG Pattern & Practice Program"
-      ],
-      "status": "Integrate AG complaint submissions into every multi-incident case."
+      "issue": "No civilian oversight of RTCC",
+      "details": "No identified independent review board or civilian oversight of RTCC operations. Limited public documentation of data retention policies and interagency sharing.",
+      "source": "Research finding, 2025-11"
+    },
+    {
+      "issue": "Community Connect warrant concerns",
+      "details": "Voluntary program lacks published retention limits or warrant requirements for police access to private camera feeds.",
+      "source": "ACLU Colorado 2025 Privacy Report"
     }
   ],
   "recommendations": [
@@ -81,28 +200,42 @@
       "theme": "RTCC transparency",
       "actions": [
         "File CORA requests for RTCC vendor contracts (ShotSpotter, Daktronics, High Point Networks).",
-        "Keep march route maps updated with RTCC coverage."
+        "Request drone deployment logs and footage retention policies.",
+        "Keep march route maps updated with RTCC coverage including mobile trailers.",
+        "Attend Public Safety Committee/RTCC briefings virtually."
       ]
     },
     {
       "theme": "Community Connect safeguards",
       "actions": [
         "Draft ordinance requiring warrants or MOUs before accessing private feeds.",
-        "Publish a public dashboard of registered cameras."
+        "Publish a public dashboard of registered cameras.",
+        "Document participation rates by neighborhood to identify equity concerns."
       ]
     },
     {
       "theme": "ALPR accountability",
       "actions": [
-        "Request placement maps and usage logs from CDOT/city.",
-        "Document civil-liberties coalitions (Libertarian officials) opposing mass scans."
+        "Request placement maps and usage logs from city and Sheriff.",
+        "Monitor Sheriff's 73 mobile ALPR deployments.",
+        "Document EFF concerns about Flock network surveillance of protesters.",
+        "Track any corridor expansions beyond downtown."
       ]
     },
     {
       "theme": "Complaint escalation",
       "actions": [
         "Build template packets (badge numbers, hashes, witness statements).",
-        "Track IA submissions and escalate to DA/AG when deadlines lapse."
+        "Track IA submissions and escalate to DA/AG when deadlines lapse.",
+        "Log all complaints in encrypted vault with case IDs."
+      ]
+    },
+    {
+      "theme": "Budget monitoring",
+      "actions": [
+        "Track when ARPA funds expire and ongoing costs shift to city budget.",
+        "Monitor annual $410,000+ recurring costs (ShotSpotter + Genetec).",
+        "Watch for speed camera proposal (15 cameras proposed July 2025)."
       ]
     }
   ]

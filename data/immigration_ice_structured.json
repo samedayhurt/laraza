@@ -1,5 +1,5 @@
 {
-  "updated": "2025-11-15",
+  "updated": "2025-11-27",
   "risks": [
     {
       "title": "Unverified ICE roundup rumors causing panic",
@@ -13,6 +13,48 @@
       "sources": [
         "Caitlyn Kim, CPR News, 2025-01-24"
       ]
+    },
+    {
+      "title": "ICE enforcement quadrupled in Colorado",
+      "description": "ICE arrests in Colorado nearly quadrupled between January-June 2025 compared to same period in 2024 (1,360 arrests). September 2025 operation targeted immigration fugitives in 14 Colorado cities including Pueblo.",
+      "impact": "Increased enforcement activity means higher risk for undocumented residents and mixed-status families.",
+      "recommended_actions": [
+        "Program CORRN hotline into all phones.",
+        "Prepare family emergency plans and power of attorney documents.",
+        "Know location of nearest legal aid (Catholic Charities, RMIAN)."
+      ],
+      "sources": [
+        "CPR News, 2025-04-07",
+        "ICE press release, 2025-09"
+      ]
+    },
+    {
+      "title": "Huerfano County ICE detention facility",
+      "description": "ICE plans to take over Huerfano County Correctional Center in Walsenburg (50 miles south of Pueblo) with 752-person capacity. Community protests at Pueblo City Council over potential ICE use of Pueblo Memorial Airport.",
+      "impact": "Nearby detention facility increases local ICE activity and transport through Pueblo area.",
+      "recommended_actions": [
+        "Monitor airport and highway for ICE transport vehicles.",
+        "Document any ICE activity at Pueblo Memorial Airport.",
+        "Support local advocacy against facility activation."
+      ],
+      "sources": [
+        "Rocky Mountain PBS, 2025"
+      ]
+    },
+    {
+      "title": "ICE 24/7 social media monitoring expansion",
+      "description": "ICE published RFI for contractors to launch round-the-clock social media monitoring across Facebook, Instagram, TikTok, Twitter/X, WhatsApp, YouTube, Reddit and more. May expand to monitor friends and relatives of targets.",
+      "impact": "Digital footprints can be used to identify, locate, and build cases against immigrants and their networks.",
+      "recommended_actions": [
+        "Review social media privacy settings immediately.",
+        "Remove location data from posts.",
+        "Use Signal for sensitive communications, not WhatsApp.",
+        "Warn community about social media surveillance risks."
+      ],
+      "sources": [
+        "Latin Times, 2025",
+        "The Conversation, 2025"
+      ]
     }
   ],
   "policies": [
@@ -20,13 +62,90 @@
       "title": "Pueblo County Sheriff cooperation limits",
       "summary": "Sheriff David Lucero pledged PCSO will not help ICE with civil 'round-up' operations and will only participate when there are criminal charges or officer-safety concerns.",
       "date": "2025-01-23",
+      "details": {
+        "will_cooperate": [
+          "Criminal charges or criminal nexus",
+          "Officer safety/backup concerns",
+          "Criminal location and apprehension support"
+        ],
+        "will_not_cooperate": [
+          "Any ICE roundup operations",
+          "Enforcement based solely on immigration status",
+          "Operations at schools, churches, or similar venues"
+        ]
+      },
+      "key_quote": "My role isn't to enforce immigration laws. I am not the federal sheriff. My role is to enforce Colorado law and to ensure the safety of the citizens of Pueblo County.",
       "implications": "Provides a documented commitment to cite if deputies assist immigration enforcement absent criminal nexus.",
       "actions": [
         "Carry copies of the statement at protests, schools, and clinics.",
         "Log any deviations for escalation to POST/AG Pattern & Practice."
       ],
       "sources": [
-        "Pueblo County Sheriff’s Office news release, 2025-01-23"
+        "Pueblo County Sheriff's Office news release, 2025-01-23",
+        "KOAA News5, 2025-01-24",
+        "KRDO, 2025-01-24"
+      ]
+    },
+    {
+      "title": "Federal court orders ICE to stop warrantless arrests in Colorado",
+      "summary": "Senior U.S. District Judge R. Brooke Jackson issued 66-page ruling finding ICE has routinely carried out illegal arrests in Colorado, ordering agents to stop making warrantless arrests based on suspected immigration violations.",
+      "date": "2025-11-25",
+      "implications": "Major legal victory limiting ICE tactics in Colorado. Can be cited in any interaction with ICE agents.",
+      "actions": [
+        "Share ruling summary with community members.",
+        "Document any warrantless arrests for legal action.",
+        "Contact ACLU or RMIAN if witnessing potential violations."
+      ],
+      "sources": [
+        "CPR News, 2025-11-25",
+        "Denver Post, 2025-11-25"
+      ]
+    },
+    {
+      "title": "Pueblo County Jail ICE detainer policy",
+      "summary": "PCSO does NOT proactively notify ICE of individuals' immigration status. Follows Colorado state law. Only responded to one ICE inquiry in 2024. ICE must provide warrant or writ signed by federal judge to request hold.",
+      "date": "2025-01",
+      "details": {
+        "fingerprint_process": "All booked individuals fingerprinted; FBI sends data to ICE automatically",
+        "detainer_requirements": "ICE must contact jail directly with warrant/writ from federal judge",
+        "cannot_detain": "Cannot hold people after release solely for ICE pickup"
+      },
+      "sources": [
+        "KRDO, 2025-01-22",
+        "Journal-Advocate, 2025-01-19"
+      ]
+    },
+    {
+      "title": "Pueblo designated 'sanctuary jurisdiction' by DHS",
+      "summary": "DHS designated Pueblo County as sanctuary jurisdiction in May 2025. List amended within one day, then pulled. August 2025: DOJ listed Colorado as 'sanctuary state' but removed county designations.",
+      "date": "2025-05-29",
+      "local_response": "County Commissioners declared Pueblo County is NOT a sanctuary county. Sheriff clarified cooperation within state law bounds.",
+      "sources": [
+        "KRDO, 2025-05-30",
+        "CPR News, 2025-05-29"
+      ]
+    },
+    {
+      "title": "City Council rejected pro-immigrant resolution",
+      "summary": "Resolution expressing 'support for immigrants' while complying with state law failed 5-2. Would have aligned city policy with Colorado law on immigration detainers.",
+      "date": "2025-11-10",
+      "context": "Vote followed protests at City Council over ICE's potential use of Pueblo Memorial Airport.",
+      "sources": [
+        "Yahoo News, 2025-11"
+      ]
+    },
+    {
+      "title": "ICE sensitive areas policy rescinded",
+      "summary": "Acting DHS Secretary rescinded prohibition on ICE arrests in 'sensitive areas' (schools, places of worship, hospitals) on January 21, 2025. ICE can now conduct enforcement at previously protected locations.",
+      "date": "2025-01-21",
+      "implications": "Schools, churches, and hospitals are no longer protected from ICE enforcement.",
+      "actions": [
+        "Update community about policy change.",
+        "Develop rapid response plans for sensitive locations.",
+        "Train staff at schools/churches on KYR protocols."
+      ],
+      "sources": [
+        "DHS announcement, 2025-01-21"
       ]
     }
   ],
@@ -34,32 +153,118 @@
     {
       "name": "Colorado Rapid Response Network (CORRN)",
       "services": [
-        "Statewide hotline 844-864-8341 (option 1 for live raids, option 2 for past incidents)",
+        "Statewide 24/7 hotline 844-864-8341 (option 1 for live raids, option 2 for past incidents)",
         "Dispatch of trained legal observers and documentation teams",
-        "Data sharing with Colorado Immigrant Rights Coalition organizers"
+        "Data sharing with Colorado Immigrant Rights Coalition organizers",
+        "Know Your Rights trainings"
       ],
-      "notes": "Program hotline into protest/legal observer phones; pair reports with badges, vehicle info, and timestamps.",
-      "source": "coloradorapidresponsenetwork.com (accessed 2025-11-15)"
+      "network_size": "3,000+ trained volunteers across Colorado (expanded from 1,200 in 2017)",
+      "member_organizations": [
+        "ACLU Colorado",
+        "American Friends Service Committee",
+        "Mi Familia Vota",
+        "Together Colorado"
+      ],
+      "notes": "Program hotline into protest/legal observer phones; pair reports with badges, vehicle info, and timestamps. Network has seen dramatic increase in calls since January 2025.",
+      "source": "coloradorapidresponsenetwork.com (accessed 2025-11-27)"
     },
     {
       "name": "Rocky Mountain Immigrant Advocacy Network (RMIAN)",
       "services": [
         "Legal orientation and direct representation for detained adults at Aurora GEO",
         "Child advocacy program for unaccompanied minors",
-        "Social service support for released families"
+        "Social service support for released families",
+        "Detention Hotline: (303) 866-9308"
       ],
-      "notes": "Collect A-numbers, detention location, and contact info before calling; Pueblo families can request phone consults.",
-      "source": "rmian.org/get-help/ (accessed 2025-11-15)"
+      "contact": {
+        "main_phone": "(303) 433-2812",
+        "detention_hotline": "(303) 866-9308",
+        "denver_court_line": "(720) 543-8898",
+        "address": "7301 Federal Blvd., Suite 300, Westminster, CO 80030",
+        "web": "rmian.org"
+      },
+      "notes": "Collect A-numbers, detention location, and contact info before calling; Pueblo families can request phone consults. Celebrating 25 years of service in 2025.",
+      "source": "rmian.org/get-help/ (accessed 2025-11-27)"
+    },
+    {
+      "name": "Catholic Charities of Southern Colorado - Immigration Services",
+      "services": [
+        "DOJ-accredited immigration assistance (no attorney on staff)",
+        "Adjustment of Status",
+        "Family-based petitions",
+        "Waivers of inadmissibility",
+        "Green card renewal",
+        "Consular processing",
+        "Temporary Protected Status (TPS)",
+        "Naturalization",
+        "U visas"
+      ],
+      "contact": {
+        "address": "429 W 10th St, Suite 101, Pueblo, CO 81003",
+        "phone": "(719) 586-8600",
+        "alternate_phone": "(719) 544-4233 ext. 109",
+        "web": "ccsoco.org",
+        "hours": "Monday-Friday 8:00 AM - 5:00 PM"
+      },
+      "source": "ccsoco.org (accessed 2025-11-27)"
     },
     {
       "name": "Colorado Immigrant Rights Coalition (CIRC)",
       "services": [
         "Policy advocacy and rapid-response coordination",
         "Volunteer training for hotline response and accompaniment",
-        "Know-your-rights materials tailored to Colorado communities"
+        "Know-your-rights materials in English and Spanish",
+        "Citizenship clinics (including June 2025 in Pueblo)",
+        "DACA renewal assistance"
       ],
-      "notes": "Pueblo organizers can join statewide alerts and mobilize local volunteers to support CORRN dispatches and legislative pushes.",
-      "source": "coloradoimmigrant.org (accessed 2025-11-15)"
+      "contact": {
+        "workshop_registration": "bit.ly/CIRCworkshop2025",
+        "media_contact": "Karen Orona, (303) 489-1809, karen.o@coloradoimmigrant.org",
+        "web": "coloradoimmigrant.org"
+      },
+      "notes": "Pueblo organizers can join statewide alerts and mobilize local volunteers. 2025 Pueblo Citizenship Clinic held June 28 at Catholic Charities.",
+      "source": "coloradoimmigrant.org (accessed 2025-11-27)"
+    },
+    {
+      "name": "Colorado Legal Services - Pueblo Office",
+      "services": [
+        "Farm Worker Rights Division (immigration for work-related crime victims)",
+        "Naturalization assistance for agricultural workers",
+        "ID Project for documentation assistance",
+        "Limited-scope immigration screenings"
+      ],
+      "contact": {
+        "address": "1000 West 6th Street, Pueblo, CO 81003",
+        "phone": "719-545-6708",
+        "web": "coloradolegalservices.org"
+      },
+      "eligibility": "Low-income individuals at or below 60% area median income, or age 60+",
+      "source": "coloradolegalservices.org (accessed 2025-11-27)"
     }
-  ]
+  ],
+  "know_your_rights": {
+    "constitutional_rights": [
+      "Fifth Amendment: Right to remain silent when receiving requests from immigration officials",
+      "Right to attorney: Legal right to consult an attorney",
+      "Property access: Do not grant officials access to property without a valid arrest or search warrant"
+    ],
+    "if_ice_comes_to_door": [
+      "You do NOT have to open the door",
+      "Ask to see a warrant signed by a judge",
+      "Do not sign any documents without attorney",
+      "You have the right to remain silent",
+      "Memorize CORRN hotline: 844-864-8341"
+    ],
+    "resources": [
+      "CIRC Know Your Rights materials (English/Spanish): coloradoimmigrant.org",
+      "RMIAN KYR page: rmian.org/know-your-rights",
+      "ACLU Colorado: aclu-co.org/know-your-rights/immigrants-rights/"
+    ]
+  },
+  "2025_context": {
+    "daca_status": "Fifth Circuit ruled Biden's 2022 DACA regulation unlawful (Jan 17, 2025). New applications blocked; renewals continue for now. Advanced parole travel risks increased.",
+    "tps_status": "Trump administration terminated or announced intent to terminate TPS for 1 million+ individuals (Hondurans, Haitians, Venezuelans) as of March 2025.",
+    "federal_funding": "Emergency Food and Shelter Program (EFSP) payments on hold. OMB memo temporarily paused federal assistance (later rescinded but impacts lingering).",
+    "state_protections": "Colorado passed SB25-276 strengthening protections for undocumented immigrants; enforcement provisions took effect June 30, 2025."
+  }
 }

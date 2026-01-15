@@ -39,5 +39,32 @@ Document live meeting observations, quotes, and agenda references here before no
 
 ## 2025-11-15 — Union litigation impacting sheriff operations
 - **Source / meeting link:** opsec/Pueblo County Officials.md citing Colorado Newsline (Sheriff vs. DOL/union lawsuit).
-- **Key takeaways:** Sheriff David Lucero argues county collective-bargaining law shouldn’t bind deputies. Outcome affects labor rights, staffing morale, and potential conflicts of interest when approving surveillance/ICE contracts.
+- **Key takeaways:** Sheriff David Lucero argues county collective-bargaining law shouldn't bind deputies. Outcome affects labor rights, staffing morale, and potential conflicts of interest when approving surveillance/ICE contracts.
 - **Follow-up tasks:** Track lawsuit status, note any commission agenda items on labor agreements, and flag how union disputes might intersect with surveillance deployment decisions.
+
+## 2025-11-04 — November 2025 Municipal Election Results
+- **Source / meeting link:** Pueblo County Clerk & Recorder election results; Pueblo Chieftain coverage (Nov 4-5, 2025).
+- **Key takeaways:**
+  - **New City Council Members (sworn in Nov 2025):**
+    - **District 1:** Dianne Danti (D) — replaces outgoing member
+    - **District 3:** Ted Hernandez (D) — replaces outgoing member
+    - **At-Large:** Selena Ruiz Gomez (D) — replaces outgoing member
+  - **Ballot Questions:**
+    - **Question 2A (0.57% sales tax increase for general fund):** FAILED — 80.75% NO
+    - **Question 2B (0.35% economic development sales tax extension):** PASSED — 56.51% YES
+    - **Question 2C (change to city manager form of government):** FAILED — 67.71% NO
+  - **Implications:** Three new council members shift council dynamics. Voters rejected city manager change, maintaining strong-mayor system. Economic development tax extension provides continued funding for business incentives but rejected general revenue increase. Monitor new members' positions on surveillance spending and ICE cooperation policies.
+- **Follow-up tasks:** Schedule introductory outreach to new council members; prepare surveillance oversight briefing packets for Danti, Hernandez, and Ruiz Gomez; track their committee assignments and voting patterns on RTCC/ALPR items.
+
+## 2025-11-27 — Updated Council Member Profiles
+- **Source / meeting link:** City of Pueblo official roster; Pueblo Chieftain post-election coverage.
+- **Key takeaways:**
+  - **District 1 — Dianne Danti (D):** New member, sworn in Nov 2025. Prior involvement TBD.
+  - **District 2 — Lori Winner (R):** Incumbent, conservative bloc. Pro-surveillance voting record.
+  - **District 3 — Ted Hernandez (D):** New member, sworn in Nov 2025. Prior involvement TBD.
+  - **District 4 — Garrison Ortiz (D):** Incumbent, swing vote on some issues.
+  - **At-Large — Selena Ruiz Gomez (D):** New member, sworn in Nov 2025. Community advocacy background.
+  - **At-Large — Bob Schilling (R):** Incumbent, conservative bloc. Pro-business, law enforcement support.
+  - **At-Large — Mark Aliff (R):** Council President 2024-25, conservative bloc. Led unanimous 7-0 park surveillance approval.
+  - **Mayor — Heather Graham (R):** Strong-mayor system retained after Question 2C failed. Has supported surveillance expansions.
+- **Follow-up tasks:** Build relationship profiles for new members; identify potential civil liberties allies; prepare targeted testimony for early 2026 budget cycle when surveillance contracts come up for renewal.
