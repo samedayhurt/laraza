@@ -22,6 +22,15 @@ Document this in your vault so the entire team works from the same assumptions.
 | [Pueblo 81008 Surveillance](Pueblo%2081008%20Surveillance.md) | Zip-code-specific survey of cameras, sensors, and choke points to brief canvassers. |
 | [Pueblo County Officials](Pueblo%20County%20Officials.md) | Quick reference on public officials, jurisdictions, and escalation pathways. |
 | [Digital Footprint Protection Playbook](../docs/digital-footprint-protection.md) | Links the research workflow to device hygiene, metadata minimization, and comms/opsec actions. |
+| [Operational Security Layers](../primers/Operational-Security-Layers.md) | 5-layer progressive security model with browser, VPN/Tor, VMs, hardware, and comms. |
+
+### Communications Guides
+See the [comms/ section](../comms/README.md) for complete guides:
+- [Signal Hardening Guide](../comms/Signal-Hardening-Guide.md) — Complete Signal setup and operational security
+- [Secure Messengers Comparison](../comms/Secure-Messengers-Comparison.md) — Choose the right messenger for your threat model
+- [GrapheneOS + Mudi Field Kit](../comms/GrapheneOS%20Mudi%20Field%20Kit.md) — Hardened phone + router deployment
+- [Radio Communications Guide](../comms/Radio-Communications-Guide.md) — Meshtastic, Reticulum, APRS
+- [Emergency Comms Playbook](../comms/Emergency-Comms-Playbook.md) — Failover procedures and device seizure protocol
 
 Add more notebooks as you solidify workflows (e.g., travel OPSEC, on-the-ground recording procedures).
 

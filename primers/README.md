@@ -21,6 +21,8 @@ This folder collects lightweight primers that provide just enough background to 
 | [Police Violence Documentation](Police%20Violence%20Documentation.md) | How to safely document, preserve, and report police violence. | Know what to document during/after incident, preserve evidence, file complaints with IA/POST/AG. |
 | [Derechos de Grabación en Colorado](Derechos%20de%20Grabacion%20en%20Colorado.md) | Spanish version of Recording Rights in Colorado. | Same as Recording Rights - en español. |
 | [Derechos de Protesta Primera Enmienda](Derechos%20de%20Protesta%20Primera%20Enmienda.md) | Spanish version of First Amendment Protest Rights. | Same as First Amendment rights - en español. |
+| [Operational-Security-Layers](Operational-Security-Layers.md) | 5-layer progressive security model tied to Pueblo threats. | Start with browser hardening, add VPN/Tor, VMs, hardware, and comms as threat level increases. |
+| [Self-Hosting-Infrastructure](Self-Hosting-Infrastructure.md) | Run your own cloud: file sync, passwords, chat, VPN. | Set up Syncthing for file sync, Vaultwarden for passwords, Matrix for chat. |
 
 > **Tip:** Primers are intentionally brief. Pair them with hands-on reps and notes in your Obsidian vault to solidify the material.
 
@@ -35,6 +37,8 @@ This folder collects lightweight primers that provide just enough background to 
 - **First Amendment:** Review dispersal order requirements before action; know police must give clear exit routes and time to comply—and when orders are unlawful.
 - **Data Broker Opt-Out:** Before publishing an op-ed, remove yourself from Spokeo, WhitePages, and BeenVerified to prevent retaliation doxing.
 - **Youth & Family:** Prepare your teenager for what to do if ICE comes while you're at work; make sure they know CORRN's number (844-864-8341) and to never open the door.
+- **Operational Security Layers:** Before researching city council agendas, harden your browser with uBlock Origin and containers; add Mullvad VPN for sensitive searches; use a VM for handling leaked documents.
+- **Self-Hosting:** Set up Syncthing on your encrypted laptop and phone so witness statements sync automatically without touching Google Drive; run Vaultwarden for team password sharing.
 
 ## How to Use These Notes
 
