@@ -86,13 +86,136 @@ In today’s digital landscape, privacy and operational security (OPSEC) are mor
 ## Disclaimer
 This project is worked on over time and space; while workflow guides may be shared, the world continues to evolve at light speed. Some information may be outdated by the time you see it, some techniques may be compromised by the time you use them, and some information may just be completely wrong. The goal here is to plant seeds for trees to grow from; learn, trust, but verify.
 
-## How to Use This Repo
-1. Clone this repo
-```
+## How to Use This Guide
+
+This guide works **completely offline** once downloaded—no internet required. Choose the method that fits your comfort level:
+
+---
+
+### Option A: Read Online (Easiest)
+
+Just browse this page. Click any link to read that section. No download needed.
+
+**Limitations:** Requires internet, can't make personal notes, leaves browsing history.
+
+---
+
+### Option B: Download to Computer (Offline Use)
+
+**What you'll get:** A folder with all guides, maps, and resources that works without internet.
+
+#### Windows
+
+1. Go to [github.com/samedayhurt/laraza](https://github.com/samedayhurt/laraza)
+2. Click the green **"Code"** button
+3. Click **"Download ZIP"**
+4. Find the downloaded file (usually in your Downloads folder), right-click it, select **"Extract All"**
+5. Open the extracted `laraza-main` folder
+6. Double-click any `.md` file to open it (they open in Notepad or any text editor)
+
+**Tip:** For better reading, install a free Markdown viewer like [Typora](https://typora.io/) or [Mark Text](https://marktext.app/).
+
+#### Mac
+
+1. Go to [github.com/samedayhurt/laraza](https://github.com/samedayhurt/laraza)
+2. Click the green **"Code"** button → **"Download ZIP"**
+3. The ZIP will auto-extract in your Downloads folder (or double-click it)
+4. Open the `laraza-main` folder
+5. Double-click any `.md` file to read it in TextEdit
+
+#### Linux
+
+**Option 1 - Download ZIP:** Same as above, extract with your file manager.
+
+**Option 2 - Command line:**
+```bash
 git clone https://github.com/samedayhurt/laraza.git
+cd laraza
 ```
-2. Open as vault using [Obsidian](https://obsidian.md/)
-3. Make edits and notes to make this guide your own
+
+---
+
+### Option C: Use with Obsidian (Best Experience)
+
+[Obsidian](https://obsidian.md/) is a free note-taking app that makes this guide **interactive**—linked notes, searchable, and you can add your own research.
+
+#### Step 1: Download the Guide
+
+Follow Option B above to download and extract the files.
+
+#### Step 2: Install Obsidian
+
+1. Go to [obsidian.md](https://obsidian.md/)
+2. Click **"Get Obsidian for free"**
+3. Download for your system (Windows/Mac/Linux)
+4. Install it like any other app
+
+#### Step 3: Open as Vault
+
+1. Open Obsidian
+2. Click **"Open folder as vault"**
+3. Navigate to the `laraza-main` folder you downloaded
+4. Click **"Open"**
+5. If prompted about "Trust author," click **"Trust"**
+
+#### Step 4: Start Exploring
+
+- Use the **left sidebar** to browse folders
+- Click any note to read it
+- Use `Ctrl+O` (or `Cmd+O` on Mac) to quickly search for any topic
+- Try the **Graph View** (icon in left sidebar) to see how topics connect
+
+**Making it yours:** Add your own notes, research, and observations. Your changes stay local—they won't affect anyone else's copy.
+
+---
+
+### Option D: Use on Phone (Offline)
+
+#### Android
+
+1. Install **Obsidian** from Google Play Store (free)
+2. Download the guide:
+   - In your phone's browser, go to [github.com/samedayhurt/laraza](https://github.com/samedayhurt/laraza)
+   - Tap green **"Code"** button → **"Download ZIP"**
+   - Extract the ZIP using your file manager (or install "ZArchiver" from Play Store)
+3. Open Obsidian → **"Create new vault"** → **"Open folder as vault"**
+4. Navigate to the extracted `laraza-main` folder → **"Use this folder"**
+
+#### iPhone/iPad
+
+1. Install **Obsidian** from App Store (free)
+2. Download the guide:
+   - In Safari, go to [github.com/samedayhurt/laraza](https://github.com/samedayhurt/laraza)
+   - Tap green **"Code"** button → **"Download ZIP"**
+   - When download completes, tap it to extract
+   - Move the folder to "On My iPhone" in Files app
+3. Open Obsidian → **"Open folder as vault"**
+4. Navigate to the folder → **"Open"**
+
+---
+
+### Keeping Your Copy Updated
+
+The guide is updated regularly. To get the latest version:
+
+**If you downloaded the ZIP:** Download a fresh copy and replace your old folder (back up any personal notes first).
+
+**If you used `git clone`:**
+```bash
+cd laraza
+git pull
+```
+
+---
+
+### Privacy Note
+
+Downloading this guide leaves minimal trace—far less than reading online. For maximum privacy:
+- Download over VPN or Tor
+- Use the offline copy exclusively
+- Store on an encrypted drive
+
+See [Operational Security Layers](primers/Operational-Security-Layers.md) for complete privacy guidance.
 
 ## Repository Structure
 - **[Primers](primers/README.md):** Fast-start guides for Linux, direction finding, virtual machines, and other fundamentals.
