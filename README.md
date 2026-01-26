@@ -1,11 +1,25 @@
 <p align="center" width="100%">
-    <img width="25%" src="assets/asset1.png"> 
+    <img width="25%" src="assets/asset1.png">
 </p>
 
 # La Raza VII.I.IX - A Field Guide on Open Source Intelligence (OSINT) and Technology Primers
 This project equips community journalists, activists, and engaged citizens with the tools, techniques, and knowledge for effective open-source research and secure technology practices, fostering resilience and informed action. It also serves as a research log for secure communication methodologies, independent analysis of community issues, and the development of accessible tech solutions to empower all.
 
 For all of our family.
+
+---
+
+## Pueblo Surveillance Apparatus Map
+
+<p align="center">
+  <a href="docs/maps/pueblo-surveillance-map.html">
+    <img src="docs/maps/pueblo-surveillance-map.png" alt="Pueblo, CO Surveillance Infrastructure Map - RTCC, ShotSpotter, ALPRs, ICE watch sites, and community resources" width="90%">
+  </a>
+</p>
+
+<p align="center"><em>Click to view interactive map | Shows RTCC, ShotSpotter zones, Flock ALPR corridors, DFR drone station, park surveillance, ICE watch sites, and community support services</em></p>
+
+---
 
 ## Latest Updates (January 2026)
 
@@ -53,6 +67,7 @@ For all of our family.
 **Stay safe. The times demand it.**
 
 ## Table of Contents
+- [Pueblo Surveillance Apparatus Map](#pueblo-surveillance-apparatus-map)
 - [Purpose](#purpose)
 - [Disclaimer](#disclaimer)
 - [How to Use This Repo](#how-to-use-this-repo)
@@ -100,10 +115,6 @@ git clone https://github.com/samedayhurt/laraza.git
 - **`scripts/build_pueblo_map.py`** — regenerates the HTML overlay whenever the GeoJSON changes so everyone shares the same situational awareness.
 - **[`docs/digital-footprint-protection.md`](docs/digital-footprint-protection.md)** — ties the research workflow to device hygiene, metadata minimization, and the comms/OPSEC primers so teams keep their digital footprint tight while executing the roadmap.
 - **[`docs/data-legend.md`](docs/data-legend.md)** — summarizes where each dataset/report comes from (census, media, vendor releases, automation scripts) so readers can audit provenance and extend the pipeline transparently.
-
-<p align="center">
-  <img src="docs/maps/pueblo-surveillance-map.png" alt="Pueblo surveillance apparatus map preview" width="70%">
-</p>
 
 ## Roadmap: Guides & Self-Advocacy
 We follow the `AGENTS.md` workflow so research flows into actionable guides that teach Pueblo residents how to advocate for themselves.
