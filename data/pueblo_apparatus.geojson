@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "updated": "2025-11-27",
+  "updated": "2026-01-26",
   "features": [
     {
       "type": "Feature",
@@ -41,7 +41,22 @@
           "https://www.pueblo.us/Directory.aspx?did=13",
           "https://www.daktronics.com/news/eye-on-crime-increases-with-daktronics-high-point-networks-collaboration-for-pueblo-police-department-s-real-time-crime-center"
         ],
-        "updated": "2025-11"
+        "updated": "2026-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.612921, 38.2629478]
+      },
+      "properties": {
+        "id": "pueblo-dfr-station",
+        "name": "Drone as First Responder (DFR) Station",
+        "type": "drone-surveillance",
+        "description": "First DFR station launched July 2025. Drones deployed to RTCC before officers arrive. Part of Pueblo's expanding aerial surveillance network.",
+        "sources": ["Daktronics press release Sept 2025"],
+        "updated": "2026-01"
       }
     },
     {
@@ -64,16 +79,17 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.5950, 38.2580]
+        "coordinates": [-104.5948, 38.2577]
       },
       "properties": {
         "id": "bessemer-mobile-trailer",
-        "name": "Mobile Camera Trailer - Bessemer Area",
+        "name": "Mobile Camera Trailer - Mesa & Elm",
         "type": "mobile-surveillance",
-        "description": "Solar-powered mobile RTCC camera trailer relocated to Mesa Ave & Elm St area (July 2025). One of four mobile trailers deployed citywide.",
-        "sources": ["KKTV, July 2025"],
+        "camera_count": 4,
+        "description": "Solar-powered mobile RTCC camera trailer at Mesa Ave & Elm St. One of four mobile trailers deployed citywide. Captured Aug 2025 homicide footage.",
+        "sources": ["KKTV, July 2025", "Pueblo PD press release Aug 2025"],
         "notes": "Location approximate based on news reporting. Trailers are mobile and may relocate.",
-        "updated": "2025-11"
+        "updated": "2026-01"
       }
     },
     {
@@ -101,12 +117,13 @@
         "id": "pcso-hq",
         "name": "Pueblo County Sheriff's Office HQ",
         "type": "law-enforcement",
-        "description": "909 Court Street command campus. Sheriff Lucero issued Jan 2025 statement limiting ICE cooperation. All 73 patrol cars now equipped with mobile ALPRs (March 2025).",
+        "mobile_alprs": 73,
+        "description": "909 Court Street command campus. Sheriff Lucero issued Jan 2025 statement limiting ICE cooperation. All 73 patrol cars now equipped with mobile Flock ALPRs (March 2025). Mobile ALPRs feed into RTCC.",
         "sources": [
           "https://www.pueblosheriff.com/Directory.aspx?did=1",
           "https://www.pueblosheriff.com/DocumentCenter/View/3323/Sheriff-Lucero-Statement"
         ],
-        "updated": "2025-11"
+        "updated": "2026-01"
       }
     },
     {
@@ -134,10 +151,10 @@
         "id": "mineral-palace-park",
         "name": "Mineral Palace Park",
         "type": "park-surveillance",
-        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Also community staging zone for events like Pueblo Pride.",
-        "sources": ["KRDO, July 2025"],
-        "notes": "Good rally point with sight lines away from downtown RTCC clusters. Now has surveillance cameras.",
-        "updated": "2025-11"
+        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Community staging zone for events like Pueblo Pride.",
+        "sources": ["KRDO, July 2025", "City of Pueblo ARPA spending reports"],
+        "notes": "Good rally point with sight lines away from downtown RTCC clusters. Surveillance cameras active 24/7, feeds to RTCC.",
+        "updated": "2026-01"
       }
     },
     {
@@ -150,9 +167,9 @@
         "id": "city-park",
         "name": "City Park",
         "type": "park-surveillance",
-        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation.",
-        "sources": ["KRDO, July 2025"],
-        "updated": "2025-11"
+        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC video wall.",
+        "sources": ["KRDO, July 2025", "City of Pueblo ARPA spending reports"],
+        "updated": "2026-01"
       }
     },
     {
@@ -165,9 +182,9 @@
         "id": "lake-minnequa",
         "name": "Lake Minnequa Park",
         "type": "park-surveillance",
-        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber).",
-        "sources": ["KRDO, July 2025"],
-        "updated": "2025-11"
+        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.",
+        "sources": ["KRDO, July 2025", "City of Pueblo ARPA spending reports"],
+        "updated": "2026-01"
       }
     },
     {
@@ -180,9 +197,9 @@
         "id": "ray-aguilera-park",
         "name": "Ray Aguilera Park",
         "type": "park-surveillance",
-        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber).",
-        "sources": ["KRDO, July 2025"],
-        "updated": "2025-11"
+        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.",
+        "sources": ["KRDO, July 2025", "City of Pueblo ARPA spending reports"],
+        "updated": "2026-01"
       }
     },
     {
@@ -195,9 +212,9 @@
         "id": "mitchell-park",
         "name": "Mitchell Park",
         "type": "park-surveillance",
-        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber).",
-        "sources": ["KRDO, July 2025"],
-        "updated": "2025-11"
+        "description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.",
+        "sources": ["KRDO, July 2025", "City of Pueblo ARPA spending reports"],
+        "updated": "2026-01"
       }
     },
     {
@@ -371,25 +388,33 @@
       "type": "Feature",
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [-104.6350, 38.2850],
-            [-104.5850, 38.2850],
-            [-104.5850, 38.2450],
-            [-104.6350, 38.2450],
-            [-104.6350, 38.2850]
-          ]
-        ]
+        "coordinates": [[[-104.625, 38.295], [-104.575, 38.295], [-104.575, 38.260], [-104.625, 38.260], [-104.625, 38.295]]]
       },
       "properties": {
-        "id": "shotspotter-coverage",
-        "name": "ShotSpotter Acoustic Coverage Area (Approximate)",
+        "id": "shotspotter-eastside",
+        "name": "ShotSpotter Eastside Coverage",
         "type": "acoustic-surveillance",
-        "description": "Approximately 6 square miles of ShotSpotter/SoundThinking acoustic gunfire detection. Sensors on buildings and street lamps detect gunshots within 60 seconds. 97% accuracy claimed over 5-month evaluation. 73% of alerts were NOT called in by citizens.",
-        "coverage_sq_mi": 6,
-        "cost_annual": "$210,000",
+        "area_sq_mi": 2,
+        "description": "Primary ShotSpotter deployment (~2 sq mi). Sensors on buildings and poles. 60-second alert to RTCC. Part of $210k/year SoundThinking contract.",
         "sources": ["SoundThinking press release 2025", "KOAA News5 2025-01"],
-        "notes": "Coverage area is approximate - exact sensor locations not public. Alerts processed through RTCC. Expansion planned with state grant funding.",
+        "notes": "Coverage area is approximate - exact sensor locations not public. Chicago IG found 89% of ShotSpotter alerts led to no gun-related incident.",
+        "updated": "2026-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-104.610, 38.260], [-104.575, 38.260], [-104.575, 38.235], [-104.610, 38.235], [-104.610, 38.260]]]
+      },
+      "properties": {
+        "id": "shotspotter-bessemer",
+        "name": "ShotSpotter Bessemer Coverage",
+        "type": "acoustic-surveillance",
+        "area_sq_mi": 1,
+        "description": "Expanded ShotSpotter coverage (~1 sq mi). Added July 2025 after March officer shooting. Extends into previously unmonitored Bessemer/Southside area.",
+        "sources": ["KOAA News5 July 2025", "Pueblo PD press release"],
+        "notes": "Expansion funded by state grant. Almost exclusively deployed in low-income Black/Latino neighborhoods.",
         "updated": "2026-01"
       }
     },

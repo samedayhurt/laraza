@@ -14,12 +14,81 @@ This memo consolidates open-source reporting on Pueblo’s north-side (81008) ci
 - **Sensors already online:** According to Daktronics’ September 25, 2025 release, Pueblo’s RTCC integrates ShotSpotter gunshot telemetry, body-worn camera feeds, drone footage when deployed, fixed-site surveillance cameras, and license plate readers.[^3]
 - **Visualization hardware:** High Point Networks built a secure network for a 7’ x 12’ Daktronics 1.2 mm dvLED wall so technicians can tile multiple live sources simultaneously.[^3]
 - **Operational example:** During a Community Connect open house, Deputy Chief James Martin said the RTCC “observed a hand-to-hand drug transaction through the Daktronics screen,” letting staff identify the suspect, contraband, and accomplices in real time.[^3]
-- **ShotSpotter reliance:** The RTCC “relies on ShotSpotter technology with sensors in high-crime areas to send alerts … within 60 seconds of a gunshot,” meaning acoustic telemetry from a private vendor is central to dispatch logic.[^3]
+- **ShotSpotter reliance:** The RTCC "relies on ShotSpotter technology with sensors in high-crime areas to send alerts … within 60 seconds of a gunshot," meaning acoustic telemetry from a private vendor is central to dispatch logic.[^3]
+
+### Full RTCC Technology Inventory (January 2026)
+
+**Location:** 200 S Main St, Pueblo PD Public Safety Complex
+**Operating Hours:** 10am-midnight (expanding to 24/7)
+
+| Component | Vendor | Annual Cost | Notes |
+|-----------|--------|-------------|-------|
+| Video Management Platform | Genetec Security Center | ~$200,000 | Primary integration layer |
+| Gunshot Detection | SoundThinking/ShotSpotter | $210,000 | ~6 sq mi coverage |
+| ALPR (Fixed) | Flock Safety | TBD | 22 cameras (PPD) |
+| ALPR (Mobile) | Flock Safety | TBD | 73 cameras (PCSO patrol vehicles) |
+| Video Wall | Daktronics | One-time | 7'x12' LED, Sept 2025 |
+| IT Infrastructure | High Point Networks | TBD | - |
+| Drone Program | DFR (Drone as First Responder) | TBD | Launched July 2025 |
+| RTCC Analyst | Staff | $83,776 | Per analyst |
+
+**Components Feeding RTCC:**
+- ShotSpotter (~6 sq mi acoustic coverage)
+- DFR drone station (launched July 2025)
+- Body cam integration
+- 22+ fixed cameras
+- 22 ALPRs (PPD)
+- 73 mobile ALPRs (PCSO)
+- 4 mobile camera trailers
+- Community Connect private camera registry
+
+### ShotSpotter Coverage Zones
+
+**Eastside Coverage (~2 sq mi)**
+- Primary deployment area
+- Sensors on buildings and poles
+- 60-second alert to RTCC
+
+**Bessemer/Southside Coverage (~1 sq mi)**
+- Added July 2025 after March officer shooting
+- Expanded coverage into previously unmonitored area
+
+**Ethical Concerns:**
+1. **Accuracy:** Chicago IG found 89% of alerts led to no gun-related incident
+2. **Racial Bias:** Almost exclusively deployed in low-income Black/Latino neighborhoods
+3. **Evidence Integrity:** SoundThinking employees can modify classifications post-hoc
+4. **Mission Creep:** Expanding to "human distress" detection
+5. **Cost-Effectiveness:** $65,000-95,000/sq mi annually; no proven impact on violence reduction
 
 ## 3. Community Connect Camera Registry
 - **Program framing:** The city pitches Community Connect as voluntary partnerships where residents and businesses can register or stream their cameras to the RTCC, emphasizing faster arrests and neighborhood safety.[^4]
-- **Genetec ecosystem:** All four “pillars” revolve around Genetec’s Security Center — on-prem, cloud, and non-Genetec IP feeds — and the site lists preferred Genetec integrators (Arden, High Point, Linx) for locals who want hardware installed.[^4]
+- **Genetec ecosystem:** All four "pillars" revolve around Genetec's Security Center — on-prem, cloud, and non-Genetec IP feeds — and the site lists preferred Genetec integrators (Arden, High Point, Linx) for locals who want hardware installed.[^4]
 - **Data governance gaps:** No retention schedules or warrant requirements are described publicly; registration simply grants detectives lookup access to private footage. Treat this as a soft pressure campaign to normalize police access to HOA/business cameras without judicial oversight.
+
+### The 4 Pillars (January 2026)
+
+**Registry URL:** pueblo.us/3000/Camera-Registry
+
+**Pillar One: Camera Registry**
+- Voluntary initiative for residents/businesses to register camera locations
+- If crime occurs nearby, officer emails requesting footage
+- PD claims "RTCC staff has no direct connection to your cameras"
+- **Reality:** Creates distributed surveillance network without public cost
+
+**Pillar Two: Genetec Cloud Video Security Center**
+- SaaS integration for participating businesses
+
+**Pillar Three: Genetec On-Premise Systems**
+- Integration with existing commercial VMS
+
+**Pillar Four: Non-Genetec IP Systems**
+- Broadest capture net for any IP camera
+
+### Self-Advocacy Actions
+- Don't register cameras with Community Connect
+- If registered, removal form available at pueblo.us
+- CORA request: Pueblo PD data sharing agreements
+- CORA request: RTCC audit logs (which agencies accessed data)
 
 ## 4. Automated License Plate Readers (ALPRs)
 - **Downtown deployment:** In 2024 the Pueblo Downtown Association purchased two Flock Safety ALPR cameras, coordinating placement with the city and CDOT to cover major intersections amid auto-theft spikes.[^5]
@@ -31,7 +100,43 @@ This memo consolidates open-source reporting on Pueblo’s north-side (81008) ci
 - **ShotSpotter / SoundThinking:** Gunshot detection sensors are placed in “high-crime” blocks; they are third-party devices whose alerts feed RTCC workflows, meaning false positives or subpoenas hit a private vendor first.[^3]
 - **Genetec Cloud Video:** Community Connect pushes households toward Genetec’s SaaS recorder or hybrid cloud, exporting raw footage to data centers outside local control.[^4]
 - **Flock Safety:** Vehicle telemetry (time, GPS, plate) lives on Flock’s servers for 30 days, and audit logs show which officer queried which term — useful for accountability but also proof the city is outsourcing investigative memory to a commercial partner.[^5]
-- **Body-worn, drone, and city infrastructure video:** All are routed through the RTCC wall, creating a single nerve center whose uptime depends on High Point Networks’ managed infrastructure.[^3]
+- **Body-worn, drone, and city infrastructure video:** All are routed through the RTCC wall, creating a single nerve center whose uptime depends on High Point Networks' managed infrastructure.[^3]
+
+### Data Flow: The Surveillance Stack (January 2026)
+
+```
+PALANTIR GOTHAM (Federal/ICE level)
+    ↑ Can ingest data from:
+    |
+FLOCK NATIONAL NETWORK (3,900+ agencies, 20B scans/month)
+    ↑ Data shared between:
+    |
+COLORADO LAW ENFORCEMENT NETWORK
+    ↑ Includes:
+    |
+PUEBLO RTCC (Genetec + Flock + ShotSpotter)
+    ↑ Feeds from:
+    |
+COMMUNITY CONNECT (Your Ring camera)
+```
+
+**Key Point:** Pueblo has no direct Palantir contract. However, data flows through interoperable networks that feed Palantir-powered federal systems. ICE uses Palantir Gotham as primary intelligence platform.
+
+### Flock "Nova" Platform (May 2025)
+- 404 Media: Flock developing "public safety data platform"
+- Supplements ALPR with data breaches, public records, commercial data
+- Designed to track individuals without warrant
+- Already in Early Access with some agencies
+
+### The ICE Connection (Late 2025)
+- Denver audit logs: 1,400+ ICE-related searches since 2024
+- Loveland PD admitted sharing Flock access with federal agent
+- Colorado has 2025 law banning ICE data sharing—enforcement inconsistent
+
+> "Flock is far from alone in this pursuit — it has close competitors in the Axon-acquired Fusus ALPR network, Motorola's Vigilant, and the local Palantir-esque Peregrine... These kinds of tracking features represent glaring contradictions of Fourth Amendment constitutional protections against warrantless search and seizure."
+> — Truthout, November 2025
+
+> "Flock provides the eyes, Palantir provides the brain."
 
 ## 6. Questions for Further OSINT / Accountability
 1. **Procurement transparency:** What contracts govern the RTCC (ShotSpotter SLA, Genetec licensing, Flock MOUs)? File CORA requests for scopes + pricing.
@@ -81,6 +186,39 @@ flowchart LR
     C -->|No force| M[Map hotspot + rumor tracking]
     I -->|Rumor only| O[Option 2 voicemail + follow-up]
 ```
+
+### Southern Colorado ICE Infrastructure (January 2026)
+
+**Walsenburg Detention Center (50 mi south)**
+- **Facility:** CoreCivic's Huerfano County Correctional Facility
+- **Capacity:** 752 beds
+- **Status:** Closed since 2010; on ICE internal planning documents (ACLU FOIA)
+
+**Local Context:**
+- Walsenburg pop: ~4,600
+- Among Colorado's highest unemployment
+- Mayor Vezzani: called it "a godsend"
+- Former Mayor Lalander: "This is not going to be the solution"
+- Friday protests since mid-February 2025
+
+**Organizing:** Speak Up Southern Colorado
+
+**Pueblo Memorial Airport ICE Flights**
+- **The Email (September 4, 2025):** Aviation Director Greg Pedroza emailed Walsenburg: "I am hoping you may have a contact with the detention center in Walsenburg who can speak to Freeman Jet Center management to propose Pueblo Airport to provide service to these flights, if needed."
+- **Response (October 2025):**
+  - 30+ protesters at City Council
+  - Coalition: Air Without ICE, NAACP Pueblo, El Movimiento Sigue, Center for Health Progress, Together Colorado, Pueblo Indivisible
+  - Councilmember Dennis Flores: working on anti-deportation resolution
+  - Pedroza denied current plans (email exists)
+
+**Hudson Detention Center (30 mi NE of Denver)**
+- 1,200-bed facility
+- ICE contract to GEO Group: December 1, 2025
+- $39M contract (6 months)
+- Would triple Colorado detention capacity
+
+> "What ICE is doing is against the American way, and it's against Pueblo's way."
+> — Roxana Mack, NAACP Pueblo
 
 ### If you only have 5 minutes
 1. **Plan your route:** Open the folium map, screenshot the corridor you’ll march through, and mark any RTCC-connected cameras so scouts can brief the crowd.

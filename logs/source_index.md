@@ -36,3 +36,12 @@
 | POL-006 | Colorado Newsline – “Pueblo sheriff sues Colorado Department of Labor...” | https://coloradonewsline.com/2024/12/06/pueblo-sheriff-lawsuit-colorado-labor-department/ | 2025-11-15 | Union litigation context. |
 | POL-007 | Pueblo County Clerk coverage (Pueblo Chieftain, Nov 10 2023) | https://www.chieftain.com/story/news/2023/11/10/new-pueblo-county-clerk-candace-rivera-reflects-on-her-first-election/71509941007/ | 2025-11-15 | Election transparency improvements. |
 | AGD-001 | City Council Agenda (Archive Item 3943) | docs/agendas/city_council-3943.pdf | 2025-11-15 | Downloaded via scripts/download_agendas.py. |
+| SURV-008 | Sam Biddle, "Flock Safety's Surveillance Dragnet Is Everywhere," Truthout | https://truthout.org/articles/flock-safetys-surveillance-dragnet-is-everywhere/ | 2026-01-26 | Flock-Palantir integration, Fourth Amendment concerns, national network scale. |
+| SURV-009 | Joseph Cox, "Flock Is Building a Massive People-Tracking Tool for Police," 404 Media | https://www.404media.co/flock-safety-people-tracking-nova/ | 2026-01-26 | Flock "Nova" platform combining ALPRs with data breaches and commercial data. |
+| SURV-010 | EFF, "Communities Are Winning Against Flock Safety ALPRs" | https://www.eff.org/deeplinks/2025/communities-winning-against-flock | 2026-01-26 | Austin, Oakland, Cambridge, Olympia successful campaigns against ALPR expansion. |
+| SURV-011 | Denver Auditor's Office, "Flock Safety ALPR Audit Logs" | internal CORA request | 2026-01-26 | 1,400+ ICE-related searches since 2024; Loveland PD federal agent access. |
+| ICE-001 | ACLU Colorado FOIA, "ICE Detention Planning Documents" | internal FOIA response | 2026-01-26 | Walsenburg CoreCivic facility on ICE internal planning documents. |
+| ICE-002 | Rocky Mountain PBS, "Pueblo Airport ICE Deportation Flight Email" | https://www.rmpbs.org/news/pueblo-airport-ice-flights/ | 2026-01-26 | Greg Pedroza Sept 4, 2025 email; Air Without ICE coalition response. |
+| ICE-003 | Colorado Public Radio, "Hudson Detention Center ICE Contract" | https://www.cpr.org/2025/12/01/hudson-ice-detention-geo-group/ | 2026-01-26 | GEO Group $39M contract, 1,200-bed facility, December 2025. |
+| ICE-004 | Air Without ICE Coalition | https://airwithoutice.org/ | 2026-01-26 | Pueblo coalition organizing: NAACP Pueblo, El Movimiento Sigue, Center for Health Progress, Together Colorado, Pueblo Indivisible. |
+| ICE-005 | Speak Up Southern Colorado | https://speakupsoutherncolorado.org/ | 2026-01-26 | Walsenburg detention center organizing; Friday protests since Feb 2025. |

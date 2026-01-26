@@ -9,6 +9,27 @@ For all of our family.
 
 ## Latest Updates (January 2026)
 
+**Surveillance Infrastructure Updates:**
+- RTCC technology stack fully documented (Genetec ~$200k, ShotSpotter $210k, Flock, DFR drones)
+- ShotSpotter coverage split into two polygons: Eastside (~2 sq mi) and Bessemer (~1 sq mi, added July 2025)
+- Community Connect 4-pillar program documented with self-advocacy actions
+- DFR (Drone as First Responder) station added to GeoJSON (launched July 2025)
+- Mobile camera trailer location updated (Mesa & Elm, captured Aug 2025 homicide footage)
+- PCSO 73 mobile ALPR inventory confirmed
+- Park surveillance metadata expanded (all 5 parks now show ARPA funding, RTCC feed status)
+
+**ICE Infrastructure Documentation:**
+- Walsenburg detention center documented (CoreCivic, 752 beds, ACLU FOIA docs)
+- Pueblo Airport ICE deportation flight email (Greg Pedroza, Sept 2025)
+- Hudson detention center ($39M GEO Group contract, 1,200 beds, Dec 2025)
+- Air Without ICE coalition organizing details (NAACP Pueblo, El Movimiento Sigue, Together Colorado)
+- Speak Up Southern Colorado (Walsenburg organizing)
+
+**Data Flow Analysis:**
+- Full surveillance stack hierarchy documented (Community Connect → RTCC → CO Network → Flock → Palantir)
+- Flock "Nova" platform early access warning (404 Media)
+- Denver audit log ICE scandal details (1,400+ searches, Loveland/Windsor PD federal agent access)
+
 **Critical Fixes:**
 - Fixed inaccurate council member data and reconciled political roster with official City of Pueblo records
 - Updated Juniper Southern Colorado (formerly Rape Crisis Services) with new 24/7 crisis line: **719-549-0549**
@@ -24,9 +45,10 @@ For all of our family.
 - [Police Violence Documentation Primer](primers/Police%20Violence%20Documentation.md) - How to document, preserve, and report
 
 **Expanded Data:**
-- GeoJSON now includes ShotSpotter 6 sq mi coverage polygon, ALPR corridors, and institutional POIs
+- GeoJSON now includes ShotSpotter Eastside + Bessemer coverage polygons, ALPR corridors, DFR drone station, and institutional POIs
 - Resources directory expanded with bail funds, worker rights orgs, LGBTQ+ services, and digital security help
 - Surveillance data updated with Flock-ICE scandal details, EFF protest surveillance findings, and racial disparity statistics
+- 10 new source citations added to logs/source_index.md
 
 **Stay safe. The times demand it.**
 
