@@ -217,6 +217,99 @@ Downloading this guide leaves minimal trace—far less than reading online. For 
 
 See [Operational Security Layers](primers/Operational-Security-Layers.md) for complete privacy guidance.
 
+---
+
+### Encrypt Your Device (Recommended)
+
+Full disk encryption ensures that if your device is lost, stolen, or seized, the data remains unreadable without your password.
+
+#### Windows
+
+**BitLocker (Windows Pro/Enterprise):**
+1. Open **Control Panel** → **System and Security** → **BitLocker Drive Encryption**
+2. Click **Turn on BitLocker** for your main drive
+3. Choose how to unlock: **Password** recommended
+4. Save your recovery key somewhere safe (NOT on the same device)
+5. Choose **Encrypt entire drive** → **New encryption mode**
+6. Click **Start encrypting**
+
+**VeraCrypt (Windows Home or any version):**
+1. Download from [veracrypt.fr](https://www.veracrypt.fr/en/Downloads.html)
+2. Install and open VeraCrypt
+3. Go to **System** → **Encrypt System Partition/Drive**
+4. Choose **Normal** → **Encrypt the Windows system partition**
+5. Choose **Single-boot** (unless you dual-boot)
+6. Create a strong password and PIM (leave PIM blank for default)
+7. Create the rescue disk when prompted (required)
+8. Run the pre-test, then encrypt
+
+#### Mac
+
+**FileVault (Built-in):**
+1. Open **System Preferences** → **Security & Privacy** → **FileVault**
+2. Click the lock icon and enter your password
+3. Click **Turn On FileVault**
+4. Choose how to unlock: **iCloud account** or **recovery key** (recovery key is more private)
+5. Save your recovery key somewhere safe
+6. Encryption begins automatically (takes a few hours)
+
+#### Linux
+
+**During Installation (Easiest):**
+Most Linux installers offer "Encrypt the new installation" during setup. Check this box and set a strong passphrase.
+
+**After Installation (LUKS):**
+Encrypting after install is complex and risky—reinstall with encryption enabled if possible. For existing systems, consider encrypting your home folder:
+```bash
+# Install ecryptfs
+sudo apt install ecryptfs-utils
+# Migrate your home directory (log in as different user first)
+sudo ecryptfs-migrate-home -u yourusername
+```
+
+#### Android
+
+Most modern Android phones are encrypted by default. To verify:
+1. Go to **Settings** → **Security** → **Encryption & credentials**
+2. Should say "Encrypted" under "Encrypt phone"
+
+If not encrypted:
+1. Charge to 80%+ and plug in
+2. Go to **Settings** → **Security** → **Encrypt phone**
+3. Set a strong PIN/password (pattern is weaker)
+4. Wait for encryption to complete (1-2 hours)
+
+**GrapheneOS:** Encrypted by default with stronger implementation than stock Android.
+
+#### iPhone/iPad
+
+iOS devices are encrypted by default when you set a passcode.
+
+**Strengthen it:**
+1. Go to **Settings** → **Face ID & Passcode** (or Touch ID & Passcode)
+2. Tap **Change Passcode**
+3. Tap **Passcode Options** → **Custom Alphanumeric Code**
+4. Set a strong password (not just 6 digits)
+
+**Why this matters:** A 6-digit PIN can be cracked in hours. An alphanumeric password with 10+ characters could take years.
+
+---
+
+### Self-Hosting Your Infrastructure
+
+For maximum control over your data, consider self-hosting your own cloud services. This eliminates third-party access to your files, communications, and research.
+
+**See the full guide:** [Self-Hosting Infrastructure](primers/Self-Hosting-Infrastructure.md)
+
+Quick overview of what you can self-host:
+- **File sync:** Nextcloud, Syncthing
+- **Passwords:** Vaultwarden (Bitwarden compatible)
+- **Communication:** Matrix/Element, XMPP, Jitsi
+- **VPN:** WireGuard, Tailscale
+- **Notes:** Obsidian + Syncthing, Joplin Server
+
+---
+
 ## Repository Structure
 - **[Primers](primers/README.md):** Fast-start guides for Linux, direction finding, virtual machines, and other fundamentals.
 - **[Secure Communication Techniques](comms/README.md):** Living playbooks for digital + RF channels, plus workflows like [Strong & Anonymous File Sync](comms/e2eefilechange.md) and the new [`GrapheneOS Mudi Field Kit`](comms/GrapheneOS%20Mudi%20Field%20Kit.md).
