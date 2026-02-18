@@ -1,11 +1,11 @@
 # Surveillance and Policing Risks
 
-*Updated: November 27, 2025*
+*Updated: February 18, 2026*
 
-Pueblo's Real-Time Crime Center (RTCC) has undergone massive expansion in 2025, centralizing high-risk surveillance technologies under a conservative municipal majority. This brief summarizes the current stack, highlights civil-liberties threats, and outlines immediate self-advocacy moves.
+Pueblo's Real-Time Crime Center (RTCC) continued expanding through early 2026, widening acoustic coverage and adding mobile camera trailers while drone-first-responder flights remain active. This brief summarizes the current stack, highlights civil-liberties threats, and outlines immediate self-advocacy moves.
 
 ## Executive Summary
-- **RTCC expansion:** $2M state grant (Jan 2025) funded video wall upgrades, drone program, and ShotSpotter expansion to 6 square miles.[^state]
+- **RTCC expansion:** $2M state grant (Jan 2025) funded video wall upgrades, drone program, and ShotSpotter now reported at 6 sq mi with city citing further build-out toward ~7 sq mi; mobile trailer fleet growing (likely 6 units).[^state]
 - **Drone as First Responder:** July 2025 launch enables 60-90 second drone response to crime scenes, integrated with RTCC.[^drones]
 - **73 mobile ALPRs:** Sheriff's Office equipped every patrol car with license plate readers (March 2025).[^alpr]
 - **Community Connect Phase 2:** Live video feed integration from private cameras launched Spring 2025.[^cc]
@@ -15,12 +15,12 @@ Pueblo's Real-Time Crime Center (RTCC) has undergone massive expansion in 2025, 
 ## Technology Stack & 2025 Expansions
 
 ### Real-Time Crime Center
-- **Components:** ShotSpotter (6 sq mi), body cams, drones, 22+ fixed cameras, 22 fixed ALPRs, four mobile trailers, Daktronics 7'×12' dvLED wall
+- **Components:** ShotSpotter (6 sq mi reported; city indicates further expansion), body cams, drones, 22+ fixed cameras, 22 fixed ALPRs, four to six mobile trailers, Daktronics 7'×12' dvLED wall
 - **Operations:** 10am-midnight daily; hiring for 24/7 coverage
 - **Cost:** $2.2M initial (ARPA) + $410K/year recurring + $2M 2025 expansion
 - **Performance claims:** 97% ShotSpotter accuracy, 40% violent crime reduction, 676 shooting incidents detected[^stats]
 - **Risks:** No civilian oversight, opaque retention policies, private vendors control evidence
-- **Advocacy:** File CORA requests for all vendor contracts; demand public retention schedules
+- **Advocacy:** File CORA requests for all vendor contracts; demand public retention schedules; request updated 2026 coverage maps and trailer deployment logs
 
 ### Drone as First Responder Program (NEW July 2025)
 - **Capabilities:** 60-90 second response to crime scenes; footage integrated into RTCC
@@ -54,7 +54,7 @@ Pueblo's Real-Time Crime Center (RTCC) has undergone massive expansion in 2025, 
 - **Risks:** Surveillance of family gatherings, protests, community events in public spaces
 
 ### ShotSpotter / SoundThinking
-- **Coverage:** Expanded from 3 to 6 square miles in 2025
+- **Coverage:** Expanded from 3 to 6 square miles (2025 grant); city communications in early 2026 indicate continued expansion—request updated coverage map to verify
 - **Performance:** 97% accuracy claimed; 73% of alerts NOT called in by citizens; 9 lives saved via rapid response
 - **Cost:** $210,000/year
 - **Risks:** False positives; acoustic data lives on vendor servers

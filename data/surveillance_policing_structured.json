@@ -1,16 +1,16 @@
 {
-  "updated": "2025-11-27",
+  "updated": "2026-02-18",
   "systems": [
     {
       "name": "Real-Time Crime Center",
       "components": [
-        "ShotSpotter acoustic sensors (6 sq mi coverage, 97% accuracy claimed)",
+        "ShotSpotter acoustic sensors (~7 sq mi coverage, 97% accuracy claimed)",
         "Body-worn camera feeds",
         "Drone feeds (Drone as First Responder program, 60-90 sec response)",
         "Fixed surveillance cameras (22 initial + park expansions)",
         "ALPR streams (22 fixed + 73 mobile in Sheriff patrol cars)",
         "Daktronics 7x12 ft dvLED wall (1.2mm pixel pitch)",
-        "Four mobile solar camera trailers"
+        "Four mobile solar camera trailers (+2 added FY25-26, likely total 6)"
       ],
       "operators": "Pueblo PD with High Point Networks infrastructure support",
       "funding": {
@@ -24,7 +24,8 @@
         "Daktronics press release, 2025-10-02",
         "KOAA News5, 2025-01 (state grant)",
         "KKTV, 2025-07-12 (drones)",
-        "KRDO, 2025-07-14 (park surveillance)"
+        "KRDO, 2025-07-14 (park surveillance)",
+        "City of Pueblo State of the City 2026 (public safety section)"
       ],
       "notes": "Operating 10am-midnight; hiring for 24/7 operations. Centralizes telemetry in one managed vendor environment."
     },
@@ -82,7 +83,7 @@
         "Remote analyst confirmation",
         "Integration with RTCC dispatch"
       ],
-      "coverage": "6 square miles (expanded from initial 3 sq mi)",
+      "coverage": "~7 square miles (expanded from initial 3 sq mi)",
       "performance": {
         "accuracy": "97% over five months",
         "incidents_detected": "676 shooting incidents",

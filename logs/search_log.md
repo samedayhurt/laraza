@@ -2,6 +2,7 @@
 
 | Date | Agent | Task | Notes |
 | --- | --- | --- | --- |
+| 2026-02-18 | 00_ORCHESTRATOR | Plan Feb 2026 refresh | Restart pipeline: fresh web pulls for context, politics, surveillance, ICE, resources; then recompile reports and run safety review. |
 | 2025-11-15 | 00_ORCHESTRATOR | Plan research order | Prioritize politics -> surveillance -> resources -> immigration -> rights guide. |
 | 2025-11-15 | 02_PUEBLO_POLITICS_POWER_MAPPER | Backfill politics raw+structured | Summarized council majority & commissioner business ties from internal docs. |
 | 2025-11-15 | 03_SURVEILLANCE_POLICING_RESEARCHER | Logged RTCC/ALPR systems | Summarized Daktronics, Community Connect, Flock, and complaint escalation details. |
@@ -55,3 +56,8 @@
 | 2025-11-27 | 07_REPORT_COMPILER | Integrated agent research | Updated immigration_ice_raw.md, surveillance_policing_raw.md, resources_directory_raw.md, politics_raw_notes.md. |
 | 2025-11-27 | 06_RIGHTS_RISK_TRANSLATOR | KYR handout update | Added exact case citation *Ramirez Ovando v. Noem* to KYR-ICE-English.md. |
 | 2025-11-27 | 00_ORCHESTRATOR | Session commit | Comprehensive 2025 research integration across all data files. |
+| 2026-02-18 | 00_ORCHESTRATOR | Feb 2026 refresh kickoff | Re-running pipeline with fresh web pulls across context, politics, surveillance, ICE, and resources. |
+| 2026-02-18 | 03_SURVEILLANCE_POLICING_RESEARCHER | State of City surveillance updates | Logged ShotSpotter coverage expanded to ~7 sq mi, added two more mobile camera trailers, ongoing drone-first-responder ops. |
+| 2026-02-18 | 04_IMMIGRATION_ICE_RISK_MAPPER | Sheriff ICE cooperation stance | Captured Jan 29 2026 statement: no participation in ICE “roundups” without criminal charges; 104 ICE arrests 2026 YTD. |
+| 2026-02-18 | 05_PUEBLO_RESOURCES_MAPPER | Homeless services expansion | Noted SafeSide Recovery adding 8 dorm-style units in Jan 2026 to reduce unsheltered homelessness. |
+| 2026-02-18 | 02_PUEBLO_POLITICS_POWER_MAPPER | Agenda scan Feb 2026 | Downloaded latest City Council agenda (Item 626); keyword scan found no surveillance/immigration/civil-liberties matches. |

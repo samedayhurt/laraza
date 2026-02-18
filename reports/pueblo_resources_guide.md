@@ -4,7 +4,7 @@ Community safety in Pueblo depends on quick access to trusted legal, housing, he
 
 ## Executive Summary
 - Civil legal aid: **Colorado Legal Services (CLS)** runs the Southeastern Colorado office in downtown Pueblo, handling eviction defense, protection orders, and limited immigration screenings for income-qualified residents.[^cls]
-- Housing & homelessness: **Posada** coordinates motel vouchers, mail services, and permanent supportive housing for families, veterans, and youth experiencing homelessness county-wide.[^posada]
+- Housing & homelessness: **Posada** coordinates motel vouchers, mail services, and supportive housing; partner site **SafeSide Recovery** doubled shelter capacity with eight new dorm-style units in Jan 2026.[^posada][^safeside]
 - Survivor safety: **YWCA Pueblo** (domestic violence) and **Rape Crisis Services** offer 24/7 hotlines, shelter/accompaniment, and bilingual advocates.[^ywca][^rcs]
 - Mental health: **Health Solutions’ Crisis Walk-In Center** provides no-cost stabilization, mobile crisis, and detox linkages regardless of insurance.[^hs]
 
@@ -13,6 +13,7 @@ Community safety in Pueblo depends on quick access to trusted legal, housing, he
 | --- | --- | --- | --- |
 | Eviction, civil legal aid, VAWA filings | Colorado Legal Services — Pueblo Office | 719-545-6708; 1000 W. 6th St., Suite I | Represents low-income clients on housing, DV, consumer, and limited immigration matters; bilingual intake. |
 | Homelessness, mail service, supportive housing | Posada | 719-545-8776; 1008 N. Grand Ave. | Provides motel vouchers, case management, mailboxes, and permanent supportive housing placements for families, veterans, and youth. |
+| 24/7 low-barrier shelter + recovery support | SafeSide Recovery (Posada partner) | 719-696-0996; 901 W. 8th St. | Offers round-the-clock shelter; Jan 2026 expansion added eight dorm-style units, hygiene services, and recovery-oriented case management. |
 | Domestic violence crisis + shelter | YWCA Pueblo | 24/7 hotline 719-545-4884 | Operates emergency shelter, legal advocacy, and economic empowerment programming for survivors and dependents. |
 | Sexual assault crisis response | Rape Crisis Services of Pueblo | 24/7 hotline 719-544-1191 | Sends advocates to hospitals/law enforcement, offers counseling referrals, and facilitates prevention education. |
 | Behavioral health & substance-use crisis | Health Solutions Crisis Walk-In Center | 844-493-8255; 711 W. 13th St. | 24/7 stabilization, mobile crisis response, peer support, and detox coordination for youth and adults. |
@@ -42,3 +43,4 @@ Community safety in Pueblo depends on quick access to trusted legal, housing, he
 - [^ccp]: Catholic Charities of the Diocese of Pueblo, https://www.ccpueblo.org/services/ (accessed 2025-11-15).
 - [^techconnect]: Pueblo City-County Library District TechConnect, https://www.pueblolibrary.org/techconnect (accessed 2025-11-15).
 - [^coopcare]: Pueblo Cooperative Care Center, https://cooperativecarecenter.org/ (accessed 2025-11-15).
+- [^safeside]: KOAA News5, “Pueblo homeless facility expanding to help more people,” Jan 9, 2026.

@@ -79,4 +79,11 @@ Log every hotline, mutual aid fund, clinic, and legal service with sourcing so w
 - **Eligibility / notes:** Serves Pueblo County residents; IDs requested but emergency services available; coordinates with faith/community partners for utility assistance.
 - **Source / verification date:** Cooperative Care Center website, accessed 2025-11-15.
 
+## 2026-01-09 — SafeSide Recovery expansion for unsheltered residents
+- **Organization:** SafeSide Recovery (run by Posada & county partners)
+- **Service focus:** 24/7 shelter and recovery support for unhoused residents; January 2026 expansion adds eight dorm-style units (double capacity) plus drop-in hygiene and case management.
+- **Contact / intake:** 901 W. 8th St., Pueblo, CO 81003; phone 719-696-0996; intake on-site; referrals via Posada.
+- **Eligibility / notes:** Adults experiencing homelessness in Pueblo County; accepts people in recovery; limited medical respite coordination.
+- **Source / verification date:** KOAA News5 “Pueblo homeless facility expanding to help more people,” Jan 9, 2026.
+
 Flag capacity constraints or seasonal programs so downstream guides stay accurate.

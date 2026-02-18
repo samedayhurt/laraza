@@ -68,3 +68,8 @@ Document live meeting observations, quotes, and agenda references here before no
   - **At-Large — Mark Aliff (R):** Council President 2024-25, conservative bloc. Led unanimous 7-0 park surveillance approval.
   - **Mayor — Heather Graham (R):** Strong-mayor system retained after Question 2C failed. Has supported surveillance expansions.
 - **Follow-up tasks:** Build relationship profiles for new members; identify potential civil liberties allies; prepare targeted testimony for early 2026 budget cycle when surveillance contracts come up for renewal.
+
+## 2026-02-18 — City Council agenda scan (Item 626)
+- **Source / meeting link:** docs/agendas/city_council-626.pdf (downloaded via scripts/download_agendas.py)
+- **Key takeaways:** Keyword scan (surveillance, immigration, civil liberties, procurement) returned no matches. No immediate surveillance/ICE items flagged in latest agenda.
+- **Follow-up tasks:** Continue weekly agenda pulls; manually skim Item 626 during work session for any late addenda or budget amendments affecting RTCC, ALPR, drones, or data sharing.

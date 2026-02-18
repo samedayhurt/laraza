@@ -1,5 +1,5 @@
 {
-  "updated": "2025-11-27",
+  "updated": "2026-02-18",
   "resources": [
     {
       "name": "Colorado Legal Services – Pueblo Office",
@@ -40,6 +40,24 @@
       },
       "eligibility": "Households or individuals experiencing or at risk of homelessness in Pueblo County; bilingual staff available.",
       "source": "Posada Pueblo website (verified 2025-11-27)"
+    },
+    {
+      "name": "SafeSide Recovery (Posada partner site)",
+      "category": ["Homeless services", "Recovery support"],
+      "services": [
+        "24/7 low-barrier shelter",
+        "Eight new dorm-style units added January 2026 (doubling capacity)",
+        "Drop-in hygiene and showers",
+        "Case management and recovery support"
+      ],
+      "contact": {
+        "address": "901 W. 8th St., Pueblo, CO 81003",
+        "phone": "719-696-0996",
+        "hours": "24/7 shelter; intake on-site",
+        "web": "https://www.koaa.com/news/covering-colorado/pueblo-homeless-facility-expanding-to-help-more-people"
+      ],
+      "eligibility": "Adults experiencing homelessness in Pueblo County; accepts residents in recovery; referrals via Posada or walk-in.",
+      "source": "KOAA News5, 2026-01-09"
     },
     {
       "name": "Mariposa Center for Safety (formerly YWCA Pueblo)",

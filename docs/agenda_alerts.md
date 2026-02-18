@@ -1,56 +1,14 @@
 # Agenda Monitoring Alert Report
 
-**Generated:** 2025-11-27 18:29
+**Generated:** 2026-02-18 10:53
 **New files downloaded:** 0
-**Keyword matches found:** 12
+**Keyword matches found:** 0
 
 ---
 
-## Keyword Alerts
+## No Keyword Matches Found
 
-### Procurement
-
-**File:** `city_council-3943.pdf`
-**Matched:** `contract`
-**Context:** ...ONS  L-1    NONE SUBMITTED  M.     RESOLUTIONS  M-1    RESOLUTION NO. 14890 AWARDING A CONSTRUCTION CONTRACT IN THE        AMOUNT OF $413,343 TO K.R. SWERDFEGER CONSTRUCTION, INC., AND        SETTING FORTH $8...
-
-**File:** `city_council-3943.pdf`
-**Matched:** `contract`
-**Context:** ...NG THE        PURCHASING AGENT TO EXECUTE SAME  M-2    RESOLUTION NO. 14891 AWARDING A CONSTRUCTION CONTRACT IN THE        AMOUNT OF $432,022.80 TO K.R. SWERDFEGER, INC. AND SETTING FORTH        $86,405 FOR C...
-
-**File:** `city_council-3943.pdf`
-**Matched:** `contract`
-**Context:** ...NG THE PURCHASING        AGENT TO EXECUTE SAME  M-3    RESOLUTION NO. 14892 AWARDING A CONSTRUCTION CONTRACT IN THE        AMOUNT OF $140,229.60 TO DOUG VAUGHN, LLC., AND SETTING FORTH $59,750        FOR CONT...
-
-**File:** `city_council-3943.pdf`
-**Matched:** `contract`
-**Context:** ...NG THE PURCHASING AGENT TO EXECUTE        SAME  M-4    RESOLUTION NO. 14893 AWARDING A CONSTRUCTION CONTRACT IN THE        AMOUNT OF $24,064 TO DOUG VAUGHN, LLC., AND SETTING FORTH $5,691 FOR        CONTINGEN...
-
-**File:** `city_council-3943.pdf`
-**Matched:** `grant`
-**Context:** ...AND ACCEPTING A COLORADO       DEPARTMENT OF LAW PEACE OFFICER STANDARDS AND TRAINING (POST)       GRANT, JULY 1, 2021, THROUGH JUNE 30, 2022, ESTABLISHING PROJECT       NUMBER PS2205, TRANSFERRING FUNDS...
-
-**File:** `city_council-3943.pdf`
-**Matched:** `grant`
-**Context:** ...G FUNDS NOT TO EXCEED THE AMOUNT OF       $4000 FROM PROJECTS-TO-BE-DETERMINED IN THE PUBLIC SAFETY GRANTS       FUND  M-6   RESOLUTION NO. 14895 TRANSFERRING $36,000 IN THE SOUTHPOINTE SPECIAL       IMPRO...
-
-**File:** `council-3943.pdf`
-**Matched:** `contract`
-**Context:** ...ONS  L-1    NONE SUBMITTED  M.     RESOLUTIONS  M-1    RESOLUTION NO. 14890 AWARDING A CONSTRUCTION CONTRACT IN THE        AMOUNT OF $413,343 TO K.R. SWERDFEGER CONSTRUCTION, INC., AND        SETTING FORTH $8...
-
-**File:** `council-3943.pdf`
-**Matched:** `contract`
-**Context:** ...NG THE        PURCHASING AGENT TO EXECUTE SAME  M-2    RESOLUTION NO. 14891 AWARDING A CONSTRUCTION CONTRACT IN THE        AMOUNT OF $432,022.80 TO K.R. SWERDFEGER, INC. AND SETTING FORTH        $86,405 FOR C...
-
-**File:** `council-3943.pdf`
-**Matched:** `contract`
-**Context:** ...NG THE PURCHASING        AGENT TO EXECUTE SAME  M-3    RESOLUTION NO. 14892 AWARDING A CONSTRUCTION CONTRACT IN THE        AMOUNT OF $140,229.60 TO DOUG VAUGHN, LLC., AND SETTING FORTH $59,750        FOR CONT...
-
-**File:** `council-3943.pdf`
-**Matched:** `contract`
-**Context:** ...NG THE PURCHASING AGENT TO EXECUTE        SAME  M-4    RESOLUTION NO. 14893 AWARDING A CONSTRUCTION CONTRACT IN THE        AMOUNT OF $24,064 TO DOUG VAUGHN, LLC., AND SETTING FORTH $5,691 FOR        CONTINGEN...
-
-*...and 2 more matches in this category*
+No surveillance, immigration, or civil liberties keywords detected in the scanned agendas.
 
 ---
 
@@ -66,10 +24,10 @@ If matches were found:
 ## Keywords Monitored
 
 **Surveillance:** real[\-\s]?time crime, rtcc, shotspotter, soundthinking, community connect...
-**Immigration:** ice, immigration, customs and border, cbp, deportation...
-**Policing:** police contract, body[\-\s]?worn camera, body\s*cam, use of force, internal affairs...
-**Civil Liberties:** first amendment, protest, demonstration, assembly, free speech...
-**Procurement:** contract, vendor, procurement, rfp, bid...
+**Immigration:** ice(?!\s*(cream|skating|machine)), immigration (enforcement|detainer|hold|policy|resolution), customs and border, cbp, deportation...
+**Policing:** police (contract|agreement|budget|department), body[\-\s]?worn camera, body\s*cam, use of force, internal affairs...
+**Civil Liberties:** first amendment, protest (permit|ordinance|policy), demonstration (permit|policy), free speech, privacy (policy|concern|right|impact)...
+**Procurement:** surveillance contract, security (vendor|contract), procurement (surveillance|camera|security), rfp.*(camera|security|surveillance), bid.*(camera|security|surveillance)...
 
 ---
 

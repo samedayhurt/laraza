@@ -1,13 +1,13 @@
 # Immigration and ICE Risks
 
-*Updated: November 27, 2025*
+*Updated: February 18, 2026*
 
 Pueblo residents face escalating federal enforcement, evolving county policies, and new surveillance threats. This brief captures the latest intelligence and tools for asserting rights and documenting abuses.
 
 ## Executive Summary
 - **MAJOR VICTORY:** Federal judge ordered ICE to stop warrantless arrests in Colorado (Nov 25, 2025)—cite this in any ICE encounter.[^court]
-- **ICE enforcement quadrupled:** 1,360 arrests in Colorado Jan-June 2025 vs. same period 2024; September operation targeted 14 cities including Pueblo.[^ice]
-- **Sheriff Lucero holds firm:** PCSO will NOT participate in roundup operations; only cooperates on criminal matters with officer-safety concerns.[^sheriff]
+- **ICE enforcement high:** 1,360 arrests Jan–Jun 2025; early 2026 statewide reports count 104 arrests so far.[^ice]
+- **Sheriff Lucero reaffirmed (Jan 2026):** PCSO will NOT participate in roundup operations; only cooperates on criminal matters with officer-safety concerns.[^sheriff]
 - **Sensitive areas rescinded:** ICE can now enforce at schools, churches, hospitals (Jan 21, 2025).[^sensitive]
 - **Social media surveillance:** ICE seeking 24/7 monitoring of Facebook, TikTok, WhatsApp, Instagram—friends/relatives may be tracked.[^social]
 - **Nearby detention:** Huerfano County facility (50 mi south) may activate with 752-bed ICE capacity.[^detention]
@@ -26,7 +26,7 @@ On November 25, 2025, Senior U.S. District Judge R. Brooke Jackson issued a 66-p
 
 ## Sheriff Cooperation Policy
 
-**Sheriff David Lucero's Pledge (January 23, 2025):**
+**Sheriff David Lucero's Pledge (January 23, 2025; reaffirmed January 29, 2026):**
 
 | Will Cooperate | Will NOT Cooperate |
 |----------------|-------------------|
@@ -36,7 +36,7 @@ On November 25, 2025, Senior U.S. District Judge R. Brooke Jackson issued a 66-p
 
 **Key quote:** "My role isn't to enforce immigration laws. I am not the federal sheriff. My role is to enforce Colorado law and to ensure the safety of the citizens of Pueblo County."
 
-**How to use:** Carry printed copies to cite at schools, clinics, or protests. Log any deviations for POST/AG complaints.
+**How to use:** Carry printed copies to cite at schools, clinics, or protests. Log any deviations for POST/AG complaints. Request monthly detainer stats from PCSO to verify practice matches pledge.
 
 ## Pueblo County Jail Policy
 

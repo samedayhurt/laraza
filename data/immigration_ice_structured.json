@@ -1,5 +1,5 @@
 {
-  "updated": "2025-11-27",
+  "updated": "2026-02-18",
   "risks": [
     {
       "title": "Unverified ICE roundup rumors causing panic",
@@ -59,9 +59,9 @@
   ],
   "policies": [
     {
-      "title": "Pueblo County Sheriff cooperation limits",
-      "summary": "Sheriff David Lucero pledged PCSO will not help ICE with civil 'round-up' operations and will only participate when there are criminal charges or officer-safety concerns.",
-      "date": "2025-01-23",
+      "title": "Pueblo County Sheriff cooperation limits (reaffirmed 2026)",
+      "summary": "Sheriff David Lucero reiterated PCSO will not help ICE with civil 'round-up' operations and will only participate when there are criminal charges or officer-safety concerns. January 2026 interview repeated stance amid statewide arrests.",
+      "date": "2026-01-29 (original pledge 2025-01-23)",
       "details": {
         "will_cooperate": [
           "Criminal charges or criminal nexus",
@@ -83,7 +83,8 @@
       "sources": [
         "Pueblo County Sheriff's Office news release, 2025-01-23",
         "KOAA News5, 2025-01-24",
-        "KRDO, 2025-01-24"
+        "KRDO, 2025-01-24",
+        "Pueblo Chieftain via Yahoo News, 2026-01-29"
       ]
     },
     {

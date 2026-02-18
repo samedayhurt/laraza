@@ -46,6 +46,13 @@ Track courthouse monitoring, local detention reports, hotline escalations, and s
 - **Sources:** Colorado Sun (Nov 25, 2025); Denver Post (Nov 25, 2025); CPR (Nov 25, 2025); Westword (Nov 25, 2025).
 - **Suggested response / referral:** Update all KYR cards with case citation *Ramirez Ovando v. Noem*; train rapid responders to cite ruling during ICE encounters; document any post-Nov 25 warrantless arrests where flight risk was not assessed—contact ACLU of Colorado immediately; inform detained individuals they may be eligible for bond refund and ankle monitor removal.
 
+## 2026-01-29 — Sheriff stance on ICE cooperation
+- **Date / trigger:** January 29, 2026
+- **Agency or facility:** Pueblo County Sheriff's Office
+- **Summary:** Sheriff David Lucero told media PCSO will not participate in ICE “roundups” or sweeps and will only cooperate when individuals are charged with crimes. Report noted 104 ICE arrests statewide early 2026; Colorado remains a sanctuary state with over 100 county jails.
+- **Sources:** Pueblo Chieftain via Yahoo News (Jan 29, 2026).
+- **Suggested response / referral:** Continue monitoring jail booking-to-ICE detainer pipeline; request monthly detainer stats; include statement in KYR trainings to clarify limits of cooperation while warning that criminal bookings can still trigger ICE holds.
+
 ## 2025-11 — ICE Social Media Monitoring Threat Assessment
 - **Date / trigger:** November 2025 policy analysis
 - **Agency or facility:** ICE / Homeland Security Investigations (HSI)

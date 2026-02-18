@@ -79,6 +79,13 @@ Collect incident logs, technology sightings, contract notes, and firsthand accou
 - **Observed capability:** Out-of-state agencies + Border Patrol ran 1,400+ searches with "ICE"/"immigration" justifications via Denver's national lookup feature. 690 searches post-Trump inauguration. Loveland PD admitted sharing portal with ICE federal agent. Pueblo's Downtown Association Flock cameras (2022 deployment) potentially accessible via national network unless disabled.
 - **Immediate risk + mitigation idea:** Immigrant community members' movements tracked via ALPR network accessible to ICE. Action: (1) CORA Pueblo PD to confirm if national lookup enabled on local Flock cameras; (2) demand City Council resolution prohibiting ICE data sharing (precedent: Denver disabled April 2025, Boulder June 2025); (3) organize with ACLU-CO and immigrant rights groups.
 
+## 2026-02-18 — State of the City notes expanded sensor footprint
+- **Date / time:** 2026-02-18 desk research (2026 State of the City PDF)
+- **Location:** City of Pueblo police technology stack
+- **Source / doc link:** Pueblo.us “State of the City 2026” (posted Jan 2026) listing public safety accomplishments.
+- **Observed capability:** ShotSpotter acoustic coverage now ~7 sq mi; two additional mobile camera trailers deployed; Drone as First Responder program continues; ALPRs and Community Connect cited as ongoing tools feeding RTCC.
+- **Immediate risk + mitigation idea:** Sensor footprint widening without fresh policy debate. Action: request updated coverage maps + deployment logs for trailers and drones; ask Council for annual public report on sensor efficacy, audit logs, and data retention.
+
 ## 2025-11-20 — EFF Exposes Flock Surveillance of Protesters, Activists Nationwide
 - **Date / time:** November 20, 2025 report (data Dec 2024 - Oct 2025)
 - **Location:** Nationwide (50+ agencies), relevance to Pueblo ALPR network
