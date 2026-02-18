@@ -21,48 +21,24 @@ For all of our family.
 
 ---
 
-## Latest Updates (January 2026)
+## Latest Updates (February 2026)
 
 **Surveillance Infrastructure Updates:**
-- RTCC technology stack fully documented (Genetec ~$200k, ShotSpotter $210k, Flock, DFR drones)
-- ShotSpotter coverage split into two polygons: Eastside (~2 sq mi) and Bessemer (~1 sq mi, added July 2025)
-- Community Connect 4-pillar program documented with self-advocacy actions
-- DFR (Drone as First Responder) station added to GeoJSON (launched July 2025)
-- Mobile camera trailer location updated (Mesa & Elm, captured Aug 2025 homicide footage)
-- PCSO 73 mobile ALPR inventory confirmed
-- Park surveillance metadata expanded (all 5 parks now show ARPA funding, RTCC feed status)
+- ShotSpotter coverage reported at ~6–7 sq mi (State of the City 2026); RTCC mobile camera trailers likely increased to 6 total; DFR drones remain active.
+- Agenda monitoring refreshed (Feb 18, 2026): latest City Council agenda contained no surveillance/ICE/civil-liberties items; alerts logged in `docs/agenda_alerts.md`.
+- Surveillance data and risks report updated to reflect 2026 footprint and advocacy asks for coverage maps, trailer logs, and drone deployments.
 
-**ICE Infrastructure Documentation:**
-- Walsenburg detention center documented (CoreCivic, 752 beds, ACLU FOIA docs)
-- Pueblo Airport ICE deportation flight email (Greg Pedroza, Sept 2025)
-- Hudson detention center ($39M GEO Group contract, 1,200 beds, Dec 2025)
-- Air Without ICE coalition organizing details (NAACP Pueblo, El Movimiento Sigue, Together Colorado)
-- Speak Up Southern Colorado (Walsenburg organizing)
+**ICE / Immigration Updates:**
+- Pueblo County Sheriff Lucero reaffirmed Jan 29, 2026: PCSO will not join ICE “roundups,” will only cooperate on criminal charges/officer safety; track jail-to-ICE detainers.
+- Early 2026 reports show 104 ICE arrests statewide YTD; immigration risks report updated with context and the 2025 federal warrantless-arrest ruling.
 
-**Data Flow Analysis:**
-- Full surveillance stack hierarchy documented (Community Connect → RTCC → CO Network → Flock → Palantir)
-- Flock "Nova" platform early access warning (404 Media)
-- Denver audit log ICE scandal details (1,400+ searches, Loveland/Windsor PD federal agent access)
+**Resource Directory Updates:**
+- SafeSide Recovery (Posada partner) added eight dorm-style units in Jan 2026, doubling 24/7 low-barrier shelter capacity in Pueblo.
+- Resource guide and structured directory updated; keep intake details documented for follow-up.
 
-**Critical Fixes:**
-- Fixed inaccurate council member data and reconciled political roster with official City of Pueblo records
-- Updated Juniper Southern Colorado (formerly Rape Crisis Services) with new 24/7 crisis line: **719-549-0549**
-- Fixed `monitor_agendas.py` to actually scrape county commissioners (was defined but never processed)
-
-**New Spanish Translations:**
-- [Derechos de Grabación en Colorado](primers/Derechos%20de%20Grabacion%20en%20Colorado.md) - Recording Rights
-- [Derechos de Protesta Primera Enmienda](primers/Derechos%20de%20Protesta%20Primera%20Enmienda.md) - First Amendment Protest Rights
-
-**New Handouts & Guides:**
-- [Traffic Stop Rights Card](docs/handouts/Traffic-Stop-Rights-Card.md) - Bilingual wallet-sized card
-- [Post-Arrest Roadmap](docs/handouts/Post-Arrest-Roadmap.md) - First 72 hours guide
-- [Police Violence Documentation Primer](primers/Police%20Violence%20Documentation.md) - How to document, preserve, and report
-
-**Expanded Data:**
-- GeoJSON now includes ShotSpotter Eastside + Bessemer coverage polygons, ALPR corridors, DFR drone station, and institutional POIs
-- Resources directory expanded with bail funds, worker rights orgs, LGBTQ+ services, and digital security help
-- Surveillance data updated with Flock-ICE scandal details, EFF protest surveillance findings, and racial disparity statistics
-- 10 new source citations added to logs/source_index.md
+**Data Flow & Tooling:**
+- `monitor_agendas.py` + `download_agendas.py` remain the workflow for weekly agenda pulls; city agenda (Item 626) added to `docs/agendas/` for audit trail.
+- Safety/ethics review rerun (Feb 18, 2026): reports remain rights-focused, no private resident data exposed.
 
 **Stay safe. The times demand it.**
 
