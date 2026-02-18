@@ -19,6 +19,12 @@ For all of our family.
 
 <p align="center"><em>Click to view interactive map | Shows RTCC, ShotSpotter zones, Flock ALPR corridors, DFR drone station, park surveillance, ICE watch sites, and community support services</em></p>
 
+### How to use the map
+- Open `docs/maps/pueblo-surveillance-map.html` in your browser (or via GitHub Pages if enabled).
+- Toggle layers (e.g., RTCC, ALPR, drones, parks, community support) with the layer control; markers are clustered for dense areas.
+- Click any pin to see description plus linked sources; polygons/lines show coverage areas like ShotSpotter or ALPR corridors.
+- Regenerate after data changes with `.venv/bin/python scripts/build_pueblo_map.py` (folium already installed in `.venv`).
+
 ---
 
 ## Latest Updates (February 2026)
