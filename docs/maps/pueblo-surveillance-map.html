@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_fbaebe8544d8dcf52a083a1615dcbe81 {
+                #map_3c06c46733cd8ae3a6c592a06913b97d {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -50,6 +50,75 @@
             </script>
 
         
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
     
                     <style>
                         .foliumtooltip {
@@ -70,14 +139,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_fbaebe8544d8dcf52a083a1615dcbe81" ></div>
+            <div class="folium-map" id="map_3c06c46733cd8ae3a6c592a06913b97d" ></div>
         
 </body>
 <script>
     
     
-            var map_fbaebe8544d8dcf52a083a1615dcbe81 = L.map(
-                "map_fbaebe8544d8dcf52a083a1615dcbe81",
+            var map_3c06c46733cd8ae3a6c592a06913b97d = L.map(
+                "map_3c06c46733cd8ae3a6c592a06913b97d",
                 {
                     center: [38.29, -104.61],
                     crs: L.CRS.EPSG3857,
@@ -89,12 +158,13 @@
 
                 }
             );
+            L.control.scale().addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
 
             
 
         
     
-            var tile_layer_943d362d3e9b59963172bc416b8b4a2e = L.tileLayer(
+            var tile_layer_cc5698a6a6335c5a3379138ad3d0693b = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -111,40 +181,54 @@
             );
         
     
-            tile_layer_943d362d3e9b59963172bc416b8b4a2e.addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            tile_layer_cc5698a6a6335c5a3379138ad3d0693b.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
         
     
-        function geo_json_51004dba99aa5a2ba476c5bbd7263ad3_styler(feature) {
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_3307d9f56d0ad89a97584253f655ecda = L.featureGroup(
+                {
+}
+            );
+        
+    
+        function geo_json_dd21d265f85919569687c1eb6a5caf25_styler(feature) {
             switch(feature.properties.id) {
-                case "pueblo-rtcc": case "pueblo-dfr-station": case "downtown-alpr": case "bessemer-mobile-trailer": case "pueblo-mall-security": case "pcso-hq": case "ccsoco-immigration": case "mineral-palace-park": case "city-park": case "lake-minnequa": case "ray-aguilera-park": case "mitchell-park": case "city-hall-cameras": case "pueblo-memorial-airport": case "posada-pueblo": case "colorado-legal-services": case "mariposa-ywca": case "pueblo-chc": case "health-solutions-crisis": case "juniper-southern-colorado": case "pueblo-library-main": case "cooperative-care-center": case "pueblo-courthouse": case "shotspotter-eastside": case "shotspotter-bessemer": case "union-ave-alpr-corridor": case "riverwalk-alpr-corridor": case "csu-pueblo": case "pueblo-community-college": case "el-centro-quinto-sol": 
-                    return {"color": "#0057b7", "fillColor": "#3388ff", "fillOpacity": 0.2, "weight": 2};
                 default:
                     return {"color": "#ff6f00", "fillColor": "#ff6f00", "fillOpacity": 0.05, "weight": 2};
             }
         }
 
-        function geo_json_51004dba99aa5a2ba476c5bbd7263ad3_onEachFeature(feature, layer) {
+        function geo_json_dd21d265f85919569687c1eb6a5caf25_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_51004dba99aa5a2ba476c5bbd7263ad3 = L.geoJson(null, {
-                onEachFeature: geo_json_51004dba99aa5a2ba476c5bbd7263ad3_onEachFeature,
+        var geo_json_dd21d265f85919569687c1eb6a5caf25 = L.geoJson(null, {
+                onEachFeature: geo_json_dd21d265f85919569687c1eb6a5caf25_onEachFeature,
             
-                style: geo_json_51004dba99aa5a2ba476c5bbd7263ad3_styler,
+                style: geo_json_dd21d265f85919569687c1eb6a5caf25_styler,
             ...{
 }
         });
 
-        function geo_json_51004dba99aa5a2ba476c5bbd7263ad3_add (data) {
-            geo_json_51004dba99aa5a2ba476c5bbd7263ad3
+        function geo_json_dd21d265f85919569687c1eb6a5caf25_add (data) {
+            geo_json_dd21d265f85919569687c1eb6a5caf25
                 .addData(data);
         }
-            geo_json_51004dba99aa5a2ba476c5bbd7263ad3_add({"features": [{"geometry": {"coordinates": [[[-104.6694073, 38.2646391], [-104.5694073, 38.2646391], [-104.5694073, 38.3646391], [-104.6694073, 38.3646391], [-104.6694073, 38.2646391]]], "type": "Polygon"}, "properties": {"description": "Bounding box for ZIP code 81008; used as frame for North Pueblo research.", "id": "zip-81008", "name": "Approximate ZIP 81008 extent", "notes": "Desktop mapping uses bounding box because public polygon data requires shapefiles.", "sources": ["Nominatim OpenStreetMap"], "type": "boundary"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.612921, 38.2629478], "type": "Point"}, "properties": {"components": ["ShotSpotter", "Drones", "Body cams", "22+ fixed cameras", "22 ALPRs", "Daktronics video wall"], "description": "Public Safety Complex hosting RTCC with ShotSpotter (6 sq mi), drones, Daktronics video wall, Community Connect intake. Operating 10am-midnight, expanding to 24/7.", "id": "pueblo-rtcc", "name": "Pueblo Police Department / Real-Time Crime Center", "sources": ["https://www.pueblo.us/Directory.aspx?did=13", "https://www.daktronics.com/news/eye-on-crime-increases-with-daktronics-high-point-networks-collaboration-for-pueblo-police-department-s-real-time-crime-center"], "type": "rtcc", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.612921, 38.2629478], "type": "Point"}, "properties": {"description": "First DFR station launched July 2025. Drones deployed to RTCC before officers arrive. Part of Pueblo\u0027s expanding aerial surveillance network.", "id": "pueblo-dfr-station", "name": "Drone as First Responder (DFR) Station", "sources": ["Daktronics press release Sept 2025"], "type": "drone-surveillance", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6126358, 38.2654292], "type": "Point"}, "properties": {"description": "Pueblo Downtown Association-funded Flock Safety cameras covering Union Ave / Riverwalk corridors. 30-day cloud retention. Part of 1,091-camera Colorado network.", "id": "downtown-alpr", "name": "Downtown Flock ALPR Installations", "notes": "EFF Nov 2025 report documents Flock network used to surveil protesters nationwide.", "sources": ["https://www.koaa.com/news/covering-colorado/license-plate-cameras-coming-to-pueblo"], "type": "alpr", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.5948, 38.2577], "type": "Point"}, "properties": {"camera_count": 4, "description": "Solar-powered mobile RTCC camera trailer at Mesa Ave \u0026 Elm St. One of four mobile trailers deployed citywide. Captured Aug 2025 homicide footage.", "id": "bessemer-mobile-trailer", "name": "Mobile Camera Trailer - Mesa \u0026 Elm", "notes": "Location approximate based on news reporting. Trailers are mobile and may relocate.", "sources": ["KKTV, July 2025", "Pueblo PD press release Aug 2025"], "type": "mobile-surveillance", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6082866, 38.3031311], "type": "Point"}, "properties": {"description": "North-side retail hub with on-site security office. Potential Community Connect participant in ZIP 81008.", "id": "pueblo-mall-security", "name": "Pueblo Mall private security office", "sources": ["https://www.shoppueblomall.com/services/security"], "type": "private-security", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6107614, 38.2751559], "type": "Point"}, "properties": {"description": "909 Court Street command campus. Sheriff Lucero issued Jan 2025 statement limiting ICE cooperation. All 73 patrol cars now equipped with mobile Flock ALPRs (March 2025). Mobile ALPRs feed into RTCC.", "id": "pcso-hq", "mobile_alprs": 73, "name": "Pueblo County Sheriff\u0027s Office HQ", "sources": ["https://www.pueblosheriff.com/Directory.aspx?did=1", "https://www.pueblosheriff.com/DocumentCenter/View/3323/Sheriff-Lucero-Statement"], "type": "law-enforcement", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6129252, 38.2764132], "type": "Point"}, "properties": {"description": "Safe walk-in site at 429 W 10th St offering DOJ-accredited immigration legal aid, Know Your Rights briefings. Phone: (719) 586-8600.", "id": "ccsoco-immigration", "name": "Catholic Charities Immigration Services", "sources": ["https://www.ccsoco.org/contact", "https://www.ccsoco.org/immigration"], "type": "community-support", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6071836, 38.2812424], "type": "Point"}, "properties": {"description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Community staging zone for events like Pueblo Pride.", "id": "mineral-palace-park", "name": "Mineral Palace Park", "notes": "Good rally point with sight lines away from downtown RTCC clusters. Surveillance cameras active 24/7, feeds to RTCC.", "sources": ["KRDO, July 2025", "City of Pueblo ARPA spending reports"], "type": "park-surveillance", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.62, 38.27], "type": "Point"}, "properties": {"description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC video wall.", "id": "city-park", "name": "City Park", "sources": ["KRDO, July 2025", "City of Pueblo ARPA spending reports"], "type": "park-surveillance", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.585, 38.24], "type": "Point"}, "properties": {"description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.", "id": "lake-minnequa", "name": "Lake Minnequa Park", "sources": ["KRDO, July 2025", "City of Pueblo ARPA spending reports"], "type": "park-surveillance", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.59, 38.25], "type": "Point"}, "properties": {"description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.", "id": "ray-aguilera-park", "name": "Ray Aguilera Park", "sources": ["KRDO, July 2025", "City of Pueblo ARPA spending reports"], "type": "park-surveillance", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.605, 38.295], "type": "Point"}, "properties": {"description": "One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.", "id": "mitchell-park", "name": "Mitchell Park", "sources": ["KRDO, July 2025", "City of Pueblo ARPA spending reports"], "type": "park-surveillance", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.614, 38.262], "type": "Point"}, "properties": {"description": "New camera arrays installed on city buildings including City Hall (2025). Enhanced surveillance for downtown events.", "id": "city-hall-cameras", "name": "City Hall Camera Arrays", "sources": ["KKTV, July 2025"], "type": "fixed-surveillance", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.5, 38.29], "type": "Point"}, "properties": {"description": "Community protests over potential ICE use for immigration transport. Monitor for ICE activity.", "id": "pueblo-memorial-airport", "name": "Pueblo Memorial Airport", "notes": "Location to watch for ICE transport flights. Not confirmed as active ICE site.", "sources": ["Rocky Mountain PBS, 2025"], "type": "watch-site", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.61, 38.288], "type": "Point"}, "properties": {"description": "Emergency housing, homeless services, youth programs. Address: 501 Belmont Ave. Phone: 719-545-8776.", "id": "posada-pueblo", "name": "Posada of Pueblo", "sources": ["posadapueblo.org"], "type": "community-support", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.613, 38.273], "type": "Point"}, "properties": {"description": "Free legal aid for eviction defense, immigration screenings, protection orders. Address: 1000 W 6th St. Phone: 719-545-6708.", "id": "colorado-legal-services", "name": "Colorado Legal Services - Pueblo Office", "sources": ["coloradolegalservices.org"], "type": "community-support", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.608, 38.269], "type": "Point"}, "properties": {"description": "24/7 DV crisis line, emergency shelter, legal advocacy. Address: 801 N Santa Fe Ave. Crisis line: 719-545-8195.", "id": "mariposa-ywca", "name": "Mariposa Center for Safety (YWCA)", "sources": ["ywcapueblo.org"], "type": "community-support", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.609, 38.278], "type": "Point"}, "properties": {"description": "FQHC accepting all patients regardless of ability to pay. Homeless clinic, migrant health services. Phone: (719) 543-8711.", "id": "pueblo-chc", "name": "Pueblo Community Health Center", "sources": ["pueblochc.org"], "type": "community-support", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.618, 38.275], "type": "Point"}, "properties": {"description": "24/7 mental health crisis stabilization, mobile crisis response, peer support, detox coordination. No insurance required. Address: 711 W 13th St. Phone: 844-493-8255.", "id": "health-solutions-crisis", "name": "Health Solutions Crisis Walk-In Center", "sources": ["health.solutions/services/crisis-care"], "type": "community-support", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.61, 38.269], "type": "Point"}, "properties": {"description": "24/7 crisis hotline (call OR text), hospital/court accompaniment, long-term case management, counseling referrals. Address: 503 N Main St, Suite 526. Crisis line: 719-549-0549 (call/text).", "id": "juniper-southern-colorado", "name": "Juniper Southern Colorado (formerly Rape Crisis Services)", "sources": ["rapecrisisservices.org", "ColoradoGives"], "type": "community-support", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.605, 38.262], "type": "Point"}, "properties": {"description": "Main library with TechConnect program: free Wi-Fi hotspot/Chromebook loans, printing, digital literacy help. Address: 100 E Abriendo Ave. Phone: 719-562-5600.", "id": "pueblo-library-main", "name": "Pueblo City-County Library - Rawlings Branch", "sources": ["pueblolibrary.org/techconnect"], "type": "community-support", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.617, 38.268], "type": "Point"}, "properties": {"description": "Food, clothing, hygiene kits, mail services for residents in crisis. Address: 326 W 8th St. Phone: 719-543-7484.", "id": "cooperative-care-center", "name": "Pueblo Cooperative Care Center", "sources": ["cooperativecarecenter.org"], "type": "community-support", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.6065, 38.2715], "type": "Point"}, "properties": {"description": "Location to monitor for ICE civil arrest activity. Nov 2025 federal ruling prohibits ICE warrantless arrests in Colorado. Address: 215 W 10th St.", "id": "pueblo-courthouse", "name": "Pueblo County Courthouse", "notes": "Log observations in data/immigration_ice_raw.md with date, time, agency, badge numbers if visible.", "sources": ["Colorado federal court ruling Nov 2025"], "type": "watch-site", "updated": "2025-11"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-104.625, 38.295], [-104.575, 38.295], [-104.575, 38.26], [-104.625, 38.26], [-104.625, 38.295]]], "type": "Polygon"}, "properties": {"area_sq_mi": 2, "description": "Primary ShotSpotter deployment (~2 sq mi). Sensors on buildings and poles. 60-second alert to RTCC. Part of $210k/year SoundThinking contract.", "id": "shotspotter-eastside", "name": "ShotSpotter Eastside Coverage", "notes": "Coverage area is approximate - exact sensor locations not public. Chicago IG found 89% of ShotSpotter alerts led to no gun-related incident.", "sources": ["SoundThinking press release 2025", "KOAA News5 2025-01"], "type": "acoustic-surveillance", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-104.61, 38.26], [-104.575, 38.26], [-104.575, 38.235], [-104.61, 38.235], [-104.61, 38.26]]], "type": "Polygon"}, "properties": {"area_sq_mi": 1, "description": "Expanded ShotSpotter coverage (~1 sq mi). Added July 2025 after March officer shooting. Extends into previously unmonitored Bessemer/Southside area.", "id": "shotspotter-bessemer", "name": "ShotSpotter Bessemer Coverage", "notes": "Expansion funded by state grant. Almost exclusively deployed in low-income Black/Latino neighborhoods.", "sources": ["KOAA News5 July 2025", "Pueblo PD press release"], "type": "acoustic-surveillance", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [[-104.62, 38.262], [-104.615, 38.264], [-104.61, 38.266], [-104.605, 38.268]], "type": "LineString"}, "properties": {"description": "Flock Safety license plate reader corridor along Union Avenue. Downtown Association funded initial deployment. Part of 1,091-camera Colorado network. 30-day cloud retention.", "id": "union-ave-alpr-corridor", "name": "Union Avenue ALPR Corridor", "notes": "EFF documented this network used for protest surveillance. Audit logs should be requested via CORA.", "sources": ["KOAA News5 2024", "EFF Nov 2025 report"], "type": "alpr-corridor", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [[-104.608, 38.258], [-104.61, 38.262], [-104.612, 38.266], [-104.614, 38.27]], "type": "LineString"}, "properties": {"description": "Flock Safety license plate reader coverage along Riverwalk area. Connected to Downtown Association surveillance initiative.", "id": "riverwalk-alpr-corridor", "name": "Riverwalk ALPR Corridor", "notes": "Part of downtown surveillance ring. Cameras capture all plates, not just hotlist matches.", "sources": ["KOAA News5 2024"], "type": "alpr-corridor", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.635, 38.285], "type": "Point"}, "properties": {"description": "Major employer and institution. Potential march/protest staging area. Has campus police. Located near ALPR coverage zones.", "id": "csu-pueblo", "name": "Colorado State University Pueblo", "notes": "University grounds are limited public forum - different First Amendment rules may apply for non-students.", "sources": ["CSU Pueblo website"], "type": "institution", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.62, 38.255], "type": "Point"}, "properties": {"description": "Major employer. Commissioner McPheeters works in grant compliance here. Mobile food pantry first Tuesday of each month.", "id": "pueblo-community-college", "name": "Pueblo Community College", "notes": "Potential conflict of interest for commissioner votes on education-related surveillance.", "sources": ["PCC website", "Care and Share Food Bank"], "type": "institution", "updated": "2026-01"}, "type": "Feature"}, {"geometry": {"coordinates": [-104.608, 38.2665], "type": "Point"}, "properties": {"description": "Free drop-in activities, after-school programs, tutoring, safe community space. Address: 609 E 6th St. Phone: 719-553-2949.", "id": "el-centro-quinto-sol", "name": "El Centro del Quinto Sol Recreation Center", "notes": "Good community meeting space. CSU-Pueblo Learning Center on-site.", "sources": ["City of Pueblo website"], "type": "community-support", "updated": "2026-01"}, "type": "Feature"}], "type": "FeatureCollection", "updated": "2026-01-26"});
+            geo_json_dd21d265f85919569687c1eb6a5caf25_add({"features": [{"geometry": {"coordinates": [[[-104.6694073, 38.2646391], [-104.5694073, 38.2646391], [-104.5694073, 38.3646391], [-104.6694073, 38.3646391], [-104.6694073, 38.2646391]]], "type": "Polygon"}, "properties": {"description": "Bounding box for ZIP code 81008; used as frame for North Pueblo research.", "id": "zip-81008", "name": "Approximate ZIP 81008 extent", "notes": "Desktop mapping uses bounding box because public polygon data requires shapefiles.", "sources": ["Nominatim OpenStreetMap"], "type": "boundary"}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-    geo_json_51004dba99aa5a2ba476c5bbd7263ad3.bindTooltip(
+    geo_json_dd21d265f85919569687c1eb6a5caf25.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
@@ -179,631 +263,1538 @@
 });
                      
     
-            geo_json_51004dba99aa5a2ba476c5bbd7263ad3.addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            geo_json_dd21d265f85919569687c1eb6a5caf25.addTo(feature_group_3307d9f56d0ad89a97584253f655ecda);
         
     
-            var marker_11eee7858b004a68d13d7848b1b39d6b = L.marker(
+            var marker_cluster_8ced4981436bbbf6dc243e3dc28fa337 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            marker_cluster_8ced4981436bbbf6dc243e3dc28fa337.addTo(feature_group_3307d9f56d0ad89a97584253f655ecda);
+        
+    
+            feature_group_3307d9f56d0ad89a97584253f655ecda.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_073d5adfa53916306e13b94f7fe3ab47 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_ba2215036423d1ee66f96c8d96eb27f6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_5a33a43b1a80062221aac184f6bc3b99 = L.marker(
                 [38.2629478, -104.612921],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_ba2215036423d1ee66f96c8d96eb27f6);
         
     
-        var popup_3740706fca87eca1a0aa0ee867d26781 = L.popup({
+            var icon_946ff477dd2c25047efe1141f72bc086 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bullseye",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_adf58f63f764d19afe0e26f815ad8a34 = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_d177ecf6b311aea31583cfdf4147c679 = $(`<div id="html_d177ecf6b311aea31583cfdf4147c679" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Police Department / Real-Time Crime Center</strong><br/>Public Safety Complex hosting RTCC with ShotSpotter (6 sq mi), drones, Daktronics video wall, Community Connect intake. Operating 10am-midnight, expanding to 24/7.<br/><em>Sources:</em> https://www.pueblo.us/Directory.aspx?did=13<br/>https://www.daktronics.com/news/eye-on-crime-increases-with-daktronics-high-point-networks-collaboration-for-pueblo-police-department-s-real-time-crime-center</div>`)[0];
-                popup_3740706fca87eca1a0aa0ee867d26781.setContent(html_d177ecf6b311aea31583cfdf4147c679);
+                var html_33eb9b9e936401da351330a15626329e = $(`<div id="html_33eb9b9e936401da351330a15626329e" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Police Department / Real-Time Crime Center</strong><br/>Public Safety Complex hosting RTCC with ShotSpotter (6 sq mi), drones, Daktronics video wall, Community Connect intake. Operating 10am-midnight, expanding to 24/7.<br/><em>Sources:</em><br/><a href="https://www.pueblo.us/Directory.aspx?did=13" target="_blank">https://www.pueblo.us/Directory.aspx?did=13</a><br/><a href="https://www.daktronics.com/news/eye-on-crime-increases-with-daktronics-high-point-networks-collaboration-for-pueblo-police-department-s-real-time-crime-center" target="_blank">https://www.daktronics.com/news/eye-on-crime-increases-with-daktronics-high-point-networks-collaboration-for-pueblo-police-department-s-real-time-crime-center</a></div>`)[0];
+                popup_adf58f63f764d19afe0e26f815ad8a34.setContent(html_33eb9b9e936401da351330a15626329e);
             
         
 
-        marker_11eee7858b004a68d13d7848b1b39d6b.bindPopup(popup_3740706fca87eca1a0aa0ee867d26781)
+        marker_5a33a43b1a80062221aac184f6bc3b99.bindPopup(popup_adf58f63f764d19afe0e26f815ad8a34)
         ;
 
         
     
     
-            var marker_6ac7f41814c946887c5f8f8180145524 = L.marker(
+                marker_5a33a43b1a80062221aac184f6bc3b99.setIcon(icon_946ff477dd2c25047efe1141f72bc086);
+            
+    
+            marker_cluster_ba2215036423d1ee66f96c8d96eb27f6.addTo(feature_group_073d5adfa53916306e13b94f7fe3ab47);
+        
+    
+            feature_group_073d5adfa53916306e13b94f7fe3ab47.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_72bab9b30fa3c90cada918aa0498c803 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_736bce9859c2b9bf056bb6b6f51014e8 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_de26ad1f516d53a91d811bdc5ceba48c = L.marker(
                 [38.2629478, -104.612921],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_736bce9859c2b9bf056bb6b6f51014e8);
         
     
-        var popup_fe0a8547a377c713d65da0a06fa7197b = L.popup({
+            var icon_e52ef81c51ae033887a71e6ea7c00d25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca279e464a6c41a7100915ea84781a5f = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_0701b517f804682b15dba39733f97c83 = $(`<div id="html_0701b517f804682b15dba39733f97c83" style="width: 100.0%; height: 100.0%;"><strong>Drone as First Responder (DFR) Station</strong><br/>First DFR station launched July 2025. Drones deployed to RTCC before officers arrive. Part of Pueblo's expanding aerial surveillance network.<br/><em>Sources:</em> Daktronics press release Sept 2025</div>`)[0];
-                popup_fe0a8547a377c713d65da0a06fa7197b.setContent(html_0701b517f804682b15dba39733f97c83);
+                var html_b451f44388f1fde5fbb73547751f141f = $(`<div id="html_b451f44388f1fde5fbb73547751f141f" style="width: 100.0%; height: 100.0%;"><strong>Drone as First Responder (DFR) Station</strong><br/>First DFR station launched July 2025. Drones deployed to RTCC before officers arrive. Part of Pueblo's expanding aerial surveillance network.<br/><em>Sources:</em><br/>Daktronics press release Sept 2025</div>`)[0];
+                popup_ca279e464a6c41a7100915ea84781a5f.setContent(html_b451f44388f1fde5fbb73547751f141f);
             
         
 
-        marker_6ac7f41814c946887c5f8f8180145524.bindPopup(popup_fe0a8547a377c713d65da0a06fa7197b)
+        marker_de26ad1f516d53a91d811bdc5ceba48c.bindPopup(popup_ca279e464a6c41a7100915ea84781a5f)
         ;
 
         
     
     
-            var marker_5188bd170cdb646a5e5f85071a56660a = L.marker(
+                marker_de26ad1f516d53a91d811bdc5ceba48c.setIcon(icon_e52ef81c51ae033887a71e6ea7c00d25);
+            
+    
+            marker_cluster_736bce9859c2b9bf056bb6b6f51014e8.addTo(feature_group_72bab9b30fa3c90cada918aa0498c803);
+        
+    
+            feature_group_72bab9b30fa3c90cada918aa0498c803.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_e25a26a8aa015737c5071c6b7dc09755 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_6449d91468254470c2bf85b515b37227 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_fb09f733cfeeac8ad272cdf4342e1fe4 = L.marker(
                 [38.2654292, -104.6126358],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_6449d91468254470c2bf85b515b37227);
         
     
-        var popup_a0a1b0876f332300026bd71ec3952ed3 = L.popup({
+            var icon_99f184996902eae5a6df6fe92d2a0325 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_983d592e6245ab47c483ad9972094dfe = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_4f87f16067b502b98623e7e84ca23aaf = $(`<div id="html_4f87f16067b502b98623e7e84ca23aaf" style="width: 100.0%; height: 100.0%;"><strong>Downtown Flock ALPR Installations</strong><br/>Pueblo Downtown Association-funded Flock Safety cameras covering Union Ave / Riverwalk corridors. 30-day cloud retention. Part of 1,091-camera Colorado network.<br/><em>Sources:</em> https://www.koaa.com/news/covering-colorado/license-plate-cameras-coming-to-pueblo</div>`)[0];
-                popup_a0a1b0876f332300026bd71ec3952ed3.setContent(html_4f87f16067b502b98623e7e84ca23aaf);
+                var html_0768a4350076067edc6c1f62c703f243 = $(`<div id="html_0768a4350076067edc6c1f62c703f243" style="width: 100.0%; height: 100.0%;"><strong>Downtown Flock ALPR Installations</strong><br/>Pueblo Downtown Association-funded Flock Safety cameras covering Union Ave / Riverwalk corridors. 30-day cloud retention. Part of 1,091-camera Colorado network.<br/><em>Sources:</em><br/><a href="https://www.koaa.com/news/covering-colorado/license-plate-cameras-coming-to-pueblo" target="_blank">https://www.koaa.com/news/covering-colorado/license-plate-cameras-coming-to-pueblo</a></div>`)[0];
+                popup_983d592e6245ab47c483ad9972094dfe.setContent(html_0768a4350076067edc6c1f62c703f243);
             
         
 
-        marker_5188bd170cdb646a5e5f85071a56660a.bindPopup(popup_a0a1b0876f332300026bd71ec3952ed3)
+        marker_fb09f733cfeeac8ad272cdf4342e1fe4.bindPopup(popup_983d592e6245ab47c483ad9972094dfe)
         ;
 
         
     
     
-            var marker_0af6eb4a65a48e9ede329b82745190ba = L.marker(
+                marker_fb09f733cfeeac8ad272cdf4342e1fe4.setIcon(icon_99f184996902eae5a6df6fe92d2a0325);
+            
+    
+            marker_cluster_6449d91468254470c2bf85b515b37227.addTo(feature_group_e25a26a8aa015737c5071c6b7dc09755);
+        
+    
+            feature_group_e25a26a8aa015737c5071c6b7dc09755.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_01bf65e482f55a6deb267482a3223dfe = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_9cc8c60c0ebf66b9b88274ca81e6d4db = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_b553a1d769fc398aaf08044181295f4f = L.marker(
                 [38.2577, -104.5948],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_9cc8c60c0ebf66b9b88274ca81e6d4db);
         
     
-        var popup_2342c77038ff281509708da6bd041706 = L.popup({
+            var icon_bf1419fd593d1b223842d38d7496c3c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkpurple",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1866436b715d01ebfba37ce05acfeda = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_61e6ee45d01cf7761f1ef4ea527db24d = $(`<div id="html_61e6ee45d01cf7761f1ef4ea527db24d" style="width: 100.0%; height: 100.0%;"><strong>Mobile Camera Trailer - Mesa & Elm</strong><br/>Solar-powered mobile RTCC camera trailer at Mesa Ave & Elm St. One of four mobile trailers deployed citywide. Captured Aug 2025 homicide footage.<br/><em>Sources:</em> KKTV, July 2025<br/>Pueblo PD press release Aug 2025</div>`)[0];
-                popup_2342c77038ff281509708da6bd041706.setContent(html_61e6ee45d01cf7761f1ef4ea527db24d);
+                var html_3aac9630c9a68b4249d4abaa9d5d9791 = $(`<div id="html_3aac9630c9a68b4249d4abaa9d5d9791" style="width: 100.0%; height: 100.0%;"><strong>Mobile Camera Trailer - Mesa & Elm</strong><br/>Solar-powered mobile RTCC camera trailer at Mesa Ave & Elm St. One of four mobile trailers deployed citywide. Captured Aug 2025 homicide footage.<br/><em>Sources:</em><br/>KKTV, July 2025<br/>Pueblo PD press release Aug 2025</div>`)[0];
+                popup_e1866436b715d01ebfba37ce05acfeda.setContent(html_3aac9630c9a68b4249d4abaa9d5d9791);
             
         
 
-        marker_0af6eb4a65a48e9ede329b82745190ba.bindPopup(popup_2342c77038ff281509708da6bd041706)
+        marker_b553a1d769fc398aaf08044181295f4f.bindPopup(popup_e1866436b715d01ebfba37ce05acfeda)
         ;
 
         
     
     
-            var marker_ba03fb67ba085e3985674ee967039901 = L.marker(
+                marker_b553a1d769fc398aaf08044181295f4f.setIcon(icon_bf1419fd593d1b223842d38d7496c3c9);
+            
+    
+            marker_cluster_9cc8c60c0ebf66b9b88274ca81e6d4db.addTo(feature_group_01bf65e482f55a6deb267482a3223dfe);
+        
+    
+            feature_group_01bf65e482f55a6deb267482a3223dfe.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_48fc0e96456360057a5ac98754627cde = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_96445cd1344931e49b9f4877ff25da40 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_9943c4a019f4e5605b7a617acb5fd300 = L.marker(
                 [38.3031311, -104.6082866],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_96445cd1344931e49b9f4877ff25da40);
         
     
-        var popup_02571f1a7d8966d076fcabf9493daf69 = L.popup({
+            var icon_2063bb9fe5d857c56b5c3c55e64474e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a59d1253bbcafc081cb8c7cb9a8c785a = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_8214c3f23dd9abf5f8b16a6c2a85aec8 = $(`<div id="html_8214c3f23dd9abf5f8b16a6c2a85aec8" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Mall private security office</strong><br/>North-side retail hub with on-site security office. Potential Community Connect participant in ZIP 81008.<br/><em>Sources:</em> https://www.shoppueblomall.com/services/security</div>`)[0];
-                popup_02571f1a7d8966d076fcabf9493daf69.setContent(html_8214c3f23dd9abf5f8b16a6c2a85aec8);
+                var html_9dcb89091eada9c282db0ef2aed67f69 = $(`<div id="html_9dcb89091eada9c282db0ef2aed67f69" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Mall private security office</strong><br/>North-side retail hub with on-site security office. Potential Community Connect participant in ZIP 81008.<br/><em>Sources:</em><br/><a href="https://www.shoppueblomall.com/services/security" target="_blank">https://www.shoppueblomall.com/services/security</a></div>`)[0];
+                popup_a59d1253bbcafc081cb8c7cb9a8c785a.setContent(html_9dcb89091eada9c282db0ef2aed67f69);
             
         
 
-        marker_ba03fb67ba085e3985674ee967039901.bindPopup(popup_02571f1a7d8966d076fcabf9493daf69)
+        marker_9943c4a019f4e5605b7a617acb5fd300.bindPopup(popup_a59d1253bbcafc081cb8c7cb9a8c785a)
         ;
 
         
     
     
-            var marker_b9317bf1ed081a8f62299aba4af5541a = L.marker(
+                marker_9943c4a019f4e5605b7a617acb5fd300.setIcon(icon_2063bb9fe5d857c56b5c3c55e64474e1);
+            
+    
+            marker_cluster_96445cd1344931e49b9f4877ff25da40.addTo(feature_group_48fc0e96456360057a5ac98754627cde);
+        
+    
+            feature_group_48fc0e96456360057a5ac98754627cde.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_6a2e3bcb02e1184a3ace4476a00a921d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_64f059add400145efbb862e21efc8916 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_c7dc72242c42822941fa531a097bb1f6 = L.marker(
                 [38.2751559, -104.6107614],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_64f059add400145efbb862e21efc8916);
         
     
-        var popup_60970b8fc30ac90729b2df1d7038256e = L.popup({
+            var icon_6baeea82e06ade6bd3f5761f73057c6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0dc7fc81844f6ef404d9401c2da0539b = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_cc981eea4e602e3f210fdfe84124429d = $(`<div id="html_cc981eea4e602e3f210fdfe84124429d" style="width: 100.0%; height: 100.0%;"><strong>Pueblo County Sheriff's Office HQ</strong><br/>909 Court Street command campus. Sheriff Lucero issued Jan 2025 statement limiting ICE cooperation. All 73 patrol cars now equipped with mobile Flock ALPRs (March 2025). Mobile ALPRs feed into RTCC.<br/><em>Sources:</em> https://www.pueblosheriff.com/Directory.aspx?did=1<br/>https://www.pueblosheriff.com/DocumentCenter/View/3323/Sheriff-Lucero-Statement</div>`)[0];
-                popup_60970b8fc30ac90729b2df1d7038256e.setContent(html_cc981eea4e602e3f210fdfe84124429d);
+                var html_9e6db68ad9860ac25681689a9d99eea7 = $(`<div id="html_9e6db68ad9860ac25681689a9d99eea7" style="width: 100.0%; height: 100.0%;"><strong>Pueblo County Sheriff's Office HQ</strong><br/>909 Court Street command campus. Sheriff Lucero issued Jan 2025 statement limiting ICE cooperation. All 73 patrol cars now equipped with mobile Flock ALPRs (March 2025). Mobile ALPRs feed into RTCC.<br/><em>Sources:</em><br/><a href="https://www.pueblosheriff.com/Directory.aspx?did=1" target="_blank">https://www.pueblosheriff.com/Directory.aspx?did=1</a><br/><a href="https://www.pueblosheriff.com/DocumentCenter/View/3323/Sheriff-Lucero-Statement" target="_blank">https://www.pueblosheriff.com/DocumentCenter/View/3323/Sheriff-Lucero-Statement</a></div>`)[0];
+                popup_0dc7fc81844f6ef404d9401c2da0539b.setContent(html_9e6db68ad9860ac25681689a9d99eea7);
             
         
 
-        marker_b9317bf1ed081a8f62299aba4af5541a.bindPopup(popup_60970b8fc30ac90729b2df1d7038256e)
+        marker_c7dc72242c42822941fa531a097bb1f6.bindPopup(popup_0dc7fc81844f6ef404d9401c2da0539b)
         ;
 
         
     
     
-            var marker_5d3683b168a7741db875b9dcc14d9d1e = L.marker(
+                marker_c7dc72242c42822941fa531a097bb1f6.setIcon(icon_6baeea82e06ade6bd3f5761f73057c6a);
+            
+    
+            marker_cluster_64f059add400145efbb862e21efc8916.addTo(feature_group_6a2e3bcb02e1184a3ace4476a00a921d);
+        
+    
+            feature_group_6a2e3bcb02e1184a3ace4476a00a921d.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_658b074dec1fe1b5491c42c28343e712 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_79835d8d42e80c580ae5496ae33e75b1 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_24e477dc8b67f308346c1ba5a813e343 = L.marker(
                 [38.2764132, -104.6129252],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_79835d8d42e80c580ae5496ae33e75b1);
         
     
-        var popup_821f2ce3e787bf525e1f43403f5c3d6b = L.popup({
-  "maxWidth": 360,
-});
-
-        
-            
-                var html_db528934a177de094c8306e160dce8dd = $(`<div id="html_db528934a177de094c8306e160dce8dd" style="width: 100.0%; height: 100.0%;"><strong>Catholic Charities Immigration Services</strong><br/>Safe walk-in site at 429 W 10th St offering DOJ-accredited immigration legal aid, Know Your Rights briefings. Phone: (719) 586-8600.<br/><em>Sources:</em> https://www.ccsoco.org/contact<br/>https://www.ccsoco.org/immigration</div>`)[0];
-                popup_821f2ce3e787bf525e1f43403f5c3d6b.setContent(html_db528934a177de094c8306e160dce8dd);
-            
-        
-
-        marker_5d3683b168a7741db875b9dcc14d9d1e.bindPopup(popup_821f2ce3e787bf525e1f43403f5c3d6b)
-        ;
-
-        
-    
-    
-            var marker_2e0d904bbff3085e26ff9e3f292f4b84 = L.marker(
-                [38.2812424, -104.6071836],
+            var icon_03ff94df86da3f74bc691d07260550c5 = L.AwesomeMarkers.icon(
                 {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            );
         
     
-        var popup_6024b3405b1fa4fdbf316ff8dd60ab52 = L.popup({
+        var popup_21e246a125ac70f9bf3d9040a12ace7f = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_866543fcd723596fc786cbd8efeae100 = $(`<div id="html_866543fcd723596fc786cbd8efeae100" style="width: 100.0%; height: 100.0%;"><strong>Mineral Palace Park</strong><br/>One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Community staging zone for events like Pueblo Pride.<br/><em>Sources:</em> KRDO, July 2025<br/>City of Pueblo ARPA spending reports</div>`)[0];
-                popup_6024b3405b1fa4fdbf316ff8dd60ab52.setContent(html_866543fcd723596fc786cbd8efeae100);
+                var html_2cd7e5edeb452674240a3d47142c29e0 = $(`<div id="html_2cd7e5edeb452674240a3d47142c29e0" style="width: 100.0%; height: 100.0%;"><strong>Catholic Charities Immigration Services</strong><br/>Safe walk-in site at 429 W 10th St offering DOJ-accredited immigration legal aid, Know Your Rights briefings. Phone: (719) 586-8600.<br/><em>Sources:</em><br/><a href="https://www.ccsoco.org/contact" target="_blank">https://www.ccsoco.org/contact</a><br/><a href="https://www.ccsoco.org/immigration" target="_blank">https://www.ccsoco.org/immigration</a></div>`)[0];
+                popup_21e246a125ac70f9bf3d9040a12ace7f.setContent(html_2cd7e5edeb452674240a3d47142c29e0);
             
         
 
-        marker_2e0d904bbff3085e26ff9e3f292f4b84.bindPopup(popup_6024b3405b1fa4fdbf316ff8dd60ab52)
+        marker_24e477dc8b67f308346c1ba5a813e343.bindPopup(popup_21e246a125ac70f9bf3d9040a12ace7f)
         ;
 
         
     
     
-            var marker_061c8a4637bb811f0ec0e007b192a7aa = L.marker(
-                [38.27, -104.62],
-                {
-}
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
-        
-    
-        var popup_9b4a2dcdbd934c8adade88b8f6281b17 = L.popup({
-  "maxWidth": 360,
-});
-
-        
+                marker_24e477dc8b67f308346c1ba5a813e343.setIcon(icon_03ff94df86da3f74bc691d07260550c5);
             
-                var html_c633f7e99529733478df3f685fa03c6a = $(`<div id="html_c633f7e99529733478df3f685fa03c6a" style="width: 100.0%; height: 100.0%;"><strong>City Park</strong><br/>One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC video wall.<br/><em>Sources:</em> KRDO, July 2025<br/>City of Pueblo ARPA spending reports</div>`)[0];
-                popup_9b4a2dcdbd934c8adade88b8f6281b17.setContent(html_c633f7e99529733478df3f685fa03c6a);
-            
-        
-
-        marker_061c8a4637bb811f0ec0e007b192a7aa.bindPopup(popup_9b4a2dcdbd934c8adade88b8f6281b17)
-        ;
-
-        
     
-    
-            var marker_d5f2c3cadf97c259d8a74663d90b9f31 = L.marker(
-                [38.24, -104.585],
-                {
-}
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
-        
-    
-        var popup_36c23c8eb8049ec28dca95c3d41ab801 = L.popup({
-  "maxWidth": 360,
-});
-
-        
-            
-                var html_2b35683c7ef3ac923e6cd0ce9af88ec2 = $(`<div id="html_2b35683c7ef3ac923e6cd0ce9af88ec2" style="width: 100.0%; height: 100.0%;"><strong>Lake Minnequa Park</strong><br/>One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.<br/><em>Sources:</em> KRDO, July 2025<br/>City of Pueblo ARPA spending reports</div>`)[0];
-                popup_36c23c8eb8049ec28dca95c3d41ab801.setContent(html_2b35683c7ef3ac923e6cd0ce9af88ec2);
-            
-        
-
-        marker_d5f2c3cadf97c259d8a74663d90b9f31.bindPopup(popup_36c23c8eb8049ec28dca95c3d41ab801)
-        ;
-
-        
-    
-    
-            var marker_994ef8090fd26ac61ade236013179614 = L.marker(
-                [38.25, -104.59],
-                {
-}
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
-        
-    
-        var popup_cb6df63023b2f6262f00217cb685cf37 = L.popup({
-  "maxWidth": 360,
-});
-
-        
-            
-                var html_1ae80c038da60caca55bbedc44f9d203 = $(`<div id="html_1ae80c038da60caca55bbedc44f9d203" style="width: 100.0%; height: 100.0%;"><strong>Ray Aguilera Park</strong><br/>One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.<br/><em>Sources:</em> KRDO, July 2025<br/>City of Pueblo ARPA spending reports</div>`)[0];
-                popup_cb6df63023b2f6262f00217cb685cf37.setContent(html_1ae80c038da60caca55bbedc44f9d203);
-            
-        
-
-        marker_994ef8090fd26ac61ade236013179614.bindPopup(popup_cb6df63023b2f6262f00217cb685cf37)
-        ;
-
-        
-    
-    
-            var marker_0de63baafefd7b4cb788e99729be89d7 = L.marker(
-                [38.295, -104.605],
-                {
-}
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
-        
-    
-        var popup_ecabbd58a1755cd3648cfc3c8bde3d70 = L.popup({
-  "maxWidth": 360,
-});
-
-        
-            
-                var html_b638f8acc306f157536c50f1661270ab = $(`<div id="html_b638f8acc306f157536c50f1661270ab" style="width: 100.0%; height: 100.0%;"><strong>Mitchell Park</strong><br/>One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.<br/><em>Sources:</em> KRDO, July 2025<br/>City of Pueblo ARPA spending reports</div>`)[0];
-                popup_ecabbd58a1755cd3648cfc3c8bde3d70.setContent(html_b638f8acc306f157536c50f1661270ab);
-            
-        
-
-        marker_0de63baafefd7b4cb788e99729be89d7.bindPopup(popup_ecabbd58a1755cd3648cfc3c8bde3d70)
-        ;
-
-        
-    
-    
-            var marker_4210c5232f0182092d53931fd1ad09c9 = L.marker(
-                [38.262, -104.614],
-                {
-}
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
-        
-    
-        var popup_6d9f35e7aea4fab310841d8e8c16ae03 = L.popup({
-  "maxWidth": 360,
-});
-
-        
-            
-                var html_18f1a9825e4c1dc2498541956b9ebbab = $(`<div id="html_18f1a9825e4c1dc2498541956b9ebbab" style="width: 100.0%; height: 100.0%;"><strong>City Hall Camera Arrays</strong><br/>New camera arrays installed on city buildings including City Hall (2025). Enhanced surveillance for downtown events.<br/><em>Sources:</em> KKTV, July 2025</div>`)[0];
-                popup_6d9f35e7aea4fab310841d8e8c16ae03.setContent(html_18f1a9825e4c1dc2498541956b9ebbab);
-            
-        
-
-        marker_4210c5232f0182092d53931fd1ad09c9.bindPopup(popup_6d9f35e7aea4fab310841d8e8c16ae03)
-        ;
-
-        
-    
-    
-            var marker_c19b931790b076c42f82d11e612225d9 = L.marker(
-                [38.29, -104.5],
-                {
-}
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
-        
-    
-        var popup_43b49ae6753cb4478541e8667de6c403 = L.popup({
-  "maxWidth": 360,
-});
-
-        
-            
-                var html_4f8889a44f847df27b493c5b9b9f647e = $(`<div id="html_4f8889a44f847df27b493c5b9b9f647e" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Memorial Airport</strong><br/>Community protests over potential ICE use for immigration transport. Monitor for ICE activity.<br/><em>Sources:</em> Rocky Mountain PBS, 2025</div>`)[0];
-                popup_43b49ae6753cb4478541e8667de6c403.setContent(html_4f8889a44f847df27b493c5b9b9f647e);
-            
-        
-
-        marker_c19b931790b076c42f82d11e612225d9.bindPopup(popup_43b49ae6753cb4478541e8667de6c403)
-        ;
-
-        
-    
-    
-            var marker_fd3ddbb5a5a26ce89a4aebe21087a2a4 = L.marker(
+            var marker_cb7110d5e7883ec4321b177cbae3690b = L.marker(
                 [38.288, -104.61],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_79835d8d42e80c580ae5496ae33e75b1);
         
     
-        var popup_12f5c1559c8eb531c6906a6be8f4dd06 = L.popup({
+            var icon_f9e3bff9103738bcee503737cdb6cac5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df8ef43890ba791f07c8939bac18e45d = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_2dd8c7366888197c6ede8025e9595c37 = $(`<div id="html_2dd8c7366888197c6ede8025e9595c37" style="width: 100.0%; height: 100.0%;"><strong>Posada of Pueblo</strong><br/>Emergency housing, homeless services, youth programs. Address: 501 Belmont Ave. Phone: 719-545-8776.<br/><em>Sources:</em> posadapueblo.org</div>`)[0];
-                popup_12f5c1559c8eb531c6906a6be8f4dd06.setContent(html_2dd8c7366888197c6ede8025e9595c37);
+                var html_b930e5326b724798531e89c36badf4a4 = $(`<div id="html_b930e5326b724798531e89c36badf4a4" style="width: 100.0%; height: 100.0%;"><strong>Posada of Pueblo</strong><br/>Emergency housing, homeless services, youth programs. Address: 501 Belmont Ave. Phone: 719-545-8776.<br/><em>Sources:</em><br/>posadapueblo.org</div>`)[0];
+                popup_df8ef43890ba791f07c8939bac18e45d.setContent(html_b930e5326b724798531e89c36badf4a4);
             
         
 
-        marker_fd3ddbb5a5a26ce89a4aebe21087a2a4.bindPopup(popup_12f5c1559c8eb531c6906a6be8f4dd06)
+        marker_cb7110d5e7883ec4321b177cbae3690b.bindPopup(popup_df8ef43890ba791f07c8939bac18e45d)
         ;
 
         
     
     
-            var marker_236720efae43782ff4b8e868639e9ca3 = L.marker(
+                marker_cb7110d5e7883ec4321b177cbae3690b.setIcon(icon_f9e3bff9103738bcee503737cdb6cac5);
+            
+    
+            var marker_5b02f9e3b8426453c797a1d5598b582a = L.marker(
                 [38.273, -104.613],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_79835d8d42e80c580ae5496ae33e75b1);
         
     
-        var popup_224eb228042b69ad5fcad1a5cb6f4137 = L.popup({
+            var icon_6b1b7dd4978b6a6602dce69c95cee7e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21e07a263375416fd21cae97c9e4a91e = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_062cacfd509cb9092c5876a29eb5edf4 = $(`<div id="html_062cacfd509cb9092c5876a29eb5edf4" style="width: 100.0%; height: 100.0%;"><strong>Colorado Legal Services - Pueblo Office</strong><br/>Free legal aid for eviction defense, immigration screenings, protection orders. Address: 1000 W 6th St. Phone: 719-545-6708.<br/><em>Sources:</em> coloradolegalservices.org</div>`)[0];
-                popup_224eb228042b69ad5fcad1a5cb6f4137.setContent(html_062cacfd509cb9092c5876a29eb5edf4);
+                var html_4c06a469c2b74719a125ba954412bb6d = $(`<div id="html_4c06a469c2b74719a125ba954412bb6d" style="width: 100.0%; height: 100.0%;"><strong>Colorado Legal Services - Pueblo Office</strong><br/>Free legal aid for eviction defense, immigration screenings, protection orders. Address: 1000 W 6th St. Phone: 719-545-6708.<br/><em>Sources:</em><br/>coloradolegalservices.org</div>`)[0];
+                popup_21e07a263375416fd21cae97c9e4a91e.setContent(html_4c06a469c2b74719a125ba954412bb6d);
             
         
 
-        marker_236720efae43782ff4b8e868639e9ca3.bindPopup(popup_224eb228042b69ad5fcad1a5cb6f4137)
+        marker_5b02f9e3b8426453c797a1d5598b582a.bindPopup(popup_21e07a263375416fd21cae97c9e4a91e)
         ;
 
         
     
     
-            var marker_ec524b227e6721674de88f7d14807db7 = L.marker(
+                marker_5b02f9e3b8426453c797a1d5598b582a.setIcon(icon_6b1b7dd4978b6a6602dce69c95cee7e8);
+            
+    
+            var marker_329462ba2c73fc0608496aae383f669d = L.marker(
                 [38.269, -104.608],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_79835d8d42e80c580ae5496ae33e75b1);
         
     
-        var popup_afc5b1afbdc28a27b7be38987cf032cd = L.popup({
+            var icon_6576ace05474b58f3080945395b36308 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_caca03e9f1f6b76972f375a9cdd03979 = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_3fdbf9c360ea24ee3f7f2480f64ae130 = $(`<div id="html_3fdbf9c360ea24ee3f7f2480f64ae130" style="width: 100.0%; height: 100.0%;"><strong>Mariposa Center for Safety (YWCA)</strong><br/>24/7 DV crisis line, emergency shelter, legal advocacy. Address: 801 N Santa Fe Ave. Crisis line: 719-545-8195.<br/><em>Sources:</em> ywcapueblo.org</div>`)[0];
-                popup_afc5b1afbdc28a27b7be38987cf032cd.setContent(html_3fdbf9c360ea24ee3f7f2480f64ae130);
+                var html_50783775130a47f4127a0ded4cd84b97 = $(`<div id="html_50783775130a47f4127a0ded4cd84b97" style="width: 100.0%; height: 100.0%;"><strong>Mariposa Center for Safety (YWCA)</strong><br/>24/7 DV crisis line, emergency shelter, legal advocacy. Address: 801 N Santa Fe Ave. Crisis line: 719-545-8195.<br/><em>Sources:</em><br/>ywcapueblo.org</div>`)[0];
+                popup_caca03e9f1f6b76972f375a9cdd03979.setContent(html_50783775130a47f4127a0ded4cd84b97);
             
         
 
-        marker_ec524b227e6721674de88f7d14807db7.bindPopup(popup_afc5b1afbdc28a27b7be38987cf032cd)
+        marker_329462ba2c73fc0608496aae383f669d.bindPopup(popup_caca03e9f1f6b76972f375a9cdd03979)
         ;
 
         
     
     
-            var marker_6ed6c0197d4ae4ae60798853cf26dcae = L.marker(
+                marker_329462ba2c73fc0608496aae383f669d.setIcon(icon_6576ace05474b58f3080945395b36308);
+            
+    
+            var marker_a1f5fdf07b5760327edabd0b69f5aa86 = L.marker(
                 [38.278, -104.609],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_79835d8d42e80c580ae5496ae33e75b1);
         
     
-        var popup_8c498b52865d36226602a0fdbcd9323d = L.popup({
+            var icon_f3679ced0f3478ed6cf1e4708e4830f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d8bdf7e83632288ff344a0187bb4fa9 = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_ac64ab05597daf613de71bba1831b547 = $(`<div id="html_ac64ab05597daf613de71bba1831b547" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Community Health Center</strong><br/>FQHC accepting all patients regardless of ability to pay. Homeless clinic, migrant health services. Phone: (719) 543-8711.<br/><em>Sources:</em> pueblochc.org</div>`)[0];
-                popup_8c498b52865d36226602a0fdbcd9323d.setContent(html_ac64ab05597daf613de71bba1831b547);
+                var html_0496ecc67c2f86b00d5bb35253940b1d = $(`<div id="html_0496ecc67c2f86b00d5bb35253940b1d" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Community Health Center</strong><br/>FQHC accepting all patients regardless of ability to pay. Homeless clinic, migrant health services. Phone: (719) 543-8711.<br/><em>Sources:</em><br/>pueblochc.org</div>`)[0];
+                popup_0d8bdf7e83632288ff344a0187bb4fa9.setContent(html_0496ecc67c2f86b00d5bb35253940b1d);
             
         
 
-        marker_6ed6c0197d4ae4ae60798853cf26dcae.bindPopup(popup_8c498b52865d36226602a0fdbcd9323d)
+        marker_a1f5fdf07b5760327edabd0b69f5aa86.bindPopup(popup_0d8bdf7e83632288ff344a0187bb4fa9)
         ;
 
         
     
     
-            var marker_4766144edb43ac29d6e18f01bf8954fb = L.marker(
+                marker_a1f5fdf07b5760327edabd0b69f5aa86.setIcon(icon_f3679ced0f3478ed6cf1e4708e4830f4);
+            
+    
+            var marker_0dc1e002f905a1c38f19e611e9fab739 = L.marker(
                 [38.275, -104.618],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_79835d8d42e80c580ae5496ae33e75b1);
         
     
-        var popup_129c9792350a54fface33ee29d105073 = L.popup({
+            var icon_eb8b7112f4575f5161be0da49e32be83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00531090af8cee438dd553ce78e90069 = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_8cc8ceaf8151dc7275f5f798c587eace = $(`<div id="html_8cc8ceaf8151dc7275f5f798c587eace" style="width: 100.0%; height: 100.0%;"><strong>Health Solutions Crisis Walk-In Center</strong><br/>24/7 mental health crisis stabilization, mobile crisis response, peer support, detox coordination. No insurance required. Address: 711 W 13th St. Phone: 844-493-8255.<br/><em>Sources:</em> health.solutions/services/crisis-care</div>`)[0];
-                popup_129c9792350a54fface33ee29d105073.setContent(html_8cc8ceaf8151dc7275f5f798c587eace);
+                var html_e3df04330cb5a747ee277edc76b42713 = $(`<div id="html_e3df04330cb5a747ee277edc76b42713" style="width: 100.0%; height: 100.0%;"><strong>Health Solutions Crisis Walk-In Center</strong><br/>24/7 mental health crisis stabilization, mobile crisis response, peer support, detox coordination. No insurance required. Address: 711 W 13th St. Phone: 844-493-8255.<br/><em>Sources:</em><br/>health.solutions/services/crisis-care</div>`)[0];
+                popup_00531090af8cee438dd553ce78e90069.setContent(html_e3df04330cb5a747ee277edc76b42713);
             
         
 
-        marker_4766144edb43ac29d6e18f01bf8954fb.bindPopup(popup_129c9792350a54fface33ee29d105073)
+        marker_0dc1e002f905a1c38f19e611e9fab739.bindPopup(popup_00531090af8cee438dd553ce78e90069)
         ;
 
         
     
     
-            var marker_6c475a3c253f9d4dba1744a2b850794f = L.marker(
+                marker_0dc1e002f905a1c38f19e611e9fab739.setIcon(icon_eb8b7112f4575f5161be0da49e32be83);
+            
+    
+            var marker_491e2261cf3a6115a515c9a6558e6ef1 = L.marker(
                 [38.269, -104.61],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_79835d8d42e80c580ae5496ae33e75b1);
         
     
-        var popup_f53b71531ed37f4e3ea7fa9ee1800f4a = L.popup({
+            var icon_f845984dcad19c089b080c04afee0897 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_583bb4f1238c92cb58751dcb49eb76aa = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_8169add0dbf3869c4f6214ded8913bfb = $(`<div id="html_8169add0dbf3869c4f6214ded8913bfb" style="width: 100.0%; height: 100.0%;"><strong>Juniper Southern Colorado (formerly Rape Crisis Services)</strong><br/>24/7 crisis hotline (call OR text), hospital/court accompaniment, long-term case management, counseling referrals. Address: 503 N Main St, Suite 526. Crisis line: 719-549-0549 (call/text).<br/><em>Sources:</em> rapecrisisservices.org<br/>ColoradoGives</div>`)[0];
-                popup_f53b71531ed37f4e3ea7fa9ee1800f4a.setContent(html_8169add0dbf3869c4f6214ded8913bfb);
+                var html_c88b98f78b0cdab7fd981cd37f44cf7f = $(`<div id="html_c88b98f78b0cdab7fd981cd37f44cf7f" style="width: 100.0%; height: 100.0%;"><strong>Juniper Southern Colorado (formerly Rape Crisis Services)</strong><br/>24/7 crisis hotline (call OR text), hospital/court accompaniment, long-term case management, counseling referrals. Address: 503 N Main St, Suite 526. Crisis line: 719-549-0549 (call/text).<br/><em>Sources:</em><br/>rapecrisisservices.org<br/>ColoradoGives</div>`)[0];
+                popup_583bb4f1238c92cb58751dcb49eb76aa.setContent(html_c88b98f78b0cdab7fd981cd37f44cf7f);
             
         
 
-        marker_6c475a3c253f9d4dba1744a2b850794f.bindPopup(popup_f53b71531ed37f4e3ea7fa9ee1800f4a)
+        marker_491e2261cf3a6115a515c9a6558e6ef1.bindPopup(popup_583bb4f1238c92cb58751dcb49eb76aa)
         ;
 
         
     
     
-            var marker_fab53840e887fc122305b7e11ed99a3c = L.marker(
+                marker_491e2261cf3a6115a515c9a6558e6ef1.setIcon(icon_f845984dcad19c089b080c04afee0897);
+            
+    
+            var marker_981e2b81797a51fc8ef2c8d566fdaf02 = L.marker(
                 [38.262, -104.605],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_79835d8d42e80c580ae5496ae33e75b1);
         
     
-        var popup_5ecfec08cb37bf37f0329209f22f783d = L.popup({
+            var icon_b815b18d26814bf0cfabb859d6d1f813 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12b6ff9ae1e06c04c10f6b7c825cc990 = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_6258913dc59094c61740951c12870a24 = $(`<div id="html_6258913dc59094c61740951c12870a24" style="width: 100.0%; height: 100.0%;"><strong>Pueblo City-County Library - Rawlings Branch</strong><br/>Main library with TechConnect program: free Wi-Fi hotspot/Chromebook loans, printing, digital literacy help. Address: 100 E Abriendo Ave. Phone: 719-562-5600.<br/><em>Sources:</em> pueblolibrary.org/techconnect</div>`)[0];
-                popup_5ecfec08cb37bf37f0329209f22f783d.setContent(html_6258913dc59094c61740951c12870a24);
+                var html_76c3625299f02bfc77ac6d3d0bd840d2 = $(`<div id="html_76c3625299f02bfc77ac6d3d0bd840d2" style="width: 100.0%; height: 100.0%;"><strong>Pueblo City-County Library - Rawlings Branch</strong><br/>Main library with TechConnect program: free Wi-Fi hotspot/Chromebook loans, printing, digital literacy help. Address: 100 E Abriendo Ave. Phone: 719-562-5600.<br/><em>Sources:</em><br/>pueblolibrary.org/techconnect</div>`)[0];
+                popup_12b6ff9ae1e06c04c10f6b7c825cc990.setContent(html_76c3625299f02bfc77ac6d3d0bd840d2);
             
         
 
-        marker_fab53840e887fc122305b7e11ed99a3c.bindPopup(popup_5ecfec08cb37bf37f0329209f22f783d)
+        marker_981e2b81797a51fc8ef2c8d566fdaf02.bindPopup(popup_12b6ff9ae1e06c04c10f6b7c825cc990)
         ;
 
         
     
     
-            var marker_736cfea463cede5f583910ffbfce8d70 = L.marker(
+                marker_981e2b81797a51fc8ef2c8d566fdaf02.setIcon(icon_b815b18d26814bf0cfabb859d6d1f813);
+            
+    
+            var marker_1a72e40749e6495582bc92d46886559d = L.marker(
                 [38.268, -104.617],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_79835d8d42e80c580ae5496ae33e75b1);
         
     
-        var popup_786b125e5cc9e69245bc21c49843725c = L.popup({
-  "maxWidth": 360,
-});
-
-        
-            
-                var html_a2ada97f6c39946d0e711f2cbd60cf18 = $(`<div id="html_a2ada97f6c39946d0e711f2cbd60cf18" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Cooperative Care Center</strong><br/>Food, clothing, hygiene kits, mail services for residents in crisis. Address: 326 W 8th St. Phone: 719-543-7484.<br/><em>Sources:</em> cooperativecarecenter.org</div>`)[0];
-                popup_786b125e5cc9e69245bc21c49843725c.setContent(html_a2ada97f6c39946d0e711f2cbd60cf18);
-            
-        
-
-        marker_736cfea463cede5f583910ffbfce8d70.bindPopup(popup_786b125e5cc9e69245bc21c49843725c)
-        ;
-
-        
-    
-    
-            var marker_5e4014206f1e043d685029deae0937c9 = L.marker(
-                [38.2715, -104.6065],
+            var icon_fe4f47876030411f363ff97538ca008f = L.AwesomeMarkers.icon(
                 {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            );
         
     
-        var popup_5e1f45f605e4864a37bd6d413768c810 = L.popup({
+        var popup_7de27a5d25e8b67cc0274eef0902620e = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_aaabcac68ffe9a852c56894d9ed0aa74 = $(`<div id="html_aaabcac68ffe9a852c56894d9ed0aa74" style="width: 100.0%; height: 100.0%;"><strong>Pueblo County Courthouse</strong><br/>Location to monitor for ICE civil arrest activity. Nov 2025 federal ruling prohibits ICE warrantless arrests in Colorado. Address: 215 W 10th St.<br/><em>Sources:</em> Colorado federal court ruling Nov 2025</div>`)[0];
-                popup_5e1f45f605e4864a37bd6d413768c810.setContent(html_aaabcac68ffe9a852c56894d9ed0aa74);
+                var html_fe1f9de8616ab9e62be29e401f526320 = $(`<div id="html_fe1f9de8616ab9e62be29e401f526320" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Cooperative Care Center</strong><br/>Food, clothing, hygiene kits, mail services for residents in crisis. Address: 326 W 8th St. Phone: 719-543-7484.<br/><em>Sources:</em><br/>cooperativecarecenter.org</div>`)[0];
+                popup_7de27a5d25e8b67cc0274eef0902620e.setContent(html_fe1f9de8616ab9e62be29e401f526320);
             
         
 
-        marker_5e4014206f1e043d685029deae0937c9.bindPopup(popup_5e1f45f605e4864a37bd6d413768c810)
+        marker_1a72e40749e6495582bc92d46886559d.bindPopup(popup_7de27a5d25e8b67cc0274eef0902620e)
         ;
 
         
     
     
-            var marker_b4bd662a1eb066183c85f6c22ac8227b = L.marker(
-                [38.285, -104.635],
-                {
-}
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
-        
-    
-        var popup_fcd1d6db261c9567232ebfeb2fd983f4 = L.popup({
-  "maxWidth": 360,
-});
-
-        
+                marker_1a72e40749e6495582bc92d46886559d.setIcon(icon_fe4f47876030411f363ff97538ca008f);
             
-                var html_024ced0a9ecc79e2d7781ef83832cb86 = $(`<div id="html_024ced0a9ecc79e2d7781ef83832cb86" style="width: 100.0%; height: 100.0%;"><strong>Colorado State University Pueblo</strong><br/>Major employer and institution. Potential march/protest staging area. Has campus police. Located near ALPR coverage zones.<br/><em>Sources:</em> CSU Pueblo website</div>`)[0];
-                popup_fcd1d6db261c9567232ebfeb2fd983f4.setContent(html_024ced0a9ecc79e2d7781ef83832cb86);
-            
-        
-
-        marker_b4bd662a1eb066183c85f6c22ac8227b.bindPopup(popup_fcd1d6db261c9567232ebfeb2fd983f4)
-        ;
-
-        
     
-    
-            var marker_e6bbf02a332abb0c1fb1077b57e2c008 = L.marker(
-                [38.255, -104.62],
-                {
-}
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
-        
-    
-        var popup_34d30fcee913a353f4029a36db51ae99 = L.popup({
-  "maxWidth": 360,
-});
-
-        
-            
-                var html_314f1f3ad0005ec48fe490c020b681ba = $(`<div id="html_314f1f3ad0005ec48fe490c020b681ba" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Community College</strong><br/>Major employer. Commissioner McPheeters works in grant compliance here. Mobile food pantry first Tuesday of each month.<br/><em>Sources:</em> PCC website<br/>Care and Share Food Bank</div>`)[0];
-                popup_34d30fcee913a353f4029a36db51ae99.setContent(html_314f1f3ad0005ec48fe490c020b681ba);
-            
-        
-
-        marker_e6bbf02a332abb0c1fb1077b57e2c008.bindPopup(popup_34d30fcee913a353f4029a36db51ae99)
-        ;
-
-        
-    
-    
-            var marker_1762b470c5e23a3c0993caa41d0bfd58 = L.marker(
+            var marker_f99d50385b2cc2655f4ad77f864c543d = L.marker(
                 [38.2665, -104.608],
                 {
 }
-            ).addTo(map_fbaebe8544d8dcf52a083a1615dcbe81);
+            ).addTo(marker_cluster_79835d8d42e80c580ae5496ae33e75b1);
         
     
-        var popup_676bc864f32e06b7a8267f6c2e9c20c6 = L.popup({
+            var icon_6091b2dec2e8a0636d6c830921c64c23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a3a00eb05b680f4856b35676b584400 = L.popup({
   "maxWidth": 360,
 });
 
         
             
-                var html_8716fb0db64b7ff70aa38ef3e4c17a36 = $(`<div id="html_8716fb0db64b7ff70aa38ef3e4c17a36" style="width: 100.0%; height: 100.0%;"><strong>El Centro del Quinto Sol Recreation Center</strong><br/>Free drop-in activities, after-school programs, tutoring, safe community space. Address: 609 E 6th St. Phone: 719-553-2949.<br/><em>Sources:</em> City of Pueblo website</div>`)[0];
-                popup_676bc864f32e06b7a8267f6c2e9c20c6.setContent(html_8716fb0db64b7ff70aa38ef3e4c17a36);
+                var html_1e75f8cba53d83f2c17783884cefe411 = $(`<div id="html_1e75f8cba53d83f2c17783884cefe411" style="width: 100.0%; height: 100.0%;"><strong>El Centro del Quinto Sol Recreation Center</strong><br/>Free drop-in activities, after-school programs, tutoring, safe community space. Address: 609 E 6th St. Phone: 719-553-2949.<br/><em>Sources:</em><br/>City of Pueblo website</div>`)[0];
+                popup_0a3a00eb05b680f4856b35676b584400.setContent(html_1e75f8cba53d83f2c17783884cefe411);
             
         
 
-        marker_1762b470c5e23a3c0993caa41d0bfd58.bindPopup(popup_676bc864f32e06b7a8267f6c2e9c20c6)
+        marker_f99d50385b2cc2655f4ad77f864c543d.bindPopup(popup_0a3a00eb05b680f4856b35676b584400)
         ;
 
         
     
+    
+                marker_f99d50385b2cc2655f4ad77f864c543d.setIcon(icon_6091b2dec2e8a0636d6c830921c64c23);
+            
+    
+            marker_cluster_79835d8d42e80c580ae5496ae33e75b1.addTo(feature_group_658b074dec1fe1b5491c42c28343e712);
+        
+    
+            feature_group_658b074dec1fe1b5491c42c28343e712.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_f88bfd950e024f71fcc3d196d52c0d86 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_304771361af4db4d3f50edeefa1aa62d = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_245aa4f0dbc3cc793af5b7a9fcfac477 = L.marker(
+                [38.2812424, -104.6071836],
+                {
+}
+            ).addTo(marker_cluster_304771361af4db4d3f50edeefa1aa62d);
+        
+    
+            var icon_87dda155d7a5380a9ac19dc1d0ee4204 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_720b02409be962b30054326f3d4c6880 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8ace0cc9ce00103be5f3c1af941a64e7 = $(`<div id="html_8ace0cc9ce00103be5f3c1af941a64e7" style="width: 100.0%; height: 100.0%;"><strong>Mineral Palace Park</strong><br/>One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Community staging zone for events like Pueblo Pride.<br/><em>Sources:</em><br/>KRDO, July 2025<br/>City of Pueblo ARPA spending reports</div>`)[0];
+                popup_720b02409be962b30054326f3d4c6880.setContent(html_8ace0cc9ce00103be5f3c1af941a64e7);
+            
+        
+
+        marker_245aa4f0dbc3cc793af5b7a9fcfac477.bindPopup(popup_720b02409be962b30054326f3d4c6880)
+        ;
+
+        
+    
+    
+                marker_245aa4f0dbc3cc793af5b7a9fcfac477.setIcon(icon_87dda155d7a5380a9ac19dc1d0ee4204);
+            
+    
+            var marker_e424dc58ce41b6405688df1277d40c90 = L.marker(
+                [38.27, -104.62],
+                {
+}
+            ).addTo(marker_cluster_304771361af4db4d3f50edeefa1aa62d);
+        
+    
+            var icon_4b255ffa7004d77b6b5d593a27717514 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9283b00be3ecfd317af0f3d4c1d4cdf = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_c1edef06f54833b5ef233f6a04ef574c = $(`<div id="html_c1edef06f54833b5ef233f6a04ef574c" style="width: 100.0%; height: 100.0%;"><strong>City Park</strong><br/>One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC video wall.<br/><em>Sources:</em><br/>KRDO, July 2025<br/>City of Pueblo ARPA spending reports</div>`)[0];
+                popup_f9283b00be3ecfd317af0f3d4c1d4cdf.setContent(html_c1edef06f54833b5ef233f6a04ef574c);
+            
+        
+
+        marker_e424dc58ce41b6405688df1277d40c90.bindPopup(popup_f9283b00be3ecfd317af0f3d4c1d4cdf)
+        ;
+
+        
+    
+    
+                marker_e424dc58ce41b6405688df1277d40c90.setIcon(icon_4b255ffa7004d77b6b5d593a27717514);
+            
+    
+            var marker_41ceca8337b15c3bdd5d43c577e08694 = L.marker(
+                [38.24, -104.585],
+                {
+}
+            ).addTo(marker_cluster_304771361af4db4d3f50edeefa1aa62d);
+        
+    
+            var icon_18a02f918537b1900c9dcc7757c02b62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72f0040bc847b9f9932893d3aedf58f9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_670a88a6a25a98b1c39166c6ccec76a0 = $(`<div id="html_670a88a6a25a98b1c39166c6ccec76a0" style="width: 100.0%; height: 100.0%;"><strong>Lake Minnequa Park</strong><br/>One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.<br/><em>Sources:</em><br/>KRDO, July 2025<br/>City of Pueblo ARPA spending reports</div>`)[0];
+                popup_72f0040bc847b9f9932893d3aedf58f9.setContent(html_670a88a6a25a98b1c39166c6ccec76a0);
+            
+        
+
+        marker_41ceca8337b15c3bdd5d43c577e08694.bindPopup(popup_72f0040bc847b9f9932893d3aedf58f9)
+        ;
+
+        
+    
+    
+                marker_41ceca8337b15c3bdd5d43c577e08694.setIcon(icon_18a02f918537b1900c9dcc7757c02b62);
+            
+    
+            var marker_61ccff589f8a3ed50bba2add151837cf = L.marker(
+                [38.25, -104.59],
+                {
+}
+            ).addTo(marker_cluster_304771361af4db4d3f50edeefa1aa62d);
+        
+    
+            var icon_6f91c892a51b3305bb53f61d8c05a8c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af2f5b800a76a73564d1729627af87f4 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_edfb149e84f839735c11da9c62af2779 = $(`<div id="html_edfb149e84f839735c11da9c62af2779" style="width: 100.0%; height: 100.0%;"><strong>Ray Aguilera Park</strong><br/>One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.<br/><em>Sources:</em><br/>KRDO, July 2025<br/>City of Pueblo ARPA spending reports</div>`)[0];
+                popup_af2f5b800a76a73564d1729627af87f4.setContent(html_edfb149e84f839735c11da9c62af2779);
+            
+        
+
+        marker_61ccff589f8a3ed50bba2add151837cf.bindPopup(popup_af2f5b800a76a73564d1729627af87f4)
+        ;
+
+        
+    
+    
+                marker_61ccff589f8a3ed50bba2add151837cf.setIcon(icon_6f91c892a51b3305bb53f61d8c05a8c3);
+            
+    
+            var marker_96ad15de7dcaac952a88532f114eaf92 = L.marker(
+                [38.295, -104.605],
+                {
+}
+            ).addTo(marker_cluster_304771361af4db4d3f50edeefa1aa62d);
+        
+    
+            var icon_dffa7b639e9e167540c7f0a9b73b2f6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad86be2b6664e1be44c2d40a58e58e85 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_dbe45cc000e614528717aa7fe2fcfcf1 = $(`<div id="html_dbe45cc000e614528717aa7fe2fcfcf1" style="width: 100.0%; height: 100.0%;"><strong>Mitchell Park</strong><br/>One of 5 parks with RTCC-connected surveillance infrastructure (cameras, ALPRs, Wi-Fi, fiber). Funded by $1M+ ARPA allocation. Cameras feed directly to RTCC.<br/><em>Sources:</em><br/>KRDO, July 2025<br/>City of Pueblo ARPA spending reports</div>`)[0];
+                popup_ad86be2b6664e1be44c2d40a58e58e85.setContent(html_dbe45cc000e614528717aa7fe2fcfcf1);
+            
+        
+
+        marker_96ad15de7dcaac952a88532f114eaf92.bindPopup(popup_ad86be2b6664e1be44c2d40a58e58e85)
+        ;
+
+        
+    
+    
+                marker_96ad15de7dcaac952a88532f114eaf92.setIcon(icon_dffa7b639e9e167540c7f0a9b73b2f6c);
+            
+    
+            marker_cluster_304771361af4db4d3f50edeefa1aa62d.addTo(feature_group_f88bfd950e024f71fcc3d196d52c0d86);
+        
+    
+            feature_group_f88bfd950e024f71fcc3d196d52c0d86.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_c4eb53f88ea88a9afbdfe7ba43c9ae4b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_e9783e1d79b1aa9daf754e2eb69dc1f4 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_9c075eb7d69e4e2f87c83059a7a98389 = L.marker(
+                [38.262, -104.614],
+                {
+}
+            ).addTo(marker_cluster_e9783e1d79b1aa9daf754e2eb69dc1f4);
+        
+    
+            var icon_13b9f9ba8fdc73939d0ed277cc97b18a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "video-camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68b26bd5c13fcd3db2ce71117b8fffd0 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ac544d40f3db458637556a5f6ff3dc0a = $(`<div id="html_ac544d40f3db458637556a5f6ff3dc0a" style="width: 100.0%; height: 100.0%;"><strong>City Hall Camera Arrays</strong><br/>New camera arrays installed on city buildings including City Hall (2025). Enhanced surveillance for downtown events.<br/><em>Sources:</em><br/>KKTV, July 2025</div>`)[0];
+                popup_68b26bd5c13fcd3db2ce71117b8fffd0.setContent(html_ac544d40f3db458637556a5f6ff3dc0a);
+            
+        
+
+        marker_9c075eb7d69e4e2f87c83059a7a98389.bindPopup(popup_68b26bd5c13fcd3db2ce71117b8fffd0)
+        ;
+
+        
+    
+    
+                marker_9c075eb7d69e4e2f87c83059a7a98389.setIcon(icon_13b9f9ba8fdc73939d0ed277cc97b18a);
+            
+    
+            marker_cluster_e9783e1d79b1aa9daf754e2eb69dc1f4.addTo(feature_group_c4eb53f88ea88a9afbdfe7ba43c9ae4b);
+        
+    
+            feature_group_c4eb53f88ea88a9afbdfe7ba43c9ae4b.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_ff7ad07a3fafe047d9505c97ab6717c6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_80998e1caf79410d8c0bdb0e569d180a = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_0805d757d9680f7d08e96e322a7a7512 = L.marker(
+                [38.29, -104.5],
+                {
+}
+            ).addTo(marker_cluster_80998e1caf79410d8c0bdb0e569d180a);
+        
+    
+            var icon_4c1e1a5fa038cf17670ccd04508017f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d4c4a3ed865b494fc9dc44fe4d9d023 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2e40efecf7bbab3a4b9d559359e3eaee = $(`<div id="html_2e40efecf7bbab3a4b9d559359e3eaee" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Memorial Airport</strong><br/>Community protests over potential ICE use for immigration transport. Monitor for ICE activity.<br/><em>Sources:</em><br/>Rocky Mountain PBS, 2025</div>`)[0];
+                popup_3d4c4a3ed865b494fc9dc44fe4d9d023.setContent(html_2e40efecf7bbab3a4b9d559359e3eaee);
+            
+        
+
+        marker_0805d757d9680f7d08e96e322a7a7512.bindPopup(popup_3d4c4a3ed865b494fc9dc44fe4d9d023)
+        ;
+
+        
+    
+    
+                marker_0805d757d9680f7d08e96e322a7a7512.setIcon(icon_4c1e1a5fa038cf17670ccd04508017f6);
+            
+    
+            var marker_899f13c1de38e02171f2dbd4c1c65e45 = L.marker(
+                [38.2715, -104.6065],
+                {
+}
+            ).addTo(marker_cluster_80998e1caf79410d8c0bdb0e569d180a);
+        
+    
+            var icon_3295d522fcbf2a40f4440f61c0ed40ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ada5a281cf0f9f01feaf47f2937b246f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_40d567c55c842391c10afd92fd8b0a15 = $(`<div id="html_40d567c55c842391c10afd92fd8b0a15" style="width: 100.0%; height: 100.0%;"><strong>Pueblo County Courthouse</strong><br/>Location to monitor for ICE civil arrest activity. Nov 2025 federal ruling prohibits ICE warrantless arrests in Colorado. Address: 215 W 10th St.<br/><em>Sources:</em><br/>Colorado federal court ruling Nov 2025</div>`)[0];
+                popup_ada5a281cf0f9f01feaf47f2937b246f.setContent(html_40d567c55c842391c10afd92fd8b0a15);
+            
+        
+
+        marker_899f13c1de38e02171f2dbd4c1c65e45.bindPopup(popup_ada5a281cf0f9f01feaf47f2937b246f)
+        ;
+
+        
+    
+    
+                marker_899f13c1de38e02171f2dbd4c1c65e45.setIcon(icon_3295d522fcbf2a40f4440f61c0ed40ed);
+            
+    
+            marker_cluster_80998e1caf79410d8c0bdb0e569d180a.addTo(feature_group_ff7ad07a3fafe047d9505c97ab6717c6);
+        
+    
+            feature_group_ff7ad07a3fafe047d9505c97ab6717c6.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_e7a7fce28fa9de4b5d09e30251135091 = L.featureGroup(
+                {
+}
+            );
+        
+    
+        function geo_json_0f1e276db21d4be0ce4c9765beda82aa_styler(feature) {
+            switch(feature.properties.id) {
+                default:
+                    return {"color": "#0057b7", "fillColor": "#3388ff", "fillOpacity": 0.2, "weight": 2};
+            }
+        }
+
+        function geo_json_0f1e276db21d4be0ce4c9765beda82aa_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_0f1e276db21d4be0ce4c9765beda82aa = L.geoJson(null, {
+                onEachFeature: geo_json_0f1e276db21d4be0ce4c9765beda82aa_onEachFeature,
+            
+                style: geo_json_0f1e276db21d4be0ce4c9765beda82aa_styler,
+            ...{
+}
+        });
+
+        function geo_json_0f1e276db21d4be0ce4c9765beda82aa_add (data) {
+            geo_json_0f1e276db21d4be0ce4c9765beda82aa
+                .addData(data);
+        }
+            geo_json_0f1e276db21d4be0ce4c9765beda82aa_add({"features": [{"geometry": {"coordinates": [[[-104.625, 38.295], [-104.575, 38.295], [-104.575, 38.26], [-104.625, 38.26], [-104.625, 38.295]]], "type": "Polygon"}, "properties": {"area_sq_mi": 2, "description": "Primary ShotSpotter deployment (~2 sq mi). Sensors on buildings and poles. 60-second alert to RTCC. Part of $210k/year SoundThinking contract.", "id": "shotspotter-eastside", "name": "ShotSpotter Eastside Coverage", "notes": "Coverage area is approximate - exact sensor locations not public. Chicago IG found 89% of ShotSpotter alerts led to no gun-related incident.", "sources": ["SoundThinking press release 2025", "KOAA News5 2025-01"], "type": "acoustic-surveillance", "updated": "2026-01"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_0f1e276db21d4be0ce4c9765beda82aa.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["name", "type"];
+    let aliases = ["Name", "Category"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_0f1e276db21d4be0ce4c9765beda82aa.addTo(feature_group_e7a7fce28fa9de4b5d09e30251135091);
+        
+    
+        function geo_json_97a4347befa3e53ece9acc432c5dde84_styler(feature) {
+            switch(feature.properties.id) {
+                default:
+                    return {"color": "#0057b7", "fillColor": "#3388ff", "fillOpacity": 0.2, "weight": 2};
+            }
+        }
+
+        function geo_json_97a4347befa3e53ece9acc432c5dde84_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_97a4347befa3e53ece9acc432c5dde84 = L.geoJson(null, {
+                onEachFeature: geo_json_97a4347befa3e53ece9acc432c5dde84_onEachFeature,
+            
+                style: geo_json_97a4347befa3e53ece9acc432c5dde84_styler,
+            ...{
+}
+        });
+
+        function geo_json_97a4347befa3e53ece9acc432c5dde84_add (data) {
+            geo_json_97a4347befa3e53ece9acc432c5dde84
+                .addData(data);
+        }
+            geo_json_97a4347befa3e53ece9acc432c5dde84_add({"features": [{"geometry": {"coordinates": [[[-104.61, 38.26], [-104.575, 38.26], [-104.575, 38.235], [-104.61, 38.235], [-104.61, 38.26]]], "type": "Polygon"}, "properties": {"area_sq_mi": 1, "description": "Expanded ShotSpotter coverage (~1 sq mi). Added July 2025 after March officer shooting. Extends into previously unmonitored Bessemer/Southside area.", "id": "shotspotter-bessemer", "name": "ShotSpotter Bessemer Coverage", "notes": "Expansion funded by state grant. Almost exclusively deployed in low-income Black/Latino neighborhoods.", "sources": ["KOAA News5 July 2025", "Pueblo PD press release"], "type": "acoustic-surveillance", "updated": "2026-01"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_97a4347befa3e53ece9acc432c5dde84.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["name", "type"];
+    let aliases = ["Name", "Category"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_97a4347befa3e53ece9acc432c5dde84.addTo(feature_group_e7a7fce28fa9de4b5d09e30251135091);
+        
+    
+            var marker_cluster_c6dc0f86a863bf03f98775e69e005b50 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            marker_cluster_c6dc0f86a863bf03f98775e69e005b50.addTo(feature_group_e7a7fce28fa9de4b5d09e30251135091);
+        
+    
+            feature_group_e7a7fce28fa9de4b5d09e30251135091.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_c385ce610b1861df83404398d03377cc = L.featureGroup(
+                {
+}
+            );
+        
+    
+        function geo_json_783b87a59d169395a9b134321e9f6cf4_styler(feature) {
+            switch(feature.properties.id) {
+                default:
+                    return {"color": "#0057b7", "fillColor": "#3388ff", "fillOpacity": 0.2, "weight": 2};
+            }
+        }
+
+        function geo_json_783b87a59d169395a9b134321e9f6cf4_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_783b87a59d169395a9b134321e9f6cf4 = L.geoJson(null, {
+                onEachFeature: geo_json_783b87a59d169395a9b134321e9f6cf4_onEachFeature,
+            
+                style: geo_json_783b87a59d169395a9b134321e9f6cf4_styler,
+            ...{
+}
+        });
+
+        function geo_json_783b87a59d169395a9b134321e9f6cf4_add (data) {
+            geo_json_783b87a59d169395a9b134321e9f6cf4
+                .addData(data);
+        }
+            geo_json_783b87a59d169395a9b134321e9f6cf4_add({"features": [{"geometry": {"coordinates": [[-104.62, 38.262], [-104.615, 38.264], [-104.61, 38.266], [-104.605, 38.268]], "type": "LineString"}, "properties": {"description": "Flock Safety license plate reader corridor along Union Avenue. Downtown Association funded initial deployment. Part of 1,091-camera Colorado network. 30-day cloud retention.", "id": "union-ave-alpr-corridor", "name": "Union Avenue ALPR Corridor", "notes": "EFF documented this network used for protest surveillance. Audit logs should be requested via CORA.", "sources": ["KOAA News5 2024", "EFF Nov 2025 report"], "type": "alpr-corridor", "updated": "2026-01"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_783b87a59d169395a9b134321e9f6cf4.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["name", "type"];
+    let aliases = ["Name", "Category"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_783b87a59d169395a9b134321e9f6cf4.addTo(feature_group_c385ce610b1861df83404398d03377cc);
+        
+    
+        function geo_json_a28ed05f35a28b6f24949777fa9ac574_styler(feature) {
+            switch(feature.properties.id) {
+                default:
+                    return {"color": "#0057b7", "fillColor": "#3388ff", "fillOpacity": 0.2, "weight": 2};
+            }
+        }
+
+        function geo_json_a28ed05f35a28b6f24949777fa9ac574_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_a28ed05f35a28b6f24949777fa9ac574 = L.geoJson(null, {
+                onEachFeature: geo_json_a28ed05f35a28b6f24949777fa9ac574_onEachFeature,
+            
+                style: geo_json_a28ed05f35a28b6f24949777fa9ac574_styler,
+            ...{
+}
+        });
+
+        function geo_json_a28ed05f35a28b6f24949777fa9ac574_add (data) {
+            geo_json_a28ed05f35a28b6f24949777fa9ac574
+                .addData(data);
+        }
+            geo_json_a28ed05f35a28b6f24949777fa9ac574_add({"features": [{"geometry": {"coordinates": [[-104.608, 38.258], [-104.61, 38.262], [-104.612, 38.266], [-104.614, 38.27]], "type": "LineString"}, "properties": {"description": "Flock Safety license plate reader coverage along Riverwalk area. Connected to Downtown Association surveillance initiative.", "id": "riverwalk-alpr-corridor", "name": "Riverwalk ALPR Corridor", "notes": "Part of downtown surveillance ring. Cameras capture all plates, not just hotlist matches.", "sources": ["KOAA News5 2024"], "type": "alpr-corridor", "updated": "2026-01"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_a28ed05f35a28b6f24949777fa9ac574.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["name", "type"];
+    let aliases = ["Name", "Category"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_a28ed05f35a28b6f24949777fa9ac574.addTo(feature_group_c385ce610b1861df83404398d03377cc);
+        
+    
+            var marker_cluster_e4d1a404fac22329e61778cb288ebd87 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            marker_cluster_e4d1a404fac22329e61778cb288ebd87.addTo(feature_group_c385ce610b1861df83404398d03377cc);
+        
+    
+            feature_group_c385ce610b1861df83404398d03377cc.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var feature_group_b2a93cebc5bee16062d024f2b470fa93 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_87402ea10b5214589a328c415072a18d = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_ae58bd90ecc5a73623abbae1d9e263e8 = L.marker(
+                [38.285, -104.635],
+                {
+}
+            ).addTo(marker_cluster_87402ea10b5214589a328c415072a18d);
+        
+    
+            var icon_3d7c2413c3c225e7027875c39e220f4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44e2a0a491599a36ac34631620ac1aeb = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_063511c04d5cc901776a93587feeb9e5 = $(`<div id="html_063511c04d5cc901776a93587feeb9e5" style="width: 100.0%; height: 100.0%;"><strong>Colorado State University Pueblo</strong><br/>Major employer and institution. Potential march/protest staging area. Has campus police. Located near ALPR coverage zones.<br/><em>Sources:</em><br/>CSU Pueblo website</div>`)[0];
+                popup_44e2a0a491599a36ac34631620ac1aeb.setContent(html_063511c04d5cc901776a93587feeb9e5);
+            
+        
+
+        marker_ae58bd90ecc5a73623abbae1d9e263e8.bindPopup(popup_44e2a0a491599a36ac34631620ac1aeb)
+        ;
+
+        
+    
+    
+                marker_ae58bd90ecc5a73623abbae1d9e263e8.setIcon(icon_3d7c2413c3c225e7027875c39e220f4a);
+            
+    
+            var marker_1c4111745d8da8308e86ea08b7441c0a = L.marker(
+                [38.255, -104.62],
+                {
+}
+            ).addTo(marker_cluster_87402ea10b5214589a328c415072a18d);
+        
+    
+            var icon_6d378616910456eb0bd2345bfc7f290c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73fa56ba67c4d5c2ed5b60c7a1132897 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e17a2047cf27420ee4809fba0e09447b = $(`<div id="html_e17a2047cf27420ee4809fba0e09447b" style="width: 100.0%; height: 100.0%;"><strong>Pueblo Community College</strong><br/>Major employer. Commissioner McPheeters works in grant compliance here. Mobile food pantry first Tuesday of each month.<br/><em>Sources:</em><br/>PCC website<br/>Care and Share Food Bank</div>`)[0];
+                popup_73fa56ba67c4d5c2ed5b60c7a1132897.setContent(html_e17a2047cf27420ee4809fba0e09447b);
+            
+        
+
+        marker_1c4111745d8da8308e86ea08b7441c0a.bindPopup(popup_73fa56ba67c4d5c2ed5b60c7a1132897)
+        ;
+
+        
+    
+    
+                marker_1c4111745d8da8308e86ea08b7441c0a.setIcon(icon_6d378616910456eb0bd2345bfc7f290c);
+            
+    
+            marker_cluster_87402ea10b5214589a328c415072a18d.addTo(feature_group_b2a93cebc5bee16062d024f2b470fa93);
+        
+    
+            feature_group_b2a93cebc5bee16062d024f2b470fa93.addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+        
+    
+            var layer_control_a9116e671aa60048d980537190a0efda_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_cc5698a6a6335c5a3379138ad3d0693b,
+                },
+                overlays :  {
+                    "boundary" : feature_group_3307d9f56d0ad89a97584253f655ecda,
+                    "rtcc" : feature_group_073d5adfa53916306e13b94f7fe3ab47,
+                    "drone-surveillance" : feature_group_72bab9b30fa3c90cada918aa0498c803,
+                    "alpr" : feature_group_e25a26a8aa015737c5071c6b7dc09755,
+                    "mobile-surveillance" : feature_group_01bf65e482f55a6deb267482a3223dfe,
+                    "private-security" : feature_group_48fc0e96456360057a5ac98754627cde,
+                    "law-enforcement" : feature_group_6a2e3bcb02e1184a3ace4476a00a921d,
+                    "community-support" : feature_group_658b074dec1fe1b5491c42c28343e712,
+                    "park-surveillance" : feature_group_f88bfd950e024f71fcc3d196d52c0d86,
+                    "fixed-surveillance" : feature_group_c4eb53f88ea88a9afbdfe7ba43c9ae4b,
+                    "watch-site" : feature_group_ff7ad07a3fafe047d9505c97ab6717c6,
+                    "acoustic-surveillance" : feature_group_e7a7fce28fa9de4b5d09e30251135091,
+                    "alpr-corridor" : feature_group_c385ce610b1861df83404398d03377cc,
+                    "institution" : feature_group_b2a93cebc5bee16062d024f2b470fa93,
+                },
+            };
+            let layer_control_a9116e671aa60048d980537190a0efda = L.control.layers(
+                layer_control_a9116e671aa60048d980537190a0efda_layers.base_layers,
+                layer_control_a9116e671aa60048d980537190a0efda_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_3c06c46733cd8ae3a6c592a06913b97d);
+
+        
 </script>
 </html>
