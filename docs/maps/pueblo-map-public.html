@@ -20,10 +20,30 @@
   <div id="map" aria-label="Map of Pueblo surveillance and resources"></div>
   <div id="error-banner" style="position:absolute;top:8px;right:12px;z-index:20;background:#8b0000;color:white;padding:8px 12px;border-radius:8px;font-size:12px;display:none;"></div>
   <div id="status-badge" style="position:absolute;top:8px;left:12px;z-index:20;background:#1e5aff;color:white;padding:8px 12px;border-radius:8px;font-size:12px;display:none;"></div>
+  <div class="help-overlay" id="help-overlay" role="dialog" aria-modal="true" aria-label="How to use the map">
+    <div class="help-card">
+      <button class="close-btn" id="close-help">Close</button>
+      <h2>How to read this map</h2>
+      <ul>
+        <li><strong>Colors = system type.</strong> Use legend + presets to filter.</li>
+        <li><strong>Search</strong> by name/type/description; Enter zooms to best match.</li>
+        <li><strong>Popups</strong> show description, last verified date, and sources.</li>
+        <li><strong>Presets</strong> jump to surveillance, resources, ICE/watch, parks, or all data.</li>
+        <li><strong>Share</strong> copies your current view/layers; <strong>Download CSV</strong> exports the data.</li>
+        <li><strong>No private addresses</strong>; sources are public records/news.</li>
+      </ul>
+    </div>
+  </div>
 
   <section class="control-panel" aria-label="Map controls">
     <h1>Pueblo Surveillance & Support</h1>
     <p class="subhead">Dark-mode public map of surveillance tech, policing sites, watch points, and community resources.</p>
+
+    <div class="chip-row">
+      <span class="chip" id="last-updated-chip">Data updated: loading…</span>
+      <span class="chip">Sources: public records/news only</span>
+      <button class="chip-btn" id="open-help" type="button">How to read this map</button>
+    </div>
 
     <div class="section-label">Search</div>
     <div class="search-row">
@@ -145,6 +165,21 @@
       if (!el) return;
       el.textContent = msg;
       el.style.display = 'block';
+    }
+
+    function updateLastUpdated(geo) {
+      const chip = document.getElementById('last-updated-chip');
+      if (!chip) return;
+      const dates = (geo.features || [])
+        .map((f) => f.properties?.updated)
+        .filter(Boolean);
+      if (!dates.length) {
+        chip.textContent = 'Data updated: n/a';
+        return;
+      }
+      // pick max date string
+      const latest = dates.sort().slice(-1)[0];
+      chip.textContent = `Data updated: ${latest}`;
     }
 
     let map;
@@ -503,6 +538,7 @@
       const geo = await fetchGeoJSON();
       lastGeo = geo;
       geo.features.forEach(addFeature);
+      updateLastUpdated(geo);
 
       // add all layers to map
       Object.values(layerGroups).forEach((group) => group.addTo(map));
@@ -530,6 +566,15 @@
     loadData().catch((err) => {
       console.error(err);
       showError('Unable to load map data. Please refresh or report the issue.');
+    });
+
+    document.getElementById('open-help')?.addEventListener('click', () => {
+      const o = document.getElementById('help-overlay');
+      if (o) o.style.display = 'flex';
+    });
+    document.getElementById('close-help')?.addEventListener('click', () => {
+      const o = document.getElementById('help-overlay');
+      if (o) o.style.display = 'none';
     });
   </script>
 </body>

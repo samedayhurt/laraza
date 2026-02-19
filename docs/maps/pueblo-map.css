@@ -102,6 +102,9 @@ html { height: 100%; }
 .legend-item { display: flex; align-items: center; gap: 10px; margin: 6px 0; color: var(--muted); font-size: 13px; }
 .legend-swatch { width: 16px; height: 16px; border-radius: 50%; border: 1px solid #0b0f1a; }
 
+.chip-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 0; }
+.chip { background: #10203d; color: var(--text); border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; font-size: 12px; }
+
 .preset-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
 .chip-btn { background: #10203d; color: var(--text); border: 1px solid var(--border); padding: 8px 10px; border-radius: 999px; cursor: pointer; font-size: 12px; }
 .chip-btn:hover { background: #1a2c4d; }
@@ -118,6 +121,12 @@ html { height: 100%; }
 .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; color: white; margin-left: 6px; }
 .badge.stale { background: #d97706; }
 .badge.fresh { background: #10b981; }
+
+.help-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 50; display: none; align-items: center; justify-content: center; padding: 20px; }
+.help-card { background: #0f172a; color: var(--text); border: 1px solid var(--border); border-radius: 12px; max-width: 640px; width: 100%; padding: 20px; box-shadow: var(--shadow); }
+.help-card h2 { margin-top: 0; }
+.help-card ul { color: var(--muted); line-height: 1.5; }
+.close-btn { float: right; background: #162036; color: var(--text); border: 1px solid var(--border); padding: 6px 10px; border-radius: 8px; cursor: pointer; }
 
 .results { margin-top: 10px; background: #0f172a; border: 1px solid var(--border); border-radius: 10px; max-height: 160px; overflow: auto; }
 .result-item { padding: 8px 10px; cursor: pointer; border-bottom: 1px solid #131c2e; }
