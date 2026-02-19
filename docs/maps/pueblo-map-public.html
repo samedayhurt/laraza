@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pueblo, CO Surveillance & Resources Map (Public)</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-o9N1j7kGStN7fEji1rG6N0wGHBb5/7S3u1p3Z2QkbwY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css?v=2026-02-19" integrity="sha256-o9N1j7kGStN7fEji1rG6N0wGHBb5/7S3u1p3Z2QkbwY=" crossorigin="anonymous" />
   <link rel="stylesheet" href="./pueblo-map.css" />
   <style>
     /* Leaflet dark tweaks */
@@ -45,7 +48,7 @@
     <div id="legend-items"></div>
   </aside>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-VtA6F9OBV1wR1JrVN6M8GN28M5soNqd7KP9JdFQDaIY=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js?v=2026-02-19" integrity="sha256-VtA6F9OBV1wR1JrVN6M8GN28M5soNqd7KP9JdFQDaIY=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/fuse.js@6.6.2"></script>
   <script>
     // Inline backup of the dataset will be injected below.
@@ -284,16 +287,20 @@
     }
 
     async function fetchGeoJSON() {
+      // Prefer embedded data to avoid fetch/CORS/caching issues on GitHub Pages.
+      if (EMBEDDED_GEOJSON && EMBEDDED_GEOJSON.features && EMBEDDED_GEOJSON.features.length) {
+        return EMBEDDED_GEOJSON;
+      }
       const candidates = [
-        './pueblo_apparatus.geojson',
-        'pueblo_apparatus.geojson',
-        '../maps/pueblo_apparatus.geojson',
-        '../../data/pueblo_apparatus.geojson',
+        './pueblo_apparatus.geojson?v=2026-02-19',
+        'pueblo_apparatus.geojson?v=2026-02-19',
+        '../maps/pueblo_apparatus.geojson?v=2026-02-19',
+        '../../data/pueblo_apparatus.geojson?v=2026-02-19',
         'https://raw.githubusercontent.com/samedayhurt/laraza/main/data/pueblo_apparatus.geojson',
       ];
       for (const url of candidates) {
         try {
-          const res = await fetch(url, { cache: 'no-cache' });
+          const res = await fetch(url, { cache: 'no-store' });
           if (res.ok) {
             const geo = await res.json();
             if (geo && geo.features && geo.features.length) return geo;
@@ -301,10 +308,6 @@
         } catch (err) {
           continue;
         }
-      }
-      if (EMBEDDED_GEOJSON && EMBEDDED_GEOJSON.features && EMBEDDED_GEOJSON.features.length) {
-        console.warn('Falling back to embedded GeoJSON.');
-        return EMBEDDED_GEOJSON;
       }
       throw new Error('Unable to load GeoJSON from any known path or embedded data.');
     }

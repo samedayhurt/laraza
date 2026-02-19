@@ -21,6 +21,7 @@ body {
 #map {
   position: absolute;
   inset: 0;
+  z-index: 0;
 }
 
 .control-panel {
@@ -36,6 +37,7 @@ body {
   border-radius: 12px;
   box-shadow: var(--shadow);
   backdrop-filter: blur(6px);
+  z-index: 10;
 }
 
 .control-panel h1 {
