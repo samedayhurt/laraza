@@ -747,6 +747,48 @@
         "notes": "Good community meeting space. CSU-Pueblo Learning Center on-site.",
         "updated": "2026-01"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.618,
+          38.266
+        ]
+      },
+      "properties": {
+        "id": "safeside-710w4th",
+        "name": "SafeSide Recovery Shelter (Posada) \u2013 710 W 4th",
+        "type": "community-support",
+        "description": "Low-barrier 24/7 shelter expansion (8 dorm-style units added Jan 2026); intake via Posada shelter campus.",
+        "sources": [
+          "SafeSide/Posada Jan 2026 expansion announcement"
+        ],
+        "notes": "Approximate campus location; confirm intake details before directing people.",
+        "updated": "2026-02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6165,
+          38.2662
+        ]
+      },
+      "properties": {
+        "id": "safeside-728w4th",
+        "name": "SafeSide Recovery Shelter (Posada) \u2013 728 W 4th",
+        "type": "community-support",
+        "description": "Posada/SafeSide campus building supporting low-barrier shelter beds and recovery services (expansion Jan 2026).",
+        "sources": [
+          "SafeSide/Posada Jan 2026 expansion announcement"
+        ],
+        "notes": "Approximate campus location; shelter buildings span 710\u2013728 W 4th.",
+        "updated": "2026-02"
+      }
     }
   ]
 }

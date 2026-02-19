@@ -1,6 +1,7 @@
 # Surveillance and Policing Risks
 
-*Updated: February 18, 2026*
+*Updated: February 18, 2026*  
+_Last refreshed (map sync): 2026-02-19_
 
 Pueblo's Real-Time Crime Center (RTCC) continued expanding through early 2026, widening acoustic coverage and adding mobile camera trailers while drone-first-responder flights remain active. This brief summarizes the current stack, highlights civil-liberties threats, and outlines immediate self-advocacy moves.
 

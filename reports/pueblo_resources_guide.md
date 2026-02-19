@@ -2,6 +2,8 @@
 
 Community safety in Pueblo depends on quick access to trusted legal, housing, health, and survivor services. Use this guide to match urgent needs with organizations already operating in the county, and pair every outreach with documentation (names, dates, case IDs) so follow-up teams can advocate effectively.
 
+_Last refreshed (map sync): 2026-02-19_
+
 ## Executive Summary
 - Civil legal aid: **Colorado Legal Services (CLS)** runs the Southeastern Colorado office in downtown Pueblo, handling eviction defense, protection orders, and limited immigration screenings for income-qualified residents.[^cls]
 - Housing & homelessness: **Posada** coordinates motel vouchers, mail services, and supportive housing; partner site **SafeSide Recovery** doubled shelter capacity with eight new dorm-style units in Jan 2026.[^posada][^safeside]

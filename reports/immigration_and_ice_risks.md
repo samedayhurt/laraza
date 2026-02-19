@@ -4,6 +4,8 @@
 
 Pueblo residents face escalating federal enforcement, evolving county policies, and new surveillance threats. This brief captures the latest intelligence and tools for asserting rights and documenting abuses.
 
+_Last refreshed (map sync): 2026-02-19_
+
 ## Executive Summary
 - **MAJOR VICTORY:** Federal judge ordered ICE to stop warrantless arrests in Colorado (Nov 25, 2025)—cite this in any ICE encounter.[^court]
 - **ICE enforcement high:** 1,360 arrests Jan–Jun 2025; early 2026 statewide reports count 104 arrests so far.[^ice]
