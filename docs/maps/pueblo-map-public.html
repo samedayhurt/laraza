@@ -280,10 +280,27 @@
       if (opts.openPopup !== false && layer.openPopup) layer.openPopup();
     }
 
+    async function fetchGeoJSON() {
+      const candidates = [
+        './pueblo_apparatus.geojson',
+        'pueblo_apparatus.geojson',
+        '../maps/pueblo_apparatus.geojson',
+        '../../data/pueblo_apparatus.geojson',
+        'https://raw.githubusercontent.com/samedayhurt/laraza/main/data/pueblo_apparatus.geojson',
+      ];
+      for (const url of candidates) {
+        try {
+          const res = await fetch(url, { cache: 'no-cache' });
+          if (res.ok) return await res.json();
+        } catch (err) {
+          continue;
+        }
+      }
+      throw new Error('Unable to load GeoJSON from any known path.');
+    }
+
     async function loadData() {
-      // Prefer colocated copy for GitHub Pages; fall back to repo root data for local use.
-      const res = await fetch('./pueblo_apparatus.geojson').catch(() => fetch('../../data/pueblo_apparatus.geojson'));
-      const geo = await res.json();
+      const geo = await fetchGeoJSON();
       geo.features.forEach(addFeature);
 
       // add all layers to map
@@ -294,6 +311,8 @@
       const combined = L.featureGroup(all.flatMap((g) => g.getLayers()))
       if (combined.getLayers().length) {
         map.fitBounds(combined.getBounds(), { padding: [40, 40] });
+      } else {
+        alert('Map loaded but no features were found in the dataset.');
       }
 
       buildLegend();
@@ -303,7 +322,7 @@
 
     loadData().catch((err) => {
       console.error(err);
-      alert('Unable to load map data. Please check the repository path.');
+      alert('Unable to load map data. Please check the repository path or refresh.');
     });
   </script>
 </body>
