@@ -753,8 +753,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.618,
-          38.266
+          -104.6186,
+          38.2703
         ]
       },
       "properties": {
@@ -763,9 +763,10 @@
         "type": "community-support",
         "description": "Low-barrier 24/7 shelter expansion (8 dorm-style units added Jan 2026); intake via Posada shelter campus.",
         "sources": [
-          "SafeSide/Posada Jan 2026 expansion announcement"
+          "SafeSide/Posada Jan 2026 expansion announcement",
+          "Local listings at 710 W 4th St (multiple tenants)"
         ],
-        "notes": "Approximate campus location; confirm intake details before directing people.",
+        "notes": "Approx geocode near 710 W 4th St; confirm onsite intake before directing people.",
         "updated": "2026-02"
       }
     },
@@ -774,8 +775,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.6165,
-          38.2662
+          -104.61741,
+          38.27027
         ]
       },
       "properties": {
@@ -784,9 +785,10 @@
         "type": "community-support",
         "description": "Posada/SafeSide campus building supporting low-barrier shelter beds and recovery services (expansion Jan 2026).",
         "sources": [
-          "SafeSide/Posada Jan 2026 expansion announcement"
+          "SafeSide/Posada Jan 2026 expansion announcement",
+          "MapQuest lat/long 38.27027,-104.61741"
         ],
-        "notes": "Approximate campus location; shelter buildings span 710\u2013728 W 4th.",
+        "notes": "Shelter campus spans 710\u2013728 W 4th; this point is MapQuest geocode for 728.",
         "updated": "2026-02"
       }
     }
