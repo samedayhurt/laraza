@@ -87,3 +87,4 @@ Log every hotline, mutual aid fund, clinic, and legal service with sourcing so w
 - **Source / verification date:** KOAA News5 “Pueblo homeless facility expanding to help more people,” Jan 9, 2026.
 
 Flag capacity constraints or seasonal programs so downstream guides stay accurate.
+- Jan 2026: SafeSide Recovery (Posada partner) added 8 dorm-style low-barrier shelter units, doubling 24/7 capacity; location: Pueblo (verify address before mapping).

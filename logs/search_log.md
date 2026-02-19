@@ -2,6 +2,7 @@
 
 | Date | Agent | Task | Notes |
 | --- | --- | --- | --- |
+| 2026-02-19 | 03_SURVEILLANCE_POLICING_RESEARCHER | Updated map data with Feb 2026 ShotSpotter stats + trailer fleet | Embedded refreshed GeoJSON and added 2025/2026 surveillance stats.
 | 2026-02-19 | 00_ORCHESTRATOR | Set public map as Pages landing | Added docs/index.html redirect and hardened data loading for pueblo-map-public.html. |
 | 2026-02-19 | 00_ORCHESTRATOR | Publish public interactive map | Added Leaflet dark-mode map with search/layer toggles at docs/maps/pueblo-map-public.html + Pages link. |
 | 2026-02-19 | 00_ORCHESTRATOR | Plan interactive public map | Build dark-mode, searchable static map for GitHub Pages using GeoJSON surveillance/resources data. |

@@ -130,3 +130,4 @@ Use this format to track detention cases:
 ---
 
 Note any sensitive client info using pseudonyms until legal review approves sharing.
+- Jan 29 2026: Sheriff David Lucero reiterated PCSO will not participate in ICE “roundups” without criminal nexus or officer safety risk; cooperation limited to detainers/warrants. (Yahoo/Chieftain summary)

@@ -84,6 +84,7 @@ Collect incident logs, technology sightings, contract notes, and firsthand accou
 - **Location:** City of Pueblo police technology stack
 - **Source / doc link:** Pueblo.us “State of the City 2026” (posted Jan 2026) listing public safety accomplishments.
 - **Observed capability:** ShotSpotter acoustic coverage now ~7 sq mi; two additional mobile camera trailers deployed; Drone as First Responder program continues; ALPRs and Community Connect cited as ongoing tools feeding RTCC.
+- Feb 2026 stats: ShotSpotter footprint reported ~7 sq mi; 2025 data 7,715 detections → 2,076 incidents (KKTV 12/31/25). Fleet of ~6 mobile camera trailers noted in 2026 coverage.
 - **Immediate risk + mitigation idea:** Sensor footprint widening without fresh policy debate. Action: request updated coverage maps + deployment logs for trailers and drones; ask Council for annual public report on sensor efficacy, audit logs, and data retention.
 
 ## 2025-11-20 — EFF Exposes Flock Surveillance of Protesters, Activists Nationwide
