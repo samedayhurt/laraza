@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pueblo, CO Surveillance & Resources Map (Public)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-o9N1j7kGStN7fEji1rG6N0wGHBb5/7S3u1p3Z2QkbwY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./pueblo-map.css" />
+  <style>
+    /* Leaflet dark tweaks */
+    .leaflet-control-container .leaflet-top.leaflet-left { top: 120px; }
+    .leaflet-popup-content-wrapper { background: #0f172a; color: #e8f0ff; border: 1px solid #1e2b40; }
+    .leaflet-popup-tip { background: #0f172a; }
+    .leaflet-control-zoom a { color: #e8f0ff; background: #0f172a; border-color: #1e2b40; }
+    .leaflet-control-scale-line { border-color: #1e2b40 !important; color: #9fb3d1; }
+    a { color: #26c6ff; }
+  </style>
+</head>
+<body>
+  <div id="map" aria-label="Map of Pueblo surveillance and resources"></div>
+
+  <section class="control-panel" aria-label="Map controls">
+    <h1>Pueblo Surveillance & Support</h1>
+    <p class="subhead">Dark-mode public map of surveillance tech, policing sites, watch points, and community resources.</p>
+
+    <div class="section-label">Search</div>
+    <div class="search-row">
+      <input id="search-input" type="search" placeholder="Search name, type, description" aria-label="Search features" />
+      <button class="button" id="search-btn">Go</button>
+    </div>
+    <div class="results" id="results" role="listbox" aria-label="Search results" hidden></div>
+
+    <div class="section-label">Layers</div>
+    <div class="checkbox-grid" id="layer-grid"></div>
+    <div style="display:flex; gap:8px; margin-top:10px;">
+      <button class="button secondary" id="all-on">All on</button>
+      <button class="button secondary" id="all-off">All off</button>
+    </div>
+
+    <p class="footer-note">Sources are public (council minutes, news, vendor docs). No private home addresses. Use for safety awareness and advocacy.</p>
+  </section>
+
+  <aside class="legend" aria-label="Legend">
+    <h3>Legend</h3>
+    <div id="legend-items"></div>
+  </aside>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-VtA6F9OBV1wR1JrVN6M8GN28M5soNqd7KP9JdFQDaIY=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/fuse.js@6.6.2"></script>
+  <script>
+    const typeMeta = {
+      "rtcc": { label: "RTCC / Real-Time Center", color: "#ff6f61" },
+      "acoustic-surveillance": { label: "ShotSpotter / Acoustic", color: "#ffb347" },
+      "drone-surveillance": { label: "Drone First Responder", color: "#c084fc" },
+      "fixed-surveillance": { label: "Fixed Cameras", color: "#1e5aff" },
+      "mobile-surveillance": { label: "Mobile Trailers", color: "#3dd1f2" },
+      "alpr": { label: "ALPR Cameras", color: "#4ade80" },
+      "alpr-corridor": { label: "ALPR Corridor", color: "#22c55e" },
+      "park-surveillance": { label: "Park Cameras", color: "#a6e1fa" },
+      "community-support": { label: "Community Support", color: "#26c6ff" },
+      "law-enforcement": { label: "Police / Sheriff", color: "#60a5fa" },
+      "institution": { label: "Institution", color: "#94a3b8" },
+      "watch-site": { label: "ICE / Watch Site", color: "#f472b6" },
+      "private-security": { label: "Private Security", color: "#facc15" },
+      "boundary": { label: "Study Boundary", color: "#ff6f00" },
+      "default": { label: "Other", color: "#8b5cf6" },
+    };
+
+    const layerGroups = {};
+    const featureIndex = [];
+    let fuse;
+
+    const map = L.map('map', {
+      zoomControl: false,
+      preferCanvas: true,
+    }).setView([38.29, -104.61], 12);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap & CARTO',
+      maxZoom: 19,
+    }).addTo(map);
+
+    L.control.zoom({ position: 'bottomright' }).addTo(map);
+    L.control.scale({ imperial: true, metric: true, position: 'bottomleft' }).addTo(map);
+
+    function ensureLayer(type) {
+      if (!layerGroups[type]) {
+        layerGroups[type] = L.layerGroup();
+      }
+      return layerGroups[type];
+    }
+
+    function colorFor(type) {
+      return (typeMeta[type] || typeMeta.default).color;
+    }
+
+    function popupHtml(props) {
+      const sources = (props.sources || []).map((src) => {
+        if (typeof src === 'string' && src.startsWith('http')) {
+          return `<a href="${src}" target="_blank" rel="noreferrer">${src}</a>`;
+        }
+        return src;
+      }).join('<br/>') || 'n/a';
+      const updated = props.updated ? `<div><strong>Updated:</strong> ${props.updated}</div>` : '';
+      return `
+        <div>
+          <div style="font-size:16px;font-weight:700;margin-bottom:4px;">${props.name || 'Untitled'}</div>
+          <div style="font-size:12px; color:#9fb3d1; margin-bottom:6px;">${props.type || 'unknown'}</div>
+          <div style="margin-bottom:8px;">${props.description || ''}</div>
+          ${updated}
+          <div style="margin-top:8px;"><strong>Sources:</strong><br/>${sources}</div>
+        </div>
+      `;
+    }
+
+    function stylePolygon(type) {
+      const c = colorFor(type);
+      return { color: c, weight: 2, fillColor: c, fillOpacity: 0.25 };
+    }
+
+    function addFeature(feature, idx) {
+      const type = feature.properties.type || 'default';
+      const group = ensureLayer(type);
+      const coords = feature.geometry.coordinates;
+      let layer;
+
+      if (feature.geometry.type === 'Point') {
+        const [lng, lat] = coords;
+        layer = L.circleMarker([lat, lng], {
+          radius: 8,
+          color: colorFor(type),
+          fillColor: colorFor(type),
+          fillOpacity: 0.9,
+          weight: 2,
+        });
+      } else if (feature.geometry.type === 'LineString') {
+        const latlngs = coords.map(([lng, lat]) => [lat, lng]);
+        layer = L.polyline(latlngs, { color: colorFor(type), weight: 3, opacity: 0.9 });
+      } else if (feature.geometry.type === 'MultiLineString') {
+        const latlngs = coords.map((line) => line.map(([lng, lat]) => [lat, lng]));
+        layer = L.multiPolyline(latlngs, { color: colorFor(type), weight: 3, opacity: 0.9 });
+      } else if (feature.geometry.type === 'Polygon') {
+        const latlngs = coords.map((ring) => ring.map(([lng, lat]) => [lat, lng]));
+        layer = L.polygon(latlngs, stylePolygon(type));
+      } else if (feature.geometry.type === 'MultiPolygon') {
+        const latlngs = coords.map((poly) => poly.map((ring) => ring.map(([lng, lat]) => [lat, lng])));
+        layer = L.multiPolygon(latlngs, stylePolygon(type));
+      }
+
+      if (!layer) return;
+
+      layer.bindPopup(popupHtml(feature.properties), { maxWidth: 380 });
+      layer.on('mouseover', () => { layer.setStyle && layer.setStyle({ weight: 3 }); });
+      layer.on('mouseout', () => { layer.setStyle && layer.setStyle({ weight: 2 }); });
+
+      layer.addTo(group);
+
+      const entry = {
+        id: feature.properties.id || `feature-${idx}`,
+        name: feature.properties.name || 'Untitled',
+        description: feature.properties.description || '',
+        type,
+        layer,
+      };
+      featureIndex.push(entry);
+    }
+
+    function buildLegend() {
+      const legendRoot = document.getElementById('legend-items');
+      legendRoot.innerHTML = '';
+      Object.entries(typeMeta).forEach(([type, meta]) => {
+        if (type === 'default') return;
+        const div = document.createElement('div');
+        div.className = 'legend-item';
+        div.innerHTML = `<span class="legend-swatch" style="background:${meta.color}"></span><span>${meta.label}</span>`;
+        legendRoot.appendChild(div);
+      });
+    }
+
+    function buildLayerControls() {
+      const grid = document.getElementById('layer-grid');
+      grid.innerHTML = '';
+      const types = Object.keys(layerGroups).sort();
+      types.forEach((type) => {
+        const id = `layer-${type}`;
+        const wrapper = document.createElement('label');
+        wrapper.className = 'checkbox-pill';
+        wrapper.innerHTML = `
+          <input type="checkbox" id="${id}" data-type="${type}" checked />
+          <span>${(typeMeta[type] || typeMeta.default).label}</span>
+        `;
+        grid.appendChild(wrapper);
+      });
+
+      grid.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
+        cb.addEventListener('change', (e) => {
+          const type = e.target.dataset.type;
+          toggleLayer(type, e.target.checked);
+        });
+      });
+
+      document.getElementById('all-on').onclick = () => setAll(true);
+      document.getElementById('all-off').onclick = () => setAll(false);
+    }
+
+    function toggleLayer(type, on) {
+      const group = layerGroups[type];
+      if (!group) return;
+      if (on) {
+        group.addTo(map);
+      } else {
+        map.removeLayer(group);
+      }
+    }
+
+    function setAll(state) {
+      Object.keys(layerGroups).forEach((type) => toggleLayer(type, state));
+      document.querySelectorAll('#layer-grid input[type="checkbox"]').forEach((cb) => {
+        cb.checked = state;
+      });
+    }
+
+    function buildSearch() {
+      fuse = new Fuse(featureIndex, {
+        keys: ['name', 'description', 'type'],
+        threshold: 0.35,
+      });
+      const input = document.getElementById('search-input');
+      const btn = document.getElementById('search-btn');
+      const resultsEl = document.getElementById('results');
+
+      function renderResults(items) {
+        if (!items.length) {
+          resultsEl.hidden = true;
+          resultsEl.innerHTML = '';
+          return;
+        }
+        resultsEl.hidden = false;
+        resultsEl.innerHTML = '';
+        items.slice(0, 8).forEach((res) => {
+          const { item } = res;
+          const div = document.createElement('div');
+          div.className = 'result-item';
+          div.tabIndex = 0;
+          div.innerHTML = `<div class="result-title">${item.name}</div><div class="result-meta">${item.type}</div>`;
+          div.onclick = () => focusFeature(item);
+          div.onkeydown = (ev) => { if (ev.key === 'Enter') focusFeature(item); };
+          resultsEl.appendChild(div);
+        });
+      }
+
+      function runSearch() {
+        const q = input.value.trim();
+        if (!q) {
+          renderResults([]);
+          return;
+        }
+        const hits = fuse.search(q);
+        renderResults(hits);
+        if (hits.length) focusFeature(hits[0].item, { openPopup: false });
+      }
+
+      btn.onclick = runSearch;
+      input.addEventListener('keyup', (e) => { if (e.key === 'Enter') runSearch(); });
+    }
+
+    function focusFeature(item, opts = { openPopup: true }) {
+      const layer = item.layer;
+      // Ensure layer visible
+      const cb = document.querySelector(`#layer-grid input[data-type="${item.type}"]`);
+      if (cb && !cb.checked) {
+        cb.checked = true;
+        toggleLayer(item.type, true);
+      }
+      if (layer.getBounds) {
+        map.fitBounds(layer.getBounds(), { maxZoom: 17, padding: [30, 30] });
+      } else if (layer.getLatLng) {
+        map.flyTo(layer.getLatLng(), 16, { duration: 0.6 });
+      }
+      if (opts.openPopup !== false && layer.openPopup) layer.openPopup();
+    }
+
+    async function loadData() {
+      // Prefer colocated copy for GitHub Pages; fall back to repo root data for local use.
+      const res = await fetch('./pueblo_apparatus.geojson').catch(() => fetch('../../data/pueblo_apparatus.geojson'));
+      const geo = await res.json();
+      geo.features.forEach(addFeature);
+
+      // add all layers to map
+      Object.values(layerGroups).forEach((group) => group.addTo(map));
+
+      // fit bounds
+      const all = Object.values(layerGroups);
+      const combined = L.featureGroup(all.flatMap((g) => g.getLayers()))
+      if (combined.getLayers().length) {
+        map.fitBounds(combined.getBounds(), { padding: [40, 40] });
+      }
+
+      buildLegend();
+      buildLayerControls();
+      buildSearch();
+    }
+
+    loadData().catch((err) => {
+      console.error(err);
+      alert('Unable to load map data. Please check the repository path.');
+    });
+  </script>
+</body>
+</html>

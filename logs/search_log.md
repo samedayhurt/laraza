@@ -2,6 +2,8 @@
 
 | Date | Agent | Task | Notes |
 | --- | --- | --- | --- |
+| 2026-02-19 | 00_ORCHESTRATOR | Publish public interactive map | Added Leaflet dark-mode map with search/layer toggles at docs/maps/pueblo-map-public.html + Pages link. |
+| 2026-02-19 | 00_ORCHESTRATOR | Plan interactive public map | Build dark-mode, searchable static map for GitHub Pages using GeoJSON surveillance/resources data. |
 | 2026-02-18 | 00_ORCHESTRATOR | Plan Feb 2026 refresh | Restart pipeline: fresh web pulls for context, politics, surveillance, ICE, resources; then recompile reports and run safety review. |
 | 2025-11-15 | 00_ORCHESTRATOR | Plan research order | Prioritize politics -> surveillance -> resources -> immigration -> rights guide. |
 | 2025-11-15 | 02_PUEBLO_POLITICS_POWER_MAPPER | Backfill politics raw+structured | Summarized council majority & commissioner business ties from internal docs. |

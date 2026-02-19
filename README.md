@@ -12,12 +12,15 @@ For all of our family.
 ## Pueblo Surveillance Apparatus Map
 
 <p align="center">
-  <a href="docs/maps/pueblo-surveillance-map.html">
+  <a href="docs/maps/pueblo-map-public.html">
     <img src="docs/maps/pueblo-surveillance-map.png" alt="Pueblo, CO Surveillance Infrastructure Map - RTCC, ShotSpotter, ALPRs, ICE watch sites, and community resources" width="90%">
   </a>
 </p>
 
-<p align="center"><em>Click to view interactive map | Shows RTCC, ShotSpotter zones, Flock ALPR corridors, DFR drone station, park surveillance, ICE watch sites, and community support services</em></p>
+<p align="center"><em>Click to open the dark-mode public map (search + layer toggles) served via GitHub Pages.</em></p>
+
+**Direct GitHub Pages link (public):** https://samedayhurt.github.io/laraza/docs/maps/pueblo-map-public.html  
+**Offline fallback (existing Folium build):** docs/maps/pueblo-surveillance-map.html
 
 ### How to use the map
 - Open `docs/maps/pueblo-surveillance-map.html` in your browser (or via GitHub Pages if enabled).

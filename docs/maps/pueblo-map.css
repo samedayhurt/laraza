@@ -1,0 +1,115 @@
+:root {
+  --bg: #0b1220;
+  --panel: rgba(12, 18, 32, 0.92);
+  --border: #1e2b40;
+  --text: #e8f0ff;
+  --muted: #9fb3d1;
+  --accent: #1e5aff;
+  --accent-2: #26c6ff;
+  --danger: #ff6f61;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+}
+
+.control-panel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 320px;
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+}
+
+.control-panel h1 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.subhead { color: var(--muted); margin: 0 0 12px; font-size: 13px; }
+
+.section-label { margin: 12px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+
+.search-row { display: flex; gap: 8px; align-items: center; }
+
+#search-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #0f172a;
+  color: var(--text);
+}
+
+.button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.button.secondary { background: #162036; color: var(--muted); }
+.button:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+.button:hover { background: #2a6bff; }
+
+.checkbox-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+
+.checkbox-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: #0f172a;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.checkbox-pill input { accent-color: var(--accent); }
+
+.legend { position: absolute; right: 16px; bottom: 16px; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 12px; box-shadow: var(--shadow); width: 220px; }
+.legend h3 { margin: 0 0 8px; font-size: 14px; }
+.legend-item { display: flex; align-items: center; gap: 10px; margin: 6px 0; color: var(--muted); font-size: 13px; }
+.legend-swatch { width: 16px; height: 16px; border-radius: 50%; border: 1px solid #0b0f1a; }
+
+.results { margin-top: 10px; background: #0f172a; border: 1px solid var(--border); border-radius: 10px; max-height: 160px; overflow: auto; }
+.result-item { padding: 8px 10px; cursor: pointer; border-bottom: 1px solid #131c2e; }
+.result-item:last-child { border-bottom: none; }
+.result-item:hover, .result-item:focus-visible { background: #15223a; outline: none; }
+.result-title { font-weight: 600; }
+.result-meta { color: var(--muted); font-size: 12px; }
+
+.footer-note {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .control-panel { width: calc(100% - 24px); left: 12px; right: 12px; max-height: 60vh; }
+  .legend { position: static; margin: 12px; width: auto; }
+}
