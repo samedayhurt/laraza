@@ -102,6 +102,23 @@ html { height: 100%; }
 .legend-item { display: flex; align-items: center; gap: 10px; margin: 6px 0; color: var(--muted); font-size: 13px; }
 .legend-swatch { width: 16px; height: 16px; border-radius: 50%; border: 1px solid #0b0f1a; }
 
+.preset-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.chip-btn { background: #10203d; color: var(--text); border: 1px solid var(--border); padding: 8px 10px; border-radius: 999px; cursor: pointer; font-size: 12px; }
+.chip-btn:hover { background: #1a2c4d; }
+.chip-btn:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+
+.info-list { margin: 6px 0 12px; padding-left: 16px; color: var(--muted); font-size: 13px; line-height: 1.4; }
+.info-list li { margin: 2px 0; }
+
+.link-buttons { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.link-btn { background: #162036; color: var(--text); border: 1px solid var(--border); padding: 8px 12px; border-radius: 10px; text-decoration: none; font-size: 13px; }
+.link-btn:hover { background: #1f2d4a; }
+.link-btn:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; color: white; margin-left: 6px; }
+.badge.stale { background: #d97706; }
+.badge.fresh { background: #10b981; }
+
 .results { margin-top: 10px; background: #0f172a; border: 1px solid var(--border); border-radius: 10px; max-height: 160px; overflow: auto; }
 .result-item { padding: 8px 10px; cursor: pointer; border-bottom: 1px solid #131c2e; }
 .result-item:last-child { border-bottom: none; }
