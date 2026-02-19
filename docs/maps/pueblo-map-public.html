@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="cache-control" content="no-cache" />
-  <meta http-equiv="pragma" content="no-cache" />
-  <meta http-equiv="expires" content="0" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pueblo, CO Surveillance & Resources Map (Public)</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css?v=2026-02-19" integrity="sha256-o9N1j7kGStN7fEji1rG6N0wGHBb5/7S3u1p3Z2QkbwY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="./pueblo-map.css" />
   <style>
     /* Leaflet dark tweaks */
@@ -21,6 +18,7 @@
 </head>
 <body>
   <div id="map" aria-label="Map of Pueblo surveillance and resources"></div>
+  <div id="error-banner" style="position:absolute;top:8px;right:12px;z-index:20;background:#8b0000;color:white;padding:8px 12px;border-radius:8px;font-size:12px;display:none;"></div>
 
   <section class="control-panel" aria-label="Map controls">
     <h1>Pueblo Surveillance & Support</h1>
@@ -48,7 +46,7 @@
     <div id="legend-items"></div>
   </aside>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js?v=2026-02-19" integrity="sha256-VtA6F9OBV1wR1JrVN6M8GN28M5soNqd7KP9JdFQDaIY=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/fuse.js@6.6.2"></script>
   <script>
     // Inline backup of the dataset will be injected below.
@@ -76,18 +74,30 @@
     const featureIndex = [];
     let fuse;
 
-    const map = L.map('map', {
-      zoomControl: false,
-      preferCanvas: true,
-    }).setView([38.29, -104.61], 12);
+    function showError(msg) {
+      const el = document.getElementById('error-banner');
+      el.textContent = msg;
+      el.style.display = 'block';
+    }
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap & CARTO',
-      maxZoom: 19,
-    }).addTo(map);
+    let map;
+    try {
+      map = L.map('map', {
+        zoomControl: false,
+        preferCanvas: true,
+      }).setView([38.29, -104.61], 12);
 
-    L.control.zoom({ position: 'bottomright' }).addTo(map);
-    L.control.scale({ imperial: true, metric: true, position: 'bottomleft' }).addTo(map);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap & CARTO',
+        maxZoom: 19,
+      }).addTo(map);
+
+      L.control.zoom({ position: 'bottomright' }).addTo(map);
+      L.control.scale({ imperial: true, metric: true, position: 'bottomleft' }).addTo(map);
+    } catch (err) {
+      console.error(err);
+      showError('Map failed to load. Please hard refresh or check CDN availability.');
+    }
 
     function ensureLayer(type) {
       if (!layerGroups[type]) {
@@ -287,15 +297,15 @@
     }
 
     async function fetchGeoJSON() {
-      // Prefer embedded data to avoid fetch/CORS/caching issues on GitHub Pages.
+      // Use embedded data first for reliability on Pages.
       if (EMBEDDED_GEOJSON && EMBEDDED_GEOJSON.features && EMBEDDED_GEOJSON.features.length) {
         return EMBEDDED_GEOJSON;
       }
       const candidates = [
-        './pueblo_apparatus.geojson?v=2026-02-19',
-        'pueblo_apparatus.geojson?v=2026-02-19',
-        '../maps/pueblo_apparatus.geojson?v=2026-02-19',
-        '../../data/pueblo_apparatus.geojson?v=2026-02-19',
+        './pueblo_apparatus.geojson',
+        'pueblo_apparatus.geojson',
+        '../maps/pueblo_apparatus.geojson',
+        '../../data/pueblo_apparatus.geojson',
         'https://raw.githubusercontent.com/samedayhurt/laraza/main/data/pueblo_apparatus.geojson',
       ];
       for (const url of candidates) {
@@ -313,6 +323,10 @@
     }
 
     async function loadData() {
+      if (!map) {
+        showError('Map engine unavailable.');
+        return;
+      }
       const geo = await fetchGeoJSON();
       geo.features.forEach(addFeature);
 
@@ -335,7 +349,7 @@
 
     loadData().catch((err) => {
       console.error(err);
-      alert('Unable to load map data. Please check the repository path or refresh.');
+      showError('Unable to load map data. Please refresh or report the issue.');
     });
   </script>
 </body>
