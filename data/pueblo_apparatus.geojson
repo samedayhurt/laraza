@@ -640,13 +640,14 @@
         "id": "union-ave-alpr-corridor",
         "name": "Union Avenue ALPR Corridor",
         "type": "alpr-corridor",
-        "description": "Flock Safety license plate reader corridor along Union Avenue. Downtown Association funded initial deployment. Part of 1,091-camera Colorado network. 30-day cloud retention.",
+        "description": "Union Avenue ALPR corridor (Flock Safety). Downtown Association-funded. ~1.47 km. 30-day cloud retention; audit logs required for queries.",
         "sources": [
           "KOAA News5 2024",
           "EFF Nov 2025 report"
         ],
-        "notes": "EFF documented this network used for protest surveillance. Audit logs should be requested via CORA.",
-        "updated": "2026-01"
+        "notes": "Mapped polyline approximate to Union Ave routing; retention 30 days per Flock standard.",
+        "updated": "2026-02",
+        "length_km": 1.47
       }
     },
     {
@@ -676,12 +677,13 @@
         "id": "riverwalk-alpr-corridor",
         "name": "Riverwalk ALPR Corridor",
         "type": "alpr-corridor",
-        "description": "Flock Safety license plate reader coverage along Riverwalk area. Connected to Downtown Association surveillance initiative.",
+        "description": "Riverwalk ALPR corridor (Flock Safety). ~1.43 km coverage. 30-day cloud retention; audit logs required.",
         "sources": [
           "KOAA News5 2024"
         ],
-        "notes": "Part of downtown surveillance ring. Cameras capture all plates, not just hotlist matches.",
-        "updated": "2026-01"
+        "notes": "Approximate path along Riverwalk; retention 30 days per Flock standard.",
+        "updated": "2026-02",
+        "length_km": 1.43
       }
     },
     {
