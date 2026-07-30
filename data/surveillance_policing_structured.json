@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-18",
+  "updated": "2026-07-29",
   "systems": [
     {
       "name": "Real-Time Crime Center",
@@ -145,6 +145,109 @@
         "opsec/Pueblo 81008 Surveillance.md – Commercial Telemetry section"
       ],
       "notes": "Private vendors hold primary evidence; subpoena processes and retention policies must be documented."
+    },
+    {
+      "name": "Genetec Cloudrunner ALPR (citywide)",
+      "components": [
+        "70 Genetec Cloudrunner ALPR cameras installed across Pueblo",
+        "Plates queried against Colorado Crime Information Center (CCIC)",
+        "Plates queried against federal National Crime Information Center (NCIC)",
+        "Unified platform fusing ALPR + video surveillance + gunshot detection + drone feeds",
+        "Officer responding to an ALPR hit also receives video from nearby cameras"
+      ],
+      "operators": "Pueblo PD Real-Time Crime Center",
+      "deployment_date": "2026-07 (reported; install date not disclosed)",
+      "sources": [
+        "SECO News, 2026-07-14 (https://seconews.org/article/9277)",
+        "Genetec customer story, City of Pueblo (https://www.genetec.com/customer-stories/city-of-pueblo)",
+        "Genetec Cloudrunner changelog, March 2026"
+      ],
+      "notes": "NEW 2026-07-29. Largest undocumented expansion found in this refresh: 70 cameras vs the 22 fixed PPD ALPRs previously recorded, from a vendor the repo had logged only as the video layer. Retention period NOT disclosed. Cost NOT disclosed. No written policy located. Pueblo now runs TWO parallel ALPR vendors (Genetec Cloudrunner + Flock). The NCIC linkage is the concrete path by which local plate reads can reach federal immigration targeting."
+    },
+    {
+      "name": "Drone as First Responder - BRINC fleet with ShotSpotter auto-trigger",
+      "components": [
+        "BRINC drones (vendor newly confirmed 2026)",
+        "ShotSpotter gunfire detection automatically triggers drone deployment",
+        "Thermal and visual cameras; sirens and two-way audio",
+        "Drones 'positioned strategically around the city' - launch sites NOT disclosed"
+      ],
+      "operators": "Pueblo PD",
+      "deployment_date": "2025-07 program launch; ShotSpotter auto-trigger integration documented 2026-01",
+      "sources": [
+        "SoundThinking, 2026-01-16 (https://www.soundthinking.com/blog/how-pueblo-pd-uses-shotspotter-and-brinc-drone-integration/)",
+        "KOAA (launch coverage, 3 drones with cameras/sirens/two-way audio, part of ~$1M RTCC investment)",
+        "Pueblo PD UAV Unit page (https://www.pueblo.us/2435/UAV-Unit)"
+      ],
+      "notes": "NEW 2026-07-29. Launch is automated by default and gated only by an operator feasibility check (weather, competing missions, coverage) - NOT by a warrant or policy review. Chief Noeller presented the program at IACP 2025. CRITICAL DISCLOSURE GAP: PPD's own public UAV Unit page still describes a 2018 unit with five operators and THREE UAVs for crime-scene documentation, with no mention of DFR, BRINC, the ShotSpotter trigger, any policy, or any FAA BVLOS waiver."
+    },
+    {
+      "name": "CDOT automated speed enforcement - I-25 Pueblo work zone",
+      "components": [
+        "6 cameras (Pueblo Star Journal reports 7); one northbound unit trailer-mounted",
+        "Point-to-point (P2P) average-speed measurement between camera pairs",
+        "Southbound units at MP 100.8, 100.3, 99.4; northbound at MP 100.8, 99.8, 99.3"
+      ],
+      "operators": "Colorado Department of Transportation (state-operated, not Pueblo PD)",
+      "location": "I-25 between Mile Points 99.3 and 100.8, I-25/US 50B Interchange Reconstruction work zone",
+      "deployment_date": "Warning period began 2026-06-30; $75 civil penalties began 2026-07-30",
+      "retention": "Captured images destroyed three years after the violation is resolved - the ONLY publicly stated retention figure in Pueblo's sensor stack",
+      "sources": [
+        "CDOT, 2026-07 (https://www.codot.gov/news/2026/july2026news/speeding-fines-i25-us50b-pueblo-begin-july30)",
+        "CDOT, 2026-06-30 (https://www.codot.gov/news/2026/june2026news/speeding-drops-in-colorado-work-zones)",
+        "KRDO, 2026-06-29 and 2026-07-22",
+        "Pueblo Star Journal, 2026-07-18"
+      ],
+      "notes": "NEW 2026-07-29. 11,000+ violations issued during the 30-day warning phase; excessive speeds down ~67%. $75 penalty for 10+ mph over, mailed to registered owner, 45 days to pay or appeal, no license points. Point-to-point measurement necessarily retains a timestamped plate identity at two locations - that is travel-pattern data, not a speed snapshot. LIVE DECISION PENDING: CDOT will decide whether cameras remain after construction. Vendor NOT disclosed. Access and law-enforcement sharing provisions NOT disclosed."
+    },
+    {
+      "name": "School surveillance - Pueblo D60 and District 70",
+      "components": [
+        "Pueblo PD SRO Section embedded in D60: officers at 4 high schools and 6 middle schools",
+        "D70 bond-funded security camera systems and intercom upgrades district-wide",
+        "Motorola Solutions case study on Pueblo County schools exists (Motorola owns Avigilon and Pelco) - image PDF, unread"
+      ],
+      "operators": "Pueblo PD (SROs); Pueblo City Schools D60; Pueblo County District 70",
+      "sources": [
+        "Pueblo D60 SRO page (https://www.pueblod60.org/departments/school-culture-wellness-safety/school-safety/school-resource-officers-sros)",
+        "SRO agreement on file at City of Pueblo, effective 2022-01-01",
+        "District 70 bond information page (https://www.district70.org/quick-links/bond-information)",
+        "Motorola Solutions Pueblo County Schools case study PDF"
+      ],
+      "notes": "NEW 2026-07-29. D60 SRO scope includes 'crime prevention efforts within the schools AND the neighborhoods they serve' plus 'traffic enforcement and motor vehicle accidents' - beat-cop scope, not a school-safety role. No 2026 MOU renewal, cost-share, data-sharing clause, or student-record-access provision located; city copy dated 2022. NO evidence of Evolv/ZeroEyes/Omnilert weapons detection or Gaggle/GoGuardian/Bark/Lightspeed monitoring at either district. Colorado SB25-143 (effective 2025-07-01) conditionally lifted the school facial-recognition moratorium and requires LOCAL SCHOOL BOARD APPROVAL - making D60/D70 board agendas a free early-warning system."
+    },
+    {
+      "name": "Transit telemetry - RidePueblo app",
+      "components": [
+        "RidePueblo app (TripSpark MyRide, com.tripspark.myride.cityofpueblo, myride.pueblo.us)",
+        "Online transit pass purchase"
+      ],
+      "operators": "City of Pueblo / Pueblo Transit",
+      "deployment_date": "2026-05-04",
+      "sources": [
+        "KKTV, 2026-05-04 (https://www.kktv.com/2026/05/04/new-ridepueblo-app-coordinates-city-transit/)",
+        "Pueblo Transit pages (https://www.pueblo.us/104/Pueblo-Transit)"
+      ],
+      "notes": "NEW 2026-07-29. Pueblo Transit publishes NO privacy policy, NO data-retention terms, and NO statement of what rider location or trip data is collected or who can access it. No information on onboard bus cameras - near-certain to exist, simply undisclosed. Clean records-request target: TripSpark/MyRide retention terms and any law-enforcement access provision."
+    },
+    {
+      "name": "Pueblo County Detention Center (new facility) - electronic security stack undisclosed",
+      "components": [
+        "672 beds (150 more than the 46-year-old facility replaced)",
+        "First net-zero-energy jail in the US",
+        "Published feature lists mention medical clinic, kitchen, laundry, training room, expanded evidence storage",
+        "NO surveillance, biometric, body-scanner, or video-visitation systems disclosed in any coverage reviewed"
+      ],
+      "operators": "Pueblo County Sheriff's Office",
+      "location": "3830 Medal of Honor Blvd, Pueblo County",
+      "deployment_date": "Ribbon-cut 2026-05-07; all inmates transferred by 2026-07-11",
+      "funding": "$150 million, largely marijuana excise tax",
+      "sources": [
+        "Pueblo Chieftain, 2026-05-07",
+        "Correctional News, 2026-05-11",
+        "KKTV, 2026-07-11"
+      ],
+      "notes": "NEW 2026-07-29. A documented GAP, not a documented absence: nothing has been disclosed about cameras, biometrics, body scanners, or inmate-communications monitoring in a $150M/672-bed facility. A new federal counter-drone rule authorizing local police AND corrections agencies to detect and disable drones makes C-UAS a plausible near-term acquisition here."
     }
   ],
   "incidents": [
@@ -215,6 +318,278 @@
         "CBS Colorado, 2025"
       ],
       "status": "ACTION: Organize community testimony supporting bill; coordinate with ACLU-CO."
+    },
+    {
+      "title": "HIGHEST-VALUE NEGATIVE: Colorado ALPR warrant bill SB26-070 (PEEPS Act) DIED - no new state law",
+      "summary": "Bipartisan bill (Sens. Amabile D-Boulder, Zamora Wilson R-El Paso; Reps. Zokaie, Nguyen) would have required a warrant to query ALPR data more than 72 hours after an offense, imposed a ~30-day retention cap, mandated access logging, required ANNUAL PUBLIC REPORTS listing the number and locations of surveillance devices, restricted out-of-jurisdiction and third-party sharing, made ALPR location data non-public under CORA, given the AG enforcement authority, and created an exclusionary rule. Passed Senate Judiciary 5-2 on 2026-02-23/24; Amabile pulled it from the Senate floor 2026-04-29/30 - 'we didn't have the votes.' Would have taken effect August 2026. Named opposition: Colorado Association of Chiefs of Police, County Sheriffs of Colorado, Colorado District Attorneys' Council, multiple city governments - plus a Polis veto threat over the warrant requirement. Pueblo's chief and sheriff belong to two of those associations.",
+      "date": "2026-04-29",
+      "sources": [
+        "Colorado General Assembly, SB26-070 (https://leg.colorado.gov/bills/sb26-070)",
+        "Colorado Newsline, 2026-04-29 (https://coloradonewsline.com/2026/04/29/colorado-lawmakers-kill-bill-to-limit-police-use-of-flock-camera-data/)",
+        "Colorado Sun, 2026-04-21 (https://coloradosun.com/2026/04/21/senate-bill-70-colorado-surveillance-technology/)",
+        "Boulder Reporting Lab, 2026-04-30",
+        "Colorado Newsline, 2026-02-24"
+      ],
+      "status": "DEAD. Pueblo PD and PCSO operate under NO state-mandated ALPR retention cap, NO warrant requirement, NO audit-log disclosure duty, and NO public device-inventory obligation. ACTION: drop any messaging assuming a 2026 state law exists; reframe as a local ordinance or administrative directive using the bill text as model language (bipartisan, cleared committee = political cover)."
+    },
+    {
+      "title": "SB26-071 'SAFE Act' postponed indefinitely 6-1 - second Colorado reform bill dead",
+      "summary": "The Surveillance Accountability and Freedom Ensured Act (Sen. Lynda Zamora Wilson, R-Colorado Springs) would, from 2027-07-01, have required a warrant for facial recognition (exigent imminent-threat exception only), restricted ALPR and traffic cameras to public spaces and enumerated purposes, set per-technology retention caps with mandatory destruction, banned sale of surveillance data, permitted inter-agency sharing only for active investigations where the recipient also complies, mandated BIENNIAL ATTORNEY GENERAL AUDITS with civil enforcement, required free compliance information to residents, and created a private right of action. Introduced 2026-01-28, laid over unamended 2026-02-23, postponed indefinitely by Senate Judiciary 2026-05-06 on a 6-1 vote. The Colorado Municipal League opposed it.",
+      "date": "2026-05-06",
+      "sources": [
+        "Colorado General Assembly, SB26-071 (https://leg.colorado.gov/bills/sb26-071)",
+        "ACLU of Colorado bill page (https://www.aclu-co.org/legislation/sb26-071-use-of-surveillance-technology-by-law-enforcement/)",
+        "Colorado Politics, 2026-02-18",
+        "Colorado Municipal League position paper"
+      ],
+      "status": "DEAD. The AG-audit and biennial-reporting provisions were the strongest oversight architecture proposed in Colorado. ACTION: lift the SAFE Act retention/destruction schedule and audit language verbatim into a proposed Pueblo ordinance - it is a Republican-sponsored bill, which defuses the 'partisan overreach' objection with a GOP-majority council."
+    },
+    {
+      "title": "HB26-1037 (ban on government purchase of personal data from brokers) killed",
+      "summary": "Would have barred law enforcement and government entities from purchasing or otherwise obtaining for value personal data from third-party brokers, and barred agencies from sharing personal data among themselves, with carve-outs only for a judicial warrant, subpoena, court order, individual consent, or emergency. Postponed indefinitely by House Judiciary 2026-04-22.",
+      "date": "2026-04-22",
+      "sources": [
+        "Colorado General Assembly, HB26-1037 (https://leg.colorado.gov/bills/hb26-1037)"
+      ],
+      "status": "DEAD. Data-broker purchases remain a legal, unlogged bypass around every warrant requirement, and Flock's Nova product is built on aggregated public-records and commercial data. ACTION: add 'any contract, subscription, or trial with a data broker or people-search product, including Flock Nova, Thomson Reuters CLEAR, LexisNexis Accurint, TransUnion TLOxp, or Peregrine' to the standing CORA template."
+    },
+    {
+      "title": "COMPLIANCE HOOK: HB26-1276 SIGNED - penalties for sharing personal info with federal immigration agencies",
+      "summary": "The one surveillance-adjacent Colorado statute that PASSED in 2026. Sponsors Reps. Velasco and Garcia, Sens. Jodeh and Weissman. Passed House 42-21, Senate 23-12; signed by Gov. Polis 2026-06-04. Increases penalties for local authorities who share personal information with federal immigration agencies; expands CDPHE authority to inspect immigration detention facilities with civil penalties for non-compliance; creates an immigration facility inspection fund ($107,283 appropriated); requires the POST Board to establish training standards on peace officer compliance with laws concerning civil immigration detainers, with officers to complete training BY 2027-12-31; directs the Attorney General to develop and publish a policy on protection of personal identifying information. It does NOT mention ALPR or license plate reader data. Amended at the governor's request to strip a provision barring state agencies from complying with immigration enforcement subpoenas.",
+      "date": "2026-06-04",
+      "sources": [
+        "Colorado General Assembly, HB26-1276 (https://leg.colorado.gov/bills/hb26-1276)",
+        "Colorado Newsline, 2026-05-21 (https://coloradonewsline.com/2026/05/21/public-safety-laws-colorado/)",
+        "Colorado Sun, 2026-05-14"
+      ],
+      "status": "IN EFFECT. Strongest live compliance hook of this refresh, but it governs personal information sharing, not sensors - the fight is whether a plate read counts as PII. ACTION: (1) once the AG publishes the required PII-protection policy, CORA both Pueblo agencies for their conforming policy and ask IN WRITING whether they treat ALPR reads and RTCC video as PII under it; (2) track the POST immigration-detainer training standard and CORA completion rosters against the 2027-12-31 deadline; (3) the detention-facility inspection authority applies to the Walsenburg/CoreCivic and Hudson/GEO facilities already in the repo."
+    },
+    {
+      "title": "HB26-1312 SIGNED - Colorado POST Board restructured, civilian seats reduced",
+      "summary": "Sponsors Rep. Chad Clifford, Sen. Kyle Mullica. Introduced 2026-03-02, House 2026-04-21, Senate 2026-05-01, signed 2026-06-03, effective 2026-08-12. Reduces law-enforcement leadership seats AND reduces non-law-enforcement (civilian) members while increasing line-officer representation; adds training-academy and reserve-officer representatives; sets minimum certification age at 21; bars POST from approving skills instructors or academies holding revoked certifications as of 2026-09-01; requires the AG to propose academy training updates by 2030-12-31.",
+      "date": "2026-06-03",
+      "sources": [
+        "Colorado General Assembly, HB26-1312 (https://leg.colorado.gov/bills/hb26-1312)"
+      ],
+      "status": "IN EFFECT 2026-08-12. Net effect is FEWER civilian members and MORE line officers on the state body that decertifies officers - a reduction in civilian oversight capacity at the exact venue the repo's complaint-escalation workflow routes to. ACTION: update IA/DA/POST/AG escalation guidance to set realistic expectations about POST; shift weight to the AG Pattern & Practice route and civil litigation."
+    },
+    {
+      "title": "SB26-152 SIGNED - bans per-citation vendor pay for automated enforcement",
+      "summary": "Sponsors Sens. Matt Ball and Byron Pelton, Reps. Jenny Willford and Carlos Barron. Introduced 2026-03-31, signed 2026-06-02, effective 2026-08-12. Key procurement provision: vendor compensation must be a flat monthly fee or flat hourly rate and may NOT include incentives, bonuses, or escalators related to the number of citations issued. Also establishes registered-owner liability with sale/lease/stolen defenses; under variable or temporary speed reductions, citations only for exceeding the regular posted maximum; restructures penalty amounts; civil penalties rise starting 2035-01-01.",
+      "date": "2026-06-02",
+      "sources": [
+        "Colorado General Assembly, SB26-152 (https://leg.colorado.gov/bills/SB26-152)"
+      ],
+      "status": "IN EFFECT 2026-08-12. A narrow but genuine win and a usable audit standard. ACTION: when any Pueblo automated-enforcement contract surfaces, CORA the compensation schedule and check it against the flat-fee mandate - a per-citation term after 2026-08-12 is a straightforward violation."
+    },
+    {
+      "title": "HB26-1071 (Pueblo's bid for municipal interstate speed cameras) died; Pueblo Council backed it",
+      "summary": "Prime sponsor Rep. Tisha Mauro (Pueblo). Would have let cities and counties place automated vehicle identification systems on federal interstates, currently a state-only power. Introduced 2026-01-27; House committee 8-3 on 2026-02-17; House 3rd reading passed 37-22 on 2026-02-23; Senate committee 5-2 on 2026-03-19; Senate 2nd reading passed 2026-04-20; Senate 3rd reading laid over to 2026-05-14, one day after the General Assembly adjourned 2026-05-13. LOST. Pueblo City Council formally resolved in support at its 2026-02-09 meeting.",
+      "date": "2026-05-13",
+      "sources": [
+        "Colorado General Assembly, HB26-1071 (https://leg.colorado.gov/bills/HB26-1071)",
+        "Pueblo City Council meeting coverage, 2026-02 (https://www.yahoo.com/news/articles/know-pueblo-city-council-meeting-143018079.html)"
+      ],
+      "status": "DEAD. Documents that Pueblo's council and its state representative were actively seeking MORE automated enforcement authority in the same session they declined to act on ALPR limits. ACTION: cite the 2026-02-09 resolution when council members claim caution about surveillance; watch for the bill's return in 2027."
+    },
+    {
+      "title": "EFF: ICE-populated NCIC 'Immigration Violator' hotlist can be enabled inside Flock",
+      "summary": "Agencies using Flock can subscribe cameras to NCIC topics from a dropdown in the admin interface, including an 'Immigration Violator' file populated EXCLUSIVELY by ICE. Per the NCIC operator manual that file includes people with administrative warrants issued by ICE WITHOUT judicial review, plus vehicle data where ICE has reasonable grounds to believe the subject may be operating a particular vehicle. Every passing plate is compared against it in real time. EFF records requests confirmed it enabled at Blue Island PD (IL) and Sparks PD (NV); 11 other responding agencies had it disabled. NO Colorado agency is named - nobody has asked.",
+      "date": "2026-06-25",
+      "sources": [
+        "EFF Deeplinks, 2026-06-25 (https://www.eff.org/deeplinks/2026/06/are-your-local-police-using-flock-safety-alprs-scan-immigrants)"
+      ],
+      "status": "TOP PRIORITY ACTION. Materially worse than the 2025 Denver scandal: that was retrospective searching, this is an automated real-time ICE targeting pipeline. Pueblo PD runs Flock AND runs Genetec Cloudrunner explicitly against NCIC, so the mechanism is present on two systems. ACTION: file the records request using EFF's published template language asking for 'NCIC topics that the agency has selected,' to both Pueblo PD and PCSO; check EyesonFlock.com and AtlasofSurveillance.org first; brief CORRN, El Movimiento Sigue and CIRC; time the request to land with the incoming sheriff."
+    },
+    {
+      "title": "ATF searched Loveland's Flock data for ICE - disabling 'national lookup' is not sufficient",
+      "summary": "An ATF agent searched Loveland CO's Flock data six times in April 2026, and ATF confirmed the searches were conducted in collaboration with ICE. No AG investigation has been announced. Separately, the Colorado Sun confirmed that although Denver pulled its data from Flock's national directory in April 2025, it STILL shares with other Colorado departments whose data other agencies can reach - and a federal agent using Loveland PD's account made 26 ICE-related searches April 3-25, i.e. AFTER Denver's opt-out.",
+      "date": "2026-04",
+      "sources": [
+        "9News (https://www.9news.com/article/news/politics/atf-searches-ice-access-loveland-license-plate-tracking-cameras/73-f319ab3b-201d-42af-8dae-35870a63b94a)",
+        "Colorado Sun, 2026-02-06 (https://coloradosun.com/2026/02/06/have-denvers-flock-cameras-been-used-for-immigration-enforcement/)"
+      ],
+      "status": "CRITICAL TECHNICAL POINT. In-state sharing plus a single cooperating in-state agency re-opens the federal pathway. ACTION: the CORA ask must be the FULL LIST of agencies Pueblo shares with and receives from, not a yes/no on national lookup; demand removal of all 287(g)-holding agencies per Durango's June 2026 precedent; demand weekly or monthly audits with public reporting per Durango and Thornton."
+    },
+    {
+      "title": "Colorado precedent: five full Flock cancellations, seven sharing restrictions, four live reviews - Pueblo took no action",
+      "summary": "FULL CANCELLATIONS: Denver - administrative non-renewal by Mayor Johnston announced 2026-02-24, contract expired 2026-03-31, all 110 cameras decommissioned and physically removed (largest US removal by camera count), driven by audit logs showing 1,400+ immigration-purpose searches; council then approved an Axon replacement 7-6 on 2026-03-31. Fort Collins - COUNCIL VOTE 6-1 on 2026-06-16, immediate cancellation, data collection halted, all 15 cameras ordered removed, plus a MORATORIUM on new surveillance tech until a policy is written (strongest council-vote precedent, comparable Front Range city). Canon City - MOST TRANSFERABLE TO PUEBLO: small southern Colorado city ~40 miles away, 6 cameras, mechanism was simply LETTING THE CONTRACT EXPIRE (2026-06-08 special meeting, lapsed 2026-06-30); Police Chief John Schick reversed his own prior support citing 'operational concerns, and, frankly, some professional blind spots, particularly concerning data security and external data controls.' Longmont - unanimous non-renewal 2026-03-24 with local data-control requirements, mandatory public reporting and a one-year review attached to the Axon replacement. Aspen - police-chief administrative decision, paused 2026-04-27, discontinued ~2026-07-24; two readers never activated, zero data ever collected. SHARING RESTRICTIONS: Thornton - police department alone, no council vote, contract untouched, REVOKED Flock network access for over 2,100 outside agencies (Feb 2026) with weekly audits. Durango - unanimous council resolution 2026-04-21 requiring monthly public reports; first report 2026-06-17 disclosed ALL agencies holding 287(g) agreements were removed from sharing and DPD audits and denies access weekly; a citizen 'Protect Our Privacy Ordinance' (72-hour retention, judicial warrant, civilian oversight committee) from DeFlock Durango with ACLU-CO and CIRC is still pending. Glenwood Springs - staged administrative shutoff, all outside-agency access blocked 2026-02-11 'regardless of location' after Aspen Journalism found 78 outside agencies including US Border Patrol had run immigration searches; 21 cameras now run only as an internal CCIC/NCIC hotlist network. Boulder - CITY MANAGER administrative rebid announced 2026-03-13 (explicitly not a council matter), Flock extended on renegotiated terms with a 30-day no-penalty opt-out and monthly data-review meetings, RFP for 49 ALPRs still under review as of 2026-07-20; class action filed 2026-05-27 over the 31-camera network under the Colorado Constitution. Snowmass Village - suspended all outside sharing (Mar 2026) after finding 21 agencies including ICE ERO, HSI and US Marshals in its logs. Pitkin County - halted HSI sharing. Carbondale - declined to adopt at all. LIVE REVIEWS: Castle Rock (council directed a vendor comparison 2026-07-21; 32 Flock ALPRs at a 365-DAY retention), Avon (public input 2026-07-28 ahead of renewal, contract terminable on 30 days notice), Silt, Telluride.",
+      "date": "2026-07",
+      "sources": [
+        "Colorado Politics, 2026-02-24 (Denver)",
+        "9News (Denver 110 cameras removed)",
+        "Coloradoan, 2026-06-16 and KUNC, 2026-06-19 (Fort Collins)",
+        "Canon City Daily Record, 2026-06-10",
+        "Times-Call, 2026-03-25 (Longmont)",
+        "Aspen Times, 2026-07-24 and Aspen Public Radio, 2026-07-27",
+        "ThorntonPD Flock page (https://www.thorntonpd.org/flock)",
+        "Durango Herald, 2026-06-20 and 2026-04-06",
+        "Aspen Times, 2026-02-13 (Glenwood Springs)",
+        "Boulder Reporting Lab, 2026-03-13 and Axios Boulder, 2026-07-20",
+        "Aspen Journalism (Snowmass, Silt, Pitkin)",
+        "Sopris Sun, 2026-05-13 (Carbondale)",
+        "Denver Gazette, 2026-07-22 (Castle Rock review)",
+        "CBS News Colorado, 2026-07-28 (Avon)"
+      ],
+      "status": "NO Pueblo city or county action on Flock or ALPR was found anywhere in this window - no council item, no ordinance, no administrative restriction - while Pueblo simultaneously expanded Flock and stood up 70 Cloudrunner cameras. ACTION: (1) lead with Canon City for local credibility and Fort Collins for the council-vote template; (2) because Boulder, Thornton, Glenwood Springs, Aspen, Snowmass and Pitkin all acted WITHOUT a council vote, the chief and city manager can unilaterally disable outside-agency and 287(g) access - make that the first, cheapest ask; (3) FRAME THE ASK AS DATA OWNERSHIP, RETENTION LIMITS AND NO FEDERAL ACCESS, NOT 'drop Flock' - Denver, Longmont, Douglas County, Glenwood Springs and Colorado Springs all migrated to Axon, which holds existing DHS and ICE contracts, and ACLU-CO opposed Denver's Axon replacement. A vendor swap is not a win."
+    },
+    {
+      "title": "Colorado counter-trend: nearby jurisdictions expanded ALPR and drones in the same window",
+      "summary": "Colorado Springs announced ~2026-02-09/10 it would nearly TRIPLE its ALPRs while switching Flock to Axon - attributable to Police Chief Adrian Vasquez administratively, with no council vote found; Mayor Yemi Mobolade published a public defense 2026-04-23. Commerce City council voted 7-2 on 2026-04-06 (Ordinance 2755, with 2756 recognizing $608,900 for 2026) for a 5-year ~$4.56M Flock contract covering ALPRs, drones, cameras, gunshot detection and RTCC tooling. Douglas County approved a $22.8M Axon package 2026-07-14 replacing 50 Flock cameras with 100 Axon Outpost ALPRs plus a countywide drone-first-responder network, with a 30-day purge unless tied to an open case, quarterly sheriff audits and DA oversight - the stated drivers were that the county did not own its own camera data and that a county trailhead camera was HACKED and livestreaming to the open internet. Castle Rock signed a ~$600K 3-year Flock drone contract in June 2026 then opened a review in July. Glenwood Springs approved a $2.4M 10-year Axon contract 7-0. Statewide (Colorado Sun 2026-04-27): ~100 Colorado agencies have Flock partnerships, 160+ private entities involved, 60 agencies statewide use ALPR with 42 holding Flock contracts - Pueblo is inside that 60 but is not named.",
+      "date": "2026-07-14",
+      "sources": [
+        "KKTV, 2026-02-10 (Colorado Springs)",
+        "coloradosprings.gov mayor's column and Gazette, 2026-04-23",
+        "9News (Commerce City Ordinance 2755)",
+        "Denver Gazette, 2026-07-15 (Douglas County $22.8M Axon)",
+        "9News (Castle Rock drones)",
+        "City of Glenwood Springs Resolution 2026-10",
+        "Colorado Sun, 2026-04-27 (statewide scale)"
+      ],
+      "status": "Do NOT overstate the retrenchment narrative - cite both columns. The strongest transferable SAFEGUARDS come from the expansion side: Douglas County's data-ownership requirement, 30-day purge, quarterly audits and DA oversight, plus Longmont's local data control and mandatory public reporting, are the concrete terms to demand of Pueblo regardless of vendor. The Douglas County trailhead camera hack is a local-adjacent argument that these systems are a SECURITY liability, not only a privacy one."
+    },
+    {
+      "title": "Flock 2026 accountability record: audits, breaches, litigation, and one abandoned product",
+      "summary": "DAYTON OH (disclosed 2026-06-26): suspended Flock in early May 2026 after finding 7,100+ immigration-related searches of its data (Jul 2023-2026) - 3,703 by Border Patrol, 779 by Lowndes County GA, 1,778 containing 'ICE,' 443 for 'immigration,' 140 outside agencies; July 2025 alone had 6,104 immigration searches vs ~1,000 the prior year and 22 in 2023; the city COULD NOT DETERMINE whether data was returned or acted on. SFPD AUDIT (disclosed 2026-06-18): a routine May 2026 audit found regional fusion center NCRIC had queried SF's Flock network for federal and out-of-state agencies - 299 improper inquiries in about a year, including night-hours access granted to another network's watch center WITHOUT SFPD's knowledge; SFPD cut off NCRIC. This is the fusion-center risk the repo has been asking about, confirmed in practice. LAPD IG AUDIT (2026-07-13): for Aug-Sep 2025, officers acknowledged 161 alerts as accurate plate matches on vehicles that were NOT actually stolen, out of 5,911 plates tracked and 210.5M plate reads; no action taken on 4,575 hot-listed vehicles; LAPD let its Flock contract EXPIRE and suspended new ALPR deployments pending full audit and public input. PERSON-TRACKING (404 Media 2026-07-16): a 'FreeForm' search is used for hundreds of person-descriptor searches ('heavy-set male with a black and white hat,' 'person on skateboard'), some with racial descriptors and political-affiliation indicators, across hundreds of cameras in multiple states. TWO SECURITY INCIDENTS: 2026-01-08 Flock Condor cameras (360-degree PTZ with AI object tracking) were reachable on the open internet with NO username, password or encryption - live video, ~one month of archived footage, and the ability to DELETE video; 60+ exposed camera admin systems findable via ordinary search engines; Flock called it 'a limited, isolated configuration issue.' 2026-06-11 Flock leaked police search reasons, and some searched plates, into DuckDuckGo and Bing indexes. Officers have repeatedly been arrested for using Flock to stalk people (2026-06-10). LITIGATION: Javorsky v. Flock class action filed 2026-02-26 in San Francisco Superior Court (amended 2026-04-03) under California's ALPR Privacy Act, alleging federal agencies accessed SFPD camera data 1.6M+ times in seven months and Los Altos data was shared out-of-state 1M+ times, with audit search reasons literally reading 'CBP,' 'ICE,' 'fresno dea intel'; statutory damages $2,500/violation. ONE ADVOCACY WIN: EFF 2026-07-17, Flock ENDED the rollout of 'Distress Detection,' a citywide microphone feature marketed to detect human screaming; gunshot detection remains and also flags 'community disruption.' Flock also discontinued live video on ALPRs for law enforcement in March 2026 after a 5-agency pilot, and its CEO then claimed the cameras only take 'a static picture of a car,' contradicting Flock's own prior marketing. NOVA SHIPPED, NOT KILLED: a live marketed product federating RMS, CAD, LPR, jail records, public records and 'approved open sources,' advertising 'type in a name, phone number, address, or vehicle'; San Diego PD signed a one-year pilot 2026-04-29 but has not activated it; BERKELEY DECLINED the Nova package 2026-05-08; Flock removed hacked-breach data sources but kept the product. MISSION CREEP (EFF May 2026): ALPR used for school residency verification, background checks and noise complaints. Flock sent a trademark cease-and-desist to the creator of DeFlock.me; EFF is representing him and refused. OPEN FEDERAL INQUIRIES, both from 2025 and both still unanswered as of July 2026: the 2025-08-08 House investigation (Reps. Krishnamoorthi and Robert Garcia) and the 2025-11-03 Wyden/Krishnamoorthi letter urging an FTC Section 5 investigation - the latter noting ~75% of Flock law-enforcement customers opted into the National Lookup Tool per Flock's own disclosure to Congress, and at least 35 Flock customer accounts stolen via infostealer malware. No FTC investigation has been publicly opened. Flock was valued at $8.4B as of April 2026.",
+      "date": "2026-07",
+      "sources": [
+        "Dayton 24/7 Now and Dayton Daily News, 2026-06-26",
+        "SF Standard and Mission Local, 2026-06-18 (SFPD/NCRIC audit)",
+        "404 Media, 2026-07-13 (LAPD IG audit) and Fortune, 2026-07-15",
+        "404 Media, 2026-07-16 (FreeForm person searches)",
+        "WFLX, 2026-01-09 (Condor exposure)",
+        "404 Media, 2026-06-11 (search reasons indexed by DuckDuckGo/Bing)",
+        "404 Media, 2026-06-10 (officers arrested for stalking via Flock)",
+        "EFF Deeplinks, 2026-07-17 (Distress Detection ended)",
+        "404 Media, 2026-07-23 (CEO video claim)",
+        "Javorsky v. Flock complaint (https://www.courthousenews.com/wp-content/uploads/2026/02/javorsky-vs-flock-complaint.pdf)",
+        "EFF Deeplinks, 2026-05 (mission creep) and 2026-06-02 (DeFlock C&D)",
+        "Axios San Diego, 2026-04-29 and Berkeleyside, 2026-05-08 (Nova)",
+        "Wyden letter to FTC, 2025-11-03"
+      ],
+      "status": "Every safeguard Pueblo PD asserts verbally - documented query reasons, verified hits, no federal access, no person tracking, no live video - has been audited and found wanting in at least one other jurisdiction in 2026. ACTION: (1) build the CORA request from the Dayton/SFPD/LAPD template - full audit log export, list of sharing agencies, search-reason strings, hit-accuracy dispositions; (2) demand Pueblo enable Flock's own FREE 'Audit Assistance' tool (launched 2026-04-14) and publish the output - refusing a free first-party audit tool is itself a story; (3) use the Condor exposure and the DuckDuckGo/Bing leak to argue these systems are a SECURITY liability, which reaches a GOP-majority council better than a privacy argument; (4) ask specifically whether Pueblo has any Nova pilot, trial or quote - Berkeley's refusal is the precedent."
+    },
+    {
+      "title": "CORRECTION TO EXISTING REPO CLAIM: no confirmed Flock-Palantir integration; Thiel-owns-both is false",
+      "summary": "The claim that Flock and Palantir are commonly owned or technically integrated has been FACT-CHECKED AS FALSE. Peter Thiel co-founded Palantir and sits on its board; he was NEVER on Flock's board. His Founders Fund did participate in Flock's $275M round (spring 2025). Palantir separately holds ~$140M in ICE contracts. Flock's own trust page states 'Flock does not work with Palantir,' that Palantir has no access to Flock customer data, no ownership and no relationship. No confirmed 2026 technical Flock-Palantir integration exists.",
+      "date": "2026-02-13",
+      "sources": [
+        "Colorado Sun fact-check, 2026-02-13 (https://coloradosun.com/2026/02/13/are-flock-and-palantir-both-owned-by-billionaire-peter-thiel/)",
+        "Flock Safety trust page (https://www.flocksafety.com/trust)"
+      ],
+      "status": "ACTION REQUIRED. The ASCII data-flow diagram in opsec/Pueblo 81008 Surveillance.md section 5 ('PALANTIR GOTHAM <- FLOCK NATIONAL NETWORK') and the 'Flock provides the eyes, Palantir provides the brain' quote overstate a publicly debunked link - an easy credibility hit if a reporter or council member checks it. FLAGGED FOR THE OWNER OF opsec/ TO REVISE; not edited by this agent. The accurate and far stronger framing is the DOCUMENTED pipeline: local plate reads -> CCIC/NCIC -> ICE-populated Immigration Violator hotlist, plus local agencies running searches for federal partners. Replace the Palantir framing with the NCIC framing in all public-facing materials."
+    },
+    {
+      "title": "Pueblo County Sheriff reported ZERO months of state-mandated use-of-force data",
+      "summary": "Colorado DCJ Office of Research and Statistics, 'Contacts and Use of Force in Colorado: CY2024 Report' (September 2025, pursuant to 24-31-903 C.R.S.). Table 57: Pueblo PD reported 10 of 12 months - 9,244 contacts, 12,695 citizens, 31 use-of-force contacts, force rate 244.2 per 10,000. PUEBLO COUNTY SHERIFF'S OFFICE REPORTED 0 OF 12 MONTHS - zero contacts, zero citizens, zero force - one of 65 of 255 mandated Colorado agencies submitting nothing. Table 58 lists Pueblo PD for 3 law-enforcement-involved civilian deaths in CY2024 (deaths 4/17, 6/19, 7/30/2024; all gunshot; two decedents recorded Hispanic, one White - names in the state report are omitted here). Statewide: force used on Black non-Hispanic individuals at 3,142 per 100,000 contacts vs 531.8 for White NH (~5.9x); Black NH people 3x more likely to be person-searched (7.5% vs 2.4%) yet searches of Black NH and Native American NH people found contraband LESS often (15%, 11%) than White NH (17%) - an inverted hit-rate finding. Statewide IA outcomes: 169 misconduct complaints with 2 sustained (1.2%); 565 post-use-of-force investigations with 21 sustained (3.7%); only ONE agency in the entire state (Aurora PD) reported officer resignations during administrative investigation - Pueblo agencies did not. CRITICAL LIMITATION: agency-level race breakdowns do NOT exist in the published report - Tables 57/58 give Pueblo only aggregate counts and every race/ethnicity table is statewide, so a Pueblo-specific stop or search disparity CANNOT be computed from public data. There is no 2026 release; the CY2025 report is expected ~September 2026.",
+      "date": "2025-09",
+      "sources": [
+        "Colorado DCJ ORS, CY2024 Contacts and Use of Force Report (https://cdpsdocs.state.co.us/ors/Docs/Reports/2025_LEI-Rpt-CY2024.pdf)",
+        "Colorado DCJ dashboards (403 to automated fetch)"
+      ],
+      "status": "SINGLE MOST ACTIONABLE ACCOUNTABILITY GAP FOUND. ACTION: (1) records request to DCJ ORS for RECORD-LEVEL Pueblo contact/search/force data - required to compute any local disparity figure; (2) ask PCSO in writing why zero months were submitted and what will be submitted for CY2025, timed to land with the incoming sheriff and ahead of the ~Sept 2026 CY2025 report; (3) a non-reporting agency is invisible to every statewide disparity analysis, which is itself the harm."
+    },
+    {
+      "title": "Pueblo PD publishes no Internal Affairs statistics and Pueblo has no civilian oversight body",
+      "summary": "The Pueblo PD Internal Affairs page describes scope and intake channels and is staffed by 2 sergeants, but publishes NO sustained-complaint counts, no annual report, no disposition data and no resolution times. The City of Pueblo Boards and Commissions page lists 28+ bodies and contains NO police civilian oversight board, police advisory board or citizen review board; the Civil Service Commission is a hiring/appeals body, not a misconduct-review body. No proposal for a Pueblo oversight board was found. The 'Cases of Interest' body-camera briefing page has exactly ONE 2026 entry (2026-05-14) against 4 in 2025 and 2 in 2024 - a measurable transparency regression.",
+      "date": "2026-07",
+      "sources": [
+        "Pueblo PD Internal Affairs Section (https://www.pueblo.us/449/Internal-Affairs-Section)",
+        "Pueblo PD Special Services Division (https://www.pueblo.us/1591/Special-Services-Division)",
+        "City of Pueblo Boards and Commissions (https://www.pueblo.us/84/Boards-Commissions)",
+        "Pueblo PD Cases of Interest (https://www.pueblo.us/2996/Cases-of-Interest)"
+      ],
+      "status": "ACTION: CORA IA complaint counts, dispositions and median resolution times for 2024-2026; build the oversight-board ask using Colorado Springs and Aurora as precedent; cite the drop in Cases-of-Interest postings. CAUTION: 'Police Civilian Oversight Board' videos dated 2026-01-08 and 2026-04-09 surface in searches - these appear to be ALBUQUERQUE, NOT PUEBLO. Do not cite as Pueblo."
+    },
+    {
+      "title": "10th Circuit clears the way for jury trial against Pueblo County Sheriff defendants",
+      "summary": "On 2026-06-10 the 10th Circuit dismissed the Pueblo County sheriff defendants' appeal 3-0 (opinion by Judge Veronica Rossman), holding it 'lacks jurisdiction to resolve an argument that tries to smuggle in factual disputes under the guise of an abstract legal issue.' The case - arising from a 2022-02-22 fatal deputy shooting in the Liberty Point International School parking lot in Pueblo West, plus the unlawful seizure and search of the decedent's mother - now proceeds to JURY TRIAL on excessive force and unlawful seizure. Sheriff Lucero is a named defendant in his official capacity. Qualified immunity was denied by the district court and affirmed by the 10th Circuit 2024-02-11 (one aggregator misdates this to 2026). The Pueblo County DA declined criminal charges against the deputies in 2022. Regional context: Las Animas County SO paid a $1.5M Taser settlement (2024) and Huerfano County SO a $10M in-custody death settlement.",
+      "date": "2026-06-10",
+      "sources": [
+        "Colorado Politics, 2026-06-10 (https://www.coloradopolitics.com/2026/06/10/10th-circuit-tosses-pueblo-county-sheriff-defendants-appeal-in-fatal-shooting-lawsuit/)",
+        "10th Circuit opinion PDF (https://www.ca10.uscourts.gov/sites/ca10/files/opinions/010111449841.pdf)",
+        "Colorado Politics, 2025-05-20 (jury trial ruling)"
+      ],
+      "status": "A live federal civil-rights trial against PCSO landing as a new sheriff takes office, with discovery and testimony likely to become public. ACTION: track the docket and attend; note that criminal charges were declined while civil liability survived three rounds of qualified-immunity review - a concrete argument for the AG Pattern & Practice route."
+    },
+    {
+      "title": "Three Pueblo PD officer-involved shootings, May-July 2026",
+      "summary": "2026-05-14 (~12:18 a.m.), Carousel Ln 0-100 block after a weapons call at Drew Dix Park: a man (19) died. 2026-06-02 (~3:29 p.m.), 800 block E. 5th St after a domestic-weapons call at Alexander Cir: a suspect was wounded and hospitalized. 2026-07-08, Glen Royal Dr near Pueblo Blvd / W Northern Ave, domestic disturbance: a man (54) was killed. The 10th Judicial District Critical Incident Response Team was activated for the first two (presumed for the third; not confirmed in available text). Decedents and involved officers are private individuals and are not named. Notably PPD placed involved DISPATCHERS on administrative leave in both the May and June incidents; a department captain characterized this as 'the department's normal wellness process,' not discipline.",
+      "date": "2026-07-08",
+      "sources": [
+        "City of Pueblo NewsFlash 4947, 2026-05-14 and KKTV, 2026-05-14",
+        "City of Pueblo NewsFlash 4955, 2026-06-02 and KKTV, 2026-06-03",
+        "FOX21 News (2026-07-08 incident)",
+        "KKTV, 2026-05-16 (dispatcher leave practice)"
+      ],
+      "status": "Three OIS in under two months against 3 civilian deaths in all of CY2024 suggests an increasing rate, into an environment with no published IA data and no oversight body. ACTION: CORA the CIRT reports and body-camera footage for all three; track whether each appears on Cases of Interest and how quickly; the dispatcher-leave practice implies RTCC and dispatch telemetry is part of the incident record, so CORA RTCC logs, ALPR queries and drone flight records for each incident window - also the cleanest way to test whether the sensor stack drove the response."
+    },
+    {
+      "title": "Pueblo County Sheriff Lucero loses primary - incoming sheriff is the best-timed intervention window",
+      "summary": "In the 2026-06-30 Democratic primary, challenger Allen Medina defeated incumbent Sheriff David J. Lucero 11,882 (53.16%) to 10,470 (46.84%) and runs UNOPPOSED in November - effectively Pueblo County's next sheriff. At the 2026-06-01 Labor Council forum Medina committed to transparency ('We have to be transparent about everything that we do'), OPPOSED devoting agency resources to immigration enforcement against otherwise law-abiding undocumented residents, invoked Fourth and Fifth Amendment protections for 'all people in the United States,' and named recruitment and retention as the top challenge. He did NOT address surveillance technology, use-of-force policy, or jail conditions.",
+      "date": "2026-06-30",
+      "sources": [
+        "Pueblo Chieftain, 2026-07-01 (https://www.chieftain.com/story/news/politics/elections/2026/07/01/allen-medina-wins-pueblo-county-sheriff-primary/90766509007/)",
+        "Pueblo Star Journal, 2026-06-01 (candidate forum)"
+      ],
+      "status": "BEST-TIMED INTERVENTION WINDOW IN THIS REFRESH. An incoming sheriff who campaigned on transparency, has taken no public position on surveillance tech, and inherits an agency operating 73 mobile ALPRs and reporting ZERO months of state-mandated use-of-force data. ACTION: prepare a short transition ask now - publish an ALPR policy with a retention cap, disable federal/out-of-state sharing and any ICE-populated NCIC hotlist, commit to full 24-31-903 C.R.S. reporting for CY2025, publish annual audit summaries; request a transition meeting before January."
+    },
+    {
+      "title": "RTCC live camera monitoring during an incident, documented by Pueblo PD itself",
+      "summary": "PPD's own social post on a 2026-04-11 incident (posted 2026-04-13) states the RTCC 'monitored camera footage in the 200 block of S Grand Avenue' and observed a weapon being passed between individuals. This is a direct departmental admission of live camera monitoring of a public street, which sits awkwardly against the standing public claim that cameras are 'not continuously monitored' and are accessed only during active incidents.",
+      "date": "2026-04-11",
+      "sources": [
+        "Pueblo Police Department post, 2026-04-13 (https://www.facebook.com/PuebloPolice/posts/1422654356569878/)",
+        "Mirror (https://x.com/PuebloPolice1/status/2043768319967117807)"
+      ],
+      "status": "Useful primary-source contradiction of the department's own framing, in its own words. ACTION: preserve a screenshot and archive link; deploy when the 'not continuously monitored' assurance is offered at council; CORA the RTCC monitoring policy defining what triggers live observation and who authorizes it."
+    },
+    {
+      "title": "ShotSpotter two-year Pueblo figures: 83% of alerts had no accompanying 911 call",
+      "summary": "Vendor-published Pueblo figures (program start February 2024): 3,383 ShotSpotter alerts over two years vs only 608 with an accompanying 911 call - a 17% correlation rate, meaning 83% of detected 'gunfire' generated no citizen call at all. Also claimed: 37 shooting victims received potentially life-saving first aid via alerts, and 4,300+ shell casings recovered for ballistic evidence. NOTE: the vendor success-story PDF dated 2026-01-27 now 404s at the vendor site - the vendor appears to have PULLED it. No 2026 square-mileage change or updated annual cost was found, and SoundThinking's Q2 2026 multi-year renewals press release (2026-07-02) names Albuquerque, Worcester, Richland County, Macon-Bibb, Peoria, Massachusetts State Police and Fayetteville NC - PUEBLO IS NOT LISTED.",
+      "date": "2026-01-27",
+      "sources": [
+        "SoundThinking Pueblo success story, 2026-01-27 (URL now 404s - archive before citing)",
+        "SoundThinking blog, 2026-01-16 (figures repeated)",
+        "SoundThinking Q2 2026 renewals press release, 2026-07-02",
+        "KOAA, 2025-04-30"
+      ],
+      "status": "The 17% figure is presented by the vendor as proof of value; it is equally a measure of how much of the system's activity NO RESIDENT ever independently corroborated. ACTION: archive the pulled vendor PDF; CORA alert-level dispositions (how many alerts produced a confirmed gunshot) so the false-positive rate can be computed rather than inferred; CORA the current ShotSpotter contract term and renewal date, since Pueblo's absence from the Q2 2026 renewal list is unexplained. National counterpoint: Detroit renewed ShotSpotter 5-4 on 2026-06-30 over cost, privacy and effectiveness objections."
+    },
+    {
+      "title": "Facial recognition: no Pueblo use found, but SB22-113 is the live compliance hook",
+      "summary": "NO evidence was found that Pueblo PD or PCSO uses facial recognition, Clearview AI, or any facial recognition service - a genuine negative finding, and the most important one to keep monitoring, because Pueblo already has the camera fabric that FRS bolts onto. Colorado SB22-113 remains in effect and requires any agency, BEFORE using facial recognition, to: file a NOTICE OF INTENT with its reporting authority; publish an ACCOUNTABILITY REPORT of policies and procedures; obtain a WARRANT for ongoing surveillance or real-time/near-real-time identification (narrow exceptions for investigative leads with probable cause, missing persons, decedent ID); conduct operational testing before deployment; and train personnel periodically. It bars FRS results as the SOLE basis for probable cause, requires meaningful human review of legally significant decisions, and prohibits targeting by protected characteristic or First Amendment activity. The task force repeals 2027-09-01 but the substantive restrictions persist. Aurora is the in-state precedent: council authorized APD facial recognition 2025-10-23, and Aurora's public reports page shows exactly what Pueblo would have to publish. Colorado DMV facial recognition is available to police, and use by a Pueblo agency would itself trigger the SB22-113 duties. Separately SB25-143 (effective 2025-07-01) conditionally lifted the school FRS moratorium, permitting districts to use facial recognition to alert staff to individuals who made violent threats, locate missing children on grounds, and alert staff when court-barred individuals enter; systems may remain operational at all times for authorized purposes, biometric data must be deleted within 18 months, and use REQUIRES LOCAL SCHOOL BOARD APPROVAL.",
+      "date": "2026-07",
+      "sources": [
+        "Colorado General Assembly, SB22-113 (https://leg.colorado.gov/bills/sb22-113)",
+        "Security Industry Association analysis of SB25-143, 2025-04-08",
+        "Denverite, 2025-10-23 (Aurora authorization)",
+        "Aurora facial recognition public reports page",
+        "9News investigation, Colorado DMV facial recognition"
+      ],
+      "status": "A SB22-113 notice of intent is a PUBLIC RECORD filed with a reporting authority - asking whether one exists is a cheap, high-signal early-warning check. ACTION: (1) ask the City of Pueblo and Pueblo County in writing whether ANY notice of intent or accountability report has been filed, and whether either agency has submitted Colorado DMV facial-recognition requests; (2) because SB25-143 requires LOCAL SCHOOL BOARD APPROVAL, monitoring D60 and D70 board agendas is a free early-warning system for school FRS; (3) set a standing quarterly re-check - this is the vector most likely to change first."
+    },
+    {
+      "title": "Pueblo institutional context: fiscal crisis alongside sensor spending",
+      "summary": "Pueblo County commissioners imposed a hiring freeze amid a 'massive budget deficit' on 2026-02-06 and eliminated HR positions to save $400K+ on 2026-07-23. Chief Chris Noeller remains Pueblo PD chief; Deputy Chief James Martin is the department's public voice on surveillance technology. PPD authorized strength is 269 positions - 207 sworn, 62 civilian. On 2026-05-05 Chief Noeller responded to a viral video by attacking state law - 'the legislation and policies of this state handcuff your police officers' - and disclosed that PPD issued nearly 21 municipal violations per day January-April 2026 and that 41 individuals had charges auto-dismissed after being found incompetent to stand trial. The posted RTCC Technician role ($53,978-$67,824/yr) explicitly includes 'monitoring and taking control of drones,' monitoring the 'citywide security camera network, Pueblo County resources within the city, public/private partnership cameras,' and monitoring 'license plate reader (LPR) data and alerts' - a civilian job description confirming civilian personnel pilot drones and monitor ALPR alerts. 24/7 RTCC operation remains a stated GOAL, not an achievement; no 2026 budget line funding it was located.",
+      "date": "2026-07-23",
+      "sources": [
+        "Pueblo Chieftain, 2026-02-06 (hiring freeze)",
+        "Pueblo Chieftain, 2026-07-23 (HR cuts)",
+        "KKTV, 2026-05-05 (chief's framing)",
+        "City of Pueblo Police Department page (authorized strength)",
+        "City of Pueblo RTCC Technician job posting"
+      ],
+      "status": "A county in fiscal crisis is spending on sensors while freezing hiring - the COST argument is the most viable lever with this council, more than privacy. ACTION: (1) build the recurring-cost case - $210K/yr ShotSpotter + ~$200K/yr Genetec licensing + undisclosed Cloudrunner and Flock costs + $53,978-$67,824 per RTCC technician, against a documented deficit and ARPA funds expiring; (2) TOP REMAINING DOCUMENTARY GAP: the Pueblo PD section of the 2026 budget is JavaScript-rendered on OpenGov and could not be read - needs a manual browser session or a CORA request; (3) use the RTCC technician job description as evidence of what the RTCC actually does, since it is more candid than any policy document the city publishes."
+    },
+    {
+      "title": "UNCONFIRMED / RUMOR bucket - quarantined from public materials",
+      "summary": "NOT CITABLE. (1) A 2026-01-26 Pueblo City Council item on citywide Flock expansion - two community Facebook posts state the police chief presented and council 'is being asked to decide if flock cameras should be expanded across the city'; not confirmable through any news outlet or official agenda; council migrated to CivicClerk (JS-rendered) and pueblo.us/AgendaCenter only archives through 2022. A related unverified figure: a '$113,000 / 35-camera Flock contract approved June 2024.' (2) Solar-powered ALPR unit locations from Pueblo Independent News (community FB page, posted April 28) naming Bessemer Park, Mineral Palace Park, downtown and 'major intersections,' citing an arrest near the Senate Bar - Mineral Palace Park is independently confirmed by KOAA, the others are community-sourced only. (3) The 6-vs-7 camera count on the I-25 work zone (CDOT says six; Pueblo Star Journal says seven). (4) The 4-vs-6 mobile camera trailer count (KOAA says 4; the Feb 2026 refresh recorded ~6). (5) A POST decertification of the former PPD officer convicted 2026-05-12 of a Class 3 felony - should trigger mandatory revocation, but POST publishes no browsable list and its pages return 403; strong inference only. That officer resigned the day of his Jan 2025 arrest so no IA file was opened; at least two Pueblo PD officers have resigned ahead of discipline, and Colorado's resignation-reporting requirement is not being complied with by Pueblo agencies. (6) An FOP labor dispute or litigation against PCSO - referenced by the incoming sheriff at a forum, not independently sourced. (7) A Colorado AG investigation into ALPR/ICE data sharing DOES NOT EXIST and an earlier lead was misdated: the AG's Mesa County investigation was announced 2025-06-23, NOT 2026, and concerned a deputy sharing a driver's plate and vehicle description in a SIGNAL GROUP CHAT with DHS officials, not ALPR databases; it was expanded to four agencies in July 2025, the lawsuit against the deputy was later DROPPED, and Mesa County's countersuit was dismissed. CIRC and allies delivered 2,000+ petition signatures on 2025-07-10 asking the AG to investigate Flock/ALPR-ICE sharing statewide; the office said only that it would 'review the petition.' No such investigation has been opened. (8) Louisville CO Flock deactivation - dated ~Sept 2025, outside the window, and nearly all 'Louisville + Flock' results are Louisville, Kentucky. (9) Aggregate cancellation counts ('53 cities cancelled,' '80 localities in 28 states,' '100,000 cameras') appear only in low-quality aggregators showing signs of AI generation; EFF confirms the trend but publishes no number. A claimed SCOTUS geofence ruling affecting Flock ALPRs (July 2026) has a single low-quality source - do not use. DO NOT CITE stateofsurveillance.org, citizenportal.ai, placa.ai, techtimes.com, uticaphoenix.net, newschunks.com. (10) 'Project Falcon' in Pueblo Watch coverage reads like a surveillance story but is a proposed tissue-manufacturing plant with a contested ~$68M incentive package - flagged so nobody chases it.",
+      "date": "2026-07-29",
+      "sources": [
+        "See per-item notes in data/surveillance_policing_raw.md UNCONFIRMED entry, 2026-07-29"
+      ],
+      "status": "QUARANTINED. Verification priority: (1) the 2026-01-26 council agenda packet and video, (2) the POST revocation record, (3) the trailer and I-25 camera counts, (4) the community-reported ALPR sites. STRUCTURAL NOTE FOR THE PROJECT: chieftain.com, coloradonewsline.com, dcj.colorado.gov, post.colorado.gov, theguardian.com and 9news.com block automated fetching, and both the CivicClerk council portal and the OpenGov budget are JavaScript-rendered - a periodic manual browser session is now a structural requirement of this research."
     }
   ],
   "civil_liberties_concerns": [
@@ -232,6 +607,51 @@
       "issue": "Community Connect warrant concerns",
       "details": "Voluntary program lacks published retention limits or warrant requirements for police access to private camera feeds.",
       "source": "ACLU Colorado 2025 Privacy Report"
+    },
+    {
+      "issue": "Local plate reads flow to an ICE-populated federal hotlist via NCIC",
+      "details": "Pueblo PD's 70 Genetec Cloudrunner ALPR cameras are queried against NCIC, and Flock systems can subscribe to an NCIC 'Immigration Violator' file populated exclusively by ICE - which per the NCIC operator manual includes people with administrative warrants issued by ICE without judicial review. Every passing plate is compared in real time. No Colorado agency has been asked whether this hotlist is enabled.",
+      "source": "SECO News 2026-07-14; EFF Deeplinks 2026-06-25"
+    },
+    {
+      "issue": "No Colorado ALPR statute exists - every safeguard must be built locally",
+      "details": "SB26-070 (warrant + 30-day retention + public device inventory) died on the Senate floor 2026-04-29; SB26-071 SAFE Act (facial recognition warrant + biennial AG audits) was postponed indefinitely 2026-05-06; HB26-1037 (data-broker purchase ban) died 2026-04-22. Pueblo PD and PCSO therefore operate under no state-mandated retention cap, no warrant requirement, no audit-log disclosure duty and no public device-inventory obligation. Opposition included the Colorado Association of Chiefs of Police and County Sheriffs of Colorado, to which Pueblo's chief and sheriff belong.",
+      "source": "leg.colorado.gov SB26-070, SB26-071, HB26-1037; Colorado Newsline 2026-04-29"
+    },
+    {
+      "issue": "Drone launch is automated by gunshot detection, gated only by an operator feasibility check",
+      "details": "ShotSpotter gunfire detection automatically triggers BRINC drone deployment in Pueblo. The only stated limit is an operator check for weather, competing missions and coverage - not a warrant or policy review. With 83% of ShotSpotter alerts generating no citizen 911 call, an acoustic false positive can put a thermal-camera drone over a Pueblo address with no human deciding it was worth doing. PPD's public UAV page still describes a 2018 three-drone crime-scene unit.",
+      "source": "SoundThinking 2026-01-16; pueblo.us/2435/UAV-Unit"
+    },
+    {
+      "issue": "Community Connect Pillars Two through Four are camera federation, not a registry, with no published terms",
+      "details": "Pillars Two (Genetec Cloud Video SaaS), Three (existing Genetec on-premise) and Four (non-Genetec IP) are technical federation of private cameras into a police video management system - materially different from the registry the program is named for. The city publishes no terms of use, no privacy policy, no retention terms, no audit commitment, and no statement of whether the RTCC obtains live streaming access or only request-based pull.",
+      "source": "pueblo.us/2998 and pueblo.us/3036 (accessed 2026-07)"
+    },
+    {
+      "issue": "Every verbal Pueblo PD safeguard has failed an audit somewhere else in 2026",
+      "details": "Documented query reasons, verified hits, no federal access, no person tracking, no live video - each was audited and found wanting elsewhere in 2026: Dayton found 7,100+ immigration searches and could not determine whether data was acted on; SFPD found 299 improper fusion-center inquiries including undisclosed night-hours access; the LAPD Inspector General found 161 alerts acknowledged as accurate matches on vehicles that were not actually stolen; 404 Media documented hundreds of person-descriptor searches including racial and political-affiliation indicators. Pueblo has published no written ALPR policy, no retention period and no audit logs at all.",
+      "source": "Dayton 24/7 Now 2026-06-26; SF Standard 2026-06-18; 404 Media 2026-07-13 and 2026-07-16"
+    },
+    {
+      "issue": "Surveillance systems are a security liability, not only a privacy one",
+      "details": "In January 2026 Flock Condor cameras were reachable on the open internet with no username, password or encryption - permitting live viewing, access to ~a month of archive, and DELETION of video; 60+ exposed admin systems were findable via ordinary search engines. In June 2026 Flock leaked police search reasons and some searched plates into DuckDuckGo and Bing. A Douglas County trailhead camera was hacked and livestreaming publicly. At least 35 Flock customer accounts have been stolen via infostealer malware. Officers have repeatedly been arrested for using Flock to stalk people.",
+      "source": "WFLX 2026-01-09; 404 Media 2026-06-11 and 2026-06-10; Denver Gazette 2026-07-15; Wyden letter to FTC 2025-11-03"
+    },
+    {
+      "issue": "Pueblo County Sheriff is invisible to every statewide accountability analysis",
+      "details": "PCSO reported ZERO of 12 months of contact and use-of-force data for CY2024 under 24-31-903 C.R.S., one of 65 of 255 mandated Colorado agencies submitting nothing. Pueblo PD reported only 10 of 12 months. No agency-level race breakdowns exist in the published state report, so a Pueblo-specific stop or search disparity cannot be computed from public data. Pueblo PD publishes no IA statistics, and Pueblo has no civilian oversight board of any kind.",
+      "source": "Colorado DCJ ORS CY2024 report, Sept 2025; pueblo.us/449 and pueblo.us/84"
+    },
+    {
+      "issue": "State oversight capacity was reduced during this reporting window",
+      "details": "HB26-1312, signed 2026-06-03 and effective 2026-08-12, reduces non-law-enforcement (civilian) members of the Colorado POST Board while increasing line-officer representation - fewer civilian members on the state body that decertifies officers, at the exact venue the project's complaint-escalation workflow routes to.",
+      "source": "leg.colorado.gov HB26-1312"
+    },
+    {
+      "issue": "Undisclosed vectors: new jail, transit app, and school camera stack",
+      "details": "A new $150M, 672-bed Pueblo County jail opened in this window with NO disclosure of cameras, biometrics, body scanners or inmate-communications monitoring. The RidePueblo transit app launched 2026-05-04 with no privacy policy, no retention terms and no statement of what rider location data is collected or who can access it. A Motorola Solutions case study on Pueblo County schools exists but is an unread image PDF - Motorola owns Avigilon and Pelco. These are documented gaps, not documented absences.",
+      "source": "Pueblo Chieftain 2026-05-07; KKTV 2026-05-04; Motorola Solutions Pueblo County Schools case study"
     }
   ],
   "recommendations": [
@@ -301,6 +721,106 @@
         "Track Sen. Amabile ALPR warrant requirement bill through 2025 session.",
         "Push Pueblo City Council to adopt Boulder PD model: 30-day retention, no national lookup, supervisory approval for external sharing.",
         "Coordinate with EFF, ACLU-CO on statewide surveillance reform."
+      ]
+    },
+    {
+      "theme": "PRIORITY 1 - NCIC hotlist and federal sharing (2026-07-29)",
+      "actions": [
+        "File records requests with BOTH Pueblo PD and Pueblo County Sheriff asking which NCIC topics/hotlists are enabled in Flock AND in Genetec Cloudrunner, specifically whether the ICE-populated 'Immigration Violator' file is on. Use EFF's published template language.",
+        "Ask for the FULL LIST of agencies Pueblo shares ALPR data with and receives from - not a yes/no on 'national lookup.' The Loveland/ATF case proves in-state sharing plus one cooperating agency re-opens the federal pathway.",
+        "Demand removal of all agencies holding 287(g) agreements, citing Durango's June 2026 precedent.",
+        "Demand weekly or monthly audits with public reporting, citing Durango and Thornton (Thornton revoked access for 2,100+ agencies administratively).",
+        "Check EyesonFlock.com and AtlasofSurveillance.org for existing Pueblo entries first.",
+        "Brief CORRN, El Movimiento Sigue, NAACP Pueblo and CIRC that a plate read in Pueblo may now generate an ICE alert with no judicial warrant."
+      ]
+    },
+    {
+      "theme": "PRIORITY 2 - Genetec Cloudrunner accountability (new system, 2026-07-29)",
+      "actions": [
+        "CORA the Cloudrunner contract, total cost, term length, retention period, written ALPR policy, audit logs and query-justification records - none are public for 70 cameras.",
+        "CORA the 70-camera placement map so organizers can route around coverage and the map layer can be updated.",
+        "Publicly note that Pueblo now runs TWO parallel ALPR vendors while peer Colorado cities cancelled one.",
+        "Reconcile the installed park camera list against the December 2024 $1M authorizing resolution - El Central Park now appears while Ray Aguilera Park and Lake Minnequa have dropped off, with no visible re-authorization.",
+        "Resolve the 4-vs-6 mobile camera trailer discrepancy before publishing."
+      ]
+    },
+    {
+      "theme": "Local ordinance strategy after both state bills died (2026-07-29)",
+      "actions": [
+        "Drop all messaging that assumes a 2026 Colorado surveillance law exists - SB26-070, SB26-071 and HB26-1037 all died.",
+        "Use SB26-070's own text as model ordinance language: warrant for queries older than 72 hours, ~30-day retention cap, access logging, annual public report listing the number and locations of surveillance devices, sharing restrictions, exclusionary rule. It was bipartisan and cleared committee.",
+        "Lift SB26-071's retention/destruction schedule and biennial audit language too - it was Republican-sponsored, which defuses the 'partisan overreach' objection with a GOP-majority council.",
+        "Lead with Canon City for local credibility (small southern Colorado city ~40 miles away that simply let its contract expire; its own police chief cited 'professional blind spots… concerning data security and external data controls') and Fort Collins for the council-vote template (6-1, immediate cancellation plus a moratorium on new surveillance tech).",
+        "Make the FIRST and cheapest ask administrative, not legislative: Boulder, Thornton, Glenwood Springs, Aspen, Snowmass and Pitkin County all restricted sharing WITHOUT a council vote, so the chief and city manager can act unilaterally.",
+        "FRAME THE ASK AS DATA OWNERSHIP, RETENTION LIMITS AND NO FEDERAL ACCESS - NOT 'drop Flock.' Denver, Longmont, Douglas County, Glenwood Springs and Colorado Springs all migrated to Axon, which holds existing DHS and ICE contracts; ACLU-CO opposed Denver's Axon replacement. A vendor swap is not a win.",
+        "Borrow safeguards from the expansion side: Douglas County's data-ownership requirement, 30-day purge, quarterly sheriff audits and DA oversight; Longmont's local data control and mandatory public reporting."
+      ]
+    },
+    {
+      "theme": "HB26-1276 compliance hooks (in effect 2026-06-04)",
+      "actions": [
+        "Once the Attorney General publishes the personal-identifying-information protection policy required by HB26-1276, CORA both Pueblo agencies for their conforming policy.",
+        "Ask both agencies IN WRITING whether they treat ALPR reads and RTCC video as personal identifying information under that policy - the statute does not mention ALPR, so this is the contested ground.",
+        "Track the POST Board's immigration-detainer training standard and CORA Pueblo PD/PCSO completion rosters against the 2027-12-31 officer deadline.",
+        "Route the expanded CDPHE detention-facility inspection authority to the immigration/ICE agent - it applies to the Walsenburg/CoreCivic and Hudson/GEO facilities already in the repo.",
+        "When any Pueblo automated-enforcement contract surfaces, check the vendor compensation schedule against SB26-152's flat-fee mandate (effective 2026-08-12) - a per-citation term is a straightforward violation."
+      ]
+    },
+    {
+      "theme": "Incoming sheriff transition ask (window closes January 2027)",
+      "actions": [
+        "Prepare a short written transition ask for Sheriff-elect Allen Medina now - he campaigned on transparency, ran unopposed in November, and has taken NO public position on surveillance technology.",
+        "Ask for: a published ALPR policy with a retention cap; federal and out-of-state sharing disabled; any ICE-populated NCIC hotlist disabled; a commitment to full 24-31-903 C.R.S. contact and use-of-force reporting for CY2025; and published annual audit summaries.",
+        "Ask PCSO in writing why ZERO of 12 months of CY2024 use-of-force data were submitted, timed ahead of the ~September 2026 CY2025 state report.",
+        "Request a transition meeting before January while commitments are still cheap for him to make."
+      ]
+    },
+    {
+      "theme": "Accountability data requests (2026-07-29)",
+      "actions": [
+        "Records request to Colorado DCJ Office of Research and Statistics for RECORD-LEVEL Pueblo contact/search/force data - the published CY2024 report has no agency-level race breakdowns, so no Pueblo disparity figure can be computed without it.",
+        "CORA Pueblo PD Internal Affairs complaint counts, dispositions and median resolution times for 2024-2026 - none are published.",
+        "CORA the CIRT reports and body-camera footage for the three officer-involved shootings of 2026-05-14, 2026-06-02 and 2026-07-08.",
+        "CORA RTCC logs, ALPR queries and drone flight records for each OIS incident window - the practice of placing dispatchers on leave implies RTCC telemetry is part of the incident record, and this is the cleanest way to test whether the sensor stack drove the response.",
+        "POST records request for the certification revocation of the former PPD officer convicted 2026-05-12 of a Class 3 felony - probably the first 2026 Pueblo decertification, but POST publishes no browsable list.",
+        "Track the 10th Circuit-cleared PCSO jury trial docket and attend; note that criminal charges were declined while civil liability survived three rounds of qualified-immunity review.",
+        "Build the civilian oversight board ask using Colorado Springs and Aurora as precedent; cite the drop in Cases-of-Interest postings (one 2026 entry vs four in 2025) as a measurable transparency regression."
+      ]
+    },
+    {
+      "theme": "Drone and DFR accountability (2026-07-29)",
+      "actions": [
+        "CORA the DFR policy, FAA waivers/COAs and BVLOS authorizations, launch-site list, flight logs, drone-video retention period, and the ShotSpotter-to-drone auto-trigger configuration.",
+        "Put PPD's public UAV Unit page (2018 unit, three UAVs, crime-scene documentation) side by side with the vendor case study (BRINC fleet, gunshot-triggered auto-launch, thermal, sirens, two-way audio) in council testimony and the next La Cucaracha editorial - the disclosure gap IS the story.",
+        "Demand the UAV page be updated as a condition of any further drone funding.",
+        "CORA ShotSpotter alert-level dispositions so the false-positive rate can be computed rather than inferred from the 17% 911-correlation figure.",
+        "Archive the SoundThinking Pueblo success-story PDF dated 2026-01-27 - the vendor appears to have pulled it from its site.",
+        "CORA the current ShotSpotter contract term and renewal date - Pueblo's absence from SoundThinking's Q2 2026 multi-year renewals announcement is unexplained."
+      ]
+    },
+    {
+      "theme": "New and emerging vectors to monitor (2026-07-29)",
+      "actions": [
+        "Facial recognition: ask the City of Pueblo and Pueblo County in writing whether any SB22-113 notice of intent or accountability report has been filed, and whether either agency has submitted Colorado DMV facial-recognition requests. Aurora's public reports page is the template for what Pueblo would have to publish. Set a standing quarterly re-check - this is the vector most likely to change first.",
+        "Schools: because SB25-143 requires LOCAL SCHOOL BOARD APPROVAL for school facial recognition, monitor D60 and D70 board agendas and minutes as a free early-warning system. Also request the CURRENT D60 SRO MOU - the copy on file at the city is dated 2022-01-01 and no data-sharing or student-record-access provision is known.",
+        "Obtain and manually read the Motorola Solutions Pueblo County schools case study (image PDF) - Motorola owns Avigilon and Pelco, so this likely documents the D70 camera and analytics stack.",
+        "Transit: request TripSpark/MyRide (RidePueblo) data-retention terms and any law-enforcement access provision, plus Pueblo Transit's onboard camera policy - no privacy policy is published at all.",
+        "New jail: records request the electronic security stack for the 672-bed facility - cameras, biometrics, body scanners, inmate communications monitoring. Nothing has been disclosed for a $150M build. A new federal counter-drone rule authorizing local police AND corrections agencies to detect and disable drones makes C-UAS a plausible near-term acquisition.",
+        "CDOT: request the I-25 Pueblo speed-camera vendor, full retention and access policy, and any law-enforcement or federal sharing provision; submit public comment opposing post-construction retention of the cameras, since CDOT's keep-or-remove decision is live now. Note the 3-year image retention as the benchmark to hold every other Pueblo system against.",
+        "Ask specifically whether Pueblo has any Flock Nova pilot, trial or quote - Berkeley's May 2026 refusal is the precedent. Add data brokers and people-search products by name to the standing CORA template, since HB26-1037's purchase ban died.",
+        "Demand Pueblo enable Flock's own FREE 'Audit Assistance' tool (launched 2026-04-14) and publish the output - refusing a free first-party audit tool is itself a story.",
+        "Re-run searches on the four least-exhausted vectors: cell-site simulators, Colorado Information Analysis Center participation by Pueblo agencies, Pueblo Mall private security integration, and CBI/Colorado State Patrol ALPR."
+      ]
+    },
+    {
+      "theme": "Messaging corrections and research hygiene (2026-07-29)",
+      "actions": [
+        "REMOVE the Palantir framing from all public-facing materials. The Flock-Palantir integration and Thiel-owns-both claims were fact-checked as false by the Colorado Sun on 2026-02-13; Flock's trust page states 'Flock does not work with Palantir.' The ASCII data-flow diagram in opsec/Pueblo 81008 Surveillance.md section 5 and the 'Flock provides the eyes, Palantir provides the brain' quote are a credibility liability - flagged for the owner of opsec/ to revise.",
+        "Replace it with the DOCUMENTED pipeline: local plate reads -> CCIC/NCIC -> ICE-populated Immigration Violator hotlist, plus local agencies running searches for federal partners.",
+        "Do NOT cite stateofsurveillance.org, citizenportal.ai, placa.ai, techtimes.com, uticaphoenix.net or newschunks.com - AI-generated aggregators. Avoid aggregate cancellation counts ('53 cities') entirely; EFF confirms the trend but publishes no number.",
+        "Do not overstate the retrenchment narrative - Colorado Springs is nearly tripling its readers and Commerce City voted 7-2 for a $4.56M expansion in the same window. Cite both columns.",
+        "Lead the cost argument with a GOP-majority council: $210K/yr ShotSpotter + ~$200K/yr Genetec licensing + undisclosed Cloudrunner and Flock costs + $53,978-$67,824 per RTCC technician, against a documented county budget deficit, a February 2026 hiring freeze and expiring ARPA funds. Pair it with the security-liability argument (Condor exposure, search-reason leak, Douglas County camera hack) rather than a privacy-first frame.",
+        "STRUCTURAL: chieftain.com, coloradonewsline.com, dcj.colorado.gov, post.colorado.gov, theguardian.com and 9news.com block automated fetching, and both the CivicClerk council portal (puebloco.portal.civicclerk.com) and the OpenGov budget are JavaScript-rendered. A periodic MANUAL BROWSER SESSION is now a structural requirement of this research. Top documentary gaps: the 2026-01-26 council agenda packet and video, and the Pueblo PD section of the 2026 budget."
       ]
     }
   ]

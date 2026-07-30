@@ -102,25 +102,40 @@ This memo consolidates open-source reporting on Pueblo’s north-side (81008) ci
 - **Flock Safety:** Vehicle telemetry (time, GPS, plate) lives on Flock’s servers for 30 days, and audit logs show which officer queried which term — useful for accountability but also proof the city is outsourcing investigative memory to a commercial partner.[^5]
 - **Body-worn, drone, and city infrastructure video:** All are routed through the RTCC wall, creating a single nerve center whose uptime depends on High Point Networks' managed infrastructure.[^3]
 
-### Data Flow: The Surveillance Stack (January 2026)
+### Data Flow: The Surveillance Stack (corrected July 2026)
+
+> ⚠️ **CORRECTION — the previous version of this diagram was wrong and has been replaced.**
+> It showed `PALANTIR GOTHAM ← FLOCK NATIONAL NETWORK`. **There is no confirmed Flock–Palantir
+> integration**, and the common claim that Peter Thiel owns both is **false** — he co-founded
+> Palantir and sits on its board but **was never on Flock's board** (his Founders Fund did join
+> Flock's $275M round in spring 2025). Flock's own trust page states plainly: *"Flock does not
+> work with Palantir."* Fact-checked by the Colorado Sun, Feb 13 2026.
+>
+> **Publishing the old diagram was a credibility risk** — any reporter or council member who
+> checked it would have found it debunked, and that would discredit the accurate findings
+> alongside it. The real pipeline below is **better documented and more damaging.** Use it.
 
 ```
-PALANTIR GOTHAM (Federal/ICE level)
-    ↑ Can ingest data from:
+ICE  (administrative warrants — issued WITHOUT judicial review)
+    ↓ populates a hotlist inside:
+NCIC "IMMIGRATION VIOLATOR" FILE  (federal)
+    ↕ queried against / alerts back to:
+PUEBLO ALPR READS
+    ├── Genetec Cloudrunner  (~70 cameras citywide, NCIC-queried)
+    └── Flock Safety         (12 fixed + 4 mobile trailers; national lookup network)
+    ↑ plus reads from:
+PCSO PATROL FLEET  (73 mobile ALPRs, one per car)
     |
-FLOCK NATIONAL NETWORK (3,900+ agencies, 20B scans/month)
-    ↑ Data shared between:
-    |
-COLORADO LAW ENFORCEMENT NETWORK
-    ↑ Includes:
-    |
-PUEBLO RTCC (Genetec + Flock + ShotSpotter)
+PUEBLO RTCC  (Genetec + Flock + ShotSpotter + BRINC drones + park cameras)
     ↑ Feeds from:
-    |
-COMMUNITY CONNECT (Your Ring camera)
+COMMUNITY CONNECT  (your Ring / storefront camera — no published warrant
+                    requirement, no published retention limit)
 ```
 
-**Key Point:** Pueblo has no direct Palantir contract. However, data flows through interoperable networks that feed Palantir-powered federal systems. ICE uses Palantir Gotham as primary intelligence platform.
+**Key points — all documented:**
+- **An ICE-populated NCIC "Immigration Violator" hotlist can be switched on inside Flock**, generating real-time alerts against warrants no judge reviewed (EFF, June 25 2026). **Pueblo has this mechanism on both Flock and Cloudrunner.** Whether it is enabled is unknown — **ask in writing.**
+- **Disabling the "national lookup" does not close the pathway.** ATF searched Loveland's Flock data on ICE's behalf; an SFPD audit found federal partners ran **299 improper searches** through a fusion center. The exposure runs through *local* agencies querying for federal partners — no vendor toggle prevents that.
+- **Pueblo has no direct Palantir contract, and none is needed** for the above to work. Drop Palantir from the argument entirely; it isn't load-bearing.
 
 ### Flock "Nova" Platform (May 2025)
 - 404 Media: Flock developing "public safety data platform"
@@ -136,7 +151,12 @@ COMMUNITY CONNECT (Your Ring camera)
 > "Flock is far from alone in this pursuit — it has close competitors in the Axon-acquired Fusus ALPR network, Motorola's Vigilant, and the local Palantir-esque Peregrine... These kinds of tracking features represent glaring contradictions of Fourth Amendment constitutional protections against warrantless search and seizure."
 > — Truthout, November 2025
 
-> "Flock provides the eyes, Palantir provides the brain."
+> ~~"Flock provides the eyes, Palantir provides the brain."~~
+> ⚠️ **Do not use this line.** It asserts a Flock–Palantir relationship that has been publicly
+> fact-checked as false (Colorado Sun, Feb 13 2026; Flock's trust page states it does not work
+> with Palantir). Retained struck-through so anyone who saw the earlier version knows it was
+> withdrawn deliberately. **Use the NCIC / ICE-hotlist framing above instead** — it is
+> documented, it is worse, and it survives a fact-check.
 
 ## 6. Questions for Further OSINT / Accountability
 1. **Procurement transparency:** What contracts govern the RTCC (ShotSpotter SLA, Genetec licensing, Flock MOUs)? File CORA requests for scopes + pricing.
