@@ -20,7 +20,8 @@ For all of our family.
 <p align="center"><em>Click to open the dark-mode public map (search + layer toggles) served via GitHub Pages.</em></p>
 
 **GitHub Pages landing (public):** https://samedayhurt.github.io/laraza/  
-**Direct map URL:** https://samedayhurt.github.io/laraza/docs/maps/pueblo-map-public.html  
+**Direct map URL:** https://samedayhurt.github.io/laraza/maps/pueblo-map-public.html
+*(Note: GitHub Pages serves `/docs` as the site root, so the live path has **no** `docs/` segment. The previously documented `…/docs/maps/…` URL returned **404** — verified and corrected 2026-07-30.)*  
 **Offline fallback (existing Folium build):** docs/maps/pueblo-surveillance-map.html
 
 ### How to use the map
