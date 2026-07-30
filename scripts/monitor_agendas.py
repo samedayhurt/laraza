@@ -14,6 +14,12 @@ Usage:
     python3 monitor_agendas.py --source city      # Check only city council
     python3 monitor_agendas.py --keywords-only    # Just show keyword matches from existing PDFs
     python3 monitor_agendas.py --output alerts.md # Write alerts to file
+    python3 monitor_agendas.py --packets          # Also pull full agenda packets
+
+Exit codes:
+    0 = ran clean, no keyword matches
+    2 = keyword matches found
+    3 = a data source was stale or empty (result is NOT a verified all-clear)
 
 Requirements:
     - Python 3.8+
@@ -34,9 +40,20 @@ import re
 import shutil
 import subprocess
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from typing import Optional
+
+import pueblo_sources
+from pueblo_sources import (
+    CIVICCLERK_TENANTS,
+    LEGACY_ARCHIVE_FALLBACK,
+    STALENESS_DAYS,
+    USER_AGENT,
+    fetch_meetings,
+    staleness_warning,
+)
 
 # Configuration
 AGENDA_DIR = pathlib.Path("docs/agendas")
@@ -44,18 +61,33 @@ LOG_FILE = pathlib.Path("logs/agenda_monitor.log")
 ALERT_FILE = pathlib.Path("docs/agenda_alerts.md")
 STATE_FILE = pathlib.Path("docs/agendas/.monitor_state.json")
 
-# Sources to monitor
+# Sources to monitor.
+#
+# LIVE source (verified 2026-07-29) is the CivicClerk OData API -- see
+# scripts/pueblo_sources.py for the full access pattern.
+#
+#   City of Pueblo  -> https://puebloco.api.civicclerk.com/v1
+#   Pueblo County   -> https://pueblococo.api.civicclerk.com/v1
+#
+# The two `legacy_url` values below are DEAD and kept only for labeled fallback:
+#   * https://www.pueblo.us/Archive.aspx?AMID=37 -- CivicPlus Archive Center,
+#     newest entry 2022-05-23, most content 2013 and older. This is what caused
+#     the 2026-02-18 false all-clear on the January 2013 agenda.
+#   * https://county.pueblo.org/board-county-commissioners/meeting-schedule --
+#     HTTP 404. The county's live agendas are on CivicClerk tenant `pueblococo`;
+#     county.pueblo.org itself now returns HTTP 403 to scripted clients, so
+#     there is no legacy HTML fallback for the county at all.
 SOURCES = {
     "city_council": {
-        "name": "Pueblo City Council",
-        "url": "https://www.pueblo.us/Archive.aspx?AMID=37",
-        "pattern": r"Archive\.aspx\?ADID=(\d+)",
+        "name": CIVICCLERK_TENANTS["city_council"]["name"],
+        "api": CIVICCLERK_TENANTS["city_council"]["api"],
+        "legacy_url": LEGACY_ARCHIVE_FALLBACK["city_council"],
     },
     "county_commissioners": {
-        "name": "Pueblo County Board of Commissioners",
-        "url": "https://county.pueblo.org/board-county-commissioners/meeting-schedule",
-        "pattern": r"href=[\"']([^\"']*\.pdf)[\"']",
-        "base_url": "https://county.pueblo.org",
+        "name": CIVICCLERK_TENANTS["county_commissioners"]["name"],
+        "api": CIVICCLERK_TENANTS["county_commissioners"]["api"],
+        # No working legacy fallback -- see note above.
+        "legacy_url": None,
     },
 }
 
@@ -81,9 +113,20 @@ KEYWORDS = {
         r"\bdaktronics\b",
         r"\bhigh\s+point\s+networks\b",
         r"\bfacial\s+recognition\b",
+        # Vectors surfaced by the April 2026 editorial research
+        r"\bbrinc\b",
+        r"\bfusus\b",
+        r"\baxon\b",
+        r"\bfusion\s+center\b",
+        r"\bcell[\-\s]?site\s+simulator\b",
+        r"\bstingray\b",
+        r"\bgunshot\s+detection\b",
+        r"\bcamera\s+trailer\b",
     ],
     "immigration": [
-        r"\bice\b(?!\s*(cream|skating|machine))",  # ICE but not ice cream
+        # "ICE" the agency, excluding Pueblo's Ice Arena, ice rinks, ice cream, etc.
+        # The bare-word version false-positived on "ICE ARENA CONCESSION EQUIPMENT".
+        r"\bice\b(?!\s*(cream|skating|skate|rink|arena|machine|storm|melt|hockey))",
         r"\bimmigration\s+(enforcement|detainer|hold|policy|resolution)",
         r"\bcustoms\s+and\s+border\b",
         r"\bcbp\b",
@@ -94,7 +137,11 @@ KEYWORDS = {
         r"\bimmigrant\s+(rights|protection|community)",
     ],
     "policing": [
-        r"\bpolice\s+(contract|agreement|budget|department)",
+        # Bare "Police Department" appears in nearly every agenda (staff reports,
+        # employee recognitions, routine CDOT agreements) and drowned out real hits.
+        # Require an action/procurement word nearby instead.
+        r"\bpolice\s+(contract|agreement|budget)",
+        r"\bpolice\s+department\b.{0,120}?\b(contract|agreement|purchase|equipment|technology|software|grant|budget|camera|surveillance|drone)",
         r"\bbody[\-\s]?worn\s+camera",
         r"\bbody\s*cam\b",
         r"\buse\s+of\s+force\b",
@@ -251,48 +298,69 @@ def search_keywords(text: str, filename: str) -> list[dict]:
     return matches
 
 
-def get_city_council_links(html: str, base_url: str) -> list[tuple[str, str]]:
-    """Extract agenda PDF links from city council archive page."""
+def _slug(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-") or "document"
+
+
+def discover_source(source: str, limit: int, packets: bool = False) -> tuple[list[tuple[str, str]], list[dict]]:
+    """Discover newest-first agenda documents for a source via CivicClerk.
+
+    Returns (links, meetings) where links is [(url, filename), ...] ordered
+    NEWEST FIRST and meetings is the raw meeting metadata (for the staleness
+    guard and for reporting real meeting dates).
+
+    On failure, falls back to the explicitly-labeled DEFUNCT Archive Center if
+    one is configured for this source.
+    """
+    conf = SOURCES[source]
+    file_types = ("Agenda", "Agenda Packet") if packets else ("Agenda",)
+
+    meetings: list[dict] = []
+    try:
+        meetings = fetch_meetings(source, limit=limit, file_types=file_types)
+    except (urllib.error.URLError, OSError, ValueError, KeyError) as exc:
+        log(f"Live CivicClerk lookup failed for {conf['name']}: {exc}", "ERROR")
+
+    if meetings:
+        links = []
+        for meeting in meetings:
+            for doc in meeting["files"]:
+                # event_id disambiguates two meetings held on the same date
+                # (the county routinely holds several).
+                filename = (
+                    f"{source}-{meeting['date']}-"
+                    f"{meeting['event_id']}-{_slug(doc['type'])}.pdf"
+                )
+                links.append((doc["url"], filename))
+        return links, meetings
+
+    # ---- Fallback: DEFUNCT legacy Archive Center ------------------------
+    legacy_url = conf.get("legacy_url")
+    if not legacy_url:
+        log(
+            f"No live meetings for {conf['name']} and NO legacy fallback exists "
+            f"for this source. Treat any scan result as unverified.",
+            "ERROR",
+        )
+        return [], []
+
+    log(
+        f"FALLING BACK to DEFUNCT legacy Archive Center for {conf['name']}: "
+        f"{legacy_url} -- results are almost certainly years out of date.",
+        "WARN",
+    )
+    html = fetch_html(legacy_url)
+    if not html:
+        return [], []
+
+    ids = {int(a) for a in re.findall(r"Archive\.aspx\?ADID=(\d+)", html)}
     links = []
-    ids = re.findall(r"Archive\.aspx\?ADID=(\d+)", html)
-    seen = set()
-
-    for adid in ids:
-        if adid in seen:
-            continue
-        seen.add(adid)
-        url = urllib.parse.urljoin(base_url, f"/ArchiveCenter/ViewFile/Item/{adid}")
-        filename = f"city_council-{adid}.pdf"
-        links.append((url, filename))
-
-    return links
-
-
-def get_county_commissioner_links(html: str, base_url: str) -> list[tuple[str, str]]:
-    """Extract agenda PDF links from county commissioners page."""
-    links = []
-    # Find all PDF links on the page
-    pdf_matches = re.findall(r'href=["\']([^"\']*\.pdf)["\']', html, re.IGNORECASE)
-    seen = set()
-
-    for pdf_path in pdf_matches:
-        if pdf_path in seen:
-            continue
-        seen.add(pdf_path)
-
-        # Construct full URL
-        if pdf_path.startswith("http"):
-            url = pdf_path
-        elif pdf_path.startswith("/"):
-            url = base_url + pdf_path
-        else:
-            url = base_url + "/" + pdf_path
-
-        # Extract filename from URL
-        filename = f"county_{pathlib.Path(pdf_path).name}"
-        links.append((url, filename))
-
-    return links
+    # Newest first (higher ADID == newer upload), so we stop walking
+    # backwards through 2012.
+    for adid in sorted(ids, reverse=True)[:limit]:
+        url = urllib.parse.urljoin(legacy_url, f"/ArchiveCenter/ViewFile/Item/{adid}")
+        links.append((url, f"{source}-{adid}.pdf"))
+    return links, []
 
 
 def load_state() -> dict:
@@ -321,9 +389,23 @@ def save_state(state: dict) -> None:
         json.dump(state, f, indent=2)
 
 
-def generate_alert_report(all_matches: list[dict], new_files: list[str]) -> str:
-    """Generate a markdown alert report."""
+def generate_alert_report(
+    all_matches: list[dict],
+    new_files: list[str],
+    source_status: Optional[list[dict]] = None,
+    stale_warnings: Optional[list[str]] = None,
+) -> str:
+    """
+    Generate a markdown alert report.
+
+    `source_status` and `stale_warnings` are written into the report itself, not just
+    the console. A reader coming back to this file weeks later must be able to tell
+    whether "0 matches" meant "nothing happened" or "we scanned nothing." From
+    Nov 2025 to Jul 2026 this file could not distinguish those, and a scan of the
+    January 2013 agenda was recorded as a clean bill of health.
+    """
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    verified = bool(source_status) and not stale_warnings
 
     report = f"""# Agenda Monitoring Alert Report
 
@@ -331,9 +413,38 @@ def generate_alert_report(all_matches: list[dict], new_files: list[str]) -> str:
 **New files downloaded:** {len(new_files)}
 **Keyword matches found:** {len(all_matches)}
 
----
-
 """
+
+    if stale_warnings:
+        report += (
+            "> ## 🛑 NOT AN ALL-CLEAR — stale or empty source\n>\n"
+            "> At least one source failed its freshness check, so the keyword results below\n"
+            "> are **not** evidence that nothing is happening. Fix the source, then re-run.\n>\n"
+        )
+        for w in stale_warnings:
+            for line in w.strip().splitlines():
+                if line and not line.startswith("!"):
+                    report += f"> {line}\n"
+        report += ">\n> See `scripts/pueblo_sources.py`.\n\n"
+    elif verified:
+        report += "> ✅ **Source freshness verified** — an empty result below is meaningful.\n\n"
+    else:
+        report += (
+            "> ℹ️ **Keyword-only run** (`--keywords-only`): existing PDFs were rescanned and\n"
+            "> **no source freshness check was performed**. This tells you nothing about\n"
+            "> whether new agendas have been published.\n\n"
+        )
+
+    if source_status:
+        report += "## Source Status\n\n| Body | Newest meeting | Age | Verdict |\n| --- | --- | --- | --- |\n"
+        for s in source_status:
+            report += (
+                f"| {s['name']} | {s.get('newest') or '—'} | "
+                f"{s.get('age_days', '—')} d | {s['verdict']} |\n"
+            )
+        report += "\n"
+
+    report += "---\n\n"
 
     if new_files:
         report += "## New Agendas Downloaded\n\n"
@@ -421,6 +532,11 @@ def main() -> int:
         action="store_true",
         help="Suppress output except errors"
     )
+    parser.add_argument(
+        "--packets",
+        action="store_true",
+        help="Also download full Agenda Packets (large, but where contracts live)"
+    )
     args = parser.parse_args()
 
     log("=" * 60)
@@ -429,31 +545,56 @@ def main() -> int:
     state = load_state()
     new_files = []
     all_matches = []
+    stale_warnings = []
+    source_status = []
 
-    # Download new agendas
+    # Download new agendas from the LIVE CivicClerk API (newest first).
     if not args.keywords_only:
+        wanted = []
         if args.source in ["city", "all"]:
-            log("Checking Pueblo City Council agendas...")
-            html = fetch_html(SOURCES["city_council"]["url"])
-            if html:
-                links = get_city_council_links(html, "https://www.pueblo.us")
-                for url, filename in links[:args.limit]:
-                    dest = AGENDA_DIR / filename
-                    if download_file(url, dest):
-                        new_files.append(filename)
-
+            wanted.append("city_council")
         if args.source in ["county", "all"]:
-            log("Checking Pueblo County Commissioners agendas...")
-            html = fetch_html(SOURCES["county_commissioners"]["url"])
-            if html:
-                links = get_county_commissioner_links(
-                    html,
-                    SOURCES["county_commissioners"]["base_url"]
+            wanted.append("county_commissioners")
+
+        for source in wanted:
+            conf = SOURCES[source]
+            log(f"Checking {conf['name']} agendas ({conf['api']})...")
+            links, meetings = discover_source(source, args.limit, packets=args.packets)
+
+            warning = staleness_warning(conf["name"], meetings)
+            newest = meetings[0]["date"] if meetings else None
+            age_days = None
+            if newest:
+                try:
+                    age_days = (
+                        datetime.date.today() - datetime.date.fromisoformat(newest)
+                    ).days
+                except ValueError:
+                    age_days = None
+
+            if warning:
+                stale_warnings.append(warning)
+                for line in warning.strip().splitlines():
+                    log(line, "WARN")
+                source_status.append({
+                    "name": conf["name"], "newest": newest,
+                    "age_days": age_days if age_days is not None else "—",
+                    "verdict": "🛑 STALE / EMPTY — not an all-clear",
+                })
+            elif meetings:
+                log(
+                    f"{conf['name']}: newest meeting {newest} "
+                    f"({meetings[0]['category']}) -- source is fresh"
                 )
-                for url, filename in links[:args.limit]:
-                    dest = AGENDA_DIR / filename
-                    if download_file(url, dest):
-                        new_files.append(filename)
+                source_status.append({
+                    "name": conf["name"], "newest": newest, "age_days": age_days,
+                    "verdict": "✅ fresh",
+                })
+
+            for url, filename in links:
+                dest = AGENDA_DIR / filename
+                if download_file(url, dest):
+                    new_files.append(filename)
 
     # Search all PDFs for keywords
     log("Scanning agendas for keywords...")
@@ -468,7 +609,7 @@ def main() -> int:
                 all_matches.extend(matches)
 
     # Generate report
-    report = generate_alert_report(all_matches, new_files)
+    report = generate_alert_report(all_matches, new_files, source_status, stale_warnings)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w") as f:
@@ -488,6 +629,18 @@ def main() -> int:
         print("ALERT: Keywords detected in agendas!")
         print(f"See {args.output} for details")
         print("=" * 60)
+
+    # Re-emit staleness warnings LAST so a dead source can never be mistaken for
+    # a clean "no matches found" run (the 2026-02-18 false all-clear).
+    if stale_warnings:
+        for warning in stale_warnings:
+            print(warning, file=sys.stderr)
+        print(
+            f"A source was stale/empty (threshold {STALENESS_DAYS} days). "
+            f"The keyword result above is NOT a verified all-clear.",
+            file=sys.stderr,
+        )
+        return 3  # Exit code 3 = source health problem
 
     return 0 if not all_matches else 2  # Exit code 2 = alerts found
 

@@ -1,3 +1,16 @@
 .venv/
 __pycache__/
 AGENTS.md
+
+# Runtime artifacts from scripts/ — regenerated on each monitor run
+docs/agendas/.monitor_state.json
+logs/agenda_monitor.log
+
+# Full agenda PACKETS are 50-100MB each and would wreck clone size for the
+# offline/phone workflow this repo is built around. Re-fetch on demand with:
+#   python3 scripts/monitor_agendas.py --packets
+# The short agenda PDFs (~250KB) ARE tracked, as the keyword-scan audit trail.
+docs/agendas/*agenda-packet.pdf
+
+# Local Obsidian UI state (not research content)
+.obsidian/workspace.json

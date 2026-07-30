@@ -1,9 +1,59 @@
 # Surveillance and Policing Risks
 
-*Updated: February 18, 2026*  
-_Last refreshed (map sync): 2026-02-19_
+*Updated: **July 29, 2026***
 
-Pueblo's Real-Time Crime Center (RTCC) continued expanding through early 2026, widening acoustic coverage and adding mobile camera trailers while drone-first-responder flights remain active. This brief summarizes the current stack, highlights civil-liberties threats, and outlines immediate self-advocacy moves.
+Pueblo's Real-Time Crime Center (RTCC) continued expanding through 2026, widening acoustic coverage and adding mobile camera trailers while drone-first-responder flights remain active. This brief summarizes the current stack, highlights civil-liberties threats, and outlines immediate self-advocacy moves.
+
+---
+
+## ⚠️ July 2026 Update — What Changed, and Why It Changes Your Approach
+
+### 1. There is no longer any state-law constraint on this stack
+
+All three 2026 Colorado bills that would have regulated it **died** (sine die May 13, 2026):
+
+| Bill | Would have required | Outcome |
+| --- | --- | --- |
+| **SB26-070** ("PEEPS Act") | Warrant for location data >72 hrs old; ~30-day retention cap; query logging; **public annual report of device count and locations** | **LOST** — sponsors pulled it at Second Reading Apr 29 under a veto threat. Sen. Amabile: *"We didn't have the votes."* |
+| **SB26-071** ("SAFE Act") | Warrant for facial recognition; mandatory data destruction; no data sales; **biennial AG audits** across ShotSpotter, drones, park cameras, BWC, Flock, and Community Connect | **LOST** — postponed indefinitely 6–1 in Senate Judiciary, May 6 |
+| **HB26-1037** | Bar on obtaining broker data "for anything of value"; **private cause of action**; evidence exclusion | **LOST by one vote, twice, in one day** (House Judiciary, Apr 22) — the closest of the three, and the **highest-leverage 2027 target** |
+
+Pueblo City Council formally **opposed all three** on Feb 9, 2026. **Facial recognition in Colorado remains warrantless.** Every retention limit, audit, use policy, and public report you want now has to be won **locally** — from council, the mayor, and the sheriff — or extracted via CORA. Sponsors have signalled a 2027 rewrite ("probably with a new governor" — Rep. Nguyen), which makes the **Nov 2026 governor's race** the upstream variable.
+
+### 2. The single best lever available: the July 27, 2026 DCJ grant (item N3)
+
+Verified directly in the agenda packet. A **$275,384 Colorado Division of Criminal Justice grant** (CY2026, project **PS2509**, grant **#2024-SC-25-866**), ratifying the Mayor's execution:
+
+- **The grant's research component names the RTCC.** Packet text: *"The subject matter of research will be a comprehensive study of the **Real Time Crime Center**."* Assigned to PPD's **Crime Analyst and Threat Liaison Officer** with a research partner from the **Thomas V. Healy Center at CSU-Pueblo**. *(The same paragraph also references studying the CIT co-responder program, so the scope is genuinely ambiguous in the source — confirm before characterizing it publicly.)*
+  → **Ask: who owns the study output, and will it be published?** A city-funded RTCC study is the most realistic path to an independent coverage map and audit entering the public record.
+- **PPD was added as one of five new DOJ National Public Safety Partnership (PSP) sites** — a federal technical-assistance relationship, administered by BJA, that appears nowhere else in this repo. It puts DOJ consultants inside PPD operations. **Establish what data flows through it.**
+- **Two enforceable grant conditions:**
+  - **#26 bars grant funds from unmanned aircraft systems (UAS/drones)** or accessories entirely.
+  - **#27 permits Facial Recognition Technology only if the City already has policies and procedures protecting Fourth and First Amendment rights, privacy, and civil liberties.**
+  → 🔴 **CORA target: does the City of Pueblo have an FRT policy?** If not, it cannot lawfully spend this grant on FRT. If the City claims one, that document must be producible. **With SB26-071 dead, this grant condition may be the only binding FRT constraint on Pueblo.**
+- Same agenda: **item R8** (updated CIT Master Services Agreement with Health Solutions) and **item N6** (PCSO–PPD MOU on alternate/default **E911 call routing**).
+
+### 3. The ALPR build-out is not going through council — stop watching only agendas
+
+- **Pueblo PD is expanding to 12 Flock cameras** (4 live), **4 mobile trailers**, and park cameras at **Mitchell, Mineral Palace, City, and El Centro** — with **no council authorization vote located anywhere in Feb–Jul 2026**, while the city lobbied against state ALPR regulation. No disclosed cost, funding source, or retention policy.
+- **Notable negative:** a keyword scan of **29 city and 20 county agendas/packets (Jan–Jul 2026)** returned **zero** genuine hits for Flock, ALPR, license plate readers, ShotSpotter, SoundThinking, Genetec, or Fusus. No new ALPR or gunshot-detection procurement went through either body in 2026.
+  → Together these mean the expansion is running on **grants, the Downtown Association, vendor trials, or mayoral authority**. Watch those channels — including the new **15% uncommitted-balance authority** on the half-cent sales tax, and the **Nov 2026 ballot question earmarked for "fire and city technology."**
+- **Deputy Chief Jim Martin has publicly asserted that a query audit log exists.** That public statement makes it **CORA-able**. Request it.
+- **Denver is the template to demand:** its Flock contract carries a **$100k penalty** for sharing with federal immigration enforcement, **bars federal task-force officers**, and **disables Denver data in Flock's nationwide lookup**. In Feb 2026 Denver's *auditor refused to sign* the contract after the mayor bypassed council. **Pueblo has no known equivalent to any of this.**
+
+### 4. Two 2026 laws that DID pass create new obtainable documents
+
+- **HB26-1123** (eff. **May 27, 2026**) — requires **body-worn-camera recording of jail strip searches**, restricted-access tagging, and an **annual report to the AG** and jail standards advisory committee. This applies to **PCSO's new 672-bed facility** (opened May 2026, fully occupied July 11). A brand-new document stream that did not exist before.
+- **HB26-1276** (eff. **Aug 12, 2026**) — directs the **AG to set policy on PII sharing**. The only surviving 2026 state lever on local data sharing.
+
+### 5. Accountability context that changed
+
+- **Sheriff Lucero lost the June 30, 2026 primary** to **Allen Medina**, who takes office **January 2027** unopposed. Medina centers transparency and has committed to not raiding non-criminal residents — but **he has said nothing on the record about surveillance technology.** Get him on record before January, while he still wants your support.
+- **The county's new 672-bed jail** carries ~150 surplus beds plus sheriff-stated expansion room on 33 acres, arriving the same year ICE sought more Colorado capacity. **No federal bed contract is confirmed or denied** — logged as a risk to monitor, not a finding.
+- **Automated speed enforcement arrived** in Pueblo via CDOT: $75 fines in the I-25/US 50B work zone from **July 30, 2026**. The separate 15-camera *city* proposal from July 2025 remains unresolved.
+- **Budget austerity on both city and county** (city: 7 positions cut, 25 frozen, 15% operating reduction, $10M 2027 deficit; county: ~$10.2M deficit, 10 unpaid furlough days) — **expect slower CORA responses and plan deadlines accordingly.**
+
+---
 
 ## Executive Summary
 - **RTCC expansion:** $2M state grant (Jan 2025) funded video wall upgrades, drone program, and ShotSpotter now reported at 6 sq mi with city citing further build-out toward ~7 sq mi; mobile trailer fleet growing (likely 6 units).[^state]

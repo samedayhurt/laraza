@@ -41,11 +41,13 @@ if ! command -v python3 &> /dev/null; then
     exit 1
 fi
 
-# Run the agenda monitor
+# Run the agenda monitor.
+# `set -e` is active, so guard the call — exit 2 (matches) and exit 3 (stale source)
+# are expected outcomes, not script failures.
 echo ""
 echo "Running agenda monitor..."
-python3 scripts/monitor_agendas.py --limit 5 --output "$ALERT_FILE"
-MONITOR_EXIT=$?
+MONITOR_EXIT=0
+python3 scripts/monitor_agendas.py --source all --limit 5 --output "$ALERT_FILE" || MONITOR_EXIT=$?
 
 # Check results
 if [ $MONITOR_EXIT -eq 2 ]; then
@@ -61,9 +63,24 @@ if [ $MONITOR_EXIT -eq 2 ]; then
         # - Post to webhook: curl -X POST -d @"$ALERT_FILE" https://webhook.url
         # - Desktop notification: notify-send "La Raza Alert" "Keyword matches found"
     fi
+elif [ $MONITOR_EXIT -eq 3 ]; then
+    # This is the failure mode that went undetected from Nov 2025 to Jul 2026:
+    # a dead source produces an empty scan that LOOKS like good news.
+    echo ""
+    echo "########################################################################"
+    echo "🛑 STALE OR EMPTY SOURCE - THIS IS *NOT* AN ALL-CLEAR."
+    echo ""
+    echo "   No agenda was verified as current, so an empty keyword scan means"
+    echo "   nothing. Pueblo may have migrated platforms again."
+    echo "   Check scripts/pueblo_sources.py and the newest-meeting date above."
+    echo "########################################################################"
+
+    if [ "$1" == "--notify" ]; then
+        echo "Notification requested - a stale source deserves one as much as an alert."
+    fi
 elif [ $MONITOR_EXIT -eq 0 ]; then
     echo ""
-    echo "✓ No alerts - all clear"
+    echo "✓ No keyword matches - and the source was verified fresh."
 else
     echo ""
     echo "ERROR: Monitor script failed with exit code $MONITOR_EXIT"

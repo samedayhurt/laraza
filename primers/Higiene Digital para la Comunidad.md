@@ -209,10 +209,10 @@ Guarda estos en tu teléfono AHORA:
 |--------|--------|---------------|
 | **CORRN** | 844-864-8341 | Actividad de ICE, emergencias de inmigración |
 | **RMIAN Detención** | (303) 866-9308 | Familiar detenido |
-| **Caridades Católicas Inmigración** | (719) 586-8600 | Ayuda legal de inmigración |
+| **Caridades Católicas Inmigración (Pueblo)** | 719-544-4233 | Ayuda legal de inmigración |
 | **Servicios de Crisis de Colorado** | 844-493-8255 | Crisis de salud mental |
 | **211** | 2-1-1 | Ayuda general para encontrar recursos |
-| **Mariposa/YWCA** | 719-545-8195 | Crisis de violencia doméstica |
+| **Mariposa Center for Safety** | 719-545-8195 | Crisis de violencia doméstica |
 
 ---
 

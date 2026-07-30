@@ -101,21 +101,27 @@ PCSO will NOT participate in ICE roundups. Only cooperates on criminal matters. 
 |------|---------|
 | **CORRN (live ICE)** | 844-864-8341 (opt.1 live / opt.2 recap) |
 | **RMIAN Detention Hotline** | (303) 866-9308 |
-| **Catholic Charities Immigration** | (719) 586-8600 |
+| **Catholic Charities Immigration (Pueblo)** | 719-544-4233 |
 | **Colorado Legal Services – Pueblo** | 719-545-6708 |
 | **Posada housing** | 719-545-8776 |
-| **Mariposa/YWCA DV crisis** | 719-545-8195 |
-| **ACOVA victim services** | 719-583-6434 |
+| **Mariposa Center for Safety (DV crisis)** | 719-545-8195 |
+| ⚠️ **ACOVA victim services** | 719-583-6434 — **UNVERIFIED as of 2026-07-29; their domain no longer resolves.** Confirm a human answers before relying on this. |
 | **Juniper (Sexual Assault)** | 719-549-0549 (call/text 24/7) |
-| **Health Solutions Crisis** | 844-493-8255 |
-| **Colorado Crisis Services** | 844-493-8255 / text TALK to 38255 |
+| **Health Solutions Crisis Living Room** | **719-545-2746** · 1310 Chinook Lane |
+| **988 Colorado** (absorbed Colorado Crisis Services) | **Dial 988** · legacy 844-493-8255 / text TALK to 38255 still route |
 | **211 referrals** | Dial 2-1-1 |
-| **CIRC workshops** | bit.ly/CIRCworkshop2025 |
-| **Pueblo Library TechConnect** | 719-562-5600 |
+| **CIRC (workshops, court accompaniment)** | coloradoimmigrant.org · (303) 922-3344 |
+| **Pueblo Library "Device Library"** | 719-562-5600 (program renamed from TechConnect) |
+| **Public Defender – Pueblo** | **719-546-0004** |
+| **SoCo Equality Alliance (LGBTQ+)** | socoequality.org |
+
+> **Contacts re-verified 2026-07-29.** Two cautions before you print this table:
+> **(1)** the DV org's old domain `ywcapueblo.org` now redirects to a political campaign donation site — purge it from any flyer still in circulation; the crisis line **719-545-8195** is unchanged and correct.
+> **(2)** the ACOVA line above is the one entry we could not confirm. See the provisional list in `reports/pueblo_resources_guide.md`.
 
 ## Emergency Digital Security Help
 
-- **Access Now Helpline:** 24/7, responds in 2 hours, 9 languages — accessnow.org/help
+- **Access Now Helpline:** 24/7, responds in 2 hours, **10 languages** — accessnow.org/help (PGP key available on site)
 - **EFF/Cape Mobile Obscura:** Free ultra-private cell service for activists — won Time's Best Invention 2025
 - **Front Line Defenders:** Security in-a-Box guide — securityinabox.org
 

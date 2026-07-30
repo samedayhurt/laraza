@@ -1,5 +1,5 @@
 {
-  "updated": "2025-11-27",
+  "updated": "2026-07-29",
   "officials": [
     {
       "body": "Pueblo City Council",
@@ -130,9 +130,28 @@
         "union_lawsuit": "Filed suit arguing sheriff's office not subject to 2022 collective bargaining law"
       },
       "key_quote": "My role isn't to enforce immigration laws. I am not the federal sheriff.",
+      "electoral_status": "LOST 2026 Democratic primary (2026-06-30) to challenger Allen Medina, 46.84% to 53.16%. Term ends January 2027. The 2025-01-23 ICE non-cooperation pledge is the policy of an OUTGOING sheriff and must be cited with that caveat.",
+      "successor": {
+        "name": "Allen Medina",
+        "party": "Democrat",
+        "status": "Primary winner 2026-06-30 (11,882 votes / 53.16%); no Republican filed, so unopposed in the November 2026 general election. Expected to take office January 2027.",
+        "background": "US Army/Army Reserves veteran 1985-1993; ~30 years law enforcement, 28 with PCSO (25 as sergeant across Detention, Patrol, Investigations, Civil/Fugitive); currently Adult Community Parole Officer, Colorado Dept. of Corrections.",
+        "stated_positions": {
+          "ice_cooperation": "Would not support ICE raids on people who have not committed crimes after entering the country; local law enforcement should not spend resources targeting otherwise law-abiding undocumented residents; enforcement focused on 'individuals who commit crimes or are subject to judicial warrants'; invoked Fourth and Fifth Amendment protections as applying broadly.",
+          "transparency": "Centerpiece of platform: 'We have to be transparent about everything that we do.' Also favors greater county-municipal law enforcement cooperation.",
+          "detention": "Wants Crisis Intervention Team-style training for detention personnel and staff dealing with behavioral health.",
+          "union_lawsuit": "Criticized the Fraternal Order of Police lawsuit and pledged to end the litigation if elected: 'Employees have rights too.'",
+          "surveillance_technology": "NOT ADDRESSED on the record. No stated position on ALPR/Flock, RTCC data sharing, drones, jail surveillance, federal task-force participation, or renting detention beds. OPEN GAP - highest-priority pre-inauguration outreach."
+        },
+        "sources": [
+          "Pueblo Star Journal, 2026-06-01, https://pueblostarjournal.org/news/2026/06/01/sheriff-candidate-allen-medina-outlines-vision-for-pueblo-county-during-labor-council-forum/",
+          "Pueblo Chieftain via Yahoo primary results, 2026-06-30, https://www.yahoo.com/news/politics/articles/live-results-heres-whos-winning-013239034.html"
+        ]
+      },
       "sources": [
         "PCSO news release, 2025-01-23",
-        "Colorado Newsline, 2025-03-04"
+        "Colorado Newsline, 2025-03-04",
+        "Yahoo/Pueblo Chieftain primary results, 2026-06-30"
       ]
     },
     {
@@ -202,6 +221,339 @@
       "sources": ["KRDO, 2025-07-14"]
     }
   ],
+  "key_votes_2026": [
+    {
+      "topic": "Resolutions opposing three state surveillance/privacy bills (SB26-070, SB26-071, HB26-1037)",
+      "date": "2026-02-09",
+      "outcome": "All three resolutions passed; vote count NOT CONFIRMED",
+      "details": "City adopted resolutions opposing all three bills. The HB26-1037 resolution called that bill 'harmful to public safety.' Opposition tracks Colorado Municipal League framing. All three bills subsequently died in the 2026 session - see state_legislation_2026.",
+      "gaps": "Vote count, individual member statements, and full WHEREAS clauses not yet retrieved from the Feb 9 2026 agenda packet.",
+      "sources": [
+        "Pueblo Chieftain, 2026-02-11, https://www.chieftain.com/story/news/2026/02/11/why-pueblo-city-council-is-against-these-3-state-bills/88604786007/"
+      ]
+    },
+    {
+      "topic": "Ordinance expanding permitted uses of the half-cent economic development sales tax",
+      "date": "2026-02-23",
+      "outcome": "Passed 5-2",
+      "details": "Allows up to 15% of the total uncommitted half-cent balance to fund capital-improvement infrastructure, small-business startup support to reduce 'economic leakage,' and 'placemaking' - previously restricted to 'primary jobs' (mostly manufacturing) cash incentives. Third attempt after two prior failures; strong public opposition at the meeting; Mayor Graham advocated for it.",
+      "significance": "CONFIRMS the 5-2 conservative majority survived the three new members seated Nov 2025. Treat 5-2 as the operative 2026 whip count. The new 15% discretionary pool is a plausible off-council funding channel for corridor cameras, lighting, and network backbone under a 'placemaking' label.",
+      "sources": [
+        "KRDO, 2026-02-23, https://krdo.com/news/2026/02/23/pueblo-city-council-meeting-mayor-advocates-for-half-cent-sales-tax/",
+        "KOAA, https://www.koaa.com/news/politics/pueblo-expands-how-half-cent-sales-tax-can-be-used-to-boost-economic-growth"
+      ]
+    },
+    {
+      "topic": "$1.8 million museum project ('In Search of Da Vinci')",
+      "date": "2026-07-19",
+      "outcome": "TABLED",
+      "details": "Council tabled the $1.8M vote after a second vote had been looming; Pueblo Star Journal had raised questions on 2026-06-19. Unresolved as of 2026-07-29. Largest confirmed council procurement item in the Feb-Jul 2026 window - and it is not surveillance-related.",
+      "sources": [
+        "Pueblo Star Journal, 2026-07-19, https://pueblostarjournal.org/news/2026/07/19/in-search-of-da-vinci-pueblo-city-council-tables-1-8-million-museum-vote/"
+      ]
+    },
+    {
+      "topic": "Surveillance / RTCC / ALPR / drone / camera contract votes, Feb 24 - Jul 29 2026",
+      "date": "2026-07-29",
+      "outcome": "NONE LOCATED",
+      "details": "No City Council vote on surveillance technology, an RTCC/ALPR/drone/camera contract, immigration, or civil liberties was found between 2026-02-24 and 2026-07-29. Pueblo PD's expansion to 12 Flock ALPR cameras appears to have proceeded WITHOUT a publicly reported council authorization. Record as 'no council vote located,' NOT as 'no expansion occurred.'",
+      "gaps": "March-July 2026 council minutes were never retrieved. pueblo.us/AgendaCenter returns no document list to automated fetch and scripts/download_agendas.py is broken (see notes).",
+      "sources": [
+        "KOAA, https://www.koaa.com/news/local-news/in-your-community/pueblo/pueblo-police-expand-crime-center-technology-to-improve-investigation-ability"
+      ]
+    }
+  ],
+  "state_legislation_2026": {
+    "session": "Colorado General Assembly, 2026 regular session; adjourned sine die 2026-05-13",
+    "headline": "Pueblo City Council formally opposed three surveillance/privacy bills on 2026-02-09. ALL THREE DIED. Colorado ended the 2026 session with no statute regulating ALPRs, no statute regulating law-enforcement surveillance technology generally, and no ban on government purchase of third-party personal data. Every constraint on Pueblo's RTCC/Flock/ShotSpotter/drone stack is therefore local and discretionary.",
+    "bills_opposed_by_pueblo": [
+      {
+        "bill": "SB26-070",
+        "title": "Ban Government Access Historical Location Information Database ('PEEPS Act' - Protecting Everyone from Excessive Police Surveillance)",
+        "url": "https://leg.colorado.gov/bills/SB26-070",
+        "city_of_pueblo_position": "Opposed (resolution adopted 2026-02-09)",
+        "final_status": "LOST - dead, no new law",
+        "final_action": "Pulled by its own sponsors at Senate Second Reading on 2026-04-29; recorded as 'Senate Second Reading Laid Over to 07/04/2026 - No Amendments,' a parking maneuver past sine die. Died without a floor vote.",
+        "history": [
+          "2026-01-28 Introduced in Senate, assigned to Judiciary",
+          "2026-02-23 Senate Judiciary PASSED with amendments L.001, L.003, L.005, L.007, L.008, L.009, L.010; referred to Appropriations",
+          "2026-04-21 Senate Appropriations PASSED with amendment L.013; referred to Committee of the Whole",
+          "2026-04-29 Pulled at Second Reading - LOST"
+        ],
+        "sponsors": "Sens. Judy Amabile (D-Boulder) and Lynda Zamora Wilson (R-Colorado Springs); Reps. Yara Zokaie (D-Fort Collins) and Kenny Nguyen (D-Broomfield). Bipartisan.",
+        "why_it_died": "Amabile: 'We didn't have the votes.' She also said she was told Gov. Polis would veto it; the Governor's office confirmed SB26-070 'went much further' than codifying best practices and 'would have negatively impacted public safety.' Amabile quoted colleagues saying 'I just can't vote for this because I'm getting hammered by law enforcement.'",
+        "opposition_coalition": "Colorado Association of Chiefs of Police, Colorado District Attorneys' Council, County Sheriffs of Colorado, Colorado State Fire Chiefs, Colorado Municipal League, and 'several city governments' (unenumerated - Pueblo's Feb 9 resolution is one of the city positions in that bucket). Named municipal witness: Colorado Springs Police Deputy Chief Jeff Jensen ('a warrant would be almost impossible to obtain').",
+        "would_have_required_of_pueblo_pd": [
+          "Warrant to query historical location data more than 72 hours old (exigency exception preserved; hotlists not banned)",
+          "~30-day retention cap absent a legitimate reason",
+          "No sharing outside the collecting jurisdiction without a warrant",
+          "Logging of when and why each query is made",
+          "Public annual report disclosing the number and location of surveillance devices",
+          "Attorney General enforcement; suppression of unlawfully obtained evidence"
+        ],
+        "next_round": "Amabile will 'come back next year and do more work in the interim.' Rep. Nguyen: 'I guarantee you, we're going to be on the same conversation, probably with a new governor, and hopefully we can make out some form of compromise.'",
+        "sources": [
+          "https://leg.colorado.gov/bills/SB26-070",
+          "Boulder Reporting Lab, 2026-04-30, https://boulderreportinglab.org/2026/04/30/amabile-pulls-colorado-bill-limiting-flock-and-other-license-plate-readers-we-didnt-have-the-votes/",
+          "Colorado Newsline, 2026-04-29, https://coloradonewsline.com/2026/04/29/colorado-lawmakers-kill-bill-to-limit-police-use-of-flock-camera-data/",
+          "Colorado Sun, 2026-04-29, https://coloradosun.com/2026/04/29/senate-bill-70-lay-over-colorado-surveillance-technology/",
+          "CPR, 2026-04-30, https://www.cpr.org/2026/04/30/license-plate-reader-restrictions-fail/",
+          "Colorado Politics, 2026-05-19, https://www.coloradopolitics.com/2026/05/19/what-didnt-pass-a-look-at-the-colorado-bills-that-died-in-the-2026-legislative-session/"
+        ]
+      },
+      {
+        "bill": "SB26-071",
+        "title": "Use of Surveillance Technology by Law Enforcement ('SAFE Act' - Surveillance Accountability and Freedom Ensured)",
+        "url": "https://leg.colorado.gov/bills/SB26-071",
+        "city_of_pueblo_position": "Opposed (resolution adopted 2026-02-09)",
+        "final_status": "LOST - dead, no new law",
+        "final_action": "Postponed Indefinitely in Senate Judiciary 6-1 on 2026-05-06",
+        "history": [
+          "2026-01-28 Introduced in Senate, assigned to Judiciary",
+          "2026-02-23 Senate Judiciary: Lay Over Unamended; amendment(s) FAILED",
+          "2026-05-06 Senate Judiciary: POSTPONE INDEFINITELY, 6-1"
+        ],
+        "sponsors": "Prime sponsor Sen. Lynda Zamora Wilson (R-Colorado Springs); no co-sponsors listed on the bill page.",
+        "would_have_been_effective": "On and after 2027-07-01",
+        "why_it_died": "Colorado Politics attributes its death to governor veto threats. Killed formally in committee one week before sine die.",
+        "would_have_required_of_pueblo_pd": [
+          "Surveillance tech used only for lawful purposes directly related to public safety or an active investigation",
+          "Warrant before facial recognition (emergency/imminent-threat exception)",
+          "Traffic cameras and ALPRs restricted to public spaces for enumerated enforcement purposes",
+          "Drone use tied to federal aviation regulations",
+          "Mandatory data destruction after retention periods expire",
+          "Ban on selling data; inter-agency sharing only for active investigations",
+          "Compliance information provided to residents at no cost",
+          "Biennial audits by the Attorney General"
+        ],
+        "local_significance": "Would have touched every layer of Pueblo's stack simultaneously - ShotSpotter, BRINC drones, fixed park cameras, body-worn cameras, Flock ALPRs, Genetec Community Connect. Its death means none of those are subject to any state published-use-policy or audit mandate. Facial recognition in Colorado remains warrantless as a matter of state law.",
+        "sources": [
+          "https://leg.colorado.gov/bills/SB26-071",
+          "Colorado Politics, 2026-05-19, https://www.coloradopolitics.com/2026/05/19/what-didnt-pass-a-look-at-the-colorado-bills-that-died-in-the-2026-legislative-session/"
+        ]
+      },
+      {
+        "bill": "HB26-1037",
+        "title": "Ban Government Purchase of Personal Data from Third Party",
+        "url": "https://leg.colorado.gov/bills/HB26-1037",
+        "city_of_pueblo_position": "Opposed (resolution adopted 2026-02-09); the city's resolution called the bill 'harmful to public safety'",
+        "final_status": "LOST - dead, no new law",
+        "final_action": "Postponed Indefinitely in House Judiciary 6-5 on 2026-04-22",
+        "history": [
+          "2026-01-14 Introduced in House, assigned to Judiciary",
+          "2026-02-25 House Judiciary witness testimony and discussion",
+          "2026-04-22 House Judiciary adopted amendment L.009, 6-5",
+          "2026-04-22 Motion to refer to Appropriations FAILED 5-6",
+          "2026-04-22 Motion to POSTPONE INDEFINITELY PASSED 6-5"
+        ],
+        "sponsors": "Reps. Jennifer Bacon (D) and Ken DeGraaf (R); Sen. Lisa Cutter (D). Cross-ideological progressive-plus-libertarian coalition.",
+        "would_have_required": "Prohibited government entities and law enforcement from purchasing or otherwise obtaining for anything of value specified personal data from third parties, and restricted agency-to-agency sharing of it. Exceptions: judicial warrant, subpoena, court order, individual consent, life-safety emergency. Included a private cause of action and exclusion of improperly obtained data from court proceedings.",
+        "local_significance": "CLOSEST of the three - died by one vote, twice, on the same day. A single flipped House Judiciary member sends it to Appropriations. Highest-leverage 2027 target. Pueblo took its sharpest rhetorical position on the bill that came nearest to passing. Received essentially no statewide press (Colorado Politics' roundup omits it entirely).",
+        "sources": [
+          "https://leg.colorado.gov/bills/HB26-1037"
+        ]
+      }
+    ],
+    "bills_that_PASSED_and_bind_local_agencies": [
+      {
+        "bill": "HB26-1123",
+        "title": "Preventing Sexual Abuse in Jails",
+        "url": "https://leg.colorado.gov/bills/hb26-1123",
+        "status": "BECAME LAW - signed by Gov. Polis 2026-05-27",
+        "effective_date": "2026-05-27 (safety clause)",
+        "sponsors": "Reps. Katie Stewart and Javier Mabrey; Sens. Judy Amabile and Mike Weissman",
+        "impetus": "A former La Plata County jail commander allegedly used jail surveillance footage to watch strip searches of 100+ women.",
+        "local_obligations": [
+          "Detention facility personnel must record strip searches via body-worn camera",
+          "Sheriff must coordinate with the BWC vendor to implement a strip-search tag and apply 'the most restrictive level of access available' to that footage",
+          "Each facility must document the number of, reason for, and result of every strip search in an annual report submitted to the jail standards advisory committee and the Colorado Attorney General"
+        ],
+        "pueblo_impact": "Applies directly to PCSO's new 672-bed detention center. Creates a new, dated, CORA-requestable document trail.",
+        "sources": ["https://leg.colorado.gov/bills/hb26-1123"]
+      },
+      {
+        "bill": "HB26-1276",
+        "title": "Protect Safety of Individuals Who Are Immigrants",
+        "url": "https://leg.colorado.gov/bills/hb26-1276",
+        "status": "BECAME LAW - cleared legislature 2026-05-11, signed by Gov. Polis 2026-06-04",
+        "effective_date": "2026-08-12 (no safety clause; 90 days after 2026-05-13 adjournment)",
+        "local_obligations": [
+          "Unannounced state inspections of immigration detention facilities at least four times per year (food/water standards, confinement conditions, detainee care)",
+          "Civil liability extended to employers whose staff disclose a person's immigration status to federal authorities",
+          "POST Board must train officers on federal immigration law",
+          "Attorney General must set policy on sharing personally identifiable information"
+        ],
+        "pueblo_impact": "The AG's PII-sharing policy is the only surviving 2026 state-level lever on local data sharing and partially substitutes for what SB26-070 would have done. The four-times-yearly inspection regime would attach if Pueblo County ever housed immigration detainees in its new facility.",
+        "handoff": "Route to 04_IMMIGRATION_ICE_RISK_MAPPER",
+        "sources": [
+          "https://leg.colorado.gov/bills/hb26-1276",
+          "https://detention-pipeline.transparencycascade.org/entry/colorado-state-pushback-ice-detention-2026/"
+        ]
+      }
+    ],
+    "other_2026_context": [
+      {
+        "bill": "HB26-1210",
+        "note": "Would have banned using surveillance data to set individualized prices or wages. PASSED the legislature and was VETOED by Gov. Polis.",
+        "significance": "Second 2026 data point that this Governor vetoes or threatens to veto surveillance-limiting bills."
+      },
+      {
+        "bill": "SB26-189",
+        "note": "Requires notice when AI is used in college admissions, job application, or loan decisions. SIGNED."
+      },
+      {
+        "bill": "HB26-1009",
+        "note": "Requires officers on domestic-violence calls to assess lethality risk and refer high-risk victims to a community advocate, with annual data reporting. PASSED."
+      }
+    ],
+    "strategic_finding": "Three surveillance-limiting measures died at least partly on Polis veto threat and a fourth (HB26-1210) was actually vetoed. Polis is term-limited; the November 2026 governor's race is the upstream variable for any 2027 ALPR or surveillance statute. Rep. Nguyen said as much: 'probably with a new governor.'",
+    "gaps": [
+      "WHETHER ANY PUEBLO OFFICIAL TESTIFIED AT THE CAPITOL - UNRESOLVED. No Pueblo name appears in six news accounts. The leg.colorado.gov SB26-070 attachments list (bill versions, 4 fiscal notes, budget staff analysis, committee reports, amendments B-H) contains no City of Pueblo, Pueblo PD, or CML document. DO NOT ASSERT Pueblo testimony. Outstanding primary sources: Senate Judiciary 2026-02-23 witness sign-in, Senate Appropriations 2026-04-21, and House Judiciary 2026-02-25 (the most likely venue).",
+      "Whether the City of Pueblo transmitted its Feb 9 resolutions to sponsors or committees as a formal position letter.",
+      "The SB26-071 6-1 committee roll call (identity of the lone dissenter) and the HB26-1037 6-5 / 5-6 roll calls.",
+      "Text of HB26-1037 amendment L.009.",
+      "Whether the Attorney General has begun HB26-1276 PII-sharing rulemaking and whether Pueblo PD or PCSO is in scope.",
+      "CPR and Colorado Newsline return HTTP 403 to automated fetch; findings from those two rest on search-index summaries plus corroborating outlets."
+    ]
+  },
+  "elections_2026": {
+    "primary_date": "2026-06-30 (ballots mailed 2026-06-08)",
+    "municipal_races": "NONE. City of Pueblo council seats were decided Nov 2025 and next come up Nov 2027. Council composition is fixed through 2026.",
+    "headline_results": [
+      {
+        "race": "Pueblo County Sheriff, Democratic primary",
+        "result": "Allen Medina DEFEATED incumbent Sheriff David Lucero",
+        "votes": "Medina 11,882 (53.16%); Lucero 10,470 (46.84%); 22,352 cast",
+        "general_election": "No Republican filed. Medina runs unopposed in November and is effectively the next sheriff, taking office January 2027.",
+        "significance": "Invalidates the load-bearing assumption across this repo's ICE section - Sheriff Lucero's 2025-01-23 non-cooperation pledge belongs to an outgoing officeholder and expires with his term. Every citation of it needs a dated caveat.",
+        "sources": ["https://www.yahoo.com/news/politics/articles/live-results-heres-whos-winning-013239034.html"]
+      },
+      {
+        "race": "Pueblo County Commissioner, District 3",
+        "result": "CONTESTED GENERAL: Angela Giron (D) vs. incumbent Zach Swearingen (R), who was unopposed in the Republican primary",
+        "significance": "This is the seat with the most direct leverage over PCSO, jail, and RTCC-adjacent budgets. Swearingen is the commissioner flagged in this repo for co-founding Republic Shooting Range and The Beach; a competitive race makes his procurement record campaign-relevant. Giron is a former state senator RECALLED in 2013 over her support for gun-control laws - among the first Colorado legislators ever recalled - so the race will likely be gun-politics-inflected, which may crowd out surveillance/privacy questions unless deliberately raised. A Democratic win flips the board from 2R-1D to 2D-1R from January 2027.",
+        "sources": [
+          "https://www.koaa.com/news/politics/woman-who-was-recalled-as-state-senator-running-for-pueblo-county-commissioner",
+          "https://krdo.com/pueblo-county-commissioner-primary-2026/2026/06/24/angela-giron/"
+        ]
+      }
+    ],
+    "full_primary_ballot": {
+      "sheriff": "David Lucero (i, D) vs Allen Medina (D) - contested; NO Republican filed",
+      "commissioner_d3": "Zach Swearingen (i, R) unopposed / Angela Giron (D)",
+      "clerk_and_recorder": "Candace Rivera (i, D) / Mary Vieth (R)",
+      "treasurer": "Kim Archuletta (i, D) / Jonathan Ambler (R)",
+      "assessor": "Naseem Zubi (D) / Tammi Pando (R)",
+      "coroner": "Gregory Grahek (i, R) / Zolanye McCulley-Bachicha (D)",
+      "state_senate_district_3": "CONTESTED Democratic primary: Taylor Voss vs Aaron Gutierrez",
+      "state_house_district_46": "Tisha Mauro (i, D) / Jonathan Post (R)",
+      "state_house_district_47": "Ty Winter (i, R) / Vic Meyers (D)",
+      "state_house_district_60": "CONTESTED Republican primary: Michelle Gray vs Matt Alexander; Kathryn Kester Green (D)",
+      "congressional_district_3": "CONTESTED both ways: Jeff Hurd (i, R) vs Ron Hanks; Alex Kelloff (D) vs Dwayne Romero",
+      "source": "https://www.yahoo.com/news/politics/articles/pueblo-primary-election-ballots-arriving-090209980.html"
+    },
+    "statewide": "Governor's office is OPEN (Polis term-limited). Per the SB26-070 sponsors, the next governor is the pivotal variable for 2027 surveillance legislation. Greg Lopez will appear on the gubernatorial ballot as an unaffiliated candidate (Pueblo Star Journal, 2026-07-28).",
+    "gaps": [
+      "Winners of the contested SD3 Democratic, HD60 Republican, and CD3 primaries - the Pueblo County official end-of-night results PDF (https://county.pueblo.org/sites/default/files/2026-07/End%20of%20night%20results.pdf) returns HTTP 403 and no article listing them surfaced.",
+      "Certified totals for any race. A vote total of 19,557 for Giron appears in a search index but the source document could not be opened - DO NOT CITE that number.",
+      "Whether Giron was unopposed in her primary (probable, unverified).",
+      "WHETHER ANY PUEBLO COUNTY OR CITY BALLOT QUESTIONS WILL APPEAR IN NOVEMBER 2026 - not confirmed either way. Referred measures are typically set by late summer; check BOCC agendas Aug-Sep.",
+      "Whether any candidate has taken a public position on surveillance technology."
+    ]
+  },
+  "council_composition_2026": {
+    "operative_majority": "5-2 conservative majority CONFIRMED still operative as of 2026-02-23 (half-cent sales tax ordinance passed 5-2), surviving the three new members seated Nov 2025 (Danti, Hernandez, Ruiz Gomez).",
+    "council_president": "Mark Aliff (At-Large); pueblo.us/580 lists his term as 2024-01-01 to 2027-12-31.",
+    "roster_changes_since_2026_02": "NONE FOUND - no resignation, vacancy, or appointment surfaced.",
+    "gaps": [
+      "2026 COMMITTEE ASSIGNMENTS UNCONFIRMED - no January 2026 organizational meeting coverage found; pueblo.us shows only Aliff's term dates.",
+      "Whether Aliff was reaffirmed as President in a January 2026 organizational vote.",
+      "Individual 5-2 roll call on 2026-02-23 (which two voted no).",
+      "Whether the 2026-02-09 resolutions were 5-2 or unanimous - the single highest-value missing datum in this dataset."
+    ]
+  },
+  "county_detention_2026": {
+    "event": "New Pueblo County detention center opened early May 2026; all inmates transferred by 2026-07-11",
+    "location": "3830 Medal of Honor Blvd, Pueblo west side",
+    "beds": "672 (reported as 627 by one outlet - use 672 with the discrepancy noted); ~150 more than the 1980-built downtown jail",
+    "site": "33 acres with stated room for expansion",
+    "features": "Marketed as the first net-zero-energy jail in the US, with on-site solar array; medical clinics, kitchen, treatment areas",
+    "cost_and_funding": "~$180 million, described as the largest capital construction effort in Pueblo County history; ~$125 million in certificates of participation (COPs), serviced by a 2016 sales tax increase and the 2019 retail marijuana sales tax increase (3.5% to 6%) that commissioners designated for the jail. No new property tax. NOTE: COPs are a lease-purchase structure that does NOT require voter approval.",
+    "driver": "Chronic overcrowding - populations exceeding design capacity by upwards of 200 at times - plus state authorities threatening sanctions over non-compliance.",
+    "sheriff_quote": "Lucero at the opening: 'We do have the ability out here if we come close to capacity at 680, that we can then expand on this 33 acres to bring another cell block in.'",
+    "power_map_significance": "Surplus detention capacity plus explicit, sheriff-stated expansion room is the precondition for federal bed-rental contracts. ~150 net new beds arrive in the same year ICE is reported to be seeking additional Colorado facilities, and the decision-maker changes hands January 2027. NO SOURCE states Pueblo County holds or seeks any ICE/USMS contract - this is a risk to monitor, NOT a finding. Note that Colorado law bars local governments from contracting with PRIVATE civil immigration detention facilities; a county-run facility is a different legal question.",
+    "new_statutory_hooks": "HB26-1123 (effective 2026-05-27) applies - BWC recording of strip searches, restricted-access tagging, annual report to the jail standards advisory committee and the Attorney General. HB26-1276 (effective 2026-08-12) mandates unannounced state inspections at least four times yearly of immigration detention facilities.",
+    "gaps": [
+      "Whether the facility holds or plans to hold any federal/ICE/USMS detainees, or has an intergovernmental agreement to do so - NO SOURCE CONFIRMS OR DENIES.",
+      "Commissioners' roll call on the jail contracts.",
+      "Surveillance technology installed inside the facility.",
+      "Daily Colorado News is an unvetted outlet; its cost/COP figures are uncorroborated by broadcast outlets.",
+      "Colorado Times Recorder (Mar 2026) reports ICE 'hold rooms' exist in locations 'from Craig to Pueblo' (https://coloradotimesrecorder.com/2026/03/exclusive-secret-ice-detention-facilities-exist-around-colorado-data-shows/76983/) - Pueblo specifics (location, operator, whether in a county facility) NOT VERIFIED."
+    ],
+    "sources": [
+      "KKTV, 2026-05-08, https://www.kktv.com/2026/05/08/pueblo-opens-new-detention-center-150-more-beds-first-net-zero-energy-jail-us/",
+      "KKTV, 2026-07-11, https://www.kktv.com/2026/07/11/all-pueblo-county-inmates-transferred-new-detention-facility/",
+      "KOAA, https://www.koaa.com/news/local-news/pueblo-county-opens-new-detention-center-with-672-beds-solar-energy-design",
+      "Daily Colorado News, 2026-06-15, https://dailycoloradonews.com/pueblo-county-commissioners-advance-180m-jail-plan/"
+    ]
+  },
+  "city_procurement_and_executive_power_2026": [
+    {
+      "item": "PEDCO sues the City of Pueblo for breach of its economic-development contract",
+      "date": "2026-03-20",
+      "details": "PEDCO alleges the city budgeted $350,000 for 2025 economic-development services, paid half, then Mayor Heather Graham directed the city to 'pause' payments as of 2025-08-01, leaving $175,000 unpaid.",
+      "significance": "A documented instance of a sitting mayor unilaterally halting a contracted payment stream under Pueblo's strong-mayor system - directly relevant to how surveillance contracts could be started or stopped without council action.",
+      "sources": ["https://pueblostarjournal.org/news/2026/03/20/pueblo-watch-pedco-sues-city-of-pueblo-alleging-breach-of-economic-development-contract/"]
+    },
+    {
+      "item": "Project Falcon (Kruger plant pursuit) stalled; Mayor declines to discuss",
+      "date": "2026-07-24 to 2026-07-26",
+      "details": "Mayor Graham declined to discuss Project Falcon on 2026-07-26, saying she would comment if the project moves forward. Economic-development secrecy pattern.",
+      "significance": "Watch for incentive packages routed through the newly flexible half-cent 15% authority approved 2026-02-23.",
+      "sources": [
+        "https://pueblostarjournal.org/news/2026/07/24/pueblo-watch-project-falcon-kruger-plant-stalled/",
+        "https://pueblostarjournal.org/pueblo-watch/2026/07/26/mayor-graham-declines-discussion-project-falcon-will-comment-if-moves-forward/"
+      ]
+    },
+    {
+      "item": "PURA office move raises independence questions",
+      "date": "2026-06-19",
+      "details": "Pueblo Urban Renewal Authority office move raised questions about its independence and City Hall influence.",
+      "significance": "URA financing is a common off-council channel for camera, lighting, and network spending in commercial corridors.",
+      "sources": ["https://pueblostarjournal.org/news/2026/06/19/pueblo-watch-pura-office-move-raises-questions-about-independence-and-city-hall-influence/"]
+    }
+  ],
+  "surveillance_procurement_watch_2026": {
+    "flock_alpr_expansion": {
+      "status": "Pueblo PD acquiring 12 Flock ALPR cameras, with 4 already operational",
+      "reported": "2026-05 (approximate - the KOAA article carries no visible publication date; search index places it May 2026)",
+      "no_council_vote_located": true,
+      "other_inventory_disclosed": "Cloud-runner cameras; four mobile camera trailers for redeployment to 'high-crime areas'; ShotSpotter; drone-as-first-responder; fixed park cameras at Mitchell Park, Mineral Palace Park, City Park, and El Centro/El Central Park.",
+      "department_claim": "Deputy Chief Jim Martin: the systems 'aren't used for random surveillance,' and officers 'must have specific reasons to search license plates, and those reasons must be documented in the system.' This is a public claim that an internal audit log EXISTS - and with SB26-070 dead there is no state audit or public-reporting requirement behind it. CORA-requestable and the natural test of the department's own stated policy.",
+      "not_disclosed": "Dollar amount, funding source, contract term, and whether council ever approved it. A 12-camera buy may sit below the procurement threshold forcing a public council vote - which is itself the finding.",
+      "statewide_contrast": "Denver added contract terms imposing a $100,000 fine and possible termination for sharing ALPR data with the federal government for immigration enforcement, barred federal task-force officers from access, and had Flock disable Denver's data in the nationwide lookup (CBS Colorado, 2025-10-22). Denver Auditor Tim O'Brien REFUSED to sign the city's Flock contract on 2026-02-19 after the mayor bypassed council: 'I just want that data secure, so that you and I as citizens don't have our data being exposed to people that shouldn't have it.' Pueblo has no publicly known equivalent safeguard.",
+      "gaps": "Whether Pueblo PD participates in Flock's national lookup network and whether its data has been queried for immigration purposes - Pueblo does not appear in any reachable Flock transparency-portal index and no Pueblo-specific audit was found. Whether the 4 camera trailers are Flock or a separate vendor.",
+      "sources": [
+        "https://www.koaa.com/news/local-news/in-your-community/pueblo/pueblo-police-expand-crime-center-technology-to-improve-investigation-ability",
+        "https://www.soundthinking.com/blog/how-pueblo-pd-uses-shotspotter-and-brinc-drone-integration/",
+        "https://www.cbsnews.com/colorado/news/denver-contract-flock-camera-immigration-privacy",
+        "https://www.cbsnews.com/colorado/news/denver-auditor-flock-cameras-contract/",
+        "https://www.eff.org/deeplinks/2026/06/are-your-local-police-using-flock-safety-alprs-scan-immigrants"
+      ]
+    },
+    "operational_drone_use_confirmed": {
+      "detail": "Pueblo PD's own news flash for the 2026-06-12 shooting explicitly references 'area surveillance' and 'drones' used to locate a suspect.",
+      "source": "https://www.pueblo.us/m/newsflash?cat=16"
+    },
+    "new_thread_federal_task_force": {
+      "detail": "Pueblo PD posts recurring 'Safe Streets Wanted Criminal Round-Up' items tied to the FBI Southern Colorado Safe Streets Task Force - a standing federal-local task force relationship not previously documented in this repo and material to data-sharing analysis.",
+      "source": "https://www.pueblo.us/m/newsflash?cat=16"
+    },
+    "automated_speed_enforcement": {
+      "detail": "Pueblo is one of 12 Colorado local governments using Automated Vehicle Identification Systems. The only confirmed 2026 development is STATE-run: CDOT's Colorado Speed Enforcement Program began a 30-day warning period 2026-06-30 and started issuing $75 fines 2026-07-30 in the I-25/US 50B interchange reconstruction work zone in Pueblo. The 15-camera CITY speed-camera proposal from July 2025 remains unresolved - no 2026 council action found.",
+      "source": "https://www.codot.gov/news/2026/july2026news/speeding-fines-i25-us50b-pueblo-begin-july30"
+    }
+  },
   "policies": [
     {
       "topic": "Surveillance purchasing oversight",
@@ -246,7 +598,46 @@
       "item": "ShotSpotter expansion",
       "details": "Additional coverage beyond 6 sq mi planned with state grant",
       "source": "KOAA, 2025-01"
+    },
+    {
+      "item": "Colorado 2026 legislative interim - ALPR bill rewrite",
+      "details": "Sens. Amabile and Zamora Wilson and Reps. Zokaie and Nguyen said they will do interim work and return with a revised ALPR/location-data bill in 2027. Interim committee assignments post over the summer; there is a Pueblo-facing comment window before a 2027 bill is drafted.",
+      "source": "Boulder Reporting Lab, 2026-04-30; KKCO/KKTV, 2026-05-07"
+    },
+    {
+      "item": "Attorney General PII-sharing policy under HB26-1276",
+      "details": "HB26-1276 (effective 2026-08-12) directs the AG to set policy on sharing personally identifiable information. This is the ONLY surviving 2026 state-level lever on local data sharing after SB26-070/071 and HB26-1037 all died. Track the rulemaking and whether Pueblo PD/PCSO are in scope.",
+      "source": "https://leg.colorado.gov/bills/hb26-1276"
+    },
+    {
+      "item": "First HB26-1123 annual strip-search report from PCSO",
+      "details": "New statutory duty effective 2026-05-27 requires PCSO to report the number, reason and result of every strip search to the jail standards advisory committee and the Colorado Attorney General annually. New obtainable document; also CORA the BWC vendor change order creating the strip-search access tag.",
+      "source": "https://leg.colorado.gov/bills/hb26-1123"
+    },
+    {
+      "item": "November 2026 general election",
+      "details": "Sheriff Allen Medina (D) unopposed - takes office Jan 2027. Commissioner D3 contested: Angela Giron (D) vs Zach Swearingen (R) - a Democratic win flips the board 2D-1R. Clerk Candace Rivera (D) contested. Open Governor's race is the upstream variable for 2027 surveillance legislation. Confirm whether any county or city ballot questions are referred (check BOCC agendas Aug-Sep).",
+      "source": "https://www.yahoo.com/news/politics/articles/pueblo-primary-election-ballots-arriving-090209980.html"
+    },
+    {
+      "item": "Tabled $1.8M museum vote",
+      "details": "Council tabled 'In Search of Da Vinci' on 2026-07-19; disposition unresolved.",
+      "source": "https://pueblostarjournal.org/news/2026/07/19/in-search-of-da-vinci-pueblo-city-council-tables-1-8-million-museum-vote/"
     }
+  ],
+  "priority_followups_2026_07_29": [
+    "HIGHEST PRIORITY: get Sheriff-elect Allen Medina on the record before January 2027 on (a) whether he adopts, rewrites, or drops the 2025-01-23 ICE non-cooperation pledge; (b) whether PCSO will rent beds in the new 672-bed facility to ICE/USMS; (c) PCSO's ALPR and RTCC data-sharing posture. He is running on 'transparent about everything that we do,' which makes public questions hard to deflect.",
+    "Update EVERY citation of Sheriff Lucero's Jan 2025 ICE pledge across data/ and reports/ with 'policy of an outgoing sheriff; term ends Jan 2027.'",
+    "Because there is now NO state ALPR statute, reframe the local ask from 'support the state bill' to 'adopt a local surveillance-use ordinance' (published use policies, retention limits, query audit logs, annual public reporting, no federal immigration sharing - i.e. the SB26-070/071 provisions enacted municipally). Denver's contract terms are the nearest Colorado template.",
+    "Pull the 2026-02-09 and 2026-02-23 minutes plus the January 2026 organizational meeting minutes from pueblo.us AgendaCenter - roll calls and committee assignments are the biggest gaps in this dataset.",
+    "Request Senate Judiciary 2026-02-23, Senate Appropriations 2026-04-21, and House Judiciary 2026-02-25 witness lists from Legislative Council to settle whether any Pueblo official testified.",
+    "CORA Pueblo PD for the Flock contract/quote, the ALPR use policy, and the ALPR query audit log with stated reasons (Deputy Chief Martin has publicly asserted this log exists). Ask explicitly whether Pueblo PD shares into Flock's national network and whether any federal immigration agency has queried Pueblo data.",
+    "CORA Pueblo County/PCSO for any intergovernmental agreement or bed-rental contract with ICE, USMS, or another federal agency, plus average daily population against the 672 design capacity, and the surveillance system installed in the new facility.",
+    "Document the FBI Southern Colorado Safe Streets Task Force relationship - MOU, participating PPD/PCSO personnel, and what data flows through it. New thread.",
+    "Draft a neutral surveillance/privacy questionnaire for the Commissioner D3 candidates and the sheriff-elect. Per AGENTS.md, publish questions and any answers as information - do not campaign or target persuasion.",
+    "Determine the City of Pueblo procurement threshold requiring a council vote and check the 12-camera Flock buy against it.",
+    "Add the November 2026 Governor's race to the watchlist as an upstream determinant of 2027 surveillance legislation.",
+    "FLAG TO ORCHESTRATOR: scripts/download_agendas.py is broken and producing false negatives - see notes."
   ],
   "campaign_finance": {
     "municipal_limits": "$400 per election cycle from persons/entities (effective 2024-01-01)",
@@ -271,5 +662,5 @@
       "select": "Governmental Authority"
     }
   },
-  "notes": "Updated with November 2025 election results and key votes. Continue enriching with meeting-specific data."
+  "notes": "Updated 2026-07-29 by 02_PUEBLO_POLITICS_POWER_MAPPER, closing the 2026-02-18 to 2026-07-29 gap. Headline: all three state bills Pueblo City Council opposed on 2026-02-09 (SB26-070, SB26-071, HB26-1037) DIED in the 2026 session - see state_legislation_2026. Colorado has no ALPR or law-enforcement-surveillance statute, so every guardrail on Pueblo's RTCC stack is local and discretionary. Second headline: Sheriff David Lucero LOST his 2026-06-30 Democratic primary to Allen Medina, who is unopposed in November - the Jan 2025 ICE non-cooperation pledge this repo relies on belongs to an outgoing officeholder. DATA-INTEGRITY WARNING: scripts/download_agendas.py is NOT retrieving current agendas. The 2026-07-29 run in logs/agenda_monitor.log downloaded city_council-619/-578/-549.pdf, which are minutes from October-December 2012, and city_council-626.pdf - the file the 2026-02-18 raw-notes entry reports as a clean keyword scan - is the minutes of the 2013-01-14 regular meeting. That 'no matches' finding is meaningless and must not be relied on. The scraper appears to walk sequential AgendaCenter document IDs rather than filtering by date, and .monitor_state.json shows processed: []. Fix before the next pass; scripts/ is not this agent's file. No March-July 2026 council minutes were retrieved. Continue enriching with meeting-specific data."
 }

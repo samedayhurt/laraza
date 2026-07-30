@@ -1,9 +1,13 @@
 {
-  "updated": "2026-02-18",
+  "updated": "2026-07-29",
   "resources": [
     {
       "name": "Colorado Legal Services – Pueblo Office",
-      "category": ["Legal aid", "Housing", "Immigration"],
+      "category": [
+        "Legal aid",
+        "Housing",
+        "Immigration"
+      ],
       "services": [
         "Eviction defense and housing stability clinics",
         "Protection orders and family safety filings",
@@ -13,55 +17,77 @@
         "Naturalization assistance for agricultural workers"
       ],
       "contact": {
-        "address": "1000 W. 6th St., Suite I, Pueblo, CO 81003",
+        "address": "1000 W. 6th St., Suite 1, Pueblo, CO 81003",
         "phone": "719-545-6708",
         "web": "https://www.coloradolegalservices.org/node/10/pueblo-office"
       },
       "eligibility": "Income at or below 60% area median income; priority for survivors of violence, seniors, and people at risk of homelessness.",
-      "source": "Colorado Legal Services website (verified 2025-11-27)"
+      "source": "statesidelegal.org; Colorado Office of Administrative Courts PDF rev 12/2025; coloradosun.com 2025-08-05; coltaf.org (verified 2026-07-29, own site 403)",
+      "service_area": "Pueblo, Huerfano, and Las Animas counties",
+      "verification_caveat": "coloradolegalservices.org returned HTTP 403 to every fetch attempt, so this record is NOT primary-verified. Corroborated by Stateside Legal and the Colorado Office of Administrative Courts 'Free or Low Cost Legal Services' listing revised 12/2025; address and phone consistent across both.",
+      "funding_watch": "HIGHEST-EXPOSURE PROVIDER IN THIS DIRECTORY. The FY2026 federal budget proposed ELIMINATING the Legal Services Corporation; the House proposed an unprecedented 46% cut. The last enacted LSC bill cut grants 3.6%, an estimated $260,000 hit to Colorado Legal Services, against rising eviction, public-benefits, and immigration demand. Colorado's COLTAF partially backfilled, raising the June 2026 general-support distribution to $5.47 million. NO Pueblo office closure or intake suspension found - but re-check before publishing any guide that leans on this provider.",
+      "verified": "2026-07-29 (secondary sources only)"
     },
     {
       "name": "Posada of Pueblo",
-      "category": ["Housing", "Mutual aid", "Homeless services"],
+      "category": [
+        "Housing",
+        "Mutual aid",
+        "Homeless services"
+      ],
       "services": [
-        "Emergency motel vouchers and diversion support",
-        "Mail services and basic-needs supplies",
-        "Permanent supportive housing case management",
-        "Veteran and youth-focused housing navigation",
-        "Elko Family Emergency Shelter (11 units)",
-        "Transitional Housing for youth ages 18-24",
-        "Homeless Youth Services for ages 12-24"
+        "Rapid Rehousing (Housing First, short-term assistance) - entry via Coordinated Entry By-Name List referral, NOT walk-in",
+        "Permanent Supportive Housing for people with disabilities and complex needs",
+        "Elko Family Shelter - families in crisis, private family rooms, case management, employment assistance",
+        "Norman Transitional Housing - ages 18-24, up to seven residents, reduced rent plus case management",
+        "Housing navigation and case management"
       ],
       "contact": {
         "address": "501 Belmont Avenue, Pueblo, CO 81004",
         "phone": "719-545-8776",
-        "web": "https://posadapueblo.org/services/",
-        "hours": "Case managers: Mon-Fri 8AM-4PM; Walk-in by appointment 9AM-1PM"
+        "web": "https://www.posadapueblo.org/programs",
+        "hours": "Mon-Fri 9:00 AM - 1:00 PM"
       },
       "eligibility": "Households or individuals experiencing or at risk of homelessness in Pueblo County; bilingual staff available.",
-      "source": "Posada Pueblo website (verified 2025-11-27)"
+      "source": "posadapueblo.org/programs (primary, verified 2026-07-29)",
+      "closed_programs": "Tenant-Based Rental Assistance (TBRA) is CLOSED as of 2026-07-29 per their own site. It served income-qualified families with children, seniors 65+, and youth aging out of foster care. Do not refer people to TBRA right now.",
+      "access_note": "Narrow 4-hour daily intake window and no walk-ins for Rapid Rehousing. Appointment required - do not list as a drop-in or heat-refuge site.",
+      "corrections_2026_07_29": "The original raw note's address '1008 N. Grand Ave.' was wrong for Posada; 501 Belmont Avenue is correct. (1008 N. Grand Ave. is the Pueblo Community Health Center homeless clinic.)",
+      "verified": "2026-07-29"
     },
     {
-      "name": "SafeSide Recovery (Posada partner site)",
-      "category": ["Homeless services", "Recovery support"],
+      "name": "The Pueblo Shelter (operated by SafeSide Foundation)",
+      "category": [
+        "Homeless services",
+        "Recovery support",
+        "Food assistance"
+      ],
       "services": [
-        "24/7 low-barrier shelter",
-        "Eight new dorm-style units added January 2026 (doubling capacity)",
-        "Drop-in hygiene and showers",
-        "Case management and recovery support"
+        "Low-barrier overnight shelter, harm-reduction approach (no sobriety required)",
+        "Community meal daily at 4:30 PM - open to ANYONE in the community who needs a meal",
+        "Peer-led Residence Program (structured recovery housing, sobriety required)",
+        "Case management and employment support"
       ],
       "contact": {
-        "address": "901 W. 8th St., Pueblo, CO 81003",
-        "phone": "719-696-0996",
-        "hours": "24/7 shelter; intake on-site",
-        "web": "https://www.koaa.com/news/covering-colorado/pueblo-homeless-facility-expanding-to-help-more-people"
-      ],
-      "eligibility": "Adults experiencing homelessness in Pueblo County; accepts residents in recovery; referrals via Posada or walk-in.",
-      "source": "KOAA News5, 2026-01-09"
+        "address": "728 W 4th St, Pueblo, CO 81003",
+        "phone": "(719) 924-8413",
+        "hours": "Overnight shelter 9 PM - 7 AM, last entry midnight; community meal daily 4:30 PM",
+        "web": "https://www.thepuebloshelter.org/"
+      },
+      "eligibility": "Overnight shelter: people who are actively unhoused. Residence Program: individuals who are sober and ready to change. Community meal: anyone in the community who needs a meal, no housing status required.",
+      "source": "thepuebloshelter.org (primary); safesidefoundation.org (primary, negative result); cfdpueblo.org (primary, address conflict) (verified 2026-07-29)",
+      "rules": "No violence or threats, no weapons, no drug/alcohol use inside, limited belongings, pets not housed.",
+      "naming_history": "Formerly Pueblo Rescue Mission. The City of Pueblo took the deeds in Oct 2024 with handover completing 2024-12-31; SafeSide Foundation operates it. pueblorescuemission.org no longer resolves.",
+      "corrections_2026_07_29": "Prior entry listed 901 W. 8th St. - that address is actually Center Toward Self Reliance (719-546-1271), a disability independent-living center, confirmed on its own site. Prior phone 719-696-0996 could not be confirmed on any SafeSide or Pueblo Shelter page. SafeSide Foundation's own site lists only a Colorado Springs admin address (1670 E Cheyenne Mountain Blvd, Ste F, PMB 252, Colorado Springs, CO 80906), no phone, and does not confirm any 901 W. 8th St. site.",
+      "provisional": "The 'eight dorm-style units added January 2026 (doubling capacity)' claim is sourced only to KOAA 2026-01-09 and is NOT confirmed on any SafeSide or Pueblo Shelter page. Retained as provisional.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Mariposa Center for Safety (formerly YWCA Pueblo)",
-      "category": ["Domestic violence", "Legal advocacy"],
+      "category": [
+        "Domestic violence",
+        "Legal advocacy"
+      ],
       "services": [
         "24/7 domestic violence crisis hotline",
         "Emergency refuge shelter",
@@ -73,18 +99,27 @@
       ],
       "contact": {
         "crisis_line": "719-545-8195",
+        "crisis_line_label": "24/7 domestic violence crisis line",
         "main_phone": "719-542-6904",
-        "address": "801 N. Santa Fe Avenue, Pueblo, CO 81003",
-        "email": "hello@ywcapueblo.com",
-        "web": "https://www.ywcapueblo.org/domestic-violence-services/"
+        "address": "801 N Santa Fe Ave., Pueblo, CO 81003 (public office; NOT the shelter)",
+        "web": "https://mariposacenterforsafety.org/"
       },
       "eligibility": "All victims of domestic violence regardless of gender; capacity-based shelter placements.",
-      "languages": ["English", "Spanish"],
-      "source": "YWCA Pueblo website (verified 2025-11-27)"
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "source": "mariposacenterforsafety.org/contact-us (primary); ywcapueblo.org redirect observed directly (verified 2026-07-29)",
+      "shelter_location": "CONFIDENTIAL by design. The emergency shelter address is deliberately not public. 801 N Santa Fe Ave. is the public office. Do not publish or map a shelter location.",
+      "corrections_2026_07_29": "CRITICAL: the previously stored domain ywcapueblo.org has been released and now 301-redirects to billmoherforcongress.com, a political campaign donation site. Any directory, flyer, or report still pointing survivors at ywcapueblo.org sends them to a campaign fundraising page - purge that URL everywhere. Emails hello@ywcapueblo.com and shelterywca@ywcapueblo.com are on the abandoned domain, are not listed on the current site, and have been removed as presumed dead. Crisis line, office line, and address all re-confirmed unchanged.",
+      "verified": "2026-07-29"
     },
     {
       "name": "ACOVA (A Community Organization for Victim Assistance)",
-      "category": ["Victim assistance", "Legal advocacy"],
+      "category": [
+        "Victim assistance",
+        "Legal advocacy"
+      ],
       "services": [
         "On-scene crisis intervention",
         "Personal advocacy and safety planning",
@@ -97,18 +132,29 @@
       ],
       "contact": {
         "phone": "719-583-6434",
-        "alternate_phones": ["719-553-2460", "719-583-6250"],
+        "alternate_phones": [
+          "719-553-2460",
+          "719-583-6250"
+        ],
         "address": "920 N Main St, Pueblo, CO 81003",
-        "web": "https://acovapueblo.org/",
+        "web": "https://acovapueblo.org/ (DEAD - DNS does not resolve as of 2026-07-29)",
         "hours": "Mon-Fri 8:30AM-4:30PM; 24/7 crisis response available"
       },
       "eligibility": "All crime victims including women, deaf individuals, developmentally disabled, immigrants, military personnel, trafficked persons.",
-      "languages": ["English", "Spanish"],
-      "source": "ACOVA Pueblo website (verified 2025-11-27)"
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "source": "ACOVA Pueblo website (last verified 2025-11-27; domain dead as of 2026-07-29)",
+      "status": "UNVERIFIED - HIGHEST-PRIORITY FOLLOW-UP. acovapueblo.org NO LONGER RESOLVES (DNS failure). Could not confirm the phone numbers, address, hours, or whether the organization still operates. It sits in this directory's emergency-hotline quick reference, and Colorado victim-advocate programs have documented 2026 layoffs and budget cuts. A human must call before this is published as a confirmed hotline.",
+      "verified": "UNVERIFIED as of 2026-07-29"
     },
     {
       "name": "Juniper Southern Colorado (formerly Pueblo Rape Crisis Services)",
-      "category": ["Sexual assault support", "Mental health"],
+      "category": [
+        "Sexual assault support",
+        "Mental health"
+      ],
       "services": [
         "24/7 sexual assault hotline (call OR text)",
         "Hospital and court accompaniment",
@@ -119,68 +165,102 @@
       "contact": {
         "crisis_line": "719-549-0549 (call or text 24/7)",
         "office": "719-544-1191",
-        "address": "503 N Main St, Suite 526, Pueblo, CO 81003",
-        "web": "https://rapecrisisservices.org/"
+        "address": "503 N. Main St., Ste 526, Pueblo, CO 81003",
+        "web": "https://junipersoco.org/"
       },
       "eligibility": "Survivors and secondary survivors in Pueblo and surrounding counties; Spanish-speaking advocates available on request. Only sexual violence resource center serving Pueblo area since mid-1970s. Serves 450+ individuals annually.",
-      "source": "Juniper Southern Colorado website; ColoradoGives (verified 2025-11-27)"
+      "source": "junipersoco.org (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "Website moved: rapecrisisservices.org now 301-redirects to junipersoco.org. Old domain still redirects correctly so the risk is cosmetic. Crisis hotline 719-549-0549 (call or text) and office 719-544-1191 both re-confirmed.",
+      "verified": "2026-07-29"
     },
     {
-      "name": "Health Solutions Crisis Walk-In Center",
-      "category": ["Mental health", "Substance use"],
+      "name": "Health Solutions Crisis Living Room (24/7 crisis walk-in)",
+      "category": [
+        "Mental health",
+        "Substance use"
+      ],
       "services": [
-        "24/7 crisis stabilization and observation",
+        "24/7/365 crisis walk-in ('Crisis Living Room') - talk to someone face to face",
+        "Crisis stabilization and observation",
         "Mobile crisis response and peer support",
         "Detox linkage and care coordination",
-        "Youth and adult walk-in counseling"
+        "Youth and adult behavioral health"
       ],
       "contact": {
-        "address": "711 W. 13th St., Pueblo, CO 81003",
-        "phone": "844-493-8255",
-        "web": "https://www.health.solutions/services/crisis-care/"
+        "address": "1310 Chinook Lane, Pueblo, CO 81001",
+        "phone": "719-545-2746",
+        "phone_label": "Connect 2 Care, answered 24/7/365",
+        "hours": "Crisis walk-in open 24/7/365",
+        "web": "https://www.health.solutions/locations/"
       },
       "eligibility": "No-cost crisis care regardless of insurance; serves youth and adults across Pueblo County.",
-      "source": "Health Solutions website (verified 2025-11-27)"
+      "source": "health.solutions/locations (primary, verified 2026-07-29)",
+      "related_sites": {
+        "Adult Outpatient": "1304 Chinook Lane, Pueblo, CO 81001 (719-545-2746)",
+        "Walk-In Clinic": "1080 Chinook Lane, Pueblo, CO 81001 (719-564-9400)",
+        "Youth & Family Services": "1012 West Abriendo Ave, Pueblo, CO 81004 (719-545-2746)",
+        "Recovery Solutions": "2003 E 4th St, Pueblo, CO 81001 (719-545-2746)",
+        "Administration": "41 Montebello Rd, Ste. 202, Pueblo, CO 81001 (719-545-2746)"
+      },
+      "corrections_2026_07_29": "Address was listed as 711 W. 13th St., which is NOT a Health Solutions location (absent from their locations page). Phone was listed as 844-493-8255, which is the legacy statewide Colorado Crisis Services line, not Health Solutions' own number. Both corrected. Prior web URL health.solutions/services/crisis-care/ returns 404.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Colorado Rapid Response Network (CORRN)",
-      "category": ["Immigration rapid response", "Legal observation"],
+      "category": [
+        "Immigration rapid response",
+        "Legal observation"
+      ],
       "services": [
-        "Statewide 24/7 hotline (844-864-8341 opt.1 live / opt.2 past incidents)",
+        "Statewide 24/7 hotline 844-864-8341 - option 1 reaches a volunteer dispatcher for ACTIVE ICE activity",
+        "Option 2 leaves a message about PAST ICE interactions; DocuTeam responds in 3-4 business days",
         "Dispatch of trained observers and legal support teams",
         "Incident logging shared with immigrant-rights coalitions",
         "Know Your Rights trainings"
       ],
       "contact": {
         "phone": "844-864-8341",
-        "web": "https://www.coloradorapidresponsenetwork.com/"
+        "web": "https://coloradorapidresponsenetwork.com/"
       },
       "network_size": "3,000+ volunteers statewide",
       "eligibility": "Anyone witnessing immigration enforcement activity in Colorado; bilingual dispatch available.",
-      "source": "CORRN website (verified 2025-11-27)"
+      "source": "coloradorapidresponsenetwork.com (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "URL host corrected: the stored https://www.coloradorapidresponsenetwork.com/ (www) FAILS TLS handshake. The bare domain https://coloradorapidresponsenetwork.com/ loads normally. Hotline number and both menu options re-confirmed; site footer reads (c) 2026.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Rocky Mountain Immigrant Advocacy Network (RMIAN)",
-      "category": ["Immigration legal aid"],
+      "category": [
+        "Immigration legal aid"
+      ],
       "services": [
-        "Legal orientation for detained adults at Aurora GEO",
-        "Child advocacy program for unaccompanied minors",
-        "Social service coordination for released families",
-        "Detention Hotline"
+        "Legal representation in immigration proceedings",
+        "Children's program for unaccompanied minors",
+        "Detention program and legal orientation",
+        "Social services support for released families",
+        "Pro bono legal coordination",
+        "Anti-human-trafficking services",
+        "DACA assistance"
       ],
       "contact": {
         "main_phone": "(303) 433-2812",
         "detention_hotline": "(303) 866-9308",
-        "denver_court_line": "(720) 543-8898",
+        "detention_hotline_label": "Hotline for detained people and their family members",
         "address": "7301 Federal Blvd., Suite 300, Westminster, CO 80030",
-        "web": "https://rmian.org/get-help/"
+        "web": "https://rmian.org/"
       },
       "eligibility": "Colorado families with detained adults or minors; need A-number and detention location.",
-      "source": "RMIAN website (verified 2025-11-27)"
+      "source": "rmian.org (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "Prior raw note mislabeled 303-433-2812 as the 'adult detention hotline' - it is the MAIN OFFICE. The raw note's 'child program 303-222-0003' is not published on their site: UNVERIFIED. The stored denver_court_line (720) 543-8898 is likewise UNVERIFIED and has been removed pending confirmation. rmian.org/get-help/ now 404s; use the root domain.",
+      "operational_note": "Active 2026 advocacy on detention expansion and on mail-service delays affecting detained people's court cases - mail delay can cost someone a hearing.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Catholic Charities of Southern Colorado - Immigration Services",
-      "category": ["Immigration legal aid", "Family services"],
+      "category": [
+        "Immigration legal aid",
+        "Family services"
+      ],
       "services": [
         "DOJ-accredited immigration assistance",
         "Adjustment of Status",
@@ -195,34 +275,48 @@
         "Parenting classes"
       ],
       "contact": {
-        "address": "429 W. 10th St., Suite 101, Pueblo, CO 81003",
-        "phone": "(719) 586-8600",
-        "alternate_phone": "(719) 544-4233 ext. 109",
+        "address": "429 W. 10th St., Pueblo, CO 81003",
+        "phone": "719-544-4233",
+        "email": "info@ccsoco.org",
         "web": "https://www.ccsoco.org/",
-        "hours": "Mon-Fri 8AM-5PM"
+        "hours": "Mon-Fri 8:00 AM - 5:30 PM, closed 12:30-1:00 PM for lunch"
       },
       "eligibility": "Family-based and humanitarian immigration cases; income-qualified for childcare.",
-      "source": "Catholic Charities of Southern Colorado website (verified 2025-11-27)"
+      "source": "ccsoco.org (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "Primary phone was listed as (719) 586-8600 - that is the Colorado Springs / agency line, not Pueblo intake. Correct Pueblo number is 719-544-4233. 'Suite 101' is no longer on the site. Hours corrected from 'Mon-Fri 8AM-5PM' (understated closing time and omitted the lunch closure).",
+      "funding_watch": "Immigration legal services are still listed as an active Adult Support Service and NO closure or funding-cut notice appears on their own site. Given DOJ-accredited immigration programs are a likely 2026 casualty nationally, re-check quarterly.",
+      "verified": "2026-07-29"
     },
     {
-      "name": "Colorado Crisis Services",
-      "category": ["Mental health", "Substance use"],
+      "name": "988 Colorado Mental Health Line (absorbed Colorado Crisis Services)",
+      "category": [
+        "Mental health",
+        "Substance use"
+      ],
       "services": [
-        "24/7 hotline (844-493-8255) and text line (38255)",
+        "24/7 statewide crisis support by call or text to 988",
+        "Legacy Colorado Crisis Services numbers still route here (844-493-8255, text 38255)",
         "Statewide mobile response coordination",
         "Referrals to local walk-in centers and peer support"
       ],
       "contact": {
-        "phone": "844-493-8255",
-        "text": "38255 (text TALK)",
-        "web": "https://coloradocrisisservices.org/"
+        "phone": "988",
+        "text": "988",
+        "legacy_phone": "844-493-8255 (still functional; routes to 988 Colorado)",
+        "legacy_text": "38255 (still functional; routes to 988 Colorado)",
+        "web": "https://www.988colorado.com/"
       },
-      "eligibility": "Open to anyone in Colorado regardless of insurance or immigration status; translation available in 240+ languages.",
-      "source": "Colorado Crisis Services website (verified 2025-11-27)"
+      "eligibility": "Open to anyone in Colorado regardless of insurance or immigration status; text support in English and Spanish; interpretation available.",
+      "source": "988colorado.com/en/colorado-crisis-services (primary, verified 2026-07-29)",
+      "status": "CONSOLIDATED. Under Colorado SB25-236 the Colorado Crisis Services line merged into the 988 Colorado Mental Health Line effective 2025-07-01. The coloradocrisisservices.org website began redirecting to 988colorado.com on 2026-06-05. Legacy numbers still work, so existing printed materials are not dangerous, but lead with 988 going forward.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Pueblo Community Health Center (FQHC)",
-      "category": ["Health services", "Migrant health"],
+      "category": [
+        "Health services",
+        "Migrant health"
+      ],
       "services": [
         "Primary care for all ages",
         "Preventive care and immunizations",
@@ -243,11 +337,26 @@
       },
       "locations": "14 locations in Pueblo and Huerfano Counties",
       "eligibility": "Open to all; sliding scale fees; accepts patients regardless of ability to pay.",
-      "source": "Pueblo Community Health Center website (verified 2025-11-27)"
+      "source": "pueblochc.org (primary, verified 2026-07-29)",
+      "funding_watch": "NO funding cuts, site closures, or service reductions mentioned on their site. Actively promoting affordable 2026-2027 school-year sports physicals and a fourth consecutive Gold Quality Award - signs of a healthy operation. Good news against the FQHC-risk hypothesis.",
+      "services_confirmed_2026_07_29": [
+        "Medical: preventive care, check-ups, immunizations, family planning, cancer screenings, acute and chronic illness, minor surgery",
+        "Dental: exams, cleanings, fillings, extractions, root canals, dentures",
+        "Prenatal / OB-GYN: pregnancy tests, prenatal care, delivery, postpartum, breastfeeding support, childbirth classes",
+        "Behavioral health: therapy, psychotherapy, crisis intervention, psychiatric medication consultation",
+        "Pharmacy and laboratory",
+        "School-based wellness centers at Central High School and Pueblo County High School",
+        "ChartSpan care management for Medicare patients"
+      ],
+      "unverified_fields": "'14 locations in Pueblo and Huerfano Counties', the homeless clinic at 1008 N. Grand Avenue, info@pueblochc.org, and the Ryan White Title III / migrant-farmworker service lines were not restated on the pages fetched this pass. Retained but flagged.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Pueblo Department of Public Health and Environment Clinic",
-      "category": ["Health services", "Immunizations"],
+      "category": [
+        "Health services",
+        "Immunizations"
+      ],
       "services": [
         "Immunizations (DTaP, routine vaccines, travel vaccines)",
         "Tuberculosis testing (PPD)",
@@ -261,71 +370,96 @@
         "address": "101 W. 9th Street, Pueblo, CO",
         "hours": "Mon-Fri 8AM-4:30PM (closed for lunch at noon)"
       },
-      "languages": ["English", "Spanish"],
-      "source": "Pueblo County Health Department (verified 2025-11-27)"
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "source": "Pueblo County Health Department (verified 2025-11-27)",
+      "status": "UNVERIFIED. county.pueblo.org returned HTTP 403 on all attempts this pass. Phones (719) 583-4380 / (719) 583-4376, the 101 W. 9th Street address, and the hours are all unverified.",
+      "verified": "UNVERIFIED as of 2026-07-29"
     },
     {
-      "name": "Pueblo City-County Library District TechConnect",
-      "category": ["Technology access"],
+      "name": "Pueblo City-County Library District (Device Library, formerly TechConnect)",
+      "category": [
+        "Technology access"
+      ],
       "services": [
-        "Wi-Fi hotspot and Chromebook lending",
-        "Public computer/printing services",
-        "Digital literacy classes and drop-in tech help"
+        "Device Library: Chromebook and Wi-Fi hotspot lending (under Browse & Borrow)",
+        "Public computer and printing services",
+        "Digital literacy classes and drop-in tech help",
+        "Free air-conditioned public indoor space at 10 locations - de facto daytime heat refuge",
+        "Hosts the free legal self-help clinic (Lamb) and SCEA Queermunity group (Rawlings Makerspace)"
       ],
       "contact": {
-        "address": "100 E. Abriendo Ave., Pueblo, CO 81004",
-        "phone": "719-562-5600",
-        "web": "https://www.pueblolibrary.org/techconnect"
+        "address": "Rawlings (main): 100 E Abriendo Ave., Pueblo, CO 81004",
+        "phone": "(719) 562-5600",
+        "web": "https://www.pueblolibrary.org/",
+        "locations": "https://www.pueblolibrary.org/locations"
       },
       "eligibility": "Library card required; device loans typically 21 days.",
-      "source": "PCCLD TechConnect page (verified 2025-11-27)"
+      "source": "pueblolibrary.org and /locations (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "The 'TechConnect' brand no longer appears; device lending is now the 'Device Library' (Chromebooks and Hotspots). The stored URL pueblolibrary.org/techconnect returns 404.",
+      "service_notices": "Rawlings is undergoing ELEVATOR MODERNIZATION - book drop moved to the south parking lot; accessibility impact for mobility-limited patrons. Greenhorn Valley Library has reopened, but the site conflicts with itself on its hours (locations page says M-Th 10a-7p / F-Sa 10a-6p; homepage notice says 10a-6p M-Sat) - call before relying on either.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Pueblo Cooperative Care Center",
-      "category": ["Mutual aid", "Basic needs"],
+      "category": [
+        "Mutual aid",
+        "Basic needs"
+      ],
       "services": [
-        "Food pantry and sack lunches",
-        "Clothing and hygiene supplies",
-        "Mail service",
-        "Medical prescription assistance",
-        "Diabetic vouchers",
-        "Shower program",
-        "Haircuts",
-        "Assistance with Colorado IDs/birth certificates",
-        "Pueblo Transit bus tokens"
+        "Food sacks for individuals and families of all sizes",
+        "Clothing for everyday wear or job interviews",
+        "Voucher program for Colorado IDs, birth certificates, death certificates, driver's licenses",
+        "Medical prescription assistance and diabetic supply vouchers",
+        "Pueblo Transit bus tokens",
+        "Hygiene essentials",
+        "Shower program (registration required)",
+        "Nutrition On Wheels (NOW) meal delivery for homebound residents 60+ in Pueblo County"
       ],
       "contact": {
-        "address": "310 West 11th Street, Pueblo, CO 81003",
+        "address": "326 West 8th Street, Pueblo, CO 81003",
         "phone": "719-543-7484",
         "web": "https://cooperativecare.org/",
-        "hours": "Mon 8AM-12PM (Shower Program)"
+        "hours": "Monday-Thursday 9 AM - 1 PM; closed Fridays, weekends, and holidays"
       },
       "eligibility": "Pueblo County residents; free services.",
       "note": "Largest non-profit emergency assistance program in Southern Colorado.",
-      "source": "Pueblo Cooperative Care Center website (verified 2025-11-27)"
+      "source": "cooperativecare.org (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "Address was listed as 310 West 11th Street - wrong; correct is 326 West 8th Street (the original raw-notes value was right). Hours were listed as only 'Mon 8AM-12PM (Shower Program)', which badly understated actual operating hours of Mon-Thu 9 AM - 1 PM. The ID / vital-records voucher program is the standout service for people rebuilding documentation.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Care and Share Food Bank / Sunny Side Market",
-      "category": ["Food assistance"],
+      "category": [
+        "Food assistance"
+      ],
       "services": [
         "Free food pantry in grocery store format",
         "Mobile food pantries",
         "Partner food pantries throughout Southern Colorado"
       ],
       "contact": {
-        "sunny_side_address": "1230 E. 8th St., Pueblo, CO 81001",
-        "phone": "(719) 470-1004",
-        "hours": "Mon/Wed/Thu 2PM-6PM",
-        "main_food_bank": "100 Greenhorn Dr, Pueblo, CO",
-        "web": "https://careandshare.org/"
+        "main_phone": "719-528-1247",
+        "snap_hotline": "719-666-3849",
+        "pueblo_warehouse": "100 Greenhorn Dr, Pueblo, CO",
+        "find_food_calendar": "https://careandshare.org/findfood/#calendar",
+        "web": "https://careandshare.org/",
+        "sunny_side_address": "1230 E. 8th St., Pueblo, CO 81001 - UNVERIFIED this pass"
       },
-      "eligibility": "No income requirements for Sunny Side Market; anyone can shop up to once per week.",
+      "eligibility": "Mobile pantries are drive-up, volunteers load your car, NO ID required.",
       "mobile_pantry": "First Tuesday of each month at Pueblo Community College, 11:30AM until food is gone.",
-      "source": "Care and Share Food Bank website (verified 2025-11-27)"
+      "source": "careandshare.org and /findfood (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "Main phone corrected to 719-528-1247 and SNAP hotline added. The prior Sunny Side Market number (719) 470-1004 and its hours 'Mon/Wed/Thu 2PM-6PM' could NOT be confirmed on their site - UNVERIFIED. Because mobile pantry sites rotate, publish only the live calendar rather than hardcoding any single site or time.",
+      "verified": "2026-07-29"
     },
     {
       "name": "The Salvation Army Pueblo Corps",
-      "category": ["Emergency assistance", "Food assistance"],
+      "category": [
+        "Emergency assistance",
+        "Food assistance"
+      ],
       "services": [
         "Food pantry",
         "Utility assistance",
@@ -337,44 +471,57 @@
         "Childcare"
       ],
       "contact": {
-        "address": "401 South Prairie Avenue, Pueblo, CO 81005",
-        "phone": "719-543-3656 ext. 3601",
-        "utility_phone": "719-543-3656 ext. 3602",
-        "web": "https://pueblo.salvationarmy.org/",
-        "hours": "Mon-Fri 9AM-4PM"
+        "address": "401 S Prairie Ave, Pueblo, CO 81005",
+        "phone": "719-543-3656",
+        "web": "https://www.salvationarmyusa.org/co/pueblo/w-13th-street-corps/",
+        "hours": "Mon-Fri 8:00 AM - 5:00 PM, closed for lunch 12:00-12:30 PM"
       },
       "food_pantry_hours": "Tue/Wed/Thu 10AM-12PM",
       "eligibility": "Pueblo County residents; utility assistance requires being at least one day past due.",
-      "languages": ["English", "Spanish"],
-      "source": "Salvation Army Pueblo website (verified 2025-11-27)"
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "source": "salvationarmyusa.org Pueblo Corps page (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "Hours corrected from 'Mon-Fri 9AM-4PM'. Website updated: pueblo.salvationarmy.org 301-redirects to the salvationarmyusa.org Pueblo Corps page. UNVERIFIED on the current page: extensions ext. 3601 (food pantry) and ext. 3602 (utility assistance), and the food pantry hours 'Tue/Wed/Thu 10AM-12PM'. Retained but flagged - call the main line.",
+      "verified": "2026-07-29"
     },
     {
       "name": "NeighborWorks Southern Colorado",
-      "category": ["Housing", "Financial education"],
+      "category": [
+        "Housing",
+        "Financial education"
+      ],
       "services": [
-        "Rental assistance",
-        "Security deposit assistance",
-        "Emergency shelter referrals",
-        "Transitional housing",
-        "Utility assistance",
-        "Case management",
-        "Housing navigation",
-        "Homebuyer education",
-        "Financial fitness programs"
+        "Financial Fitness education",
+        "Homebuyer education and development",
+        "Foreclosure mitigation",
+        "Down payment assistance",
+        "Home improvement lending",
+        "Small business loans",
+        "Housing construction (Pikes Peak Park, Shared Equity)",
+        "Self-Help Opportunity Program",
+        "Commercial space rentals"
       ],
       "contact": {
         "address": "1241 E. Routt Avenue, Pueblo, CO 81004",
         "phone": "719-544-8078",
-        "resource_coordinator": "Renee Taylor, (719) 404-3512, rtaylor@nwsoco.org",
-        "web": "https://nwsoco.org/",
-        "hours": "Mon-Fri 9AM-1PM"
+        "email": "community@nwsoco.org",
+        "web": "https://nwsoco.org/"
       },
       "service_area": "19 counties across Southern Colorado",
-      "source": "NeighborWorks Southern Colorado website (verified 2025-11-27)"
+      "source": "nwsoco.org (primary, verified 2026-07-29)",
+      "ethics_correction_2026_07_29": "REMOVED a named staff member's direct phone line and work email that had been stored under 'resource_coordinator'. AGENTS.md Global Constraints & Ethics bars personal contact details for rank-and-file staff; only main lines and public intake numbers belong in this directory. Replaced with the general org email.",
+      "service_discrepancy_2026_07_29": "FLAG: the prior record credited NWSOCO with rental assistance, security deposit assistance, emergency shelter referrals, transitional housing, and utility assistance. NONE of those appear on their current site, which reads as a housing-finance / homeownership and lending organization. Either the programs ended or the repo over-attributed them. Do NOT send someone here for emergency rent money without calling first - route rental emergencies to Posada, Catholic Charities, or 211.",
+      "hours": "Not published on their site; prior value 'Mon-Fri 9AM-1PM' is UNVERIFIED.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Colorado Emergency Rental Assistance Program (ERAP)",
-      "category": ["Housing", "Emergency assistance"],
+      "category": [
+        "Housing",
+        "Emergency assistance"
+      ],
       "services": [
         "Financial assistance for Coloradans behind on rent and at risk of eviction"
       ],
@@ -385,11 +532,15 @@
       },
       "eligibility": "Income at or below 60% of area median income; behind on rent; at risk of eviction.",
       "languages": "Bilingual services available",
-      "source": "Colorado Division of Housing (verified 2025-11-27)"
+      "source": "Colorado Division of Housing (verified 2025-11-27)",
+      "status": "UNVERIFIED. Could not confirm on any state site that this program is still accepting applications in 2026; most pandemic-era ERA funding is exhausted nationally. The phone 1-303-838-1200 and the 'opens 11AM first Monday' application window are both unverified. Do not publish without a call. Route rental emergencies meanwhile to Posada, Catholic Charities, or 211.",
+      "verified": "UNVERIFIED as of 2026-07-29"
     },
     {
       "name": "211 Colorado - Southeast Region",
-      "category": ["Information and referral"],
+      "category": [
+        "Information and referral"
+      ],
       "services": [
         "Free confidential referrals to emergency shelter, food, rental assistance, childcare, healthcare",
         "Live resource navigators",
@@ -397,56 +548,72 @@
         "Database of 6,500+ services from 2,500+ agencies"
       ],
       "contact": {
-        "phone": "Dial 2-1-1 or (800) 762-6169",
-        "text": "Text zip code to 898-211",
-        "web": "https://211colorado.org/",
-        "hours": "Live navigators Mon-Fri 8AM-5PM"
+        "phone": "Dial 2-1-1",
+        "toll_free_statewide": "(866) 760-6489",
+        "southeast_region_phone": "(800) 762-6169",
+        "text": "Text your ZIP code to 898-211",
+        "web": "https://211colorado.org/"
       },
-      "local_provider": "Senior Resource Development Agency (SRDA) in Pueblo",
+      "local_provider": "211 for Southeast Colorado, operated by SRDA, 230 North Union Avenue, Pueblo, CO 81003",
       "service_area": "Baca, Bent, Custer, Crowley, Fremont, Huerfano, Kiowa, Las Animas, Otero, Prowers, Pueblo Counties",
       "languages": "English, Spanish; translation in 240+ languages available",
-      "source": "211 Colorado website (verified 2025-11-27)"
+      "source": "211colorado.org (primary); pueblofoodproject.org (secondary corroboration) (verified 2026-07-29)",
+      "corrections_2026_07_29": "Added statewide toll-free (866) 760-6489. The previously stored (800) 762-6169 is still valid but is the SOUTHEAST REGIONAL line, not the statewide one. Added SRDA's Pueblo street address. Prior hours claim 'Live navigators Mon-Fri 8AM-5PM' is not published on the current site - UNVERIFIED.",
+      "note": "Most valuable single entry in the directory because it self-corrects as programs change.",
+      "verified": "2026-07-29"
     },
     {
       "name": "El Centro del Quinto Sol Recreation Center",
-      "category": ["Community center", "Youth programs"],
+      "category": [
+        "Community center",
+        "Youth programs"
+      ],
       "services": [
-        "Free drop-in activities",
-        "After-school homework help and tutoring (CSU-Pueblo Learning Center)",
-        "Summer programs and spring break activities",
-        "Free pool trips for youth ages 7-17",
-        "School supply donations",
-        "Safe community space"
+        "Free drop-in activities: open gym, learning center, maker space, park amenities",
+        "After-school and summer programming for youth",
+        "Free air-conditioned indoor space - informal heat refuge"
       ],
       "contact": {
         "address": "609 E. 6th Street, Pueblo, CO 81001",
         "phone": "719-553-2949",
-        "hours": "Mon/Wed 10:30AM-1:30PM & 3PM-8:30PM; Tue/Thu 3PM-8:30PM; Fri 8AM-8:30PM; Sat 12PM-6PM"
+        "hours_summer": "Mon-Fri 12:00-8:00 PM; Sat 12:00-6:00 PM; Sun closed (IN EFFECT NOW)",
+        "hours_school_year": "Mon-Thu 3:00-8:00 PM; Fri 12:00-8:00 PM; Sat 12:00-6:00 PM; Sun closed",
+        "web": "https://www.pueblo.us/1567"
       },
-      "eligibility": "All welcome; no fees for drop-in activities.",
-      "source": "City of Pueblo website (verified 2025-11-27)"
+      "eligibility": "All welcome; no fees for drop-in activities. Participants 18 and under must have a guardian-signed waiver on file before participating.",
+      "source": "pueblo.us/1567 (City of Pueblo, primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "Hours corrected. Prior record listed 'Mon/Wed 10:30AM-1:30PM & 3PM-8:30PM; Tue/Thu 3PM-8:30PM; Fri 8AM-8:30PM; Sat 12PM-6PM', which does not match the city's current published schedule and had no summer / school-year distinction. Summer hours are what apply right now.",
+      "verified": "2026-07-29"
     },
     {
-      "name": "United Way of Pueblo County",
-      "category": ["Community services", "Financial empowerment"],
+      "name": "United Way of Southern Colorado (formerly United Way of Pueblo County)",
+      "category": [
+        "Community services",
+        "Financial empowerment"
+      ],
       "services": [
-        "Bank On Pueblo County",
+        "Pueblo VITA free tax preparation",
         "Financial Empowerment Center",
+        "Bank On Pueblo County (safe checking accounts)",
         "Middle School Mentoring Program",
-        "Pueblo VITA (free tax preparation)",
-        "MyFriendBen benefits screening tool",
         "Referrals to community services"
       ],
       "contact": {
-        "address": "PO Box 11566, Pueblo, CO 81001-0566",
-        "web": "https://pueblounitedway.org/"
+        "address": "510 W 3rd St, Pueblo, CO 81003",
+        "phone": "719-225-8580",
+        "web": "https://www.unitedwaysoco.org/"
       },
       "focus_areas": "Youth/family strengthening, senior services, crisis intervention, basic needs/financial stability",
-      "source": "United Way of Pueblo County website (verified 2025-11-27)"
+      "source": "unitedwaysoco.org (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "RENAMED to United Way of Southern Colorado; pueblounitedway.org 301-redirects to unitedwaysoco.org. Prior record had only a PO Box (PO Box 11566, Pueblo, CO 81001-0566) and no phone at all; now has a physical address and main line. 'MyFriendBen' benefits screening no longer appears on their site - treat as discontinued or unverified.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Colorado Freedom Fund",
-      "category": ["Bail fund", "Legal support"],
+      "category": [
+        "Bail fund",
+        "Legal support"
+      ],
       "services": [
         "Bail assistance for people who cannot afford to pay",
         "Bond payment for immigration detention",
@@ -454,17 +621,24 @@
         "Know Your Rights resources"
       ],
       "contact": {
-        "phone": "(303) 997-2565",
+        "intake": "https://coloradofreedomfund.org/refer (Request Help form)",
         "web": "https://coloradofreedomfund.org/",
-        "email": "info@coloradofreedomfund.org"
+        "phone": "(303) 997-2565 - UNVERIFIED, not published on their own site",
+        "email": "info@coloradofreedomfund.org - UNVERIFIED, not published on their own site"
       },
       "eligibility": "People detained in Colorado jails or immigration detention who cannot afford bail/bond.",
       "notes": "Statewide organization; serves Pueblo County. Accepts community donations to fund bail.",
-      "source": "Colorado Freedom Fund website (verified 2026-01)"
+      "source": "coloradofreedomfund.org (primary, verified 2026-07-29)",
+      "status": "Active - site shows activity through 2026-07-02. However NO phone number or email is published on their own site; intake is the /refer form. Prior stored phone and email are UNVERIFIED.",
+      "service_area_caveat": "Their FAQ states they 'most often pay bail in the greater Denver/Front Range area, but also post across the entire state.' Pueblo is in scope but NOT prioritized - say so plainly rather than implying local coverage.",
+      "verified": "2026-07-29 (org active; contact details unverified)"
     },
     {
       "name": "ACLU of Colorado",
-      "category": ["Legal advocacy", "Civil rights"],
+      "category": [
+        "Legal advocacy",
+        "Civil rights"
+      ],
       "services": [
         "Legal intake for civil rights violations",
         "Know Your Rights trainings",
@@ -473,17 +647,22 @@
       ],
       "contact": {
         "phone": "303-777-5482",
-        "web": "https://www.aclu-co.org/",
-        "email": "aclu@aclu-co.org",
-        "address": "303 E 17th Ave, Suite 350, Denver, CO 80203"
+        "fax": "(303) 777-1773",
+        "legal_help_request": "https://www.aclu-co.org/need-legal-help/",
+        "web": "https://www.aclu-co.org/"
       },
-      "report_violations": "https://www.aclu-co.org/report",
       "notes": "Statewide organization. Tracks civil rights patterns. Can take cases involving police misconduct, free speech violations, immigrant rights.",
-      "source": "ACLU Colorado website (verified 2026-01)"
+      "source": "aclu-co.org/about/contact-us (primary, verified 2026-07-29)",
+      "intake_note": "ACLU-CO explicitly states that calling or visiting in person will NOT expedite a request - the web form at /need-legal-help/ is the route. Tell users this so a delay is not mistaken for a dead line.",
+      "corrections_2026_07_29": "Stored report URL https://www.aclu-co.org/report is not the published intake path; corrected to /need-legal-help/. The prior mailing address (303 E 17th Ave, Suite 350, Denver, CO 80203) and email aclu@aclu-co.org do not appear on their contact page (email is obfuscated) - both UNVERIFIED and removed rather than published as fact.",
+      "verified": "2026-07-29"
     },
     {
       "name": "One Colorado",
-      "category": ["LGBTQ+ services", "Advocacy"],
+      "category": [
+        "LGBTQ+ services",
+        "Advocacy"
+      ],
       "services": [
         "LGBTQ+ policy advocacy",
         "Safe schools program",
@@ -493,33 +672,49 @@
       ],
       "contact": {
         "phone": "303-396-6170",
-        "web": "https://one-colorado.org/",
-        "address": "PO Box 11966, Denver, CO 80211"
+        "email": "info@one-colorado.org",
+        "address": "303 E. 17th Ave, Suite 400, Denver, CO 80203",
+        "web": "https://one-colorado.org/"
       },
       "notes": "Statewide LGBTQ+ advocacy organization. Can connect Pueblo residents with local LGBTQ+ affirming services and support.",
-      "source": "One Colorado website (verified 2026-01)"
+      "source": "one-colorado.org (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "Address corrected from PO Box 11966, Denver, CO 80211 (not on their current site) to 303 E. 17th Ave, Suite 400. Email added.",
+      "flag": "Their site shows NO Pueblo- or southern-Colorado-specific programming, and the most recent dated accomplishment on the page is from 2023. The prior claim that One Colorado 'can connect Pueblo residents with local LGBTQ+ affirming services' was an inference, not an org statement. For Pueblo-local LGBTQ+ support lead with Southern Colorado Equality Alliance instead.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Inside Out Youth Services",
-      "category": ["LGBTQ+ services", "Youth programs"],
+      "category": [
+        "LGBTQ+ services",
+        "Youth programs"
+      ],
       "services": [
-        "LGBTQ+ youth support groups (ages 13-24)",
-        "Safe space and community building",
-        "Mental health referrals",
-        "Family support resources",
-        "HIV/STI testing referrals"
+        "LGBTQ+ youth support groups and drop-in sessions (online and in person), ages 13-24",
+        "Leadership development opportunities",
+        "Case management",
+        "Food and clothing assistance",
+        "TransParenting support group",
+        "Youth Advisory Committee",
+        "Youth Pride and Queer Prom events",
+        "Trainings and workshops for adults"
       ],
       "contact": {
         "phone": "719-328-1056",
         "web": "https://insideoutys.org/",
-        "address": "223 N. Wahsatch Ave, Colorado Springs, CO 80903"
+        "address": "223 N Wahsatch Ave, Suite 101, Colorado Springs, CO 80903"
       },
       "notes": "Based in Colorado Springs; serves Southern Colorado region including Pueblo. Drop-in hours for LGBTQ+ youth.",
-      "source": "Inside Out Youth Services website (verified 2026-01)"
+      "source": "insideoutys.org (primary, verified 2026-07-29)",
+      "service_area_correction_2026_07_29": "Their site defines the service area as Colorado Springs and surrounding counties in the Tava-Kaavi (Pikes Peak) region and does NOT mention Pueblo. The prior record asserted it 'serves Southern Colorado region including Pueblo.' They do self-describe as 'Southern Colorado's leading LGBTQIA2+ youth serving organization,' but Pueblo coverage is not stated. Downgraded from a Pueblo resource to an out-of-town regional referral (~45 min away).",
+      "status": "Active - 2026 events posted (Back-to-School Open House Aug 8; Ally Up! Legacy Breakfast Sep 24); (c) 2026 footer.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Colorado Immigrant Rights Coalition (CIRC)",
-      "category": ["Immigration advocacy", "Know Your Rights"],
+      "category": [
+        "Immigration advocacy",
+        "Know Your Rights"
+      ],
       "services": [
         "Know Your Rights workshops",
         "Rapid response coordination",
@@ -529,15 +724,22 @@
       ],
       "contact": {
         "phone": "303-922-3344",
-        "web": "https://coloradoimmigrant.org/",
-        "workshop_signup": "bit.ly/CIRCworkshop2025"
+        "address": "2525 W. Alameda Ave., Denver, CO 80219",
+        "workshop_request": "'Request a Know Your Rights Training' form at https://coloradoimmigrant.org/",
+        "web": "https://coloradoimmigrant.org/"
       },
       "notes": "Statewide coalition coordinating immigrant defense. Holds regular workshops - sign up at workshop link. Works closely with CORRN rapid response.",
-      "source": "CIRC website (verified 2026-01)"
+      "source": "coloradoimmigrant.org (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "The stored workshop signup 'bit.ly/CIRCworkshop2025' is a STALE 2025 shortlink and has been replaced. Know Your Rights trainings are now requested through a form on their site, and CIRC notes extended wait times 'due to high demand.' Street address added.",
+      "status": "Active - site carries June 2026 news items.",
+      "verified": "2026-07-29"
     },
     {
-      "name": "Colorado Workers for Innovative and New Solutions (Colorado WINS)",
-      "category": ["Worker rights", "Labor union"],
+      "name": "Colorado WINS (state government employees union)",
+      "category": [
+        "Worker rights",
+        "Labor union"
+      ],
       "services": [
         "Worker organizing support",
         "Collective bargaining assistance",
@@ -545,16 +747,21 @@
         "Grievance support for public sector workers"
       ],
       "contact": {
-        "phone": "303-839-1933",
+        "email": "info@cowins.org",
         "web": "https://coloradowins.org/",
-        "address": "1325 S. Colorado Blvd, Suite B-400, Denver, CO 80222"
+        "pueblo_building": "128 S. Union Ave, Pueblo (confirmed indirectly - SCEA hosts two LGBTQ+ groups there)"
       },
       "notes": "State employee union. Can assist public sector workers with workplace issues. May have contacts for private sector organizing resources.",
-      "source": "Colorado WINS website (verified 2026-01)"
+      "source": "coloradowins.org (primary); socoequality.org (primary, corroborating Pueblo address) (verified 2026-07-29)",
+      "scope_correction_2026_07_29": "CRITICAL SCOPE FLAG: Colorado WINS represents STATE GOVERNMENT EMPLOYEES ONLY - 27,000+ across CDOT, CDPHE, DOC, CPW, Public Safety, Early Childhood, Human Services, CDLE, Revenue, CSU Fort Collins, and CSU Pueblo. Filing it under generic 'Worker rights' will mislead private-sector workers: a Pueblo restaurant or warehouse worker CANNOT get help here. Route private-sector wage theft to Towards Justice or the Colorado Division of Labor Standards and Statistics. Also: the prior phone 303-839-1933 and address 1325 S. Colorado Blvd, Suite B-400, Denver, CO 80222 appear NOWHERE on their current site - both now UNVERIFIED.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Towards Justice",
-      "category": ["Worker rights", "Legal aid"],
+      "category": [
+        "Worker rights",
+        "Legal aid"
+      ],
       "services": [
         "Wage theft legal representation",
         "Employment discrimination cases",
@@ -569,11 +776,16 @@
       },
       "eligibility": "Low-wage workers facing wage theft, discrimination, or unsafe working conditions.",
       "notes": "Free legal services for qualifying workers. Focus on systemic cases affecting many workers.",
-      "source": "Towards Justice website (verified 2026-01)"
+      "source": "Towards Justice website (verified 2026-01)",
+      "status": "UNVERIFIED this pass. towardsjustice.org returned HTTP 403 on both the root and /get-help/. Phone 720-239-2606, the Denver address, and current intake status could not be confirmed. Still the primary private-sector wage-theft referral for Pueblo, so worth a human check.",
+      "verified": "UNVERIFIED as of 2026-07-29 (site 403)"
     },
     {
       "name": "National Lawyers Guild - Colorado Chapter",
-      "category": ["Legal observer", "Protest support"],
+      "category": [
+        "Legal observer",
+        "Protest support"
+      ],
       "services": [
         "Legal observer training and deployment",
         "Jail support coordination",
@@ -581,63 +793,663 @@
         "Know Your Rights trainings for protesters"
       ],
       "contact": {
-        "web": "https://nlgcolorado.org/",
-        "email": "info@nlgcolorado.org"
+        "email": "nlgcolorado@proton.me",
+        "legal_observer_requests": "LegalObserver.NLGCO@proton.me",
+        "web": "https://nlgcolorado.org/"
       },
       "notes": "Can request legal observers for protests and community events. Provides jail support during mass arrest situations. Volunteer-run.",
-      "source": "NLG Colorado website (verified 2026-01)"
+      "source": "nlgcolorado.org (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "Contact emails CHANGED. Prior stored info@nlgcolorado.org is not the address published on their site. General contact is now nlgcolorado@proton.me and legal observer requests go to LegalObserver.NLGCO@proton.me. This matters operationally: a bounced legal-observer request means no observers at an action. No phone is published.",
+      "observer_request_fields": "Include organization name, event name, day(s)/date(s), start and end times, and location.",
+      "verified": "2026-07-29"
     },
     {
       "name": "Access Now Digital Security Helpline",
-      "category": ["Digital security", "Emergency support"],
+      "category": [
+        "Digital security",
+        "Emergency support"
+      ],
       "services": [
         "24/7 emergency digital security assistance",
-        "Incident response for hacked accounts",
+        "Incident response for compromised accounts",
         "Security assessment and guidance",
-        "Available in 9 languages"
+        "Available in ten languages: English, Spanish, French, German, Portuguese, Russian, Tagalog, Arabic, Italian, Ukrainian"
       ],
       "contact": {
-        "web": "https://www.accessnow.org/help/",
-        "email": "help@accessnow.org"
+        "email": "help@accessnow.org",
+        "pgp_key": "https://keys.accessnow.org/help.asc",
+        "pgp_fingerprint": "6CE6 221C 98EC F399 A04C 41B8 C46B ED33 32E8 A2BC",
+        "web": "https://www.accessnow.org/help/"
       },
       "response_time": "Responds within 2 hours to emergency requests.",
       "eligibility": "Activists, journalists, human rights defenders facing digital threats.",
       "notes": "International organization. Free service. Particularly useful for activists facing online harassment or surveillance.",
-      "source": "Access Now website (verified 2026-01)"
+      "source": "accessnow.org/help (primary, verified 2026-07-29)",
+      "corrections_2026_07_29": "Language count corrected from nine to ten. Added PGP key and fingerprint. Note a VETTING PROCESS applies before support is provided - tell users so a delay is not mistaken for a dead line.",
+      "verified": "2026-07-29"
+    },
+    {
+      "name": "Southern Colorado Equality Alliance (SCEA)",
+      "category": [
+        "LGBTQ+ services",
+        "Youth programs",
+        "Advocacy"
+      ],
+      "services": [
+        "OutFront LGBTQIA+ youth group - every Friday 5:30-7:00 PM, Colorado WINS office, 128 S. Union Ave, Pueblo, ages 13-20",
+        "TransGenerations gender identity drop-in support group - 1st and 3rd Saturday 6:00 PM, Colorado WINS building, 128 S Union Ave, Pueblo (info line 719-543-6460)",
+        "Queermunity art/conversation/social justice group - 3rd Sunday 2:00-4:00 PM, Rawlings Library Makerspace, 100 E Abriendo Ave, Pueblo",
+        "Pueblo Pride (Mineral Palace Park)",
+        "LGBTQIA+ education, advocacy, and empowerment programming",
+        "Pueblo Community College scholarship program"
+      ],
+      "contact": {
+        "phone": "719-685-7900",
+        "email": "info@socoequality.org",
+        "mailing_address": "P.O. Box 602, Pueblo, CO 81002 (MAILING ONLY - not a walk-in office)",
+        "web": "https://www.socoequality.org/"
+      },
+      "eligibility": "LGBTQIA+ people and allies in Pueblo and surrounding area. OutFront is ages 13-20. TransGenerations is open drop-in for trans, genderqueer, non-binary, and questioning people plus allies.",
+      "gap_filled": "PUEBLO-LOCAL LGBTQ+ SERVICES. This is the Pueblo anchor org the directory was missing - One Colorado (Denver) and Inside Out (Colorado Springs) are both out of town.",
+      "notes": "Founded as 'Pueblo After 2', first meeting 1992-11-07, in response to Colorado's Amendment 2 - a 30+ year Pueblo institution. Queermunity meets in a public library, which lowers the barrier to attending. Their health-resources page 404'd, so no specifics are cited from it.",
+      "remaining_gap": "NO gender-affirming medical provider physically in Pueblo could be found. Planned Parenthood Pueblo is NOT among the Colorado PP centers offering gender-affirming hormone therapy; nearest are Colorado Springs Westside or Salida.",
+      "verified": "2026-07-29",
+      "source": "socoequality.org plus /outfront, /transgenerations, /queermunity (all primary, verified 2026-07-29)"
+    },
+    {
+      "name": "Center Toward Self Reliance (CTSR)",
+      "category": [
+        "Disability services",
+        "Basic needs",
+        "Food assistance"
+      ],
+      "services": [
+        "Advocacy",
+        "Independent living skills training",
+        "Nursing-home transition services",
+        "Peer support",
+        "Information and referral",
+        "Food pantry (SEE CAVEAT - may be closed to applications)"
+      ],
+      "contact": {
+        "address": "901 W. 8th St., Pueblo, CO",
+        "phone": "719-546-1271",
+        "hours": "Mon-Fri 8:00 AM - 4:30 PM",
+        "web": "https://cfdpueblo.org/"
+      },
+      "eligibility": "People with disabilities across a 17-county service area. Pantry serves low-income individuals regardless of disability status.",
+      "pantry_caveat": "Their own site says the pantry is 'currently closed to applications. Please check back in April (2026)' - and that notice has itself gone stale, since April 2026 has passed without an update. CALL BEFORE REFERRING ANYONE FOR FOOD. When operating: distribution Mon/Tue/Wed/Fri 1:00-3:30 PM (closed Thu), by appointment, once per month, photo ID in person.",
+      "note": "This is the organization actually located at 901 W. 8th St. - the address the repo had mis-assigned to SafeSide Recovery.",
+      "verified": "2026-07-29",
+      "source": "cfdpueblo.org (primary, verified 2026-07-29)"
+    },
+    {
+      "name": "Pueblo Food Project pantry network",
+      "category": [
+        "Food assistance",
+        "Information and referral"
+      ],
+      "services": [
+        "Supplies 43 food pantries across Pueblo County",
+        "Publishes a self-updating monthly calendar of pantry dates, times, and locations"
+      ],
+      "contact": {
+        "pantry_calendar": "https://app.plentifulapp.com/a/pantries (Plentiful app)",
+        "web": "https://pueblofoodproject.org/foodpantries/",
+        "fallback": "211 - dial 2-1-1 or (866) 760-6489"
+      },
+      "eligibility": "Varies by pantry; the calendar lists requirements per site.",
+      "note": "Not a pantry itself. Because the calendar self-updates it is more durable than any hardcoded pantry list - PREFER THIS LINK in public-facing guides. No last-updated stamp on their page, so spot-check before publishing.",
+      "gap_filled": "Food pantries beyond the three already listed.",
+      "verified": "2026-07-29",
+      "source": "pueblofoodproject.org (primary, verified 2026-07-29)"
+    },
+    {
+      "name": "Ecumenical Church of Pueblo West Emergency Food Pantry",
+      "category": [
+        "Food assistance"
+      ],
+      "services": [
+        "Drive-thru food pantry: pre-packed nonperishable box plus choice items (meat, bread, eggs)",
+        "Pet food on request",
+        "Fresh produce distribution 3rd Friday monthly",
+        "Seasonal school supplies, Thanksgiving baskets, health clinics"
+      ],
+      "contact": {
+        "address": "434 S. Conquistador Ave., Pueblo West, CO 81007",
+        "phone": "719-547-3088",
+        "hours": "Tue 5:00-7:00 PM; Thu 11:00 AM - 1:00 PM",
+        "web": "https://www.ecopw.org/food-for-body-and-soul-ministry"
+      },
+      "eligibility": "First visit requires intake form, photo ID, and proof of address (utility bill, insurance/medical bill, car registration, or lease). LIMITED TO ONE VISIT PER HOUSEHOLD PER MONTH.",
+      "note": "One of the few food options in Pueblo WEST.",
+      "verified": "2026-07-29",
+      "source": "ecopw.org (primary, verified 2026-07-29)"
+    },
+    {
+      "name": "Pueblo City-County Library branches (heat refuge / cooling)",
+      "category": [
+        "Cooling center",
+        "Technology access",
+        "Community center"
+      ],
+      "services": [
+        "Free air-conditioned public indoor space at 10 locations",
+        "Restrooms, seating, water, Wi-Fi, public computers",
+        "Hosts the free legal self-help clinic (Lamb) and SCEA Queermunity (Rawlings Makerspace)",
+        "Summer meal sites at Rawlings and Lamb"
+      ],
+      "contact": {
+        "phone": "(719) 562-5600 (all branches)",
+        "web": "https://www.pueblolibrary.org/locations"
+      },
+      "branches": {
+        "Rawlings (Main)": "100 E Abriendo Ave., 81004 - M-Th 9a-9p, F-Sa 9a-6p, Su 1-5p (ONLY Sunday option)",
+        "Barkman": "1300 Jerry Murphy Rd., 81001 - M-Th 9a-9p, F-Sa 9a-6p, closed Su",
+        "Lamb": "2525 S. Pueblo Blvd., 81005 - M-Th 9a-9p, F-Sa 9a-6p, closed Su",
+        "Pueblo West": "298 S. Joe Martinez Blvd., 81007 - M-Th 9a-9p, F-Sa 9a-6p, closed Su",
+        "Lucero": "1315 E 7th St., 81001 - M-Th 10a-7p, F-Sa 10a-6p, closed Su",
+        "Giodone": "24655 US Hwy 50E, 81006 - M-Th 10a-7p, F-Sa 10a-6p, closed Su",
+        "Greenhorn Valley": "4801 Cibola Dr., Colorado City, 81019 - M-Th 10a-7p, F-Sa 10a-6p, closed Su (site conflicts with itself; homepage says 10a-6p M-Sat - CALL)",
+        "Library@The Y": "3200 E. Spaulding Ave., 81008 - M-F 9:30a-6p (closed 1:30-2p), Sa 9:30a-1:30p",
+        "Library@The U (CSU-Pueblo)": "2200 Bonforte Blvd., 81001 - M-Th 7a-11p, F 7a-6p, Sa 10a-6p, Su 1-11p (LONGEST HOURS)",
+        "PCCLD@PCC": "900 W. Orman Ave., Suite 110, 81004 - M-F 8a-5p"
+      },
+      "eligibility": "Open to everyone. No library card needed to sit inside; card required only to borrow.",
+      "why_listed": "PUEBLO HAS NO PUBLISHED OFFICIAL DESIGNATED COOLING-CENTER PROGRAM. City (pueblo.us), County (county.pueblo.org), library, and Sheriff/Emergency Management sites list none - despite an NWS Pueblo Heat Advisory issued 2026-07-26 (100-106F). County heat help is limited to IN-HOME evaporative coolers via Human Services weatherization/Direct Install. So free air-conditioned public buildings with confirmed hours are the honest best answer for 'where can I cool off today'.",
+      "accessibility_caveat": "Rawlings elevator modernization in progress - flag for mobility-limited people.",
+      "gap_filled": "Warming/cooling centers (seasonal, relevant now).",
+      "verified": "2026-07-29",
+      "source": "pueblolibrary.org/locations (primary, verified 2026-07-29)"
+    },
+    {
+      "name": "City of Pueblo outdoor pools and splash pads",
+      "category": [
+        "Cooling center",
+        "Youth programs"
+      ],
+      "services": [
+        "Four outdoor pools and two splash pads",
+        "Splash pads included with paid pool admission"
+      ],
+      "contact": {
+        "phone": "719-553-2790 (Parks & Recreation main line)",
+        "web": "https://www.pueblo.us/331/Aquatics"
+      },
+      "sites": {
+        "City Park Pool": "221 S. Parkside Ln, 81005",
+        "Mineral Palace Park Pool": "1602 N. Santa Fe Ave, 81003",
+        "Ray Aguilera Park Pool": "715 McCulley Ave, 81004",
+        "Mitchell Park Pool": "1040 N. La Crosse Ave, 81001 - CASH ONLY, lower fees"
+      },
+      "eligibility": "Open to public; modest admission fees (roughly $1.50-$4 by age and site; under 2 free).",
+      "do_not_publish": "DO NOT publish per-pool phone numbers - sources conflict (719-553-2816 vs 719-553-2798 attributed to different pools). Publish only the Parks & Rec main line. DO NOT publish 2026 season dates - pueblo.us/331/Aquatics still labels its season windows and fee table '2025 Season'. A 'Free Pool Days' page circulating with July 29-31 dates is a 2024 page whose weekday/date pairs coincidentally look current - a trap; do not cite it.",
+      "access_barrier": "City Park Pool reported at or near capacity daily since Memorial Day weekend.",
+      "verified": "2026-07-29",
+      "source": "pueblo.us/331/Aquatics (primary but stale-labeled, verified 2026-07-29)"
+    },
+    {
+      "name": "Free Legal Self-Help Clinic (Lamb Library)",
+      "category": [
+        "Legal aid",
+        "Free legal clinic"
+      ],
+      "services": [
+        "Volunteer attorneys give free legal INFORMATION (not representation) via computer link",
+        "Covers family law, civil litigation, property, probate, collections, appeals, landlord-tenant, veterans' benefits, and civil protection orders"
+      ],
+      "contact": {
+        "address": "Lamb Public Library, 2525 S. Pueblo Blvd., Pueblo, CO 81005",
+        "schedule": "First Friday of every month, 3:30-5:00 PM",
+        "signup_phone": "719-562-5600"
+      },
+      "eligibility": "Parties who have NO attorney. Free.",
+      "note": "Attorneys give information only - no representation. Alongside Colorado Legal Services this is one of only two free legal clinics in Pueblo this pass could stand behind.",
+      "gap_filled": "Free or sliding-scale legal clinics.",
+      "verified": "2026-07-29",
+      "source": "City of Pueblo calendar, pueblo.us (government primary, verified 2026-07-29)"
+    },
+    {
+      "name": "Colorado State Public Defender - Pueblo Office",
+      "category": [
+        "Legal aid",
+        "Criminal defense"
+      ],
+      "services": [
+        "Criminal defense representation for indigent defendants in Pueblo County",
+        "'Reentry After Incarceration' client resource page"
+      ],
+      "contact": {
+        "address": "Union Depot, 132 W. B St., Suite 200, Pueblo, CO 81003",
+        "phone": "719-546-0004",
+        "fax": "719-583-0746",
+        "email": "Pueblo@coloradodefenders.us (office mailbox, not a personal address)",
+        "web": "https://coloradodefenders.us/offices/pueblo/",
+        "reentry_resources": "https://coloradodefenders.us/for-clients/client-resources/reentry-after-incarceration/"
+      },
+      "eligibility": "Indigent people CHARGED WITH CRIMES in Pueblo County. Court-appointed only - NOT a walk-in legal advice service. Setting that expectation matters; people arrive expecting general legal help.",
+      "corrections_2026_07_29": "The directory's quick-reference listed a 'Pueblo_Public_Defender' number of 719-583-6900, which does NOT match the office's published 719-546-0004. Corrected.",
+      "verified": "2026-07-29",
+      "source": "coloradodefenders.us (primary, verified 2026-07-29)"
+    },
+    {
+      "name": "Pueblo Combined Court Self-Help Center (10th Judicial District)",
+      "category": [
+        "Legal aid",
+        "Court self-help"
+      ],
+      "services": [
+        "Self-help resources and forms for people without an attorney"
+      ],
+      "contact": {
+        "address": "Pueblo Judicial Building, 501 N. Elizabeth St., Pueblo, CO",
+        "web": "https://lawhelp.colorado.gov/node/11446",
+        "statewide_forms": "https://www.coloradojudicial.gov"
+      },
+      "status": "PARTIAL / UNVERIFIED. No phone number and no self-help hours could be obtained - lawhelp.colorado.gov returned HTTP 403. Publish the address and URL; state hours as 'call the court to confirm'. Do not invent a number.",
+      "verified": "Existence confirmed 2026-07-29; contact details UNVERIFIED"
+    },
+    {
+      "name": "Immigrant Freedom Fund",
+      "category": [
+        "Bail fund",
+        "Immigration legal aid"
+      ],
+      "services": [
+        "Pays immigration bonds for people held in civil ICE detention at the GEO/ICE facility in Aurora, CO"
+      ],
+      "contact": {
+        "email": "info@immigrantfreedomfund.org (org inbox)",
+        "application": "Bond fund application form at https://www.immigrantfreedomfund.org",
+        "web": "https://www.immigrantfreedomfund.org",
+        "phone": "NONE published - do not invent one"
+      },
+      "eligibility": "Minimum bond $1,500, no stated maximum. SCOPED BY DETENTION LOCATION, NOT RESIDENCE - a Pueblo resident detained at Aurora IS eligible; it will NOT help with a Pueblo County criminal bond.",
+      "gap_filled": "Bail funds (partial).",
+      "gap_note": "NO Pueblo-based or Pueblo-specific bail fund exists. Checked against the National Bail Fund Network directory (Community Justice Exchange), which lists exactly two Colorado funds: Colorado Freedom Fund and Immigrant Freedom Fund. Everything else returned was a for-profit bail bondsman - keep those out of the directory.",
+      "verified": "2026-07-29",
+      "source": "immigrantfreedomfund.org (primary, verified 2026-07-29)"
+    },
+    {
+      "name": "Southern Colorado Labor Council, AFL-CIO",
+      "category": [
+        "Labor organizing"
+      ],
+      "services": [
+        "Regional labor council coordinating affiliated unions in southern Colorado",
+        "Coalition and organizing contact"
+      ],
+      "contact": {
+        "address": "304 S Union Ave, Pueblo, CO 81003",
+        "web": "https://coaflcio.org/southern-colorado-labor-council/contact-us",
+        "phone": "NONE published on their page. An email SCLCcentralbody@gmail.com appeared in search results but could NOT be confirmed on the council's own page - UNVERIFIED, do not publish."
+      },
+      "critical_scope_limit": "NOT A WAGE-THEFT INTAKE SERVICE. The page explicitly states AFL-CIO cannot respond to requests about pensions, health care, grievances, or other issues that must go to your local or national union. List as a labor/organizing contact ONLY - filing it under 'worker rights help' would send people somewhere that cannot serve them.",
+      "notes": "Confirmed active in Pueblo coalition work alongside El Movimiento Sigue, Colorado WINS, Center for Health Progress, SEIU Local 105, and NAACP. State AFL-CIO site footer reads (c) 2026.",
+      "gap_note": "NO worker center or day-laborer center with a Pueblo presence exists. Colorado's worker center (El Centro Humanitario) is Denver-only with no Pueblo satellite. Real wage-theft recourse for Pueblo = Towards Justice plus the Colorado Division of Labor Standards and Statistics complaint process. THIS GAP REMAINS OPEN.",
+      "verified": "2026-07-29",
+      "source": "coaflcio.org (semi-primary, verified 2026-07-29)"
+    },
+    {
+      "name": "Utility and energy assistance (LEAP / Energy Outreach Colorado / BHEAP)",
+      "category": [
+        "Utility assistance",
+        "Emergency assistance"
+      ],
+      "services": [
+        "Colorado LEAP - heating bill assistance plus emergency furnace repair/replacement. SEASON: Nov 1 - Apr 30 only",
+        "Energy Outreach Colorado - YEAR-ROUND past-due energy bill help, heating repair/replacement, free energy upgrades (CARE), community solar",
+        "Black Hills Energy Affordability Program (BHEAP) - percentage-of-income bill for up to one year, auto-renewed"
+      ],
+      "contact": {
+        "LEAP": "1-866-HEAT-HELP / 1-866-432-8435; apply via Colorado PEAK at colorado.gov/PEAK; https://cdhs.colorado.gov/leap",
+        "Energy_Outreach_Colorado": "Assistance line 1-866-432-8435; main office 303-825-8750; https://energyoutreach.org",
+        "Black_Hills_Energy": "Customer service 888-890-5554; in person at Black Hills Energy Service Center, 105 S. Victoria Ave., Pueblo, Mon-Fri 8:00 AM - 4:30 PM"
+      },
+      "seasonal_status": "LEAP IS OUT OF SEASON AS OF 2026-07-29. The 2025-26 season closed 2026-04-30; next window opens on/about 2026-11-01. BHEAP is GATED BEHIND LEAP (must be enrolled in LEAP or have applied with qualifying income, and must accept Budget Billing), which in practice means waiting for the Nov 1 window. Energy Outreach Colorado is the year-round option. EOC explicitly does NOT process LEAP applications.",
+      "funding_watch": "The FY2026 President's Budget proposed ELIMINATING LIHEAP entirely (~$4B); Congress instead funded it at $4.045B for FY2026 (+$20M), so the season just ended was funded. HOWEVER: HHS terminated the ENTIRE federal LIHEAP program staff on 2025-04-01, leaving states running it without federal guidance, and LIHEAP faces elimination again in the FY2027 budget - the season opening this November. Colorado received ~$42M in FY2025.",
+      "gap_filled": "Rental/utility assistance.",
+      "verified": "2026-07-29",
+      "source": "cdhs.colorado.gov/leap, energyoutreach.org/contact, blackhillsenergy.com (primary); neada.org, publicpower.org for appropriations (secondary) (verified 2026-07-29)"
+    },
+    {
+      "name": "Pueblo County Department of Human Services",
+      "category": [
+        "Emergency assistance",
+        "Food assistance",
+        "Housing"
+      ],
+      "services": [
+        "SNAP, TANF/cash assistance, Medicaid enrollment",
+        "Everyday Eats senior food program",
+        "Local LEAP intake",
+        "Emergency Home Repair Programs",
+        "Weatherization and evaporative cooler Direct Install (in-home heat relief)",
+        "Housing programs"
+      ],
+      "contact": {
+        "address": "2631 E. 4th St., Pueblo, CO 81001",
+        "phone": "719-583-6308",
+        "tty": "7-1-1",
+        "applications": "Most programs via PEAK at colorado.gov/PEAK"
+      },
+      "verification_caveat": "county.pueblo.org returned HTTP 403 to EVERY fetch attempt. All Pueblo County detail in this pass is search-indexed or third-party, NOT read from the source. Address and 719-583-6308 are consistent across sources; treat specific program terms as UNVERIFIED.",
+      "gap_note": "Could NOT confirm a distinct county-run emergency RENTAL assistance fund. Do not imply one exists.",
+      "verified": "2026-07-29 (secondary sources only)",
+      "source": "search-indexed county pages + findhelp.org (secondary, verified 2026-07-29)"
+    },
+    {
+      "name": "Everyday Eats senior food program (formerly CSFP)",
+      "category": [
+        "Food assistance",
+        "Senior services"
+      ],
+      "services": [
+        "Free monthly box of 22-25 staple items with low-sodium and diabetic-friendly options"
+      ],
+      "contact": {
+        "address": "2631 E. 4th St., Pueblo, CO 81001",
+        "distribution_hours": "Mon-Fri 7:30 AM - 3:30 PM",
+        "phone": "719-583-6199",
+        "apply": "Text FOOD to 1-877-644-3663 to receive the intake survey link"
+      },
+      "eligibility": "Pueblo County resident, age 60+, plus income limits OR enrollment in SNAP, LEAP, SSI, Medicaid/Health First Colorado, AND, AB, TANF, or OAP. Recertify every 6 months; 3 consecutive missed pickups = removal.",
+      "note": "Reportedly actively RECRUITING clients. Renamed from Commodity Supplemental Food Program.",
+      "verified": "2026-07-29 (secondary sources only - county site 403)",
+      "source": "search-indexed county page + agewisecolorado.org + findhelp.org (secondary, 2026-07-29)"
+    },
+    {
+      "name": "SRDA senior meals (congregate and Meals on Wheels)",
+      "category": [
+        "Food assistance",
+        "Senior services"
+      ],
+      "services": [
+        "Congregate meals at Patrick A. Lucero Library, 1315 E. 7th St., Pueblo - Mon & Thu 11:00 AM - 12:30 PM (RESERVATION REQUIRED the day before or before 9 AM same day)",
+        "Meals on Wheels delivered 11:00 AM - 1:00 PM, 7 days/week, registration required"
+      ],
+      "contact": {
+        "phone": "719-543-0100"
+      },
+      "eligibility": "Pueblo residents age 60+.",
+      "status": "UNVERIFIED. Sourced to the tre.org 'Food For Thought' guide, which is internally STALE (contains COVID-era text). SRDA is a long-established Pueblo agency and is also the 211 southeast regional provider, so the org is certainly active - but VERIFY meal site and hours by phone.",
+      "verified": "UNVERIFIED as of 2026-07-29"
+    },
+    {
+      "name": "Summer youth meals - Pueblo D60 Foodworks (SFSP)",
+      "category": [
+        "Food assistance",
+        "Youth programs"
+      ],
+      "services": [
+        "FREE LUNCH for all children 18 and under. No enrollment, no ID, no application. Monday-Friday.",
+        "Meals must be eaten on site. Adults may buy a meal for about $5."
+      ],
+      "contact": {
+        "phone": "719-549-7205 (Pueblo D60 Nutrition Services)",
+        "authoritative_locator": "USDA Summer Meals Site Finder - https://www.fns.usda.gov/sfsp/sitefinder"
+      },
+      "reported_sites": "Cesar Chavez Academy, Pueblo Academy of Arts, Risley International Academy, Minnequa Elementary, Irving Elementary, El Pueblo History Museum, YMCA of Pueblo, Rawlings Library (100 E Abriendo Ave), Lamb Library (2525 S Pueblo Blvd)",
+      "caveat": "VERIFY BEFORE PUBLISHING. The site list and serving times are SECONDARY and the fullest list traces to summer 2025. A 2026 D60 post confirms the program relaunched. CALL 719-549-7205 FIRST - a wrong site sends a hungry kid to a locked door. Also TIME-LIMITED: ends when school resumes in August.",
+      "note": "D60 is CEP district-wide - all enrolled students eat free during the school year, no application. D70 uses ApplyForLunch.com.",
+      "verified": "2026-07-29 (program active; specific sites secondary)",
+      "source": "pueblod60.org (primary for phone); KOAA / D60 posts / library event listings (secondary for sites) (2026-07-29)"
+    },
+    {
+      "name": "Boys & Girls Clubs of Pueblo County",
+      "category": [
+        "Youth programs"
+      ],
+      "services": [
+        "Nine clubhouses: Avondale, East Side, Sprague, Minnequa, West Side (at Irving), Ray Aguilera Teen Center, Prairie Winds, Pueblo Academy of Arts, Liberty Point International",
+        "After-school and summer youth programming"
+      ],
+      "contact": {
+        "address": "Support Services Office: 635 W. Corona, Suite 100, Pueblo, CO 81004",
+        "phone": "719-564-0055",
+        "web": "https://bgcpckids.org/"
+      },
+      "caveat": "Their site does NOT publish per-site addresses, phones, ages, hours, or fees. Publish the main number and website only and let families call.",
+      "gap_filled": "Youth services.",
+      "verified": "2026-07-29",
+      "source": "bgcpckids.org (primary, verified 2026-07-29)"
+    },
+    {
+      "name": "Veterans services in Pueblo",
+      "category": [
+        "Veterans services",
+        "Health services",
+        "Mental health"
+      ],
+      "services": [
+        "Pueblo County Veterans Service Office (CVSO) - accredited VSOs assist veterans AND family members with VA claims, applications, appeals. Free. 405 W. 9th St., Pueblo, CO 81003; main line 719-583-4544",
+        "PFC James Dunn VA Clinic (Pueblo CBOC) - 4776 Eagleridge Circle, Pueblo, CO 81008; Mon-Fri 7:30 AM - 4:30 PM. Primary care (incl. virtual), mental health, lab, nutrition, pharmacy, patient advocate. Wheelchairs on arrival. DAV van service and beneficiary travel/mileage reimbursement. Also a 40-bed Community Living Center in Pueblo",
+        "Pueblo Vet Center (NON-MEDICAL counseling, separate from the clinic) - 1515 Fortino Blvd., Suite 130, Pueblo, CO 81008; Mon-Fri 8:00 AM - 4:30 PM, non-traditional hours available, WALK-INS WELCOMED. Confidential counseling for military transition, PTSD, military sexual trauma, grief, substance use, homelessness; telehealth; Mobile Vet Center covering 18 counties",
+        "Mt. Carmel Veterans Service Center, Pueblo County office - 1925 E Orman Avenue, Suite 148, Pueblo, CO 81004; (719) 309-4719; Mon-Fri 8 AM - 5 PM. Transition and employment assistance, behavioral health and wellness, benefits navigation, community referral; VETERANS-ONLY FOOD PANTRY 1st & 3rd Wed, dates vary - call"
+      ],
+      "contact": {
+        "veterans_crisis_line": "877-927-8387, or dial 988 then press 1",
+        "homeless_veterans": "National Call Center for Homeless Veterans 877-424-3838 (24/7)",
+        "va_clinic_web": "https://www.va.gov/eastern-colorado-health-care/locations/pfc-james-dunn-va-clinic/",
+        "vet_center_web": "https://www.va.gov/pueblo-vet-center/",
+        "mt_carmel_web": "https://www.veteranscenter.org/locations/"
+      },
+      "vet_center_eligibility": "MUCH BROADER THAN PEOPLE ASSUME - worth spelling out: you do NOT need VA enrollment, a service-connected disability, or any particular discharge status. Qualifying service includes combat zones, national emergency response, MST, or use of VA education benefits. FAMILY MEMBERS SERVED TOO.",
+      "caveats": "Direct phone numbers for the VA clinic and Vet Center were not captured (va.gov routes them through a contact widget) - route via va.gov rather than guessing. CVSO detail is search-indexed because county.pueblo.org 403'd; two staff direct lines circulate but only the main line is published here per ethics constraints. Mt. Carmel: secondary listings say Suite 156; their own site says 148 - use 148.",
+      "gap_note": "Could NOT identify which agency holds the SSVF grant for Pueblo. VOA Colorado's SSVF covers Denver Metro only. DO NOT name a Pueblo SSVF provider - publish 877-424-3838 and the CVSO instead. Federal flag: FY2026 budget proposed zeroing HOPWA ($505M) and cutting Homeless Assistance Grants by $27M.",
+      "gap_filled": "Veterans services.",
+      "verified": "2026-07-29",
+      "source": "va.gov (federal primary); veteranscenter.org (primary); county CVSO search-indexed (secondary) (verified 2026-07-29)"
+    },
+    {
+      "name": "Reentry support (Pueblo)",
+      "category": [
+        "Reentry support",
+        "Substance use",
+        "Employment"
+      ],
+      "services": [
+        "Crossroads' Turning Points, Inc. - primarily SUD treatment serving justice-involved clients, plus housing services, mentoring/peer support, employment counseling and training, discharge planning, post-discharge follow-up. 509 E. 13th St., Pueblo, CO 81001 - 719-546-6666 (detox, DUI, Offender Services); 1615 Bonforte Blvd., Pueblo, CO 81001 - 719-404-1992 (outpatient, IOP, adolescents, Special Connections); Administration 4 Montebello Rd., Pueblo, CO 81001 - 719-546-6667",
+        "Catholic Charities of Southern Colorado transitional jobs - transitional jobs and technical training for people with barriers to employment, SPECIFICALLY veterans, people 50+, and non-custodial parents (NOT 'anyone with a record' - set expectations). Pueblo, Fremont, Las Animas, Huerfano counties. Contact 429 W. 10th St. / 719-544-4233"
+      ],
+      "contact": {
+        "crossroads_web": "https://crossroadstp.org",
+        "remerg": "https://remerg.com (Colorado reentry resource hub with Pueblo County pages)",
+        "ccjrc": "https://ccjrc.org/find-help/",
+        "oacra_employment": "https://oacra.com/find-services/colorado-employment",
+        "public_defender_reentry": "https://coloradodefenders.us/for-clients/client-resources/reentry-after-incarceration/"
+      },
+      "status": "WEAKEST CATEGORY. Crossroads detail is all SECONDARY (City of Pueblo page pueblo.us/939, Feb 2026 listing, rehab directories); their own locations page did not load. Verify the address/phone split. Statewide referral hubs (Remerg, CCJRC, OACRA) are the best value here.",
+      "do_not_list": "ReHire Colorado - Goodwill's published ReHire service area is El Paso, Teller, Douglas, Jefferson, Denver, Arapahoe, Adams, Boulder, Broomfield, Larimer, and Weld counties. PUEBLO IS NOT LISTED and the 719 number is El Paso County. Confirm coverage before ever listing it as a Pueblo resource. Also unconfirmed for Pueblo: Breakthrough, Second Chance Center (Aurora), Center for Employment Opportunities, Advocates for Change, The Reentry Initiative (Boulder County only). CDOC Community Reentry / Pueblo Community Parole: no Pueblo-specific address, phone, or hours verifiable - report as 'ask your parole officer' rather than inventing a location.",
+      "gap_filled": "Reentry support (partial).",
+      "verified": "2026-07-29 (mixed primary/secondary)",
+      "source": "as noted per item (2026-07-29)"
+    },
+    {
+      "name": "Friendly Harbor peer support drop-in center",
+      "category": [
+        "Mental health",
+        "Substance use",
+        "Community center"
+      ],
+      "services": [
+        "Peer-support drop-in center for adults with mental health and/or substance use conditions"
+      ],
+      "contact": {
+        "address": "2713 N Grand Ave, Pueblo, CO",
+        "phone": "719-545-2564",
+        "hours": "Mon-Sat 11 AM - 5 PM"
+      },
+      "eligibility": "Adults with mental health and/or substance use conditions.",
+      "corrections_2026_07_29": "Two secondary directories advertise a 'Friendly Harbor Free Food Pantry' at this address. Their OWN site does not mention a food pantry at all. Listed as a drop-in/peer-support center; the pantry is UNCONFIRMED.",
+      "verified": "2026-07-29",
+      "source": "own site (primary, verified 2026-07-29)"
+    },
+    {
+      "name": "Pueblo Relief Shelter",
+      "category": [
+        "Homeless services",
+        "Cooling center",
+        "Warming center"
+      ],
+      "services": [
+        "Emergency shelter, capacity 90, separate men's and women's rooms",
+        "City of Pueblo + SafeSide partnership"
+      ],
+      "contact": {
+        "reported_address": "710 W. 4th St., Pueblo, CO (distinct from The Pueblo Shelter at 728 W. 4th St.)",
+        "verify_phone": "719-924-8413"
+      },
+      "policy_change": "A city council ordinance REMOVED the requirement that the mayor declare a weather emergency to open it. It reportedly now operates NIGHTLY YEAR-ROUND regardless of temperature. KOAA also reported hours shifting from 9 PM-7 AM toward 7 AM-7 PM, which would make it a DAYTIME facility - potentially the closest thing Pueblo has to a cooling center.",
+      "status": "CONFIDENCE MEDIUM. VERIFY BY PHONE (719-924-8413) BEFORE PUBLISHING AS A DAYTIME COOLING SITE. The address and 90-bed capacity come from search aggregation of KOAA/pueblo.us; the pueblo.us CivicAlert (AID=4892) 404'd; safesidefoundation.org's Pueblo Shelter Project page gives no address, hours, or phone. The 7 AM-7 PM shift was described as UPCOMING, NOT IN EFFECT. This is exactly the entry where a stale hour range strands someone outdoors in 100F.",
+      "historical_note": "Pueblo's warming shelter previously ran roughly 7 PM-7 AM with 49 beds, extending to 24 hours in extreme cold - superseded by the nightly-operation ordinance.",
+      "verified": "PARTIALLY CONFIRMED 2026-07-29 - verify by phone before publishing"
+    },
+    {
+      "name": "Additional Pueblo food pantries (SECONDARY - call before referring)",
+      "category": [
+        "Food assistance"
+      ],
+      "services": [
+        "The Avenue Church - 3030 Thatcher Ave. - 719-561-1512 - 3rd Sat 9 AM-12 PM (another guide says 9-11 AM) - NO ID, no registration; sign in with household size; may pick up for multiple families",
+        "Lynn Gardens Baptist Church - 3804 W Pueblo Blvd. - 719-564-4434 - Thu 11 AM-2 PM; Care & Share mobile pantry 3rd Wed 9:30 AM until gone. Bring bags + ID. PET FOOD BANK last Thu of month 11 AM-1 PM",
+        "Praise Assembly Church - 2000 Troy Ave. - 719-544-9486 - every 4th Wed 9 AM-1 PM - drive-thru",
+        "Southwest Church of Christ - 1635 S Pueblo Blvd. - 719-564-3873 - 2nd Tue 9:30-11:30 AM - NO ID required",
+        "Pueblo United - 623 E. 4th St. - 719-696-8586 - Mon & Fri 9 AM-5 PM, Wed 9 AM-3 PM - CALL AHEAD to have a box prepared; mobile pantry 1st & 3rd Mon 1-3 PM",
+        "Luv in Action - address not published - 719-542-0549 - BY APPOINTMENT ONLY; leave a message",
+        "Rocky Mountain SER (RMSER) - 330 Lake Ave. - Wed & Fri 4-6 PM - NO ID required; free diapers + wipes monthly. NO PHONE PUBLISHED HERE: sources conflict (800-748-2074 / 719-334-0309 vs 719-542-1922). Do not publish a number until confirmed",
+        "Pueblo Community College pantry - 2631 E 4th St. - 719-583-6199 - by appointment after registering (phone or text 877-644-3663) - MUST BE A PUEBLO COUNTY RESIDENT (not students only); photo ID + proof of address for all household members",
+        "Pueblo Christian Church - 1605 S Pueblo Blvd. - 719-544-9822 - Mon/Tue/Wed 9-11 AM",
+        "Los Pobres / Sacred Heart Catholic Church, Avondale - 214 US-50 Bus, Avondale 81022 - 719-947-3109 - Tue 8:30 AM-12 PM, Thu 1-5:30 PM",
+        "Pueblo Community Soup Kitchen - 422 W 7th St. - no phone published - Mon-Sat 9 AM-12:30 PM - hot meals, no eligibility screen",
+        "VFW Post 3641 - 724 E. 4th St. - Mondays only 10 AM-12 PM - canned/dried goods, meat and dairy when available",
+        "Blessing Boxes - about 26 unstaffed 24/7 free-food boxes across Pueblo, Pueblo West, Avondale, Vineland. Directory: pueblocountyblessingboxes.org. Two secondary lists give DIFFERENT address sets - publish the .org link, never a hardcoded list"
+      ],
+      "status": "ALL SECONDARY - TREAT EVERY ROW AS UNVERIFIED. From a Pueblo County Food Pantries list dated 2025-04-14 hosted by nwsoco.org, which itself says 'Please call locations to confirm events', plus a tre.org guide that is internally stale (contains COVID-era text). The two lists CONFLICT with each other on RMSER's phone and on several hours.",
+      "verified": "UNVERIFIED as of 2026-07-29 - secondary, aging, mutually conflicting sources"
+    },
+    {
+      "name": "National Runaway Safeline",
+      "category": [
+        "Youth programs",
+        "Crisis line"
+      ],
+      "services": [
+        "24/7 crisis line, texting, and chat for runaway and homeless youth and their families",
+        "Referrals and safe-return support"
+      ],
+      "contact": {
+        "phone": "1-800-RUNAWAY (1-800-786-2929)",
+        "web": "https://www.1800runaway.org/"
+      },
+      "eligibility": "Youth and families nationwide, including Pueblo.",
+      "why_listed": "CRITICAL GAP MITIGATION: no under-18 emergency shelter exists in or near Pueblo. Every youth housing resource verified in Pueblo starts at age 18, and the nearest regional youth shelter (The Place, Colorado Springs) HAS CLOSED ITS SHELTER (now a day center Mon-Fri 9 AM-5 PM with housing navigation and street outreach for ages 15-24; old numbers 719-244-3959 / 719-205-7129 may no longer reach a shelter - do not publish them as a shelter line). For an unaccompanied Pueblo youth under 18 in crisis, the honest referral chain is 911 / 988 / this line / Pueblo County DHS child welfare - NOT a bed. This is a real service desert, not a research failure. Also: the 'Youthful Offender System' in Pueblo is a DOC PRISON FACILITY, not a youth service - keep it out of the directory.",
+      "verified": "2026-07-29"
     }
   ],
   "quick_reference": {
     "emergency_hotlines": {
-      "CORRN_live_ICE": "844-864-8341 (opt 1)",
-      "DV_crisis_Mariposa": "719-545-8195",
-      "ACOVA_victim_services": "719-583-6434",
-      "sexual_assault_Juniper": "719-549-0549 (call/text 24/7)",
-      "mental_health_crisis": "844-493-8255",
-      "211_referrals": "2-1-1"
+      "CORRN_live_ICE": "844-864-8341 (opt 1 = active ICE activity, 24/7)",
+      "DV_crisis_Mariposa": "719-545-8195 (24/7)",
+      "sexual_assault_Juniper": "719-549-0549 (call or text, 24/7)",
+      "mental_health_crisis": "988 (call or text) - legacy 844-493-8255 still routes here",
+      "crisis_walk_in_Pueblo": "Health Solutions Crisis Living Room, 1310 Chinook Lane - 719-545-2746 (24/7/365)",
+      "veterans_crisis": "877-927-8387, or 988 then press 1",
+      "homeless_veterans": "877-424-3838 (24/7)",
+      "runaway_homeless_youth": "1-800-RUNAWAY (1-800-786-2929)",
+      "211_referrals": "2-1-1 or (866) 760-6489",
+      "ACOVA_victim_services": "719-583-6434 - UNVERIFIED, domain dead, confirm before use"
     },
     "immigration_legal": {
-      "RMIAN_detention": "(303) 866-9308",
-      "Catholic_Charities": "(719) 586-8600",
+      "RMIAN_detention_hotline": "(303) 866-9308",
+      "RMIAN_main": "(303) 433-2812",
+      "Catholic_Charities_Pueblo": "719-544-4233",
       "Colorado_Legal_Services": "719-545-6708",
-      "CIRC_workshops": "bit.ly/CIRCworkshop2025"
+      "CIRC": "303-922-3344 (Know Your Rights training request form on coloradoimmigrant.org)",
+      "Immigrant_Freedom_Fund_bonds": "info@immigrantfreedomfund.org (Aurora ICE detention bonds)"
     },
     "housing_emergency": {
-      "Posada": "719-545-8776",
-      "CO_rental_assistance": "1-303-838-1200",
-      "NeighborWorks": "719-544-8078"
+      "Posada": "719-545-8776 (Mon-Fri 9AM-1PM; TBRA currently CLOSED)",
+      "The_Pueblo_Shelter": "(719) 924-8413 - overnight 9PM-7AM; community meal daily 4:30PM",
+      "Catholic_Charities_rent_utilities": "719-544-4233",
+      "Energy_Outreach_Colorado_year_round": "1-866-432-8435",
+      "LEAP_seasonal_Nov_to_Apr": "1-866-432-8435 (CLOSED until ~Nov 1 2026)",
+      "Black_Hills_Energy_BHEAP": "888-890-5554 (requires LEAP enrollment)",
+      "Pueblo_County_Human_Services": "719-583-6308",
+      "CO_rental_assistance_ERAP": "1-303-838-1200 - UNVERIFIED, may no longer accept applications",
+      "NeighborWorks": "719-544-8078 (housing finance/lending - NOT emergency rent)"
     },
     "legal_civil_rights": {
-      "ACLU_Colorado": "303-777-5482",
-      "NLG_Colorado": "nlgcolorado.org",
-      "Colorado_Freedom_Fund_bail": "(303) 997-2565",
-      "Pueblo_Public_Defender": "719-583-6900"
+      "ACLU_Colorado": "303-777-5482 (intake via aclu-co.org/need-legal-help/)",
+      "NLG_Colorado_legal_observers": "LegalObserver.NLGCO@proton.me",
+      "NLG_Colorado_general": "nlgcolorado@proton.me",
+      "Colorado_Freedom_Fund_bail": "Intake form at coloradofreedomfund.org/refer (phone unverified)",
+      "Pueblo_Public_Defender": "719-546-0004",
+      "Free_legal_clinic_Lamb_Library": "719-562-5600 - first Friday monthly 3:30-5PM",
+      "Colorado_Legal_Services": "719-545-6708"
     },
     "worker_rights": {
-      "Towards_Justice_wage_theft": "720-239-2606",
-      "Colorado_WINS_union": "303-839-1933"
+      "Towards_Justice_wage_theft": "720-239-2606 (UNVERIFIED this pass - site 403)",
+      "Colorado_WINS_union": "info@cowins.org - STATE GOVERNMENT EMPLOYEES ONLY",
+      "CDLE_wage_complaints": "Colorado Division of Labor Standards and Statistics - statewide, covers Pueblo",
+      "note": "NO worker center or day-laborer center with a Pueblo presence exists - gap still open."
     },
     "digital_security": {
-      "Access_Now_24_7": "accessnow.org/help"
+      "Access_Now_24_7": "help@accessnow.org (2-hour response, 10 languages, PGP available)"
+    },
+    "lgbtq": {
+      "SCEA_Pueblo": "719-685-7900 / info@socoequality.org",
+      "TransGenerations_group": "719-543-6460 - 1st & 3rd Sat 6PM, 128 S Union Ave",
+      "OutFront_youth_13_20": "Fridays 5:30-7PM, 128 S Union Ave",
+      "Queermunity": "3rd Sunday 2-4PM, Rawlings Library Makerspace"
+    },
+    "food": {
+      "Pueblo_Food_Project_pantry_calendar": "app.plentifulapp.com/a/pantries (43 pantries, self-updating)",
+      "Care_and_Share_live_calendar": "careandshare.org/findfood/#calendar (no ID required)",
+      "Cooperative_Care_Center": "719-543-7484 - 326 W 8th St, Mon-Thu 9AM-1PM",
+      "Summer_youth_meals": "719-549-7205 / fns.usda.gov/sfsp/sitefinder (free, under 18, ends August)",
+      "Everyday_Eats_seniors_60plus": "719-583-6199 or text FOOD to 1-877-644-3663"
+    },
+    "heat_and_cold_relief": {
+      "note": "Pueblo has NO published official designated cooling-center program as of 2026-07-29, despite an NWS heat advisory issued 2026-07-26 (100-106F).",
+      "library_branches_free_AC": "(719) 562-5600 - 10 locations; Library@The U has the longest hours (M-Th 7a-11p)",
+      "El_Centro_del_Quinto_Sol": "719-553-2949 - summer Mon-Fri 12-8PM, Sat 12-6PM",
+      "city_pools_splash_pads": "719-553-2790 (Parks & Rec main line)",
+      "Pueblo_Relief_Shelter": "719-924-8413 - VERIFY hours; may have shifted to daytime 7AM-7PM",
+      "in_home_cooling": "Pueblo County Human Services 719-583-6308 - evaporative cooler Direct Install"
     }
+  },
+  "last_verification_pass": {
+    "date": "2026-07-29",
+    "agent": "05_PUEBLO_RESOURCES_MAPPER",
+    "previous_pass": "2026-02-18",
+    "note": "Full verification of all pre-existing records plus expansion into mutual aid, bail funds, worker centers, LGBTQ+, cooling centers, rental/utility, food, legal clinics, youth, veterans, and reentry. Records carry a 'verified' field; those that could not be confirmed from a primary source say so explicitly and must be treated as provisional.",
+    "json_repair": "This file was ALREADY INVALID JSON before this pass: the SafeSide Recovery record's 'contact' object was opened with '{' and closed with ']' (introduced with that record around 2026-01/02). Any downstream consumer parsing this file has been failing since then. Fixed.",
+    "gaps_still_open": [
+      "No Pueblo-based mutual aid network or community fridge could be confirmed",
+      "No Pueblo-based or Pueblo-specific bail fund exists (only two statewide Colorado funds)",
+      "No worker center or day-laborer center with a Pueblo presence",
+      "No gender-affirming medical provider physically in Pueblo",
+      "No official designated cooling-center program from City, County, or library",
+      "No under-18 emergency youth shelter in or near Pueblo (regional one has closed)",
+      "Could not identify the SSVF grant holder for Pueblo"
+    ],
+    "sites_blocking_automated_verification": [
+      "county.pueblo.org (403)",
+      "lawhelp.colorado.gov (403)",
+      "coloradolegalservices.org (403)",
+      "towardsjustice.org (403)",
+      "Planned Parenthood health centers (403)"
+    ],
+    "dead_or_hijacked_domains_found": [
+      "ywcapueblo.org -> now 301-redirects to a POLITICAL CAMPAIGN DONATION SITE (billmoherforcongress.com)",
+      "acovapueblo.org -> DNS failure",
+      "pueblorescuemission.org -> DNS failure",
+      "pueblolibrary.org/techconnect -> 404",
+      "rmian.org/get-help/ -> 404",
+      "health.solutions/services/crisis-care/ -> 404",
+      "www.coloradorapidresponsenetwork.com -> TLS handshake failure (bare domain works)"
+    ],
+    "seasonal_caveats": "LEAP closed until ~Nov 1 2026; BHEAP gated behind LEAP; Posada TBRA closed; CTSR pantry closed to applications; summer youth meals active but end in August; pool season ends ~Sept."
   }
 }

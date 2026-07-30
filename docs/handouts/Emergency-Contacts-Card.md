@@ -11,7 +11,7 @@
 | **CORRN Hotline** | **844-864-8341** |
 | (Press 1 for live help) | (Presiona 1 para ayuda en vivo) |
 | **RMIAN Detention** | **(303) 866-9308** |
-| **Catholic Charities** | **(719) 586-8600** |
+| **Catholic Charities** | **719-544-4233** |
 | **CO Legal Services** | **719-545-6708** |
 
 ---
@@ -20,11 +20,11 @@
 
 | | |
 |---|---|
-| **Mental Health Crisis** | **844-493-8255** |
-| Text/Texto: TALK to 38255 | |
+| **Mental Health Crisis** | **Dial 988** |
+| Text/Texto: TALK to 38255 | (844-493-8255 also still works) |
 | **DV Crisis (Mariposa)** | **719-545-8195** |
-| **Sexual Assault** | **719-544-1191** |
-| **Victim Services (ACOVA)** | **719-583-6434** |
+| **Sexual Assault (Juniper)** | **719-549-0549** (call/text) |
+| **Victim Services (ACOVA)** | 719-583-6434 — ⚠️ *unverified 7/2026* |
 
 ---
 
@@ -74,7 +74,7 @@
 | **CORRN Hotline** | **844-864-8341** |
 | (Press 1 for live help) | (Presiona 1 para ayuda en vivo) |
 | **RMIAN Detention** | **(303) 866-9308** |
-| **Catholic Charities** | **(719) 586-8600** |
+| **Catholic Charities** | **719-544-4233** |
 | **CO Legal Services** | **719-545-6708** |
 
 ---
@@ -83,11 +83,11 @@
 
 | | |
 |---|---|
-| **Mental Health Crisis** | **844-493-8255** |
-| Text/Texto: TALK to 38255 | |
+| **Mental Health Crisis** | **Dial 988** |
+| Text/Texto: TALK to 38255 | (844-493-8255 also still works) |
 | **DV Crisis (Mariposa)** | **719-545-8195** |
-| **Sexual Assault** | **719-544-1191** |
-| **Victim Services (ACOVA)** | **719-583-6434** |
+| **Sexual Assault (Juniper)** | **719-549-0549** (call/text) |
+| **Victim Services (ACOVA)** | 719-583-6434 — ⚠️ *unverified 7/2026* |
 
 ---
 

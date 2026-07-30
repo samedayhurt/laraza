@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-18",
+  "updated": "2026-07-29",
   "risks": [
     {
       "title": "Unverified ICE roundup rumors causing panic",
@@ -54,6 +54,99 @@
       "sources": [
         "Latin Times, 2025",
         "The Conversation, 2025"
+      ]
+    },
+    {
+      "title": "Unlisted ICE hold room serving Pueblo area (PUEHOLD), holds exceeding legal limits",
+      "description": "FOIA data revealed nine ICE hold rooms in Colorado absent from ICE's public facility list, which names only Aurora. The 'PUEHOLD' room is an ICE substation at 935 State Highway 67 near the Fremont County airport - despite the name it is NOT in the city of Pueblo. It held 315 people across multiple stays Jan-Oct 2025 (statewide: 2,831 across nine rooms; Denver 1,398, Frederick 526). Records showed at least three stays of roughly 12, 14 and 19 days, far past the legal limit, and before a June 2025 memo extended the allowed period from 12 to 72 hours.",
+      "impact": "Families cannot locate detained relatives because ICE's online locator may not reflect people held in unlisted hold rooms. Absence from the locator is NOT evidence a person is not detained. Prolonged holds occur with little outside oversight.",
+      "recommended_actions": [
+        "Do not treat the ICE online detainee locator as conclusive; ask specifically about hold rooms.",
+        "Call RMIAN detention hotline (303) 866-9308 and CORRN 844-864-8341 and ask about hold rooms, not only Aurora.",
+        "Document any hold exceeding 72 hours and report to ACLU of Colorado - it is a documentable violation.",
+        "Add 'ICE hold room / substation' to the Detention Tracking Template facility field."
+      ],
+      "sources": [
+        "Colorado Times Recorder, 2026-03-04, https://coloradotimesrecorder.com/2026/03/exclusive-secret-ice-detention-facilities-exist-around-colorado-data-shows/76983/",
+        "Deportation Data Project, https://deportationdata.org/"
+      ]
+    },
+    {
+      "title": "Courthouse arrest loophole: SB20-83 does not reach federal or combined courthouses",
+      "description": "SB20-83 bars civil immigration arrests at and immediately outside county, municipal and state courthouses and protects travel to and from court; SB25-276 extended it to related treatment facilities. It does NOT apply to federal courthouses, and advocates report ICE exploiting combined state/federal buildings. CIRC also reports ICE reading court dockets for Spanish and Latin American surnames and detaining people days after a court appearance, away from the courthouse where the statute does not protect them, including people who appeared as crime victims. Documented in Glenwood Springs, Durango/La Plata, Montezuma County and Pagosa Springs; CORRN confirmed SB20-83 violations at Denver's Lindsey-Flannigan Courthouse. No confirmed Pueblo County Courthouse incident in this window, but docket harvesting is not location-specific.",
+      "impact": "The risk window extends for days after a court date, not just the courthouse visit. Crime victims and witnesses are exposed, which deters reporting.",
+      "recommended_actions": [
+        "Ask counsel about virtual court appearance - CIRC now recommends it.",
+        "Request court accompaniment through CIRC.",
+        "Confirm whether the courthouse is state-only or a combined state/federal building, because protection differs.",
+        "Understand exposure continues for days after the appearance.",
+        "Add a 'houses federal proceedings?' field to the Courthouse Monitoring Template."
+      ],
+      "sources": [
+        "KSUT Public Radio, 2026-05-26, https://www.ksut.org/news/2026-05-26/colorado-advocates-say-ice-is-abusing-loopholes-in-a-state-law-where-they-make-arrests",
+        "KDNK, 2026-06-10",
+        "Colorado Lawyers Committee, https://coloradolawyerscommittee.org/immigration-ice-sb2083"
+      ]
+    },
+    {
+      "title": "Enforcement pace held at ~12 arrests/day into 2026; 65% had no prior conviction",
+      "description": "Colorado ICE arrests totaled 4,160 in 2025 vs 1,091 in 2024, a 281% increase (better-sourced than the earlier ~300% estimate). Daily average rose from ~4 to ~12, peaked around April 2025, and HELD at about 12 per day from Jan 1 to Mar 10 2026 - the surge did not recede. 65% of those arrested had no prior criminal conviction; of those with convictions only ~5% involved violent offenses, most commonly DUI, assault and traffic offenses. County data through mid-Oct 2025 put Pueblo County among Colorado's highest-arrest counties after Denver (1,548), El Paso, Arapahoe, Mesa and Adams. Casa de Paz assisted 610 people released from Aurora in 2025 (~40% Colorado residents) vs 2,087 in 2024 (mostly out-of-state arrests), showing a shift toward detaining Colorado residents.",
+      "impact": "Pueblo County's high ranking plus a sustained statewide pace means local risk is ongoing, not receding. The 65% figure shows enforcement is not limited to people with criminal records, so risk-tiering advice is unsafe.",
+      "recommended_actions": [
+        "Use the 65%-no-conviction figure to justify universal KYR preparation rather than risk-tiering.",
+        "Build standing local Pueblo rapid-response capacity rather than relying on Denver-based responders.",
+        "Maintain family emergency plans, powers of attorney, and childcare designations regardless of criminal history."
+      ],
+      "sources": [
+        "Colorado Sun, 2026-05-04, https://coloradosun.com/2026/05/04/trumps-immigration-crackdown-in-colorado-explained-in-3-charts/",
+        "Colorado Newsline, 2025-12-30, https://coloradonewsline.com/2025/12/30/what-data-shows-about-ice-arrests-in-colorado-in-2025/"
+      ]
+    },
+    {
+      "title": "Colorado detention capacity nearly doubles: GEO wins 1,200-bed Hudson ICE contract",
+      "description": "On July 14-15 2026 GEO announced a five-year ICE contract for the 1,200-bed Big Horn Correctional Facility in Hudson (Weld County, ~30 miles NE of Denver), leased from Highlands REIT, projected at ~$85M annual revenue in year one. With Aurora (capacity raised 1,360 to 1,530 in late 2025; FY2026 year-to-date population 1,226), statewide ICE capacity moves to roughly 2,700 beds. Colorado's 2023 ban on state/local ICE detention contracts does not reach privately owned facilities. Senators Hickenlooper and Bennet and Rep. Pettersen opposed the expansion; Bennet announced a blocking strategy May 27 2026 and introduced the KIDS, TRUST and OPEN Acts May 20 2026.",
+      "impact": "Pueblo-area detainees may be held farther away and transferred more often. Hudson is ~140 miles from Pueblo vs ~120 to Aurora. Transfers routinely break attorney contact. More in-state beds also means more local arrests can be absorbed without out-of-state transfer.",
+      "recommended_actions": [
+        "Add Hudson to every detainee-locating checklist and family visitation plan.",
+        "Record the A-number and re-check the ICE locator after any transfer.",
+        "Warn families that transfer commonly severs attorney contact - re-establish immediately."
+      ],
+      "sources": [
+        "The World Journal, 2026-07, https://worldjournalnewspaper.com/geo-announces-ice-contract-for-immigrant-detention-in-hudson/"
+      ]
+    },
+    {
+      "title": "Tuberculosis at Aurora ICE facility; GEO obstructing state health investigation",
+      "description": "Adams County Health Department confirmed an active TB case in a detainee at the Aurora ICE Processing Center around July 14 2026. The Guardian reported an outbreak sickening at least 12 people, unconfirmed by local officials. Colorado officials said GEO Group failed to provide access required under state law for the TB investigation, obstructing contact tracing of exposed people. End-2025 health staffing was one physician, two physician assistants and 18 RNs/NPs for ~1,226 detainees. Aurora is currently the primary destination for detained Pueblo-area residents.",
+      "impact": "Communicable disease risk for detainees, released people, and their households, with contact tracing blocked.",
+      "recommended_actions": [
+        "Advise anyone released from Aurora in mid-2026 to seek TB screening.",
+        "Raise known medical conditions with counsel immediately - medical need supports bond and humanitarian release.",
+        "From 2026-08-12, cite HB26-1276 to demand CDPHE inspection records and penalize refused access.",
+        "Route Pueblo residents to local low-barrier clinics rather than deferring care."
+      ],
+      "sources": [
+        "CPR News, 2026-07-14, https://www.cpr.org/2026/07/14/tuberculosis-at-aurora-ice-detention-center/",
+        "Colorado Sun, 2026-07-15, https://coloradosun.com/2026/07/15/geo-group-immigration-detention-tuberculosis/",
+        "Denver Gazette, 2026-07-21"
+      ]
+    },
+    {
+      "title": "No state limit on ICE reaching local ALPR and location data after 2026 bills died",
+      "description": "All three 2026 Colorado bills that would have limited government and ICE access to location and broker data failed: SB26-070 (historical location database ban, the 'PEEPS Act') died at adjournment May 13 2026 after being laid over from April 23; SB26-071 (SAFE Act, surveillance technology) was postponed indefinitely 6-1 in Senate Judiciary May 6 2026; HB26-1037 (ban on government purchase of broker data) was postponed indefinitely in House Judiciary April 22 2026. Colorado ALPR data therefore remains governed only by each agency's own policy. ICE has no Flock contract, but the documented national pattern is ICE asking local agencies to run searches for it - local and state police ran immigration-related ALPR searches 4,000+ times between June 2024 and May 2025 across networks covering 5,000+ communities. Flock added a one-toggle federal-sharing shutoff in January 2026 and a state-law disclaimer in February 2026, but both are discretionary agency settings, not legal limits. Boulder disabled national lookup in June 2025 and restricted sharing to in-state agencies, showing agency policy is the only operative control.",
+      "impact": "Vehicle location histories of Pueblo residents remain accessible to federal immigration enforcement through local agency cooperation, with no state-law backstop and no warrant requirement.",
+      "recommended_actions": [
+        "File records requests with Pueblo PD and PCSO for ALPR audit logs, federal-sharing/national-lookup configuration, and any immigration-related federal search requests received.",
+        "Publicly ask both agencies to disable federal sharing, citing Boulder as precedent.",
+        "Explain that ALPR captures plates regardless of who is driving, so routine travel patterns are logged.",
+        "Re-run this advocacy in the 2027 session since no state protection currently exists."
+      ],
+      "sources": [
+        "Colorado General Assembly SB26-070, https://leg.colorado.gov/bills/SB26-070",
+        "Colorado General Assembly SB26-071, https://leg.colorado.gov/bills/sb26-071",
+        "Colorado General Assembly HB26-1037, https://leg.colorado.gov/bills/HB26-1037",
+        "EFF, 2026-06, https://www.eff.org/deeplinks/2026/06/are-your-local-police-using-flock-safety-alprs-scan-immigrants",
+        "Boulder Reporting Lab, 2025-08-19"
       ]
     }
   ],
@@ -148,6 +241,137 @@
       "sources": [
         "DHS announcement, 2025-01-21"
       ]
+    },
+    {
+      "title": "Ramirez Ovando v. Noem - CURRENT STATUS as of 2026-07-29: injunction in effect, on appeal, not stayed",
+      "summary": "The November 25 2025 preliminary injunction of Senior U.S. District Judge R. Brooke Jackson (D. Colo., No. 1:25-cv-03183-RBJ) barring ICE warrantless arrests in Colorado without a documented individualized flight-risk assessment REMAINS IN FULL EFFECT. The government appealed to the Tenth Circuit on January 23 2026 (No. 26-1027) and filed its opening brief June 1 2026. The appeal is PENDING AND UNDECIDED, NO STAY has been entered, and there is no Supreme Court action. The district court has continued to enforce the injunction: on May 12 2026, after a March 10-11 2026 evidentiary hearing, the court found ICE 'materially violated' both the injunction and federal law. A further motion to enforce remained under advisement as of the July 22 2026 docket update. Plaintiffs' February 3 2026 amended complaint alleges ICE used 'field warrants' issued AFTER an encounter began to circumvent the order, and alleges an internal quota of roughly 75 arrests per day.",
+      "date": "2026-07-29 (injunction 2025-11-25; violation finding 2026-05-12; appeal filed 2026-01-23, briefed 2026-06-01)",
+      "confidence": "HIGH that the injunction is currently in effect and enforceable; the appeal creates real forward uncertainty, so status is current-but-provisional and must be re-verified before any reprint of Know-Your-Rights material.",
+      "details": {
+        "still_good_law": "Yes as of 2026-07-29 - may be cited, but describe as 'on appeal' rather than settled.",
+        "remedies_ordered_2026_05_12": [
+          "ICE must develop compliance training within two weeks.",
+          "Every officer authorized to make warrantless arrests in Colorado must be trained within 45 days.",
+          "Untrained officers, including new hires, are BARRED from making warrantless arrests until trained.",
+          "ICE must produce I-213 forms for warrantless arrests and for arrests on field warrants issued after an encounter began.",
+          "ICE must produce arrest lists with A-numbers, country of origin, arrest date and warrant status for plaintiff-counsel review."
+        ],
+        "who_was_affected": "Court found affected people included parents of U.S.-citizen children, people with no criminal record, longtime residents, and asylum seekers."
+      },
+      "implications": "Strongest current documentation tool in Colorado. Observers should record whether any individualized flight-risk assessment appeared to occur and whether a warrant existed BEFORE the encounter began. The court has an active compliance-monitoring channel, so contemporaneous reports carry real leverage.",
+      "actions": [
+        "Cite as 'Ramirez Ovando v. Noem (D. Colo. Nov. 25, 2025), enforced May 12, 2026 - on appeal, 10th Cir. No. 26-1027'.",
+        "Check the Tenth Circuit docket monthly; an adverse decision requires same-week correction of every handout.",
+        "Report suspected violations to ACLU of Colorado and CORRN 844-864-8341.",
+        "Note timestamps: a warrant produced only after an encounter began is the exact pattern the court examined."
+      ],
+      "sources": [
+        "Civil Rights Litigation Clearinghouse, https://clearinghouse.net/case/47063/ (accessed 2026-07-29, docket updated 2026-07-22)",
+        "ACLU of Colorado case page, https://www.aclu-co.org/cases/ramirez-ovando-et-al-v-noem-et-al/",
+        "ACLU of Colorado press release, 2026-05-12, https://www.aclu-co.org/press-releases/federal-judge-rules-ice-violated-court-order-requires-more-oversight-and-training/",
+        "CPR News, 2026-05-12, https://www.cpr.org/2026/05/12/immigration-ice-judge-orders-more-training-warrentless-arrests/",
+        "Colorado Sun, 2026-05-12, https://coloradosun.com/2026/05/12/ice-must-retrain-arresting-officers-in-colorado-federal-judge-rules/",
+        "Justia CA10 docket 26-1027, https://dockets.justia.com/docket/circuit-courts/ca10/26-1027"
+      ]
+    },
+    {
+      "title": "Noem v. Vasquez Perdomo (SCOTUS, 2025-09-08) - ethnicity, language and location allowed as stop factors",
+      "summary": "In a 6-3 emergency-docket order with no full briefing, no oral argument and no majority opinion, the Supreme Court stayed a California district court injunction that had barred ICE 'roving patrol' stops based on apparent ethnicity, speaking Spanish or accented English, presence at a particular location, or type of work. Effect: those factors may be used as part of reasonable suspicion for an immigration stop. Still in force as of July 2026. This ruling was missing from the repo baseline.",
+      "date": "2025-09-08",
+      "confidence": "HIGH that the order issued and remains in force; because it was an emergency-docket stay without a majority opinion, its precise doctrinal scope is contested.",
+      "implications": "Materially changes what KYR material should say. An ICE stop may lawfully be initiated on grounds of appearance or language, so the practical protection is the right to remain silent and to decline consent - NOT an assurance that such a stop is itself unlawful. Pair with Ramirez Ovando, which still constrains warrantless ARREST in Colorado even where a stop is permitted.",
+      "actions": [
+        "Correct any handout implying a stop based on appearance or language is per se unlawful.",
+        "Reframe to: 'You do not have to answer questions about where you were born or your immigration status. Say: I want to remain silent. I do not consent to a search.'",
+        "Teach the stop/arrest distinction: a permitted stop does not authorize a warrantless arrest without a documented flight-risk finding in Colorado."
+      ],
+      "sources": [
+        "American Immigration Council, https://www.americanimmigrationcouncil.org/blog/supreme-courts-decision-racial-profiling-immigration-raids/",
+        "ACLU of Wisconsin, https://www.aclu-wi.org/news/racial-profiling-rampant-after-supreme-court-ruling/"
+      ]
+    },
+    {
+      "title": "HB26-1276 SIGNED - detention inspections, PII protections, POST detainer training",
+      "summary": "'Protect Safety of Individuals Who Are Immigrants.' Signed by Governor Polis June 4 2026 (Chapter 371, 2026 Session Laws), effective August 12 2026. CDPHE gains expanded authority and increased frequency of inspections of facilities housing noncitizens in civil immigration proceedings, with civil penalties for refusing inspection, an inspection cash fund, and annual public compliance reports to the Attorney General. The Attorney General must develop and publish a policy protecting personal identifying information under Colorado's civil-immigration laws. The POST Board must set peace-officer training standards on current civil immigration detainer law, with certification required by December 31 2027. The court e-filing system is exempted from certain non-disclosure pledge requirements. Appropriation $107,283.",
+      "date": "2026-06-04 (signed); 2026-08-12 (effective)",
+      "implications": "The main affirmative state protection enacted in 2026 and the legal hook for demanding inspection records at any Colorado immigration detention facility, including Walsenburg if it opens.",
+      "actions": [
+        "After 2026-08-12, request CDPHE inspection reports for any facility holding Pueblo-area residents - they must be posted publicly.",
+        "Track whether the AG actually publishes the PII policy; that document determines protection against state/local data reaching ICE.",
+        "Ask PCSO and Pueblo PD whether officers have completed POST detainer-law training."
+      ],
+      "sources": [
+        "Colorado General Assembly HB26-1276, https://leg.colorado.gov/bills/hb26-1276 (accessed 2026-07-29)"
+      ]
+    },
+    {
+      "title": "SB26-005 VETOED - no new state-court remedy against immigration agents",
+      "summary": "'Rights Violation in Immigration Enforcement Remedy' would have created a state-court cause of action against anyone acting under color of law in civil immigration enforcement who violated a person's federal constitutional rights, with a two-year limitations period and a $125,604 appropriation to the Department of Law. It passed both chambers on roughly party-line votes in early May 2026 and was VETOED by Governor Polis on June 3 2026. It is NOT law. Correcting the record: secondary trackers described it as 'awaiting signature' as of early June; the primary legislative record shows the veto.",
+      "date": "2026-06-03 (vetoed)",
+      "implications": "Do not tell community members a new state-court remedy against ICE agents exists. Remedies remain federal (Bivens-limited, plus Ramirez Ovando class relief) and Colorado's existing SB25-276/SB20-83 provisions, which reach state and local employees rather than federal agents.",
+      "actions": [
+        "Remove any reference to a state-court cause of action against federal immigration agents.",
+        "Note that SB25-276/SB20-83 enforcement applies to state and local employees only - the AG dropped a suit against a Mesa County deputy once he resigned, because the laws reach only state/local employees."
+      ],
+      "sources": [
+        "Colorado General Assembly SB26-005, https://leg.colorado.gov/bills/sb26-005 (accessed 2026-07-29)"
+      ]
+    },
+    {
+      "title": "Pueblo City Council Feb 9 2026 agenda: proposed opposition to SB26-070 and SB26-071",
+      "summary": "The published agenda for Council's third regular meeting of 2026 carried three resolutions on state surveillance legislation: OPPOSE SB26-071 (law enforcement surveillance technology regulation), OPPOSE SB26-070 (historical location database ban), and SUPPORT HB26-1071 (allowing local governments to place automated vehicle identification systems on federal interstate highways). NOTE: HB26-1071 is a DIFFERENT bill from HB26-1037 - do not conflate. Significance: the two bills Council was asked to oppose are precisely those that would have restricted government access to and sharing of vehicle-location data, the pipeline through which ICE most commonly reaches local ALPR data, while the bill Council was asked to support would expand automated vehicle surveillance infrastructure.",
+      "date": "2026-02-09",
+      "confidence": "MEDIUM - sourced from the agenda preview. The final recorded vote on each resolution was NOT confirmed. Verify against official Council minutes before asserting Council 'voted to oppose.'",
+      "implications": "If adopted, the city actively lobbied against state limits on ICE access to local location data while Pueblo County ranks among Colorado's highest ICE-arrest counties.",
+      "actions": [
+        "Pull the official Feb 9 2026 Council minutes to confirm the votes.",
+        "Raise at public comment: opposition to SB26-070/071 leaves residents' location data governed only by department policy.",
+        "Ask Council to pair AVIS expansion support with a binding local policy barring federal immigration data sharing."
+      ],
+      "sources": [
+        "Pueblo Chieftain via Yahoo News, https://www.yahoo.com/news/articles/know-pueblo-city-council-meeting-143018079.html (accessed 2026-07-29)",
+        "Colorado Municipal League position paper on SB26-071, https://www.cml.org/home/publications-news/resource-detail/position-paper-sb26-71-use-of-surveillance-technology-by-law-enforcement"
+      ]
+    },
+    {
+      "title": "Walsenburg / Huerfano County facility - NOT open as ICE detention as of 2026-07-29",
+      "summary": "As of July 29 2026 the Walsenburg facility has NOT opened as an ICE detention center and no ICE-CoreCivic contract has been announced. Governor Polis proposed the state buy it for roughly $150-200 million to relieve prison crowding; the legislature's Joint Budget Committee REJECTED that purchase on March 31 2026 citing a $1.5 billion state shortfall, reviving fears of an ICE deal. On CoreCivic's May 7 2026 Q1 earnings call there was no indication an ICE contract for Huerfano was imminent, though leadership expressed general optimism for the second half of 2026. Opponents organized as Speak Up SOCO filed a municipal ballot initiative April 9 2026 to amend Walsenburg zoning to prohibit immigrant detention at the site, set for the November 3 2026 ballot. At the July 7 2026 Walsenburg City Council meeting advocates urged direct adoption of the ordinance, fearing a deal could close before the election.",
+      "date": "2026-07-29 (status check; JBC rejection 2026-03-31; ballot measure 2026-11-03)",
+      "capacity_note": "Figures conflict across sources: 752 beds (built capacity, most commonly cited in 2025-2026 reporting), ~700 (state purchase discussions), and 1,400 (2025 ICE planning documents, likely double-bunked). Treat 752 as the base figure and 1,400 as a maximum-density planning number. The repo previously carried both 1,400 and 752.",
+      "implications": "Closest large-scale detention risk to Pueblo (~50 miles). Status could change on any contract announcement, and the gap between announcement and first intake would be short.",
+      "actions": [
+        "Keep as a live monitoring item; re-check before each community meeting.",
+        "Pre-build now: RMIAN intake protocol, visitation transport plan, Pueblo-to-Walsenburg travel logistics.",
+        "Coordinate with Speak Up SOCO for regional solidarity ahead of the Nov 3 2026 vote.",
+        "If it opens after 2026-08-12, immediately demand CDPHE inspection reports under HB26-1276."
+      ],
+      "sources": [
+        "The World Journal, https://worldjournalnewspaper.com/with-state-plans-to-buy-prison-scuttled-is-ice-back-in-play/ (accessed 2026-07-29)",
+        "The World Journal, https://worldjournalnewspaper.com/walsenburg-concentration-campreferendum-heading-for-nov-ballot/",
+        "Colorado Newsline, 2025-09-15, https://coloradonewsline.com/2025/09/15/walsenburg-ice-detention-center-jobs-controversy/"
+      ]
+    },
+    {
+      "title": "PCSO / Pueblo PD cooperation posture - no documented change since January 2026",
+      "summary": "No evidence of any change to PCSO's stated posture since the January 2026 restatement: no participation in ICE roundups or sweeps, cooperation only where there are criminal charges or a criminal nexus, or officer-safety backup. NO 287(g) agreement was found for Pueblo County or Pueblo PD in this research window; Colorado law restricts such agreements and nothing indicates Pueblo entered one. Existing jail practice stands: everyone booked is fingerprinted and the FBI transmits data to ICE automatically, so a criminal booking remains the main pathway to ICE contact regardless of the Sheriff's stance; ICE must present a warrant or writ signed by a federal judge; the jail cannot hold someone past release solely for ICE pickup.",
+      "date": "2026-07-29 (standing check; posture unchanged since 2026-01-29)",
+      "confidence": "MEDIUM-HIGH on the sheriff's posture and absence of 287(g). LOW on ALPR: no Pueblo-specific record was found of PD or PCSO plate data flowing to ICE, and no source confirms whether federal sharing is enabled. This is an unverified gap, NOT a clean bill of health.",
+      "open_items": [
+        "A February 12 2026 Pueblo County Commissioners resolution touching immigration designation was referenced in local coverage, but its text and effect COULD NOT BE VERIFIED. Obtain from the Clerk to the Board before characterizing the county's position.",
+        "Board of County Commissioners TABLED competing 'non-sanctuary' resolutions June 10 2025 after extended public comment; neither was adopted.",
+        "Pueblo City Council rejected a pro-immigrant resolution 5-2 on November 10 2025."
+      ],
+      "actions": [
+        "Request PCSO monthly ICE detainer and ICE-inquiry counts for 2026 to test stated policy against practice.",
+        "Request Pueblo PD and PCSO ALPR audit logs and federal-sharing configuration.",
+        "Obtain the Feb 12 2026 commissioners' resolution text: https://county.pueblo.org/board-county-commissioners/resolutions-minutes-and-agendas",
+        "Keep citing the Sheriff's statement at schools and clinics, while being clear it does NOT stop the fingerprint-to-ICE pipeline after a booking."
+      ],
+      "sources": [
+        "PCSO release, https://www.pueblosheriff.com/CivicAlerts.aspx?AID=511",
+        "Pueblo Chieftain via Yahoo News, 2026-01-29",
+        "CitizenPortal, https://citizenportal.ai/articles/6207598/Pueblo-County/Colorado/Pueblo-County-commissioners-table-nonsanctuary-resolution-after-heated-public-comments"
+      ]
     }
   ],
   "resources": [
@@ -167,7 +391,14 @@
         "Together Colorado"
       ],
       "notes": "Program hotline into protest/legal observer phones; pair reports with badges, vehicle info, and timestamps. Network has seen dramatic increase in calls since January 2025.",
-      "source": "coloradorapidresponsenetwork.com (accessed 2025-11-27)"
+      "source": "coloradorapidresponsenetwork.com (accessed 2025-11-27)",
+      "verified_2026_07_29": {
+        "hotline": "844-864-8341 (also written 1-844-UNITE-41)",
+        "status": "CONFIRMED CURRENT against the organization's own website on 2026-07-29",
+        "menu": "Bilingual, 24/7. Press 1 for a volunteer dispatcher about ACTIVE ICE activity. Press 2 to leave a message documenting a PAST ICE interaction - leave phone number and town.",
+        "network_size_correction": "CORRN's own site states a volunteer network of 'over 1,200 people' across Colorado and parts of Wyoming. Other 2025-2026 press reports cited 2,500 and 3,000+. The '3,000+' figure above is NOT supported by the organization's current site - soften to 'over 1,200 per CORRN, with press reports of larger totals.'",
+        "source": "https://coloradorapidresponsenetwork.com/ (accessed 2026-07-29)"
+      }
     },
     {
       "name": "Rocky Mountain Immigrant Advocacy Network (RMIAN)",
@@ -185,7 +416,16 @@
         "web": "rmian.org"
       },
       "notes": "Collect A-numbers, detention location, and contact info before calling; Pueblo families can request phone consults. Celebrating 25 years of service in 2025.",
-      "source": "rmian.org/get-help/ (accessed 2025-11-27)"
+      "source": "rmian.org/get-help/ (accessed 2025-11-27)",
+      "verified_2026_07_29": {
+        "main_phone": "(303) 433-2812 - CONFIRMED CURRENT",
+        "detention_hotline": "(303) 866-9308 - CONFIRMED CURRENT",
+        "fax": "(303) 433-2823",
+        "address": "7301 Federal Blvd., Suite 300, Westminster, CO 80030 - CONFIRMED CURRENT",
+        "dead_url_correction": "https://rmian.org/get-help/ now returns HTTP 404. Use https://www.rmian.org/ and https://www.rmian.org/detention-program instead. Any handout printing the /get-help/ link must be corrected.",
+        "programming_status": "Legal Orientation Program still maintains a presence at Aurora conducting know-your-rights presentations. RMIAN was actively hiring (Director of Social Work, pro se staff attorney, litigation roles) and running a Summer 2026 LOP internship, so KYR programming is OPERATING. However, NO source was found confirming the federal stop-work order funding was formally restored. Roughly a quarter of RMIAN funding is federal across the Legal Orientation Program, Family Group Legal Orientation Program and Immigration Court Help Desk - treat capacity as intact but structurally fragile.",
+        "source": "https://www.rmian.org/ and https://www.rmian.org/happenings (accessed 2026-07-29)"
+      }
     },
     {
       "name": "Catholic Charities of Southern Colorado - Immigration Services",
@@ -224,7 +464,18 @@
         "web": "coloradoimmigrant.org"
       },
       "notes": "Pueblo organizers can join statewide alerts and mobilize local volunteers. 2025 Pueblo Citizenship Clinic held June 28 at Catholic Charities.",
-      "source": "coloradoimmigrant.org (accessed 2025-11-27)"
+      "source": "coloradoimmigrant.org (accessed 2025-11-27)",
+      "verified_2026_07_29": {
+        "hotline": "844-864-8341 (same shared CORRN line) - CONFIRMED CURRENT",
+        "denver_metro_office": "(303) 922-3344 - CONFIRMED CURRENT",
+        "email": "info@coloradoimmigrant.org",
+        "new_2026_services": [
+          "Court accompaniment program for people with court dates.",
+          "Now recommends VIRTUAL court appearances where counsel permits, because of the SB20-83 federal/combined courthouse loophole and docket-harvesting arrests days after appearances."
+        ],
+        "note": "The 'bit.ly/CIRCworkshop2025' registration link above is from 2025 and should be treated as expired - do not reprint.",
+        "source": "https://www.coloradoimmigrant.org/ (accessed 2026-07-29)"
+      }
     },
     {
       "name": "Colorado Legal Services - Pueblo Office",
@@ -260,7 +511,25 @@
       "CIRC Know Your Rights materials (English/Spanish): coloradoimmigrant.org",
       "RMIAN KYR page: rmian.org/know-your-rights",
       "ACLU Colorado: aclu-co.org/know-your-rights/immigrants-rights/"
-    ]
+    ],
+    "corrections_2026_07_29": {
+      "stop_vs_arrest_distinction": "MUST ADD. After Noem v. Vasquez Perdomo (SCOTUS, 2025-09-08), ethnicity, speaking Spanish or accented English, location, and type of work may be used as part of reasonable suspicion for an immigration STOP. Do not tell people such a stop is per se unlawful. Do tell them: a permitted stop does not authorize a warrantless ARREST, which in Colorado still requires a documented individualized flight-risk finding under Ramirez Ovando.",
+      "recommended_script": "You do not have to answer questions about where you were born or your immigration status. Say: 'I want to remain silent.' and 'I do not consent to a search.' Do not sign anything without a lawyer.",
+      "case_citation_format": "Ramirez Ovando v. Noem (D. Colo. Nov. 25, 2025), enforced May 12, 2026 - currently in effect, on appeal, 10th Cir. No. 26-1027. Describe as 'on appeal,' not settled.",
+      "courthouse_warning": "ADD: SB20-83 does not protect people at FEDERAL courthouses or reliably at combined state/federal buildings, and does not protect people days after a court appearance. Ask counsel about virtual appearance; request CIRC court accompaniment.",
+      "detention_locator_warning": "ADD: ICE's online detainee locator may not show someone held in an unlisted ICE hold room. Absence from the locator is NOT evidence a person is not detained. Ask specifically about hold rooms.",
+      "facility_list_update": "ADD Hudson (Big Horn, ~1,200 beds, GEO, five-year ICE contract announced July 2026, ~140 miles from Pueblo) alongside Aurora (~120 miles) to detainee-locating checklists. Walsenburg has NOT opened.",
+      "dead_links_to_fix": [
+        "https://rmian.org/get-help/ returns 404 - replace with https://www.rmian.org/ or https://www.rmian.org/detention-program",
+        "bit.ly/CIRCworkshop2025 is expired - remove"
+      ],
+      "do_not_claim": [
+        "Do NOT claim a new state-court remedy against ICE agents exists - SB26-005 was VETOED 2026-06-03.",
+        "Do NOT claim Colorado limits ICE access to license plate reader or location data - SB26-070, SB26-071 and HB26-1037 all DIED in 2026.",
+        "Do NOT state the Walsenburg facility has opened - it has not, as of 2026-07-29."
+      ],
+      "hotline_verified": "844-864-8341 (CORRN/CIRC) and RMIAN detention hotline (303) 866-9308 both CONFIRMED CURRENT on 2026-07-29 and safe to keep printed. Re-verify before any reprint."
+    }
   },
   "2025_context": {
     "daca_status": "Fifth Circuit ruled Biden's 2022 DACA regulation unlawful (Jan 17, 2025). New applications blocked; renewals continue for now. Advanced parole travel risks increased.",

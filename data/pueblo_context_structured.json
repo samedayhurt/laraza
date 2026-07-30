@@ -1,5 +1,5 @@
 {
-  "updated": "2025-11-15",
+  "updated": "2026-07-29",
   "demographics": [
     {
       "topic": "Political realignment",
@@ -25,6 +25,33 @@
         "U.S. Census Bureau, ACS 2022 5-year subject tables (API)"
       ],
       "notes": "Use to illustrate disparities between north-side RTCC corridors (81008) and high-poverty southside ZIP 81005 when debating surveillance budgets."
+    },
+    {
+      "topic": "Population, income, poverty (ACS 2020-2024 5-year) — current vintage",
+      "summary": "Pueblo city population 111,561; median household income $56,664 (+/-$2,076); poverty 17.52%. Pueblo County population 169,356; median household income $64,010 (+/-$2,208); poverty 14.60%.",
+      "sources": [
+        "U.S. Census Bureau, ACS 2024 5-year (2020-2024), tables B01003/B19013/B17001, via Census Reporter API (accessed 2026-07-29)",
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B19013,B17001,B01003,B23025&geo_ids=16000US0862000,05000US08101"
+      ],
+      "notes": "Prior-vintage row retained above (QuickFacts 2023 est. / 2018-2022 dollars: city $54,137 & 22.8% poverty; county $56,567 & 18.1%). Income up ~4.7% city / ~13.2% county. Poverty decline is partly real recovery and partly a method/vintage shift (B17001 count ratio vs. S1701 subject table) — do not present as a one-year drop. ACS 5-year average unemployment: city 4.96%, county 4.78% (not a current rate)."
+    },
+    {
+      "topic": "ZIP-level income & poverty (ACS 2024 5-year) — current vintage",
+      "summary": "Median household income / poverty rate: 81008 ($69,925 / 11.98%), 81007 ($96,713 / 6.97%), 81006 ($69,050 / 14.37%), 81005 ($70,574 / 10.10%). ZCTA populations: 81008 11,608; 81007 35,690; 81006 11,029; 81005 32,441.",
+      "sources": [
+        "U.S. Census Bureau, ACS 2024 5-year (2020-2024), tables B19013 and B17001, via Census Reporter API (accessed 2026-07-29)",
+        "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B19013,B17001,B01003&geo_ids=86000US81008,86000US81007,86000US81006,86000US81005"
+      ],
+      "notes": "DATA CORRECTION: the prior ACS 2022 poverty percentages in this file (81008 13.62%, 81007 24.27%, 81006 15.06%, 81005 40.08%) are not trustworthy — they were taken from S1701_C02_001E, which is a COUNT of persons below poverty, not a percent, and the results were internally impossible (wealthiest ZCTA showing 24% poverty). Income deltas vs. 2022 are reliable; poverty deltas are not. Any map popup or slide citing '81005 = 40% poverty' must be corrected. New rates computed as B17001_002/B17001_001."
+    },
+    {
+      "topic": "Census data access change (2026)",
+      "summary": "Keyless api.census.gov queries now return an HTML 'Missing Key' page for all ACS vintages including the 2022 URL previously logged as CTX-003; census.gov QuickFacts returns HTTP 403 to scripted requests.",
+      "sources": [
+        "https://api.census.gov/data/2024/acs/acs5/subject?get=NAME,S1901_C01_012E,S1701_C02_001E&for=zip%20code%20tabulation%20area:81008 (attempted 2026-07-29)",
+        "https://api.census.gov/data.json (accessed 2026-07-29; confirms ACS 5-year vintages through 2024)"
+      ],
+      "notes": "No CENSUS_API_KEY exists in this repo or environment. Register a free key at https://api.census.gov/data/key_signup.html and store it outside version control so future refreshes can use the official S1901/S1701 subject tables and stay method-consistent with the 2022 pull."
     }
   ],
   "economy": [
@@ -36,6 +63,87 @@
         "docs/pueblo-watchlist.md references"
       ],
       "notes": "Need quantitative employment data; ties between commissioners and private businesses (Republic Shooting Range, PCC) should be tracked for conflicts."
+    },
+    {
+      "topic": "Steel mill: Orion Steel ownership, $1.2B long rail mill operational (2026)",
+      "summary": "Atlas Holdings (Connecticut) bought the former EVRAZ Pueblo mill in Aug 2025 and formed Orion Steel Companies (CEO Doug Matthews). Rocky Mountain Steel signed a seven-year domestic rail contract with Union Pacific in April 2026, and its $1.2B long rail mill officially began operations 2026-07-16 (1.1M tons/yr EAF steel, 100-meter rails, ~750,000 on-site solar panels supplying up to 95% of plant power). Employment reported as 1,300 (Aug 2025, Gov. Polis) and 'more than 1,000' (July 2026).",
+      "sources": [
+        "https://www.up.com/press-releases/growth/rocky-mountain-steel-mill-260716 (2026-07-16)",
+        "https://www.cpr.org/2026/07/16/pueblo-rail-mill-officially-open/ (2026-07-16)",
+        "https://www.cpr.org/2026/04/15/union-pacific-railroad-rocky-mountain-steel-pueblo/ (2026-04-15)",
+        "https://coloradobiz.com/pueblo-steel-mill-rail-contract-union-pacific/ (2026-04-15)",
+        "https://x.com/GovofCO/status/1960100096105746518 (Aug 2025)"
+      ],
+      "notes": "Biggest positive economic shift since the Feb 2026 baseline. Also means the largest private employer in the city is now owned by an out-of-state private-equity holding company with no Pueblo track record — watch for new tax-abatement requests and campaign finance activity. USW remains the represented union. Headcount needs a primary source (Orion filings, USW Local 2102, or state QCEW)."
+    },
+    {
+      "topic": "City of Pueblo budget shortfall and Nov 2026 sales-tax package",
+      "summary": "After voters rejected a 1% general sales-and-use tax in Nov 2025 (80%+ no), the city abolished 7 staff positions, froze 25, and cut operating budgets 15% across all departments; it projects a $10M deficit in 2027. On 2026-07-20 Mayor Heather Graham proposed four separate 0.25% sales-and-use tax ballot questions for Nov 2026 (~$5.7M/yr each, ~$23M/yr if all pass), dedicated to (1) fire and city technology, (2) infrastructure and roads, (3) non-profit/non-departmental partners, (4) Parks and Recreation.",
+      "sources": [
+        "https://www.aol.com/articles/expecting-10m-budget-deficit-pueblo-093103000.html (Pueblo Chieftain, James Bartolo, 2026-07-22)",
+        "https://www.cpr.org/2026/02/04/pueblo-state-of-the-city-2026/ (2026-02-04)",
+        "https://www.kktv.com/2026/02/04/pueblo-mayor-highlights-2025-accomplishments-annual-state-city-address/ (2026-02-04)",
+        "https://krdo.com/politics/2026/06/02/mayor-floats-sales-tax-initiative-for-pueblo/ (2026-06-02)"
+      ],
+      "notes": "PRIORITY WATCH: the 'fire and city technology' measure is the most likely vehicle to move surveillance/RTCC-adjacent IT spending into a dedicated, voter-approved recurring fund that is harder to contest line-by-line than a general-fund appropriation. Get the ballot title language when council refers it and compare permitted uses against the Flock/High Point/Daktronics contract categories. Confirm whether police/fire were exempted from the 15% cut."
+    },
+    {
+      "topic": "Pueblo County budget deficit, furloughs, county manager eliminated",
+      "summary": "County faces a ~$10.2M shortfall on its 2026 budget, driven largely by $16-18M in debt service from county purchases of the Wells Fargo building and the county jail. On 2026-02-12 commissioners unanimously imposed 10 unpaid days off plus 2 early-release days on county employees (commissioners taking them too); employees protested on the first unpaid day. On 2026-03-26 the county eliminated and reclassified positions, including abolishing the county manager post.",
+      "sources": [
+        "https://www.fox21news.com/news/pueblo-county-facing-10-million-budget-deficit/ (accessed 2026-07-29)",
+        "https://www.aol.com/articles/pueblo-county-commissioners-agree-participate-140104952.html (Pueblo Chieftain)",
+        "https://www.yahoo.com/news/articles/pueblo-county-workers-spend-first-120247362.html (Pueblo Chieftain)",
+        "https://www.facebook.com/ThePuebloChieftain/posts/1530857455708993/ (2026-03-26)"
+      ],
+      "notes": "Jail capital debt is now crowding out other county services. Eliminating the county manager concentrates operational authority in the three elected commissioners. Practical effect for researchers: furloughed, short-staffed county offices mean slower CORA responses and human-services intake — build longer lead times into records requests."
+    },
+    {
+      "topic": "Layoffs and institutional cuts (Feb-Jul 2026)",
+      "summary": "CAE USA is permanently closing its Pueblo Training Center (Air Force initial flight training) effective 2026-10-01, cutting 58 jobs — WARN letter to CDLE dated 2026-06-01, first 47 layoffs around 2026-08-03. CSU-Pueblo closed a $2.4M FY27 structural deficit with layoffs equal to nearly 9 FTE, 8 additional vacant positions closed, unit reorganization, a $1M athletics cut, and tuition up 3.5% resident / 5% nonresident — despite enrollment rising 3% and new freshmen up 21%.",
+      "sources": [
+        "https://www.fox21news.com/news/pueblos-cae-usa-to-shut-down-impacting-58-employees/ (accessed 2026-07-29)",
+        "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
+        "https://www.highereddive.com/news/colorado-state-university-turns-to-layoffs-and-other-cuts-to-manage-budget/819906/",
+        "https://newscsupueblo.org/2026/05/07/csu-board-approves-campus-budgets-for-fiscal-year-2026-2027/ (2026-05-07)"
+      ],
+      "notes": "CSU-Pueblo cuts are state-funding-driven, not demand-driven. CAE's exit removes a federal-contract employer from the Pueblo Memorial Airport / PuebloPlex area. Check the CDLE WARN list monthly for further Pueblo County notices."
+    },
+    {
+      "topic": "Labor market, housing costs, homelessness (2026)",
+      "summary": "Pueblo County unemployment 5.0% (April 2026) vs. Colorado ~3.9% (June 2026); Colorado posted its first post-pandemic job losses in spring 2026. Median home sale price ~$265K, down 5.7% year over year (mid-tier median ~$305K), while average asking rent is ~$1,326 (1BR) / $1,573 (2BR). 2026 Point-in-Time count taken 2026-01-27: Colorado Balance of State CoC (includes Pueblo County) counted 3,020 people (2,059 unsheltered / 961 sheltered; 2,449 households), a 5.4% reduction from 2025. City expanded its shelter in Jan 2026 with eight private units via a city grant with SafeSide Recovery.",
+      "sources": [
+        "https://fred.stlouisfed.org/series/COPUEB2URN (accessed 2026-07-29)",
+        "https://www.coloradopolitics.com/2026/04/13/colorado-saw-job-losses-for-the-first-time-since-pandemic/ (2026-04-13)",
+        "https://redfin.com/city/15932/CO/Pueblo/housing-market (accessed 2026-07-29)",
+        "https://www.apartments.com/rent-market-trends/pueblo-co/ (accessed 2026-07-29)",
+        "https://content.govdelivery.com/accounts/CODOLA/bulletins/41868a3 (Colorado DOLA, released 2026-05-21)",
+        "https://krdo.com/news/2026/01/22/city-of-pueblo-announces-expansion-of-local-homeless-shelter/ (2026-01-22)"
+      ],
+      "notes": "Sale prices softening while rents stay high = a renter squeeze, not relief. GAP: DOLA's release publishes no Pueblo County PIT line item (county detail is only in the interactive dashboard), and no Pueblo County eviction-filing count was obtainable from public summaries this pass. The SafeSide shelter units already appear in the repo map layer — keep in sync."
+    },
+    {
+      "topic": "Federal funding and benefits exposure",
+      "summary": "Nearly 25% of Pueblo's population relies on SNAP (123 participating retailers). Statewide, ~298,000 Colorado families could lose SNAP and ~154,000 could lose Medicaid under the 2025 federal package, which extended 80-hours/month work requirements to most working-age adults; federal Medicaid cuts reduce Colorado funding by ~$12B over a decade and the legislature closed a $1.5B FY2026-27 shortfall with Medicaid taking the brunt. HHS was reported in Feb 2026 to be cutting ~$600M in grants across Colorado, Minnesota, Illinois and California.",
+      "sources": [
+        "https://coloradonewsline.com/2026/03/17/colorado-protect-families-with-children/ (2026-03-17)",
+        "https://coloradonewsline.com/2026/03/16/federal-funding-cuts-shift-state-budgets/ (2026-03-16)",
+        "https://www.coloradopolitics.com/2026/02/10/colorado-health-programs-face-uncertainty-after-new-round-of-federal-cuts-announced/ (2026-02-10)",
+        "https://coloradofiscal.org/impact-of-federal-funding-cuts-on-colorado-communities-by-district/",
+        "https://federalfunds.colorado.gov/"
+      ],
+      "notes": "Core 2026 risk compound: ~1 in 4 Pueblo residents on SNAP + county human-services staff on furlough days + new work-requirement paperwork = mass procedural benefit loss independent of eligibility. Colorado is one of few states requiring counties to administer both Medicaid and SNAP. Verify the 'nearly 25%' figure against a primary CDHS or USDA FNS county table before publishing."
+    },
+    {
+      "topic": "Comanche closure economics (county tax base)",
+      "summary": "Comanche 3 (750 MW) is set to close by 2034-12-31 under an agreement with county commissioners; it pays ~$5.9M/yr in taxes to Pueblo County, and Xcel agreed to community assistance payments of ~$25M/yr from 2035-2040. Unit 3 has been offline since Aug 2025 for turbine repairs with return expected ~July 2026. Regulators let Comanche 2 run an extra year (Dec 2025), and in March 2026 Xcel floated keeping coal plants running to 2030. Xcel is evaluating the Comanche site and PuebloPlex for replacement generation.",
+      "sources": [
+        "https://coloradosun.com/2026/03/10/coal-power-xcel-hayden-pueblo/ (2026-03-10)",
+        "https://www.coloradopolitics.com/2026/04/27/regulators-could-force-xcel-customers-to-pay-for-troubled-comanche-3-for-decades/ (2026-04-27)",
+        "https://www.cpr.org/2025/12/04/xcel-pueblo-comanche-2-coal-plant-open/ (2025-12-04)",
+        "https://coloradosun.com/2026/01/15/coal-power-plants-colorado-just-transitions-trump/ (2026-01-15)"
+      ],
+      "notes": "Track PUC dockets on Comanche 3 cost recovery and any change to the county payment schedule; watch whether replacement generation lands at PuebloPlex, which is also where CAE is vacating."
     }
   ],
   "geography": [
@@ -62,6 +170,41 @@
         "opsec/Pueblo 81008 Surveillance.md – Political Power Snapshot"
       ],
       "notes": "Map district boundaries against surveillance deployments and protest corridors to surface representation gaps."
+    },
+    {
+      "topic": "CORRECTION: council composition is 4 districts + 3 at-large (not nine districts)",
+      "summary": "Pueblo City Council has seven members: four elected by district (Districts 1-4) and three elected at large, one at-large seat serving as Council President. The earlier 'nine districts' entry in this file is incorrect. Members reported for 2026: Brett Boston, Roger Gomez, Joseph Latino, Dianne Danti, Ted Hernandez, Mark Aliff, Selena Ruiz-Gomez; Dianne Danti holds District 1 (term 2026-01-01 to 2029-12-31), seated from the Nov 2025 election in which four seats were on the ballot.",
+      "sources": [
+        "https://www.pueblo.us/577/District-1-Representative (accessed 2026-07-29)",
+        "https://www.pueblo.us/129/City-Charter",
+        "https://www.pueblo.us/DocumentCenter/View/21743/CityCharter",
+        "https://www.coloradopolitics.com/2025/10/21/pueblo-to-vote-on-strong-mayor-government-sales-tax-and-four-city-council-seats-on-november-ballot/ (2025-10-21)"
+      ],
+      "notes": "Supersedes the nine-district claim in the 'Mayor-council model & district layout' entry above. Every district-level representation analysis must be redone against four districts. Each district rep covers roughly a quarter of the city, and the three at-large members answer to no single neighborhood — district-level pressure on surveillance votes is correspondingly diluted."
+    },
+    {
+      "topic": "No structural governance change Feb-Jul 2026; strong-mayor settled for now",
+      "summary": "Nov 2025 Question 2C — which would have abolished the elected mayor, installed a council-appointed city manager, given council the power to pick City Manager, City Clerk and Municipal Court Judges, made the Council President ceremonial head of government, and barred further changes except by Charter Convention — failed roughly two-to-one (67.71% no). Council had referred it over Mayor Graham's veto (override 2025-08-26). As of 2026-07-29 no charter convention has been called, no new city-manager measure referred, and no council district boundaries changed. Nov 2026 ballot activity is fiscal, not structural.",
+      "sources": [
+        "https://gazette.com/2025/11/04/pueblo-voters-overwhelmingly-say-yes-to-keeping-mayors-office/ (2025-11-04)",
+        "https://www.cpr.org/2025/10/22/vg-2025-election-pueblo-ballot-question-2c/ (2025-10-22)",
+        "https://www.kktv.com/2025/08/26/pueblo-city-council-overrides-mayors-veto-city-manager-form-government/ (2025-08-26)",
+        "https://www.pueblo.us/DocumentCenter/View/39091/Veto-81525",
+        "https://coloradonewsline.com/2025/10/17/pueblo-ballot-measure-strong-mayor/ (2025-10-17)"
+      ],
+      "notes": "Who decides what, unchanged: elected strong mayor holds administrative authority and the veto; the seven-member council legislates, appropriates, and can override. The 2C defeat leaves executive power concentrated in the mayor's office. The same council majority that referred 2C still sits, so a second attempt after the budget fight is plausible."
+    },
+    {
+      "topic": "Council-district census data: partially unblocked, aggregation still required",
+      "summary": "Council district geometry is now publicly available (City of Pueblo ArcGIS map service Landbase/PuebloCity_CityCouncilDistricts, plus the city Open Data hub), so boundaries no longer require a records request. However the Census Bureau publishes no 'city council district' summary level for Pueblo — ACS geographies stop at place, tract, and block group — so district-level income/poverty still requires spatially joining block groups to the four district polygons and aggregating. The new API key requirement is a second prerequisite. Not attempted this pass; the TODO stays.",
+      "sources": [
+        "https://maps.co.pueblo.co.us/outside/rest/services/Landbase/PuebloCity_CityCouncilDistricts/MapServer (accessed 2026-07-29)",
+        "https://opendata-puebloco.hub.arcgis.com/",
+        "https://www.pueblo.us/1715/GIS-Portal",
+        "https://county.pueblo.org/information-technology/gis-data-reports",
+        "https://api.census.gov/data.json (accessed 2026-07-29)"
+      ],
+      "notes": "Scoped method for next sprint: (1) get a Census API key; (2) download the four district polygons; (3) pull block-group B19001/B19025 (aggregate income) and B17001 (poverty universe + below-poverty counts) for Pueblo County; (4) area- or population-weight into districts and report count-based rates with MOEs combined in quadrature. Do not publish district medians — medians cannot be averaged across block groups."
     }
   ],
   "communications": [
@@ -78,6 +221,14 @@
   "todo": [
     "Pull census-level demographics (population, race, income) for Pueblo city vs. county.",
     "Document top 10 employers with headcounts and union presence.",
-    "Map health/housing deserts in 81008 to align resource deployments."
+    "Map health/housing deserts in 81008 to align resource deployments.",
+    "STILL BLOCKED (carried forward): council-district-level income/poverty requires block-group-to-district spatial aggregation; district polygons are now available but the Census publishes no council-district geography. See governance entry 'Council-district census data'.",
+    "Register a Census API key (outside version control) — keyless api.census.gov and scripted QuickFacts access both broke in 2026.",
+    "CORRECT DOWNSTREAM: the ACS-2022 ZIP poverty percentages (esp. '81005 = 40.08%') are mis-derived from a count column; fix any map popup, slide, or report that cites them.",
+    "CORRECT DOWNSTREAM: replace all 'nine council districts' references with four districts + three at-large seats.",
+    "Get the Nov 2026 ballot title language for the 0.25% 'fire and city technology' sales tax and compare permitted uses against known surveillance vendor contracts.",
+    "Obtain a primary-source Rocky Mountain Steel / Orion Steel Pueblo headcount (USW Local 2102, state QCEW, or company filings).",
+    "Request the Pueblo County 2026 Point-in-Time breakdown from the Balance of State CoC regional coordinator; pull Pueblo County eviction filings from Colorado Judicial or the LSC Civil Court Data Initiative.",
+    "Verify the 'nearly 25% of Pueblo on SNAP' figure against a primary CDHS or USDA FNS county table."
   ]
 }

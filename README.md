@@ -31,11 +31,68 @@ For all of our family.
 
 ---
 
-## Latest Updates (February 2026)
+## Latest Updates (July 2026)
+
+*Full research refresh, 2026-07-29. Closes the Feb 18 → Jul 29 gap. Per-task log in `logs/search_log.md`; all citations in `logs/source_index.md`; ethics sign-off in `logs/safety_ethics_review.md`.*
+
+### 🛑 Read this first: two things in this repo were wrong in ways that mattered
+
+**1. Agenda monitoring had never actually monitored anything.** `scripts/monitor_agendas.py` was scraping `pueblo.us/Archive.aspx?AMID=37` — a **defunct** archive whose newest item is **May 2022**. The PDFs it collected were from **2012–2013**. The Feb 18, 2026 note in this README saying "the latest City Council agenda contained no surveillance/ICE/civil-liberties items" described `city_council-626.pdf`, which is the **January 14, 2013** agenda. **That all-clear was false.** Nothing from Feb–Jul 2026 had ever been scanned.
+
+Fixed: Pueblo has migrated to **CivicClerk**, which exposes an unauthenticated OData API for both bodies. Now wired in via `scripts/pueblo_sources.py`. The monitor **exits `3` and prints a banner** when a source is stale or empty, `weekly_monitor.sh` no longer prints "all clear" in that case, and `docs/agenda_alerts.md` now carries a **Source Status** table. An empty scan is only meaningful if the source is proven fresh.
+
+**2. A hijacked domain sat in the domestic-violence referral path.** `ywcapueblo.org` — the stored website for Mariposa Center for Safety — has been released and now **301-redirects to a political campaign donation site**. It was rendering as a clickable link in the public map's popups. Purged everywhere; map GeoJSON re-embedded. The crisis line **719-545-8195** is unchanged and correct. Separately, the resources guide carried a **wrong DV crisis number** (719-545-4884), and Health Solutions' crisis address *and* phone were both wrong.
+
+### State legislation: every guardrail failed
+
+All three bills Pueblo City Council voted to oppose on Feb 9, 2026 are **dead**. Colorado adjourned sine die May 13, 2026 with **no ALPR statute, no law-enforcement surveillance statute, and no ban on government purchase of third-party data.**
+
+| Bill | Outcome |
+| --- | --- |
+| **SB26-070** ("PEEPS Act") | Cleared two committees, then **sponsors pulled it at Second Reading Apr 29** under a veto threat. Sen. Amabile: *"We didn't have the votes."* |
+| **SB26-071** ("SAFE Act") | **Postponed indefinitely 6–1**, Senate Judiciary, May 6. Facial recognition in Colorado remains warrantless. |
+| **HB26-1037** (data brokers) | **Died by one vote, twice, in one day** (House Judiciary, Apr 22). The bill Pueblo called *"harmful to public safety"* — and the closest to passing. **Highest-leverage 2027 target.** |
+
+Consequence: every constraint on Pueblo's RTCC stack is now **local and discretionary**. Two laws that *did* pass do bind local agencies and create new obtainable documents — **HB26-1123** (body-cam recording of jail strip searches + annual AG report, eff. May 27) and **HB26-1276** (AG-set PII-sharing policy, eff. Aug 12).
+
+### Surveillance: the build-out is bypassing council
+
+- **City Council, July 27, 2026, item N3** — a **$275,384 Colorado DCJ grant** (project PS2509). The packet states: *"The subject matter of research will be a comprehensive study of the **Real Time Crime Center**,"* assigned to PPD's Crime Analyst and a **Threat Liaison Officer** with CSU-Pueblo. **PPD was also added as one of five new DOJ National Public Safety Partnership sites.** Grant condition **#26 bars drone spending**; **#27 permits facial recognition only if the City already has civil-liberties policies in place** — which may now be the *only* binding FRT constraint on Pueblo. **Does that policy exist? CORA it.**
+- **Pueblo PD is expanding to 12 Flock ALPR cameras** (4 live), 4 mobile trailers, and park cameras at Mitchell, Mineral Palace, City, and El Centro — with **no council authorization vote found anywhere in Feb–Jul 2026**, while the city lobbied against state ALPR regulation. Deputy Chief Jim Martin has publicly said a query audit log exists; **that makes it CORA-able.**
+- **Notable negative:** a keyword scan of **49 real 2026 city and county agendas/packets** found **zero** genuine hits for Flock, ALPR, ShotSpotter, SoundThinking, Genetec, or Fusus. The ALPR build-out is not moving through either body — it runs on grants, the Downtown Association, vendor trials, or mayoral authority. **Stop watching only agendas.**
+- Denver offers a template: its Flock contract carries a **$100k penalty** for federal immigration sharing, bars federal task-force officers, and disables Denver data in Flock's nationwide lookup. **Pueblo has no known equivalent.**
+
+### ICE / immigration
+
+- ***Ramirez Ovando v. Noem*** is **in force and has been enforced** — on **May 12, 2026** the court found ICE **"materially violated"** it and barred untrained officers from warrantless arrests. ⚠️ **It is on appeal** (10th Cir. 26-1027), undecided, no stay. **Cite it as in-effect-on-appeal, never as settled.**
+- ***Noem v. Vasquez Perdomo*** (SCOTUS, Sept 2025) — a baseline gap the repo had missed entirely. Ethnicity, Spanish/accented English, location, and type of work may factor into reasonable suspicion for a **stop**. Both KYR handouts were rewritten; the old text implied protection that doesn't exist.
+- **Sheriff Lucero lost the June 30, 2026 primary** to **Allen Medina**, who takes office **January 2027** unopposed. The ICE non-cooperation pledge this repo leans on belongs to an outgoing officeholder. **Medina has said nothing on the record about surveillance technology — get him on record before January.**
+- **Walsenburg did NOT open** as ICE detention (JBC rejected the purchase Mar 31; zoning on the **Nov 3, 2026** ballot; capacity **752**, not 1,400). Capacity grew at **Hudson** instead — GEO won a **1,200-bed, five-year ICE contract on July 14, 2026**.
+- **An unlisted ICE hold room serves the Pueblo area** (PUEHOLD): 315 people Jan–Oct 2025, stays of ~12/14/19 days, located **outside the city** near the Fremont County airport. **Absence from ICE's online locator is not evidence someone isn't detained.**
+
+### Resources directory: verified, corrected, expanded 31 → 54
+
+- **22 records corrected**, including the DV crisis number, Health Solutions' address *and* phone, the public defender's number, and Catholic Charities' Pueblo line.
+- `data/resources_directory_structured.json` **had been invalid JSON since ~Jan/Feb 2026** (a `{` closed with `]`), so every downstream consumer had been silently failing to parse it for six months. Fixed.
+- **23 new records.** The long-open **LGBTQ+ gap is closed** (Southern Colorado Equality Alliance + three recurring Pueblo-local groups). Added cooling refuge, bail, worker, food, utility, youth, veterans, and reentry entries.
+- **13 entries could not be primary-verified** and are published under an explicit provisional warning rather than silently trusted. **ACOVA — a victim-services line in the emergency card whose domain no longer resolves — needs a human to call it.**
+- Still structurally missing in Pueblo: no mutual aid network, no local bail fund, no worker center, no gender-affirming provider, no official cooling-center program, and **no under-18 emergency youth shelter**.
+
+### Context
+
+- **The $1.2B long rail mill opened July 16, 2026** under Atlas Holdings / Orion Steel (the EVRAZ era is over), ~1,000–1,300 jobs, on a 7-year Union Pacific contract.
+- **Austerity on both sides:** city cut 7 positions, froze 25, and imposed a 15% operating cut against a **$10M 2027 deficit**; four 0.25% sales-tax questions go to the Nov 2026 ballot — **one is explicitly for "fire and city technology."** County faces ~$10.2M and imposed 10 unpaid furlough days. **Expect slower CORA responses.**
+- ~**25% of Pueblo relies on SNAP** as federal work requirements land.
+- **Two data corrections:** council is **7 seats (4 districts + 3 at-large)**, not "nine districts"; and the ACS-2022 ZIP poverty rates were mis-derived from a Census *count* column (`81005 = 40.08%` was impossible). Income deltas are reliable; those poverty deltas are not. Refreshed to **ACS 2024 5-year**.
+
+**Stay safe. The times demand it.**
+
+<details>
+<summary><strong>Previous Updates (February 2026)</strong> — retained for provenance; see corrections above</summary>
 
 **Surveillance Infrastructure Updates:**
 - ShotSpotter coverage reported at ~6–7 sq mi (State of the City 2026); RTCC mobile camera trailers likely increased to 6 total; DFR drones remain active.
-- Agenda monitoring refreshed (Feb 18, 2026): latest City Council agenda contained no surveillance/ICE/civil-liberties items; alerts logged in `docs/agenda_alerts.md`.
+- Agenda monitoring refreshed (Feb 18, 2026): latest City Council agenda contained no surveillance/ICE/civil-liberties items; alerts logged in `docs/agenda_alerts.md`. — ⚠️ **FALSE.** The scanned file was the January 2013 agenda; the source had been dead since before this repo started monitoring.
 - Surveillance data and risks report updated to reflect 2026 footprint and advocacy asks for coverage maps, trailer logs, and drone deployments.
 
 **ICE / Immigration Updates:**
@@ -47,10 +104,10 @@ For all of our family.
 - Resource guide and structured directory updated; keep intake details documented for follow-up.
 
 **Data Flow & Tooling:**
-- `monitor_agendas.py` + `download_agendas.py` remain the workflow for weekly agenda pulls; city agenda (Item 626) added to `docs/agendas/` for audit trail.
+- `monitor_agendas.py` + `download_agendas.py` remain the workflow for weekly agenda pulls; city agenda (Item 626) added to `docs/agendas/` for audit trail. — ⚠️ *Item 626 is the **January 14, 2013** agenda. This claim was void; see the July 2026 corrections above.*
 - Safety/ethics review rerun (Feb 18, 2026): reports remain rights-focused, no private resident data exposed.
 
-**Stay safe. The times demand it.**
+</details>
 
 ## Table of Contents
 - [Pueblo Surveillance Apparatus Map](#pueblo-surveillance-apparatus-map)

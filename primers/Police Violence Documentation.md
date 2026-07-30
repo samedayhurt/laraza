@@ -280,7 +280,7 @@ When filing complaints, reference any knowledge of:
 | Resource | Contact | Use For |
 |----------|---------|---------|
 | **Pueblo PD IA** | 719-553-2412 | Initial complaint |
-| **Pueblo Public Defender** | 719-583-6900 | If charged with crime |
+| **Pueblo Public Defender** | 719-546-0004 | If charged with crime |
 | **Colorado Legal Services** | 719-545-6708 | Civil legal help |
 | **ACLU Colorado** | 303-777-5482 | Civil rights violations |
 | **NLG Colorado** | nlgcolorado.org | Legal observer support |

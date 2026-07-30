@@ -142,7 +142,7 @@ AT ADVISEMENT HEARING
 1. Request public defender at advisement
 2. Fill out financial affidavit (income verification)
 3. Office will contact you with attorney assignment
-4. **Pueblo Public Defender Office**: 719-583-6900
+4. **Pueblo Public Defender Office**: 719-546-0004
 
 **What public defenders do:**
 - Review your case
@@ -237,7 +237,7 @@ POST-RELEASE CHECKLIST
 
 | Resource | Phone | Notes |
 |----------|-------|-------|
-| **Pueblo Public Defender** | 719-583-6900 | If assigned PD |
+| **Pueblo Public Defender** | 719-546-0004 | If assigned PD |
 | **Colorado Legal Services** | 719-545-6708 | Low-income civil legal help |
 | **ACLU Colorado** | 303-777-5482 | Rights violations |
 
@@ -247,7 +247,7 @@ POST-RELEASE CHECKLIST
 |----------|-------|-------|
 | **CORRN Hotline** | 844-864-8341 | If ICE involved |
 | **RMIAN Detention** | (303) 866-9308 | Immigration detention help |
-| **Catholic Charities** | (719) 586-8600 | Immigration legal services |
+| **Catholic Charities** | 719-544-4233 | Immigration legal services |
 
 ### Support Services
 
@@ -272,7 +272,7 @@ POST-RELEASE CHECKLIST
 
 1. **Escriba** todo lo que pasó mientras lo recuerda
 2. **Fotografíe** cualquier lesión
-3. **Contacte** un abogado o defensor público: 719-583-6900
+3. **Contacte** un abogado o defensor público: 719-546-0004
 4. **NO falte** a ninguna cita en la corte
 
 ### Contactos de Emergencia:

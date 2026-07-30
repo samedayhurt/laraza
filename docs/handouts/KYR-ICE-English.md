@@ -1,6 +1,6 @@
 # KNOW YOUR RIGHTS: If ICE Comes to Your Door
 
-**PUEBLO, CO - Updated November 2025**
+**PUEBLO, CO - Updated July 2026**
 
 ---
 
@@ -28,27 +28,88 @@
 
 ---
 
-## IMPORTANT: NOVEMBER 25, 2025 COURT RULING
+## A STOP IS NOT THE SAME AS AN ARREST
 
-**Case: *Ramirez Ovando v. Noem* — U.S. District Court, Colorado**
+**Read this part carefully. It is the most misunderstood.**
 
-**A federal judge ruled ICE warrantless arrests are UNLAWFUL in Colorado.**
+In September 2025 the U.S. Supreme Court (*Noem v. Vasquez Perdomo*) allowed agents to
+consider things like **ethnicity, speaking Spanish or accented English, your location,
+and your type of work** when deciding to **stop and question** someone.
 
-ICE must now prove you are a flight risk BEFORE arresting without a warrant.
+**What that means for you:**
+- Being stopped does **not** mean you did anything wrong.
+- Do **not** assume a stop is illegal just because it seemed based on how you look or speak.
+- **A stop still does NOT allow a warrantless ARREST in Colorado** (see next section).
 
-If ICE tries to arrest you without a warrant, say:
-> "Under *Ramirez Ovando v. Noem*, ICE cannot make warrantless arrests in Colorado without proving flight risk."
+**What to say — works in every situation:**
+> "I want to remain silent."
+> "I do not consent to a search."
 
-**If arrested after Nov 25, 2025 without warrant:** You may be eligible for bond refund and ankle monitor removal. Contact ACLU of Colorado immediately.
+You do **not** have to answer questions about **where you were born** or your
+**immigration status**. Staying silent is not a crime.
 
 ---
 
-## SHERIFF LUCERO'S PLEDGE (January 2025)
+## COLORADO COURT ORDER — STILL IN EFFECT (as of July 2026)
 
-Pueblo County Sheriff WILL NOT:
+**Case: *Ramirez Ovando v. Noem* (U.S. District Court, Colorado — Nov 25, 2025)**
+
+A federal judge **restricted ICE warrantless arrests in Colorado**. ICE must make a
+flight-risk determination before arresting without a warrant.
+
+**On May 12, 2026 the judge found ICE had "materially violated" that order** and required
+retraining — officers who are not trained are **barred** from making warrantless arrests.
+
+> ⚠️ **This order is being appealed** (10th Circuit, No. 26-1027) and has **not** been decided.
+> It is in force today, but **verify it is still current** before relying on it.
+
+If ICE tries to arrest you without a warrant, you can say:
+> "A federal court order restricts warrantless ICE arrests in Colorado. I want to remain silent. I want a lawyer."
+
+**If arrested without a warrant:** you may have legal options, including bond or monitor
+review. **Call CORRN and ACLU of Colorado right away.**
+
+---
+
+## IF YOU CANNOT FIND A DETAINED FAMILY MEMBER
+
+⚠️ **Not being listed in ICE's online detainee locator does NOT mean they are not detained.**
+
+Colorado has **unlisted ICE "hold rooms"** that do not appear in the public system. People
+have been held in them for **12, 14, even 19 days**. One serves the Pueblo area but is
+**located outside the city**, in the Fremont County area.
+
+**Keep calling CORRN and RMIAN even if the locator shows nothing.**
+
+---
+
+## COURTHOUSE WARNING
+
+Colorado law limits civil immigration arrests at **state** courthouses — but that protection
+**does NOT cover federal courthouses or combined state/federal buildings**, and it does
+**not** protect you in the days *after* a court date.
+
+- Ask **CIRC** about **court accompaniment**.
+- Ask your lawyer about appearing **virtually** when allowed.
+
+---
+
+## SHERIFF'S PLEDGE — AND A 2027 CHANGE
+
+Sheriff David Lucero pledged (Jan 2025, reaffirmed **Jan 29, 2026**) that Pueblo County
+Sheriff's Office WILL NOT:
 - Participate in ICE roundup operations
 - Enforce based solely on immigration status
 - Help ICE at schools, churches, or hospitals
+
+> ⚠️ **Sheriff Lucero lost the June 30, 2026 primary.** **Allen Medina** is expected to take
+> office in **January 2027**. He has said he will not raid non-criminal residents — but
+> **this pledge is not law and can change with the officeholder.** Do not rely on it alone.
+
+**Also important:** a sheriff's pledge cannot stop a license-plate-reader search run by
+another agency, or a detainer lodged at the jail. Colorado's 2026 bills to limit that
+**all failed** — there is currently **no state law** restricting ICE access to local
+license-plate data.
 
 ---
 
@@ -57,7 +118,7 @@ Pueblo County Sheriff WILL NOT:
 | **CORRN Hotline (ICE emergencies)** | **844-864-8341** |
 |-------------------------------------|------------------|
 | RMIAN Detention Hotline | (303) 866-9308 |
-| Catholic Charities Immigration | (719) 586-8600 |
+| Catholic Charities Immigration | 719-544-4233 |
 | Colorado Legal Services | 719-545-6708 |
 
 ---
